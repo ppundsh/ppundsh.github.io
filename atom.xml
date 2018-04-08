@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-04-08T16:48:41.944Z</updated>
+  <updated>2018-04-08T17:06:04.376Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://yoursite.com/2018/04/09/Hexo-GitHub-%E6%90%AD%E5%BB%BA%E8%A8%98%E9%8C%84/"/>
     <id>http://yoursite.com/2018/04/09/Hexo-GitHub-搭建記錄/</id>
     <published>2018-04-08T16:45:23.000Z</published>
-    <updated>2018-04-08T16:48:41.944Z</updated>
+    <updated>2018-04-08T17:06:04.376Z</updated>
     
-    <content type="html"><![CDATA[<p>作為第一篇記錄<br><a id="more"></a></p>]]></content>
+    <content type="html"><![CDATA[<p>作為第一篇記錄<br><a id="more"></a><br><br><br>&emsp;&emsp; 測試1<br><strong>測試2</strong></p><ul><li>1</li><li>2</li><li>3<br><strong>測試3</strong></li></ul>]]></content>
     
     <summary type="html">
     
