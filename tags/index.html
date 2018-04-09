@@ -612,6 +612,22 @@
 
 
 
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+   <script type="text/javascript">
+        var gitalk = new Gitalk({
+          clientID: '93c9fec1508ce54e67f0',
+          clientSecret: 'c9c33bdfef68c346a41d6ed48e594a2428ce3b1e',
+          repo: 'git@github.com:ppundsh/ppundsh.github.io.git',
+          owner: 'ppundsh',
+          admin: ['ppundsh'],
+          id: location.pathname,
+          distractionFreeMode: 'true'
+        })
+        gitalk.render('gitalk-container')           
+       </script>
+
+
   
 
 
