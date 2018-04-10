@@ -109,8 +109,6 @@
 <meta name="twitter:title" content="categories">
 
 
-  
-
 
   <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml" />
 
@@ -225,26 +223,6 @@
         
           
   
-  <li class="menu-item menu-item-tags">
-    <a href="/tags/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />Tags</a>
-</li>
-
-      
-        
-        
-          
-  
-  <li class="menu-item menu-item-categories menu-item-active">
-    <a href="/categories/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />Categories</a>
-</li>
-
-      
-        
-        
-          
-  
   <li class="menu-item menu-item-archives">
     <a href="/archives/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives</a>
@@ -260,12 +238,6 @@
     
 
     
-    
-      
-      
-    
-      
-      
     
       
       
@@ -356,7 +328,7 @@
           
 
   
-
+  
   
 
         </div>
@@ -612,20 +584,26 @@
 
 
 
-  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-   <script type="text/javascript">
-        var gitalk = new Gitalk({
+  
+    
+      <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+      <script type="text/javascript">
+        const gitalk = new Gitalk({
           clientID: '93c9fec1508ce54e67f0',
           clientSecret: 'c9c33bdfef68c346a41d6ed48e594a2428ce3b1e',
           repo: 'git@github.com:ppundsh/ppundsh.github.io.git',
           owner: 'ppundsh',
-          admin: ['ppundsh'],
-          id: location.pathname,
-          distractionFreeMode: 'true'
+          admin: 'ppundsh'.split(','),
+          id: '1523308594000', #這個是基於文章時間創建 Issues ，默認是以文章標題作為標籤創建 Issues 會導致長標題初始化失敗。
+          pagerDirection: 'first',
+          // facebook-like distraction free mode
+          distractionFreeMode: false
         })
-        gitalk.render('gitalk-container')           
-       </script>
+        gitalk.render('gitalk-container')
+      </script>
+    
+  
+
 
 
   
