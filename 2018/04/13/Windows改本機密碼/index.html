@@ -99,17 +99,19 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="tags">
-<meta property="og:url" content="http://yoursite.com/tags/index.html">
+  <meta name="description" content="剛好遇到，小記一下。用開機光碟修改，以便在鎖定畫面叫出 cmd 改密碼。">
+<meta name="keywords" content="cmd,windows,crack">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Windows 改本機密碼">
+<meta property="og:url" content="http://yoursite.com/2018/04/13/Windows改本機密碼/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="剛好遇到，小記一下。用開機光碟修改，以便在鎖定畫面叫出 cmd 改密碼。">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-04-09T21:16:03.409Z">
+<meta property="og:updated_time" content="2018-04-12T18:14:13.495Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="tags">
+<meta name="twitter:title" content="Windows 改本機密碼">
+<meta name="twitter:description" content="剛好遇到，小記一下。用開機光碟修改，以便在鎖定畫面叫出 cmd 改密碼。">
 
-
-  
 
 
   <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml" />
@@ -117,7 +119,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/04/13/Windows改本機密碼/"/>
 
 
 
@@ -127,7 +129,7 @@
   };
 </script>
 
-  <title>tags | Hexo</title>
+  <title>Windows 改本機密碼 | Hexo</title>
   
 
 
@@ -277,72 +279,158 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/13/Windows改本機密碼/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">tags</h1>
-
-<div class="post-meta">
-  
-  
-
-
-
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="tag-cloud">
-            <div class="tag-cloud-title">
-                
-                
-                  
-                    
-                  
-                
-                  
-                    
-                  
-                
-                  
-                    
-                  
-                
-                  
-                    
-                  
-                
-                  
-                    
-                  
-                
-                5 tags in total
-            </div>
-            <div class="tag-cloud-tags">
-              <a href="/tags/Hexo/" style="font-size: 12px; color: #ccc">Hexo</a> <a href="/tags/bat/" style="font-size: 12px; color: #ccc">bat</a> <a href="/tags/cmd/" style="font-size: 12px; color: #ccc">cmd</a> <a href="/tags/crack/" style="font-size: 12px; color: #ccc">crack</a> <a href="/tags/windows/" style="font-size: 12px; color: #ccc">windows</a>
-            </div>
-          </div>
+          <h1 class="post-title" itemprop="name headline">Windows 改本機密碼</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-13T01:51:39+08:00">2018-04-13</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <p>剛好遇到，小記一下。<br>用開機光碟修改，以便在鎖定畫面叫出 cmd 改密碼。<br><a id="more"></a><br>用開機光碟，不要按下一步，用指令叫出 cmd<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">shift</span> + F10</span><br></pre></td></tr></table></figure></p>
+<p>用 diskpart 查看分區<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">diskpaart</span><br></pre></td></tr></table></figure></p>
+<p>將螢小鍵盤改成 cmd<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> windows\system32</span><br><span class="line">copy cmd.exe cmd.exe.ori</span><br><span class="line">copy osk.exe osk.exe.ori</span><br><span class="line">del osk.exe</span><br><span class="line">ren cmd.exe osk.exe</span><br><span class="line">shutdown –r –t 00</span><br></pre></td></tr></table></figure></p>
+<p>或<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">copy C:\windows\system32\sethc.exe c:\</span><br><span class="line">copy /y c:\windows\system32\cmd.exe c:\windows\system32\sethc.exe</span><br></pre></td></tr></table></figure></p>
+<p>(登入界面按五次 shift )</p>
+<p>重開機後，點右下角的“輕鬆讀取”，點螢幕小鍵盤，用 net user 改密碼的指令<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">net user 帳號 *</span><br></pre></td></tr></table></figure></p>
+<p>完成後按 exit 離開。</p>
+
       
     </div>
+
     
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/cmd/" rel="tag"># cmd</a>
+          
+            <a href="/tags/windows/" rel="tag"># windows</a>
+          
+            <a href="/tags/crack/" rel="tag"># crack</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/04/11/維運指令備忘/" rel="next" title="維運指令備忘">
+                <i class="fa fa-chevron-left"></i> 維運指令備忘
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
 
 
 
-    
-    
-    
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -622,7 +710,7 @@
           repo: 'git@github.com:ppundsh/ppundsh.github.io.git',
           owner: 'ppundsh',
           admin: 'ppundsh'.split(','),
-          id: '1523308508000', #這個是基於文章時間創建 Issues ，默認是以文章標題作為標籤創建 Issues 會導致長標題初始化失敗。
+          id: '1523555499000', #這個是基於文章時間創建 Issues ，默認是以文章標題作為標籤創建 Issues 會導致長標題初始化失敗。
           pagerDirection: 'first',
           // facebook-like distraction free mode
           distractionFreeMode: false

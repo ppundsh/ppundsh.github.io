@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-04-10T19:26:54.767Z</updated>
+  <updated>2018-04-12T18:14:13.495Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,13 +17,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Windows 改本機密碼</title>
+    <link href="http://yoursite.com/2018/04/13/Windows%E6%94%B9%E6%9C%AC%E6%A9%9F%E5%AF%86%E7%A2%BC/"/>
+    <id>http://yoursite.com/2018/04/13/Windows改本機密碼/</id>
+    <published>2018-04-12T17:51:39.000Z</published>
+    <updated>2018-04-12T18:14:13.495Z</updated>
+    
+    <content type="html"><![CDATA[<p>剛好遇到，小記一下。<br>用開機光碟修改，以便在鎖定畫面叫出 cmd 改密碼。<br><a id="more"></a><br>用開機光碟，不要按下一步，用指令叫出 cmd<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">shift</span> + F10</span><br></pre></td></tr></table></figure></p><p>用 diskpart 查看分區<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">diskpaart</span><br></pre></td></tr></table></figure></p><p>將螢小鍵盤改成 cmd<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> windows\system32</span><br><span class="line">copy cmd.exe cmd.exe.ori</span><br><span class="line">copy osk.exe osk.exe.ori</span><br><span class="line">del osk.exe</span><br><span class="line">ren cmd.exe osk.exe</span><br><span class="line">shutdown –r –t 00</span><br></pre></td></tr></table></figure></p><p>或<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">copy C:\windows\system32\sethc.exe c:\</span><br><span class="line">copy /y c:\windows\system32\cmd.exe c:\windows\system32\sethc.exe</span><br></pre></td></tr></table></figure></p><p>(登入界面按五次 shift )</p><p>重開機後，點右下角的“輕鬆讀取”，點螢幕小鍵盤，用 net user 改密碼的指令<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">net user 帳號 *</span><br></pre></td></tr></table></figure></p><p>完成後按 exit 離開。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;剛好遇到，小記一下。&lt;br&gt;用開機光碟修改，以便在鎖定畫面叫出 cmd 改密碼。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="cmd" scheme="http://yoursite.com/tags/cmd/"/>
+    
+      <category term="windows" scheme="http://yoursite.com/tags/windows/"/>
+    
+      <category term="crack" scheme="http://yoursite.com/tags/crack/"/>
+    
+  </entry>
+  
+  <entry>
     <title>維運指令備忘</title>
     <link href="http://yoursite.com/2018/04/11/%E7%B6%AD%E9%81%8B%E6%8C%87%E4%BB%A4%E5%82%99%E5%BF%98/"/>
     <id>http://yoursite.com/2018/04/11/維運指令備忘/</id>
     <published>2018-04-10T18:38:35.000Z</published>
-    <updated>2018-04-10T19:26:54.767Z</updated>
+    <updated>2018-04-12T18:11:30.925Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="CMD"><a href="#CMD" class="headerlink" title="CMD"></a>CMD</h2><p>Cmd 用檔案總管開啟當前資料夾<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">start .</span><br></pre></td></tr></table></figure></p><p>檔案總管用 Cmd 開啟當前資料夾<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">shift</span> + 右鍵</span><br><span class="line">位置列輸入 cmd</span><br></pre></td></tr></table></figure></p><h2 id="Run"><a href="#Run" class="headerlink" title="Run"></a>Run</h2><p>開啟指令為<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">win + r</span><br></pre></td></tr></table></figure></p><p>創建新捷徑<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rundll32.exe shell32.dll,Control_RunDLL ncpa.cpl</span><br></pre></td></tr></table></figure></p><p>常用參數有：</p><table><thead><tr><th>命令</th><th>功能</th></tr></thead><tbody><tr><td>calc</td><td>小算盤</td></tr><tr><td>ncpa.cpl</td><td>控制台：網路連線</td></tr><tr><td>sysdm.cpl</td><td>系統</td></tr><tr><td>appwize.cpl</td><td>新增程式</td></tr><tr><td>gpedit.msc</td><td>群組</td></tr><tr><td>mstsc</td><td>遠端桌面</td></tr><tr><td>services.msc</td><td>服務</td></tr><tr><td>control userpasswords2</td><td>自動登入</td></tr><tr><td>netplwiz</td><td>自動登入</td></tr><tr><td>lusrmgr.msc</td><td>本機使用者和群組</td></tr><tr><td>certmgr.msc</td><td>憑證管理</td></tr><tr><td>perfmon.msc</td><td>效能監視器</td></tr></tbody></table>]]></content>
+    <content type="html"><![CDATA[<h2 id="CMD"><a href="#CMD" class="headerlink" title="CMD"></a>CMD</h2><p>Cmd 用檔案總管開啟當前資料夾<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">start .</span><br></pre></td></tr></table></figure></p><p>檔案總管用 Cmd 開啟當前資料夾<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">shift</span> + 右鍵</span><br><span class="line">位置列輸入 cmd</span><br></pre></td></tr></table></figure></p><h2 id="Run"><a href="#Run" class="headerlink" title="Run"></a>Run</h2><p>開啟指令為<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">win + r</span><br></pre></td></tr></table></figure></p><p>創建新捷徑<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rundll32.exe shell32.dll,Control_RunDLL ncpa.cpl</span><br></pre></td></tr></table></figure></p><p>常用參數有：</p><table><thead><tr><th>命令</th><th>功能</th></tr></thead><tbody><tr><td>calc</td><td>小算盤</td></tr><tr><td>ncpa.cpl</td><td>控制台：網路連線</td></tr><tr><td>sysdm.cpl</td><td>系統</td></tr><tr><td>appwize.cpl</td><td>新增程式</td></tr><tr><td>gpedit.msc</td><td>群組</td></tr><tr><td>mstsc</td><td>遠端桌面</td></tr><tr><td>services.msc</td><td>服務</td></tr><tr><td>control userpasswords2</td><td>自動登入</td></tr><tr><td>netplwiz</td><td>自動登入</td></tr><tr><td>lusrmgr.msc</td><td>本機使用者和群組</td></tr><tr><td>certmgr.msc</td><td>憑證管理</td></tr><tr><td>perfmon.msc</td><td>效能監視器</td></tr><tr><td>net use</td><td>查看網路連線</td></tr><tr><td>net user</td><td>查看本機帳號</td></tr><tr><td>whoami</td><td>查看當前帳號狀態</td></tr></tbody></table>]]></content>
     
     <summary type="html">
     
