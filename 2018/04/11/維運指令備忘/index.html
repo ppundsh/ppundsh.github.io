@@ -107,7 +107,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="CMDCmd 用檔案總管開啟當前資料夾1start . 檔案總管用 Cmd 開啟當前資料夾12shift + 右鍵位置列輸入 cmd Run開啟指令為1win + r 創建新捷徑1rundll32.exe shell32.dll,Control_RunDLL ncpa.cpl 常用參數有：    命令 功能     calc 小算盤   ncpa.cpl 控制台：網路連線   sysdm.cpl">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-04-12T18:11:30.925Z">
+<meta property="og:updated_time" content="2018-04-12T20:25:44.294Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="維運指令備忘">
 <meta name="twitter:description" content="CMDCmd 用檔案總管開啟當前資料夾1start . 檔案總管用 Cmd 開啟當前資料夾12shift + 右鍵位置列輸入 cmd Run開啟指令為1win + r 創建新捷徑1rundll32.exe shell32.dll,Control_RunDLL ncpa.cpl 常用參數有：    命令 功能     calc 小算盤   ncpa.cpl 控制台：網路連線   sysdm.cpl">
@@ -432,6 +432,10 @@
 <td>whoami</td>
 <td>查看當前帳號狀態</td>
 </tr>
+<tr>
+<td>winver</td>
+<td>查看 windows 版本</td>
+</tr>
 </tbody>
 </table>
 
@@ -506,7 +510,7 @@
           
 
   
-  
+
   
 
         </div>
@@ -793,27 +797,20 @@
 
 
 
-  
-    
-      <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-      <script type="text/javascript">
-        const gitalk = new Gitalk({
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+   <script type="text/javascript">
+        var gitalk = new Gitalk({
           clientID: '93c9fec1508ce54e67f0',
           clientSecret: 'c9c33bdfef68c346a41d6ed48e594a2428ce3b1e',
-          repo: 'git@github.com:ppundsh/ppundsh.github.io.git',
+          repo: 'ppundsh.github.io',
           owner: 'ppundsh',
-          admin: 'ppundsh'.split(','),
-          id: '1523385515000', #這個是基於文章時間創建 Issues ，默認是以文章標題作為標籤創建 Issues 會導致長標題初始化失敗。
-          pagerDirection: 'first',
-          // facebook-like distraction free mode
-          distractionFreeMode: false
+          admin: ['ppundsh'],
+          id: location.pathname,
+          distractionFreeMode: 'true'
         })
-        gitalk.render('gitalk-container')
-      </script>
-    
-  
-
-
+        gitalk.render('gitalk-container')           
+       </script>
 
   
 

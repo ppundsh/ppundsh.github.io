@@ -437,7 +437,7 @@
           
 
   
-  
+
   
 
         </div>
@@ -699,27 +699,20 @@
 
 
 
-  
-    
-      <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-      <script type="text/javascript">
-        const gitalk = new Gitalk({
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+   <script type="text/javascript">
+        var gitalk = new Gitalk({
           clientID: '93c9fec1508ce54e67f0',
           clientSecret: 'c9c33bdfef68c346a41d6ed48e594a2428ce3b1e',
-          repo: 'git@github.com:ppundsh/ppundsh.github.io.git',
+          repo: 'ppundsh.github.io',
           owner: 'ppundsh',
-          admin: 'ppundsh'.split(','),
-          id: '1523205923000', #這個是基於文章時間創建 Issues ，默認是以文章標題作為標籤創建 Issues 會導致長標題初始化失敗。
-          pagerDirection: 'first',
-          // facebook-like distraction free mode
-          distractionFreeMode: false
+          admin: ['ppundsh'],
+          id: location.pathname,
+          distractionFreeMode: 'true'
         })
-        gitalk.render('gitalk-container')
-      </script>
-    
-  
-
-
+        gitalk.render('gitalk-container')           
+       </script>
 
   
 
