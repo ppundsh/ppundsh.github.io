@@ -100,14 +100,14 @@
 
 
   <meta name="description" content="作為第一篇記錄，圖片等之後確認圖床再補上。官網 https://hexo.io/">
-<meta name="keywords" content="Hexo">
+<meta name="keywords" content="Hexo,Git">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo + GitHub 搭建記錄">
 <meta property="og:url" content="http://yoursite.com/2018/04/09/Hexo-GitHub-搭建記錄/index.html">
 <meta property="og:site_name" content="FFYY 凡事用心之事">
 <meta property="og:description" content="作為第一篇記錄，圖片等之後確認圖床再補上。官網 https://hexo.io/">
 <meta property="og:locale" content="zh-TW">
-<meta property="og:updated_time" content="2018-04-13T16:03:26.523Z">
+<meta property="og:updated_time" content="2018-04-13T16:28:04.802Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo + GitHub 搭建記錄">
 <meta name="twitter:description" content="作為第一篇記錄，圖片等之後確認圖床再補上。官網 https://hexo.io/">
@@ -381,113 +381,17 @@
 <p>部建<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure></p>
 <p>本機測試<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure></p>
 <p>打在 <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> ，可以看到當前的網頁</p>
-<h2 id="使用-Hexo"><a href="#使用-Hexo" class="headerlink" title="使用 Hexo"></a>使用 Hexo</h2><blockquote>
-<p>此段落引用自 Hexo 官方文檔</p>
-</blockquote>
-<p>您可以在 _config.yml 中修改大部份的配置。</p>
-<h3 id="網站"><a href="#網站" class="headerlink" title="網站"></a>網站</h3><p>參數    描述</p>
-<hr>
-<p>title    網站標題</p>
-<hr>
-<p>subtitle    網站副標題</p>
-<hr>
-<p>description    網站描述</p>
-<hr>
-<p>author    您的名字</p>
-<hr>
-<p>language    網站使用的語言</p>
-<hr>
-<p>timezone    網站時區。Hexo 默認使用您電腦的時區。時區列表。比如說：America/New_York, Japan, 和 UTC 。</p>
-<hr>
-<h3 id="網址"><a href="#網址" class="headerlink" title="網址"></a>網址</h3><p>參數    描述    默認值</p>
-<hr>
-<p>url    網址    </p>
-<hr>
-<p>root    網站根目錄    </p>
-<hr>
-<p>permalink    文章的 永久鏈結 格式    :year/:month/:day/:title/</p>
-<hr>
-<p>permalink_default    永久鏈結中各部分的默認值    </p>
-<hr>
-<pre><code>如果您的網站存放在子目錄中，例如 http://yoursite.com/blog，則請將您的 url 設為 http://yoursite.com/blog 並把 root 設為 /blog/。
-</code></pre><h3 id="目錄"><a href="#目錄" class="headerlink" title="目錄"></a>目錄</h3><p><em>參數    描述    默認值</em></p>
-<hr>
-<p>source_dir    資源文件夾，這個文件夾用來存放內容。    source</p>
-<hr>
-<p>public_dir    公共文件夾，這個文件夾用於存放生成的站點文件。    public</p>
-<hr>
-<p>tag_dir    標籤文件夾    tags</p>
-<hr>
-<p>archive_dir    歸檔文件夾    archives</p>
-<hr>
-<p>category_dir    分類文件夾    categories</p>
-<hr>
-<p>code_dir    Include code 文件夾    `downloads/code</p>
-<hr>
-<p>i18n_dir    國際化（i18n）文件夾    :lang</p>
-<hr>
-<p>skip_render    跳過指定文件的渲染，您可使用 glob 運算式來匹配路徑。</p>
-<hr>
-<h3 id="文章"><a href="#文章" class="headerlink" title="文章"></a>文章</h3><p><em>參數    描述    默認值</em></p>
-<hr>
-<p>new_post_name    新文章的文件名稱    :title.md</p>
-<hr>
-<p>default_layout    預設佈局    post</p>
-<hr>
-<p>auto_spacing    在中文和英文之間加入空格    false</p>
-<hr>
-<p>titlecase    把標題轉換為 title case    false</p>
-<hr>
-<p>external_link    在新標籤中打開鏈結    true</p>
-<hr>
-<p>filename_case    把文件名稱轉換為 (1) 小寫或 (2) 大寫    0</p>
-<hr>
-<p>render_drafts    顯示草稿    false</p>
-<hr>
-<p>post_asset_folder    啟動 Asset 文件夾    false</p>
-<hr>
-<p>relative_link    把鏈結改為與根目錄的相對位址    false</p>
-<hr>
-<p>future    顯示未來的文章    true</p>
-<hr>
-<p>highlight    代碼塊的設置    </p>
-<hr>
-<h3 id="分類-amp-標籤"><a href="#分類-amp-標籤" class="headerlink" title="分類 &amp; 標籤"></a>分類 &amp; 標籤</h3><p><em>參數    描述    默認值</em></p>
-<hr>
-<p>default_category    默認分類    uncategorized</p>
-<hr>
-<p>category_map    分類別名    </p>
-<hr>
-<p>tag_map    標籤別名    </p>
-<hr>
-<h3 id="日期-時間格式"><a href="#日期-時間格式" class="headerlink" title="日期 / 時間格式"></a>日期 / 時間格式</h3><p>Hexo 使用 Moment.js 來解析和顯示時間。</p>
-<p><em>參數    描述    默認值</em></p>
-<hr>
-<p>date_format    日期格式    MMM D YYYY</p>
-<hr>
-<p>time_format    時間格式    H:mm:ss</p>
-<hr>
-<h4 id="分頁"><a href="#分頁" class="headerlink" title="分頁"></a>分頁</h4><p><em>參數    描述    默認值</em></p>
-<hr>
-<p>per_page    每頁顯示的文章量 (0 = 關閉分頁功能)    10</p>
-<hr>
-<p>pagination_dir    分頁目錄    page</p>
-<hr>
-<h4 id="擴展"><a href="#擴展" class="headerlink" title="擴展"></a>擴展</h4><p><em>參數    描述</em></p>
-<hr>
-<p>theme    當前主題名稱。值為false時禁用主題</p>
-<hr>
-<p>deploy    部署部分的設置</p>
-<hr>
+<h2 id="使用-Hexo"><a href="#使用-Hexo" class="headerlink" title="使用 Hexo"></a>使用 Hexo</h2><p>可以在 _config.yml 中修改大部份的配置。</p>
 <h2 id="配置-Deployment"><a href="#配置-Deployment" class="headerlink" title="配置 Deployment"></a>配置 Deployment</h2><p>用文字編輯器修改 D://Github/blog (範例用)下的 _config.yml ，找到 Deployment ，按照如下</p>
 <p>deploy:<br>  type: git<br>  repo: <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:yourname/yourname.github.io.git<br>  branch: master</p>
 <p>在 blog 輸入</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 <p>開始佈署</p>
-<p>##添加新文章<br>打開 Hexo 目錄下的source文件夾，所有的文章都會以 md 形式保存在_post文件夾中，只要在_post文件夾中新建 md 類型的文檔，就能在執行hexo g的時候被渲染。 新建的文章頭需要添加一些 yml 資訊，如下所示：</p>
-<hr>
-<p>title: hello-world   //在此處添加你的標題。<br>date: 2014-11-7 08:55:29   //在此處輸入你編輯這篇文章的時間。<br>categories: Exercise   //在此處輸入這篇文章的分類。</p>
-<h2 id="toc-true-在此處設定是否開啟目錄，需要主題支援。"><a href="#toc-true-在此處設定是否開啟目錄，需要主題支援。" class="headerlink" title="toc: true  //在此處設定是否開啟目錄，需要主題支援。"></a>toc: true  //在此處設定是否開啟目錄，需要主題支援。</h2><h2 id="Markdown-記錄"><a href="#Markdown-記錄" class="headerlink" title="Markdown 記錄"></a>Markdown 記錄</h2><p>編輯格式是用 markdown ，留一下參考連結<br><a href="http://markdown.tw/" target="_blank" rel="noopener">http://markdown.tw/</a></p>
+<h2 id="添加新文章"><a href="#添加新文章" class="headerlink" title="添加新文章"></a>添加新文章</h2><p>打開 Hexo 目錄下的source文件夾，所有的文章都會以 md 形式保存在_post文件夾中，只要在_post文件夾中新建 md 類型的文檔，就能在執行hexo g的時候被渲染。 新建的文章頭需要添加一些 yml 資訊，如下所示：</p>
+<pre><code>title: hello-world   //在此處添加你的標題。
+date: 2014-11-7 08:55:29   //在此處輸入你編輯這篇文章的時間。
+categories: Exercise   //在此處輸入這篇文章的分類。
+</code></pre><h2 id="Markdown-記錄"><a href="#Markdown-記錄" class="headerlink" title="Markdown 記錄"></a>Markdown 記錄</h2><p>編輯格式是用 markdown ，留一下參考連結<br><a href="http://markdown.tw/" target="_blank" rel="noopener">http://markdown.tw/</a></p>
 <h2 id="修改主題為-Next"><a href="#修改主題為-Next" class="headerlink" title="修改主題為 Next"></a>修改主題為 Next</h2><p>在 blog 資料夾下使用命令下載 Next 主題到 themes 目錄中<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure></p>
 <p>修改站點配置文件_config.yml 中的 theme 標籤：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: next</span><br></pre></td></tr></table></figure>
@@ -525,12 +429,12 @@ scheme: Muse
 <p>同時，在 / source 目錄下會生成一個 categories 文件夾，裡面包含一個index.md文件</p>
 <p>修改 / source/categories 目錄下的index.md文件</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">title: categories</span><br><span class="line">date: 2015-09-29 14:47:21</span><br><span class="line"><span class="built_in">type</span>: <span class="string">"categories"</span></span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>修改主題配置文件<br>去掉 categories 的註釋<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: /                       <span class="comment">#主頁</span></span><br><span class="line">  categories: /categories	<span class="comment">#分類頁（需手動創建）</span></span><br><span class="line">  <span class="comment">#about: /about		#關於頁面（需手動創建）</span></span><br><span class="line">  archives: /archives		<span class="comment">#歸檔頁</span></span><br><span class="line">  tags: /tags			<span class="comment">#標籤頁（需手動創建）</span></span><br><span class="line">  <span class="comment">#commonweal: /404.html        #公益 404 （需手動創建）</span></span><br></pre></td></tr></table></figure></p>
+<p>修改主題配置文件<br>去掉 categories 的註釋<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: /                       <span class="comment">#主頁</span></span><br><span class="line">  categories: /categories	<span class="comment">#分類頁（需手動創建）</span></span><br><span class="line">  <span class="comment">#about: /about		#關於頁面（需手動創建）</span></span><br><span class="line">  archives: /archives		<span class="comment">#歸檔頁</span></span><br><span class="line">  tags: /tags			<span class="comment">#標籤頁（需手動創建）</span></span><br></pre></td></tr></table></figure></p>
 <h3 id="側邊欄頭像設置"><a href="#側邊欄頭像設置" class="headerlink" title="側邊欄頭像設置"></a>側邊欄頭像設置</h3><p>編輯站點配置文件，增加 avatar 欄位</p>
-<p>頭像<br>avatar: /images/avatar.png<br>頭像圖片須放置在主題的 /source/images / 目錄下</p>
+<p>頭像<br>    avatar: /images/avatar.png<br>頭像圖片須放置在主題的 /source/images / 目錄下</p>
 <h2 id="Gitalk-評論系統"><a href="#Gitalk-評論系統" class="headerlink" title="Gitalk 評論系統"></a>Gitalk 評論系統</h2><p>一個基於 Github Issue 和 Preact 開發的評論插件，所有要修改的檔案都是在 D:\GitHub\blog\themes\next (範例目錄的\themes\next) 之下<br>詳情 Demo 可見：<a href="https://gitalk.github.io/" target="_blank" rel="noopener">https://gitalk.github.io/</a></p>
 <h3 id="註冊新應用"><a href="#註冊新應用" class="headerlink" title="註冊新應用"></a>註冊新應用</h3><p>在 GitHub 上註冊新應用，鏈結：<a href="https://github.com/settings/applications/new" target="_blank" rel="noopener">https://github.com/settings/applications/new</a></p>
-<p>參數說明：<br>Application name： # 應用名稱，隨意<br>Homepage URL： # 網站 URL，如 <a href="https://ppundsh.github.io" target="_blank" rel="noopener">https://ppundsh.github.io</a> ，不是 repo<br>Application description # 描述，隨意<br>Authorization callback URL：# 網站 URL，<a href="https://ppundsh.github.io" target="_blank" rel="noopener">https://ppundsh.github.io</a> ，不是 repo</p>
+<p>參數說明：<br>    Application name： # 應用名稱，隨意<br>    Homepage URL： # 網站 URL，如 <a href="https://ppundsh.github.io" target="_blank" rel="noopener">https://ppundsh.github.io</a> ，不是 repo<br>    Application description # 描述，隨意<br>    Authorization callback URL：# 網站 URL，<a href="https://ppundsh.github.io" target="_blank" rel="noopener">https://ppundsh.github.io</a> ，不是 repo</p>
 <p>點擊註冊後，頁面跳轉，其中Client ID和Client Secret在後面的配置中需要用到，到時複製粘貼即可</p>
 <h3 id="comments-swig"><a href="#comments-swig" class="headerlink" title="comments.swig"></a>comments.swig</h3><p>修改/layout/_partials/comments.swig，添加內容在最下面：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% <span class="keyword">if</span> theme.gitalk.enable %&#125;</span><br><span class="line">  &lt;div id=<span class="string">"gitalk-container"</span>&gt;&lt;/div&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
@@ -541,7 +445,7 @@ scheme: Muse
 <h3 id="third-party-styl"><a href="#third-party-styl" class="headerlink" title="third-party.styl"></a>third-party.styl</h3><p>修改/source/css/_common/components/third-party/third-party.styl，在最後一行上添加內容，引入樣式：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@import <span class="string">"gitalk"</span>;</span><br></pre></td></tr></table></figure>
 <h3 id="Md5-加密-id-避免中文編碼過長"><a href="#Md5-加密-id-避免中文編碼過長" class="headerlink" title="Md5 加密 id 避免中文編碼過長"></a>Md5 加密 id 避免中文編碼過長</h3><p>post 檔名為中文時，容易造成編碼出 github issue lables 50 字符限制而出現 Error: Validation Failed. ，解決方法為使用 md5 加密 id 來縮短長度。</p>
-<p>在此把 md5 加密的 js 放在 gist 上托管，在主頁面上右上角的頭像，點一下選 your gist<br>Gist description ：說明，選填<br>Filename including extension ：md5.min.js<br>內容請貼上以下 js 源碼點開後的內容：<br><a href="https://gist.githubusercontent.com/qhh0205/78e9e0b1f3114db6737f3ed8cdd51d3a/raw/3894c5be5aa2378336b1f5ee0f296fa0b22d06e9/md5.min.js" target="_blank" rel="noopener">https://gist.githubusercontent.com/qhh0205/78e9e0b1f3114db6737f3ed8cdd51d3a/raw/3894c5be5aa2378336b1f5ee0f296fa0b22d06e9/md5.min.js</a></p>
+<p>在此把 md5 加密的 js 放在 gist 上托管，在主頁面上右上角的頭像，點一下選 your gist<br>Gist description ：說明，選填<br>Filename including extension ：md5.min.js<br>內容請貼上以下 js 源碼點開後的內容：<a href="https://gist.githubusercontent.com/qhh0205/78e9e0b1f3114db6737f3ed8cdd51d3a/raw/3894c5be5aa2378336b1f5ee0f296fa0b22d06e9/md5.min.js" target="_blank" rel="noopener">點我</a></p>
 <p>完成後點右下的 Create public gist 以創建。</p>
 <p>創建成功後，點擊右邊的 RAW ，將網址的 gist.githubusercontent.com 替換為 rawgit.com ，即 <a href="https://rawgit.com/ppundsh/f359785730acb0fbfdee07eb12522623/raw/15ce7e5ea97e7afb71792d58a21978f225195a12/md5.min.js" target="_blank" rel="noopener">https://rawgit.com/ppundsh/f359785730acb0fbfdee07eb12522623/raw/15ce7e5ea97e7afb71792d58a21978f225195a12/md5.min.js</a></p>
 <p>以上即為 md5 js gist 嵌入鏈結</p>
@@ -578,6 +482,8 @@ scheme: Muse
         <div class="post-tags">
           
             <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+          
+            <a href="/tags/Git/" rel="tag"># Git</a>
           
         </div>
       
@@ -706,7 +612,9 @@ scheme: Muse
                     
                       
                     
-                    <span class="site-state-item-count">6</span>
+                      
+                    
+                    <span class="site-state-item-count">7</span>
                     <span class="site-state-item-name">標籤</span>
                   </a>
                 </div>
@@ -749,7 +657,7 @@ scheme: Muse
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安裝-Git-和-Node-js"><span class="nav-number">1.</span> <span class="nav-text">安裝 Git 和 Node.js</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安裝和設定-Git"><span class="nav-number">1.1.</span> <span class="nav-text">安裝和設定 Git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安裝-Node-js"><span class="nav-number">1.2.</span> <span class="nav-text">安裝 Node.js</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置-Github"><span class="nav-number">2.</span> <span class="nav-text">配置 Github</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置-Hexo"><span class="nav-number">3.</span> <span class="nav-text">配置 Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#初始化-Hexo"><span class="nav-number">3.1.</span> <span class="nav-text">初始化 Hexo</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用-Hexo"><span class="nav-number">4.</span> <span class="nav-text">使用 Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#網站"><span class="nav-number">4.1.</span> <span class="nav-text">網站</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#網址"><span class="nav-number">4.2.</span> <span class="nav-text">網址</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#目錄"><span class="nav-number">4.3.</span> <span class="nav-text">目錄</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文章"><span class="nav-number">4.4.</span> <span class="nav-text">文章</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分類-amp-標籤"><span class="nav-number">4.5.</span> <span class="nav-text">分類 &amp; 標籤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#日期-時間格式"><span class="nav-number">4.6.</span> <span class="nav-text">日期 / 時間格式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#分頁"><span class="nav-number">4.6.1.</span> <span class="nav-text">分頁</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#擴展"><span class="nav-number">4.6.2.</span> <span class="nav-text">擴展</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置-Deployment"><span class="nav-number">5.</span> <span class="nav-text">配置 Deployment</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#toc-true-在此處設定是否開啟目錄，需要主題支援。"><span class="nav-number">6.</span> <span class="nav-text">toc: true  //在此處設定是否開啟目錄，需要主題支援。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Markdown-記錄"><span class="nav-number">7.</span> <span class="nav-text">Markdown 記錄</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改主題為-Next"><span class="nav-number">8.</span> <span class="nav-text">修改主題為 Next</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#顯示閱讀全文按鈕"><span class="nav-number">8.1.</span> <span class="nav-text">顯示閱讀全文按鈕</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加本地搜索"><span class="nav-number">8.2.</span> <span class="nav-text">添加本地搜索</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#功能表設置"><span class="nav-number">8.3.</span> <span class="nav-text">功能表設置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#標籤頁面"><span class="nav-number">8.4.</span> <span class="nav-text">標籤頁面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分類頁面"><span class="nav-number">8.5.</span> <span class="nav-text">分類頁面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#側邊欄頭像設置"><span class="nav-number">8.6.</span> <span class="nav-text">側邊欄頭像設置</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Gitalk-評論系統"><span class="nav-number">9.</span> <span class="nav-text">Gitalk 評論系統</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#註冊新應用"><span class="nav-number">9.1.</span> <span class="nav-text">註冊新應用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#comments-swig"><span class="nav-number">9.2.</span> <span class="nav-text">comments.swig</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#gitalk-styl"><span class="nav-number">9.2.1.</span> <span class="nav-text">gitalk.styl</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#third-party-styl"><span class="nav-number">9.3.</span> <span class="nav-text">third-party.styl</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Md5-加密-id-避免中文編碼過長"><span class="nav-number">9.4.</span> <span class="nav-text">Md5 加密 id 避免中文編碼過長</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#gitalk-swig"><span class="nav-number">9.5.</span> <span class="nav-text">gitalk.swig</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#config-yml"><span class="nav-number">9.5.1.</span> <span class="nav-text">_config.yml</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#參考網址"><span class="nav-number">10.</span> <span class="nav-text">參考網址</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安裝-Git-和-Node-js"><span class="nav-number">1.</span> <span class="nav-text">安裝 Git 和 Node.js</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安裝和設定-Git"><span class="nav-number">1.1.</span> <span class="nav-text">安裝和設定 Git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安裝-Node-js"><span class="nav-number">1.2.</span> <span class="nav-text">安裝 Node.js</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置-Github"><span class="nav-number">2.</span> <span class="nav-text">配置 Github</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置-Hexo"><span class="nav-number">3.</span> <span class="nav-text">配置 Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#初始化-Hexo"><span class="nav-number">3.1.</span> <span class="nav-text">初始化 Hexo</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用-Hexo"><span class="nav-number">4.</span> <span class="nav-text">使用 Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置-Deployment"><span class="nav-number">5.</span> <span class="nav-text">配置 Deployment</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加新文章"><span class="nav-number">6.</span> <span class="nav-text">添加新文章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Markdown-記錄"><span class="nav-number">7.</span> <span class="nav-text">Markdown 記錄</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改主題為-Next"><span class="nav-number">8.</span> <span class="nav-text">修改主題為 Next</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#顯示閱讀全文按鈕"><span class="nav-number">8.1.</span> <span class="nav-text">顯示閱讀全文按鈕</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加本地搜索"><span class="nav-number">8.2.</span> <span class="nav-text">添加本地搜索</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#功能表設置"><span class="nav-number">8.3.</span> <span class="nav-text">功能表設置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#標籤頁面"><span class="nav-number">8.4.</span> <span class="nav-text">標籤頁面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分類頁面"><span class="nav-number">8.5.</span> <span class="nav-text">分類頁面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#側邊欄頭像設置"><span class="nav-number">8.6.</span> <span class="nav-text">側邊欄頭像設置</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Gitalk-評論系統"><span class="nav-number">9.</span> <span class="nav-text">Gitalk 評論系統</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#註冊新應用"><span class="nav-number">9.1.</span> <span class="nav-text">註冊新應用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#comments-swig"><span class="nav-number">9.2.</span> <span class="nav-text">comments.swig</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#gitalk-styl"><span class="nav-number">9.2.1.</span> <span class="nav-text">gitalk.styl</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#third-party-styl"><span class="nav-number">9.3.</span> <span class="nav-text">third-party.styl</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Md5-加密-id-避免中文編碼過長"><span class="nav-number">9.4.</span> <span class="nav-text">Md5 加密 id 避免中文編碼過長</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#gitalk-swig"><span class="nav-number">9.5.</span> <span class="nav-text">gitalk.swig</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#config-yml"><span class="nav-number">9.5.1.</span> <span class="nav-text">_config.yml</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#參考網址"><span class="nav-number">10.</span> <span class="nav-text">參考網址</span></a></li></ol></div>
             
 
           </div>
