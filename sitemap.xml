@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2018/04/09/Hexo-GitHub-%E6%90%AD%E5%BB%BA%E8%A8%98%E9%8C%84/</loc>
+    
+    <lastmod>2018-04-13T16:03:26.523Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2018/04/13/Cmder-%E7%AD%86%E8%A8%98/</loc>
     
     <lastmod>2018-04-13T07:26:58.139Z</lastmod>
@@ -47,13 +54,6 @@
     <loc>http://yoursite.com/tags/index.html</loc>
     
     <lastmod>2018-04-09T21:16:03.409Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/04/09/Hexo-GitHub-%E6%90%AD%E5%BB%BA%E8%A8%98%E9%8C%84/</loc>
-    
-    <lastmod>2018-04-08T17:06:04.376Z</lastmod>
     
   </url>
   
