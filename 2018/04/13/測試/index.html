@@ -700,7 +700,7 @@
           repo: 'ppundsh.github.io',
           owner: 'ppundsh',
           admin: ['ppundsh'],
-          id: location.pathname,
+          id: md5(location.pathname),
           distractionFreeMode: 'true'
         })
         gitalk.render('gitalk-container')           
