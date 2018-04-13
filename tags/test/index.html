@@ -99,17 +99,13 @@
 
 
 
-  <meta name="description" content="設定上的記錄">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Cmder 筆記">
-<meta property="og:url" content="http://yoursite.com/2018/04/13/Cmder-筆記/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/tags/test/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="設定上的記錄">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-04-13T05:05:44.014Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Cmder 筆記">
-<meta name="twitter:description" content="設定上的記錄">
+<meta name="twitter:title" content="Hexo">
 
 
 
@@ -118,7 +114,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/04/13/Cmder-筆記/"/>
+  <link rel="canonical" href="http://yoursite.com/tags/test/"/>
 
 
 
@@ -128,7 +124,7 @@
   };
 </script>
 
-  <title>Cmder 筆記 | Hexo</title>
+  <title>Tag: test | Hexo</title>
   
 
 
@@ -175,7 +171,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-left ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -276,164 +272,58 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-expand">
-    
+  
+  
+  
+  <div class="post-block tag">
 
-  
+    <div id="posts" class="posts-collapse">
+      <div class="collection-title">
+        <h1>test<small>Tag</small>
+        </h1>
+      </div>
 
-  
-  
-  
-
-  
+      
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/13/Cmder-筆記/">
+    <header class="post-header">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
+      <h2 class="post-title">
         
-        
-          <h1 class="post-title" itemprop="name headline">Cmder 筆記</h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
+            <a class="post-title-link" href="/2018/04/13/最終測試，應該OK/" itemprop="url">
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span itemprop="name">最終測試，應該OK</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-13T02:37:06+08:00">2018-04-13</time>
-            
+            </a>
+        
+      </h2>
 
-            
-            
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2018-04-13T15:02:14+08:00"
+              content="2018-04-13" >
+          04-13
+        </time>
+      </div>
 
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <p>設定上的記錄<br><a id="more"></a></p>
-<p>##安裝右鍵選單<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Cmder.exe /REGISTER ALL</span><br></pre></td></tr></table></figure></p>
-<p>##開啟時自動到指定的位置：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">setting →Startup:Tasks→+</span><br><span class="line">cmd /k <span class="string">"%ConEmuDir%\..\init.bat"</span>  -new_console:d:D:\GitHub\Hexo\</span><br></pre></td></tr></table></figure></p>
-<p>##安裝後的調整：<br>中文字體：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Font ，Mani font 下的 Aternative font 加入 CJK 字體，再設置 Unicode ranges 為 CJK</span><br></pre></td></tr></table></figure></p>
-<p>##中文亂碼:<br>順便把代碼頁換成 utf-8<br>Startup→Environnment 下，加入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">set</span> LANG=zh_CN.UTF-8</span><br><span class="line">chcp 65001</span><br></pre></td></tr></table></figure></p>
-<p>##無邊框<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">main&gt;&gt; appearence &gt;&gt; hide caption always</span><br></pre></td></tr></table></figure></p>
-<p>##避免殘留字<br>默認的為λ，改成常用的$<br>打開\cmder\vendor目錄下面的clink.lua文件，搜索λ，全部替換成$即可！</p>
-
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2018/04/13/Windows改本機密碼/" rel="next" title="Windows 改本機密碼">
-                <i class="fa fa-chevron-left"></i> Windows 改本機密碼
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/04/13/最終測試，應該OK/" rel="prev" title="最終測試，應該OK">
-                最終測試，應該OK <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
+    </header>
   </article>
 
 
-
-    <div class="post-spread">
       
     </div>
+
   </div>
-
-
-          </div>
-          
+  
+  
+  
 
   
 
 
-
+          </div>
+          
   
     <div id="gitalk-container"></div>
     
@@ -659,10 +549,6 @@
   
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.1.0"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=6.1.0"></script>
-
-
 
   
 
@@ -697,22 +583,6 @@
 
 
 
-
-  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-  <script src="https://rawgit.com/ppundsh/f359785730acb0fbfdee07eb12522623/raw/15ce7e5ea97e7afb71792d58a21978f225195a12/md5.min.js"></script>
-   <script type="text/javascript">
-        var gitalk = new Gitalk({
-          clientID: '93c9fec1508ce54e67f0',
-          clientSecret: 'c9c33bdfef68c346a41d6ed48e594a2428ce3b1e',
-          repo: 'ppundsh.github.io',
-          owner: 'ppundsh',
-          admin: ['ppundsh'],
-          id: md5(location.pathname),
-          distractionFreeMode: 'true'
-        })
-        gitalk.render('gitalk-container')           
-       </script>
 
   
 
