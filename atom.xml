@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-04-13T05:58:50.602Z</updated>
+  <updated>2018-04-13T06:10:19.067Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>測試更多字元讓他超過</title>
+    <link href="http://yoursite.com/2018/04/13/%E6%B8%AC%E8%A9%A6%E6%9B%B4%E5%A4%9A%E5%AD%97%E5%85%83%E8%AE%93%E4%BB%96%E8%B6%85%E9%81%8E/"/>
+    <id>http://yoursite.com/2018/04/13/測試更多字元讓他超過/</id>
+    <published>2018-04-13T06:10:00.000Z</published>
+    <updated>2018-04-13T06:10:19.067Z</updated>
+    
+    <content type="html"><![CDATA[<p>如提<br><a id="more"></a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;如提&lt;br&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>測試</title>
