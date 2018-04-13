@@ -106,7 +106,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="設定上的記錄">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-04-13T05:05:44.014Z">
+<meta property="og:updated_time" content="2018-04-13T07:26:58.139Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Cmder 筆記">
 <meta name="twitter:description" content="設定上的記錄">
@@ -359,12 +359,12 @@
 
       
         <p>設定上的記錄<br><a id="more"></a></p>
-<p>##安裝右鍵選單<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Cmder.exe /REGISTER ALL</span><br></pre></td></tr></table></figure></p>
-<p>##開啟時自動到指定的位置：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">setting →Startup:Tasks→+</span><br><span class="line">cmd /k <span class="string">"%ConEmuDir%\..\init.bat"</span>  -new_console:d:D:\GitHub\Hexo\</span><br></pre></td></tr></table></figure></p>
-<p>##安裝後的調整：<br>中文字體：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Font ，Mani font 下的 Aternative font 加入 CJK 字體，再設置 Unicode ranges 為 CJK</span><br></pre></td></tr></table></figure></p>
-<p>##中文亂碼:<br>順便把代碼頁換成 utf-8<br>Startup→Environnment 下，加入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">set</span> LANG=zh_CN.UTF-8</span><br><span class="line">chcp 65001</span><br></pre></td></tr></table></figure></p>
-<p>##無邊框<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">main&gt;&gt; appearence &gt;&gt; hide caption always</span><br></pre></td></tr></table></figure></p>
-<p>##避免殘留字<br>默認的為λ，改成常用的$<br>打開\cmder\vendor目錄下面的clink.lua文件，搜索λ，全部替換成$即可！</p>
+<h2 id="安裝右鍵選單"><a href="#安裝右鍵選單" class="headerlink" title="安裝右鍵選單"></a>安裝右鍵選單</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Cmder.exe /REGISTER ALL</span><br></pre></td></tr></table></figure>
+<h2 id="開啟時自動到指定的位置："><a href="#開啟時自動到指定的位置：" class="headerlink" title="開啟時自動到指定的位置："></a>開啟時自動到指定的位置：</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">setting →Startup:Tasks→+</span><br><span class="line">cmd /k <span class="string">"%ConEmuDir%\..\init.bat"</span>  -new_console:d:D:\GitHub\Hexo\</span><br></pre></td></tr></table></figure>
+<h2 id="安裝後的調整："><a href="#安裝後的調整：" class="headerlink" title="安裝後的調整："></a>安裝後的調整：</h2><p>中文字體：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Font ，Mani font 下的 Aternative font 加入 CJK 字體，再設置 Unicode ranges 為 CJK</span><br></pre></td></tr></table></figure></p>
+<h2 id="中文亂碼"><a href="#中文亂碼" class="headerlink" title="中文亂碼:"></a>中文亂碼:</h2><p>順便把代碼頁換成 utf-8<br>Startup→Environnment 下，加入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">set</span> LANG=zh_CN.UTF-8</span><br><span class="line">chcp 65001</span><br></pre></td></tr></table></figure></p>
+<h2 id="無邊框"><a href="#無邊框" class="headerlink" title="無邊框"></a>無邊框</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">main&gt;&gt; appearence &gt;&gt; hide caption always</span><br></pre></td></tr></table></figure>
+<h2 id="避免殘留字"><a href="#避免殘留字" class="headerlink" title="避免殘留字"></a>避免殘留字</h2><p>默認的為λ，改成常用的$<br>打開\cmder\vendor目錄下面的clink.lua文件，搜索λ，全部替換成$即可！</p>
 
       
     </div>
@@ -456,8 +456,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -532,6 +541,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安裝右鍵選單"><span class="nav-number">1.</span> <span class="nav-text">安裝右鍵選單</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#開啟時自動到指定的位置："><span class="nav-number">2.</span> <span class="nav-text">開啟時自動到指定的位置：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安裝後的調整："><span class="nav-number">3.</span> <span class="nav-text">安裝後的調整：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#中文亂碼"><span class="nav-number">4.</span> <span class="nav-text">中文亂碼:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#無邊框"><span class="nav-number">5.</span> <span class="nav-text">無邊框</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#避免殘留字"><span class="nav-number">6.</span> <span class="nav-text">避免殘留字</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
