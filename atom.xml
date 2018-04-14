@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>FFYY 凡事用心之事</title>
   
-  
+  <subtitle>科技、藝術、工藝</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ppundsh.github.io/"/>
