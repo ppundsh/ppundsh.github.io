@@ -14,3 +14,6 @@ Disallow: /fancybox/
 Disallow: /lib/
 Disallow: /CNAME
 Disallow: /images/
+
+Sitemap: http://ppundsh.github.io/sitemap.xml
+Sitemap: http://ppundsh.github.io/baidusitemap.xml
