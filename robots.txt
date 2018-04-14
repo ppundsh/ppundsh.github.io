@@ -10,9 +10,7 @@ Disallow: /js/
 Disallow: /ownjs/
 Disallow: /css/
 Disallow: /fonts/
-Disallow: /vendors/
+Disallow: /fancybox/
 Disallow: /lib/
 Disallow: /CNAME
 Disallow: /images/
-
-Sitemap: https://www.xbug.me/sitemap.xml
