@@ -79,7 +79,7 @@
     root: '/',
     scheme: 'Muse',
     version: '6.1.0',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":true},
     fancybox: false,
     fastclick: false,
     lazyload: false,
@@ -109,7 +109,7 @@
 <meta property="og:site_name" content="FFYY 凡事用心之事">
 <meta property="og:description" content="作為第一篇記錄，圖片等之後確認圖床再補上。官網 https://hexo.io/">
 <meta property="og:locale" content="zh-TW">
-<meta property="og:updated_time" content="2018-04-13T21:25:40.744Z">
+<meta property="og:updated_time" content="2018-04-14T11:44:23.387Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo + GitHub 搭建記錄">
 <meta name="twitter:description" content="作為第一篇記錄，圖片等之後確認圖床再補上。官網 https://hexo.io/">
@@ -296,17 +296,7 @@
   
 
 
-
-<script>
-	(function(){
-		if(''){
-			if (prompt('請輸入文章密碼','') !== ''){
-				alert('密碼錯誤！');
-				history.back();
-			}
-		}
-	})();
-</script> </div>
+ </div>
     </header>
 
     
@@ -338,7 +328,7 @@
     <link itemprop="mainEntityOfPage" href="https://ppundsh.github.io/2018-04-09/Hexo-GitHub-搭建記錄/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Harry">
+      <meta itemprop="name" content="Flymia">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
@@ -384,6 +374,34 @@
 
           
 
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">文章字數：</span>
+                
+                <span title="文章字數">11k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">閱讀時間&asymp;</span>
+                
+                <span title="閱讀時間">0:11</span>
+              
+            </div>
           
 
           
@@ -437,6 +455,8 @@ categories: Exercise   //在此處輸入這篇文章的分類。
 <h3 id="HTML-錨點跳轉"><a href="#HTML-錨點跳轉" class="headerlink" title="HTML 錨點跳轉"></a>HTML 錨點跳轉</h3><p>來源：<a href="https://charlottehong.blogspot.com/2017/07/markdown-hackmd-github.html" target="_blank" rel="noopener">Charlotte.HonG</a></p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"First"</span>&gt;</span>跳轉到的地方<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>相對應的跳轉方式就是<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[點我跳轉](<span class="comment">#First)</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="部署時保證-README-md-不被渲染"><a href="#部署時保證-README-md-不被渲染" class="headerlink" title="部署時保證 README.md 不被渲染"></a>部署時保證 README.md 不被渲染</h3><p>來源：<a href="http://godlikemeteor.com/2017/07/20/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%94%BB%E7%95%A5%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9A%E8%BF%9B%E9%98%B6%E7%AF%87/" target="_blank" rel="noopener">Godlike</a><br>一般 Git 倉庫下面都有一個README.md來表現這個倉庫設立的目的，但是運用 hexo 佈置的時候會被自動渲染，接下來要介紹部署時保證README.md不被渲染的方法。</p>
+<p>在 Hexo 目錄下的source根目錄下添加一個,README.md。修改 Hexo 目錄下的_config.yml。將skip_render參數的值設置上。skip_render: README.md保存退出即可。</p>
 <h2 id="修改主題為-Next"><a href="#修改主題為-Next" class="headerlink" title="修改主題為 Next"></a>修改主題為 Next</h2><p>作者：<a href="https://zhiho.github.io/2015/09/29/hexo-next/" target="_blank" rel="noopener">zhiho</a><br>在 blog 資料夾下使用命令下載 Next 主題到 themes 目錄中<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure></p>
 <p>修改站點配置文件_config.yml 中的 theme 標籤：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: next</span><br></pre></td></tr></table></figure>
@@ -513,6 +533,20 @@ favicon: /favicon.ico
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">	(<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">		<span class="keyword">if</span>(<span class="string">'&#123;&#123; page.password &#125;&#125;'</span>)&#123;</span><br><span class="line">			<span class="keyword">if</span> (prompt(<span class="string">'請輸入文章密碼'</span>,<span class="string">''</span>) !== <span class="string">'&#123;&#123; page.password &#125;&#125;'</span>)&#123;</span><br><span class="line">				alert(<span class="string">'密碼錯誤！'</span>);</span><br><span class="line">				history.back();</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;)();</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
 <h4 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h4><p>寫博文的時候頂部的頁面變量添加”password: 密碼” 即可，如:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">title: <span class="string">'2017-01-01'</span></span><br><span class="line">permalink: post/111111111.html</span><br><span class="line">tags:</span><br><span class="line">  - TEST</span><br><span class="line">date: 2017-01-01 00:00:00</span><br><span class="line">password: 123</span><br></pre></td></tr></table></figure>
+<h3 id="動態背景"><a href="#動態背景" class="headerlink" title="動態背景"></a>動態背景</h3><p>作者：<a href="http://www.xudajian.com/2017/07/30/hexo-%E5%8A%A8%E6%80%81%E8%83%8C%E6%99%AF/" target="_blank" rel="noopener">Xujian</a></p>
+<h4 id="修改主題配置文件"><a href="#修改主題配置文件" class="headerlink" title="修改主題配置文件"></a>修改主題配置文件</h4><p>如果不想自定義設置下一個步驟的配置項，只需要做這一步操作<br>文件位址：blog/theme/next/_config.yml<br>將文件中的 canvas_nest: false 為 canvas_nest: true 即可。</p>
+<h4 id="修改-layout-swig-文件"><a href="#修改-layout-swig-文件" class="headerlink" title="修改_layout.swig 文件"></a>修改_layout.swig 文件</h4><p>文件位址：blog/themes/next/layout/_layout.swig<br>在  之前添加代碼 (注意不要放在 &lt; /head &gt; 的後面)：</p>
+<pre><code>{% if theme.canvas_nest %}
+      <script type="text/javascript" color="0,0,0" opacity="0.5" zindex="-1" count="150" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+    {% endif %}
+</code></pre><p>這些代碼的輸入有格式要求，具體如圖1</p>
+<h4 id="配置項說明"><a href="#配置項說明" class="headerlink" title="配置項說明"></a>配置項說明</h4><p>color ：線條顏色, 默認: ‘0,0,0’；三個數字分別為 (R,G,B)<br>opacity: 線條透明度（0~1）, 默認: 0.5<br>count: 線條的總數量, 默認: 150<br>zIndex: 背景的 z-index 屬性，css 屬性用於控制所在層的位置, 默認: -1<br>配置項可以根據自身喜好自由設置</p>
+<h3 id="文章下設置版權訊息"><a href="#文章下設置版權訊息" class="headerlink" title="文章下設置版權訊息"></a>文章下設置版權訊息</h3><p>作者：<a href="http://www.crocutax.com/2017/05/20/Hexo%E6%8C%81%E7%BB%AD%E4%BC%98%E5%8C%96-%E5%9C%A8%E6%96%87%E7%AB%A0%E5%B0%BE%E9%83%A8%E6%B7%BB%E5%8A%A0%E7%89%88%E6%9D%83%E5%A3%B0%E6%98%8E%E4%BF%A1%E6%81%AF/" target="_blank" rel="noopener">Crocutax</a></p>
+<p>Hexo+NexT 主題，主題默認的版權聲明配置在themes\next_config.yml文件中</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Declare license on posts</span></span><br><span class="line">post_copyright:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">false</span></span><br><span class="line">  license: CC BY-NC-SA 3.0</span><br><span class="line">  license_url: https://creativecommons.org/licenses/by-nc-sa/3.0/</span><br></pre></td></tr></table></figure>
+<p>直接把enable 改為true即可開啟。</p>
+<p>進階自定作法請參閱原文。</p>
+<h2 id="SEO-優化"><a href="#SEO-優化" class="headerlink" title="SEO 優化"></a>SEO 優化</h2><p>為了讓搜尋影擎更方便索引，可以有以下設置。</p>
 <h3 id="站點地圖"><a href="#站點地圖" class="headerlink" title="站點地圖"></a>站點地圖</h3><p>作者：<a href="http://zhy.one/html/hexo-generator-sitemap-baidusitemap.html" target="_blank" rel="noopener">姜正宏的網路日誌</a>、<a href="http://zhy.one/html/hexo-generator-sitemap-baidusitemap.html" target="_blank" rel="noopener">際富</a><br>可以方便搜尋影擎索引</p>
 <h4 id="安裝插件"><a href="#安裝插件" class="headerlink" title="安裝插件"></a>安裝插件</h4><p>安裝 google sitemap</p>
 <pre><code>npm install hexo-generator-sitemap --save
@@ -522,15 +556,13 @@ favicon: /favicon.ico
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sitemap:</span><br><span class="line">    path: sitemap.xml</span><br><span class="line">baidusitemap:</span><br><span class="line">    path: baidusitemap.xml</span><br></pre></td></tr></table></figure>
 <p>注意縮進。</p>
 <p>執行hexo g後，public 目錄下就會生成 sitemap.xml 和 baidusitemap.xml 兩個文件了。</p>
-<h3 id="動態背景"><a href="#動態背景" class="headerlink" title="動態背景"></a>動態背景</h3><p>作者：<a href="http://www.xudajian.com/2017/07/30/hexo-%E5%8A%A8%E6%80%81%E8%83%8C%E6%99%AF/" target="_blank" rel="noopener">Xujian</a></p>
-<h4 id="修改主題配置文件"><a href="#修改主題配置文件" class="headerlink" title="修改主題配置文件"></a>修改主題配置文件</h4><p>如果不想自定義設置下一個步驟的配置項，只需要做這一步操作<br>文件位址：blog/theme/next/_config.yml<br>將文件中的 canvas_nest: false 為 canvas_nest: true 即可。</p>
-<h4 id="修改-layout-swig-文件"><a href="#修改-layout-swig-文件" class="headerlink" title="修改_layout.swig 文件"></a>修改_layout.swig 文件</h4><p>文件位址：blog/themes/next/layout/_layout.swig<br>在  之前添加代碼 (注意不要放在 &lt; /head &gt; 的後面)：</p>
-<pre><code>{% if theme.canvas_nest %}
-      <script type="text/javascript" color="0,0,0" opacity="0.5" zindex="-1" count="150" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
-    {% endif %}
-</code></pre><p>這些代碼的輸入有格式要求，具體如圖1</p>
-<h4 id="配置項說明"><a href="#配置項說明" class="headerlink" title="配置項說明"></a>配置項說明</h4><p>color ：線條顏色, 默認: ‘0,0,0’；三個數字分別為 (R,G,B)<br>opacity: 線條透明度（0~1）, 默認: 0.5<br>count: 線條的總數量, 默認: 150<br>zIndex: 背景的 z-index 屬性，css 屬性用於控制所在層的位置, 默認: -1<br>配置項可以根據自身喜好自由設置</p>
-<h2 id="參考網址"><a href="#參考網址" class="headerlink" title="參考網址"></a>參考網址</h2><p><a href="https://lyyybz.github.io/blog/2016/12/15/Hexo-%E6%9E%84%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%AF%A6%E8%A7%A3/" target="_blank" rel="noopener">Hexo - 構建博客詳解</a></p>
+<h3 id="在-Google-站點工具設置"><a href="#在-Google-站點工具設置" class="headerlink" title="在 Google 站點工具設置"></a>在 Google 站點工具設置</h3><p>個人使用 google 推薦的方試一直失敗，參考此文後能成功<br>作者: <a href="https://github.com/iissnan/hexo-theme-next/wiki/%E6%B7%BB%E5%8A%A0-Google-Webmaster-tools-%E9%AA%8C%E8%AF%81" target="_blank" rel="noopener">iissnan</a><br>設置 <a href="https://www.google.com/webmasters/tools/" target="_blank" rel="noopener">Google 站點管理工具</a> 的驗證字串，用於提交 sitemap</p>
+<h3 id="獲取-google-site-verification-code"><a href="#獲取-google-site-verification-code" class="headerlink" title="獲取 google site verification code"></a>獲取 google site verification code</h3><p>登錄 Google Webmaster Tools，導航到驗證方法，並選擇 HTML Tag。將會獲取到一段代碼：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name=<span class="string">"google-site-verification"</span> content=<span class="string">"XXXXXXXXXXXXXXXXXXXXXXX"</span> /&gt;</span><br></pre></td></tr></table></figure>
+<p>將 content 裡面的 XXXXXXXXXXXXXXXXXXXXXXX 複製出來。</p>
+<h3 id="設置主題"><a href="#設置主題" class="headerlink" title="設置主題"></a>設置主題</h3><p>編輯站點的 _config.yml，新增欄位 google_site_verification</p>
+<pre><code>google_site_verification: XXXXXXXXXXXXXXXXXXXXXXX
+</code></pre><h2 id="參考網址"><a href="#參考網址" class="headerlink" title="參考網址"></a>參考網址</h2><p><a href="https://lyyybz.github.io/blog/2016/12/15/Hexo-%E6%9E%84%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%AF%A6%E8%A7%A3/" target="_blank" rel="noopener">Hexo - 構建博客詳解</a></p>
 <p><a href="https://xuanwo.org/2015/03/26/hexo-intor/" target="_blank" rel="noopener">史上最詳細的 Hexo 博客搭建圖文教程</a></p>
 <p><a href="http://www.lovebxm.com/2017/05/30/buildBlog/" target="_blank" rel="noopener">可能是最詳細的 Hexo + GitHub Pages 搭建博客的教程</a></p>
 <p><a href="https://kingofamani.gitbooks.io/git-teach/content/chapter_5/github.html" target="_blank" rel="noopener">GitHub 建立遠端儲存庫</a></p>
@@ -548,6 +580,8 @@ favicon: /favicon.ico
 <p><a href="http://shenzekun.cn/hexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B.html" target="_blank" rel="noopener">hexo的next主题个性化配置教程</a></p>
 <p><a href="https://www.iots.vip/post/hexo-build-to-optimize.html#%E6%96%87%E7%AB%A0%E5%AF%86%E7%A0%81" target="_blank" rel="noopener">hexo 的搭建、設置與部分優化</a></p>
 <p><a href="https://charlottehong.blogspot.com/2017/07/markdown-hackmd-github.html" target="_blank" rel="noopener">Markdown HackMD Github 同一頁文內跳轉</a></p>
+<p><a href="https://github.com/iissnan/hexo-theme-next/wiki/%E6%B7%BB%E5%8A%A0-Google-Webmaster-tools-%E9%AA%8C%E8%AF%81" target="_blank" rel="noopener">添加 Google Webmaster tools 驗證</a></p>
+<p><a href="http://godlikemeteor.com/2017/07/20/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%94%BB%E7%95%A5%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9A%E8%BF%9B%E9%98%B6%E7%AF%87/" target="_blank" rel="noopener">Hexo 博客搭建攻略（二）：進階篇</a></p>
 
       
     </div>
@@ -562,6 +596,20 @@ favicon: /favicon.ico
 
     
 
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>作者： </strong>Flymia</li>
+  <li class="post-copyright-link">
+    <strong>文章連結：</strong>
+    <a href="https://ppundsh.github.io/2018-04-09/Hexo-GitHub-搭建記錄/" title="Hexo + GitHub 搭建記錄">https://ppundsh.github.io/2018-04-09/Hexo-GitHub-搭建記錄/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版權聲明： </strong>本網誌所有文章除特別聲明外，均採用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 許可協議。轉載請註明出處！</li>
+</ul>
+
+      </div>
     
   <div>
     
@@ -646,6 +694,8 @@ favicon: /favicon.ico
 
   <aside id="sidebar" class="sidebar">
     
+      <div id="sidebar-dimmer"></div>
+    
     <div class="sidebar-inner">
 
       
@@ -665,7 +715,7 @@ favicon: /favicon.ico
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <p class="site-author-name" itemprop="name">Harry</p>
+              <p class="site-author-name" itemprop="name">Flymia</p>
               <p class="site-description motion-element" itemprop="description">MIS、生活、3C</p>
           </div>
 
@@ -746,7 +796,7 @@ favicon: /favicon.ico
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安裝-Git-和-Node-js"><span class="nav-number">1.</span> <span class="nav-text">安裝 Git 和 Node.js</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安裝和設定-Git"><span class="nav-number">1.1.</span> <span class="nav-text">安裝和設定 Git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安裝-Node-js"><span class="nav-number">1.2.</span> <span class="nav-text">安裝 Node.js</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置-Github"><span class="nav-number">2.</span> <span class="nav-text">配置 Github</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置-Hexo"><span class="nav-number">3.</span> <span class="nav-text">配置 Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#初始化-Hexo"><span class="nav-number">3.1.</span> <span class="nav-text">初始化 Hexo</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用-Hexo"><span class="nav-number">4.</span> <span class="nav-text">使用 Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置-Deployment"><span class="nav-number">5.</span> <span class="nav-text">配置 Deployment</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加新文章"><span class="nav-number">6.</span> <span class="nav-text">添加新文章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Markdown-記錄"><span class="nav-number">7.</span> <span class="nav-text">Markdown 記錄</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML-錨點跳轉"><span class="nav-number">7.1.</span> <span class="nav-text">HTML 錨點跳轉</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改主題為-Next"><span class="nav-number">8.</span> <span class="nav-text">修改主題為 Next</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Gitalk-評論系統"><span class="nav-number">9.</span> <span class="nav-text">Gitalk 評論系統</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#註冊新應用"><span class="nav-number">9.1.</span> <span class="nav-text">註冊新應用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#comments-swig"><span class="nav-number">9.2.</span> <span class="nav-text">comments.swig</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#index-swig"><span class="nav-number">9.3.</span> <span class="nav-text">index.swig</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#gitalk-styl"><span class="nav-number">9.4.</span> <span class="nav-text">gitalk.styl</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#third-party-styl"><span class="nav-number">9.5.</span> <span class="nav-text">third-party.styl</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Md5-加密-id-避免中文編碼過長"><span class="nav-number">9.6.</span> <span class="nav-text">Md5 加密 id 避免中文編碼過長</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#gitalk-swig"><span class="nav-number">9.7.</span> <span class="nav-text">gitalk.swig</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#config-yml"><span class="nav-number">9.7.1.</span> <span class="nav-text">_config.yml</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Next-其它功能完善"><span class="nav-number">10.</span> <span class="nav-text">Next 其它功能完善</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#顯示閱讀全文按鈕"><span class="nav-number">10.1.</span> <span class="nav-text">顯示閱讀全文按鈕</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#搜索功能"><span class="nav-number">10.2.</span> <span class="nav-text">搜索功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#功能表設置"><span class="nav-number">10.3.</span> <span class="nav-text">功能表設置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#標籤頁面"><span class="nav-number">10.4.</span> <span class="nav-text">標籤頁面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分類頁面"><span class="nav-number">10.5.</span> <span class="nav-text">分類頁面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#側邊欄頭像設置"><span class="nav-number">10.6.</span> <span class="nav-text">側邊欄頭像設置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改文章底部的-tag-為-號的標籤"><span class="nav-number">10.7.</span> <span class="nav-text">修改文章底部的 tag 為 #號的標籤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#網站底部字數統計"><span class="nav-number">10.8.</span> <span class="nav-text">網站底部字數統計</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#設置網站的圖示-Favicon"><span class="nav-number">10.9.</span> <span class="nav-text">設置網站的圖示 Favicon</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#隱藏網頁底部-powered-By-Hexo-強力驅動"><span class="nav-number">10.10.</span> <span class="nav-text">隱藏網頁底部 powered By Hexo / 強力驅動</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文章加密訪問"><span class="nav-number">10.11.</span> <span class="nav-text">文章加密訪問</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#第一步"><span class="nav-number">10.11.1.</span> <span class="nav-text">第一步</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第二步"><span class="nav-number">10.11.2.</span> <span class="nav-text">第二步</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#站點地圖"><span class="nav-number">10.12.</span> <span class="nav-text">站點地圖</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安裝插件"><span class="nav-number">10.12.1.</span> <span class="nav-text">安裝插件</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#動態背景"><span class="nav-number">10.13.</span> <span class="nav-text">動態背景</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#修改主題配置文件"><span class="nav-number">10.13.1.</span> <span class="nav-text">修改主題配置文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修改-layout-swig-文件"><span class="nav-number">10.13.2.</span> <span class="nav-text">修改_layout.swig 文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置項說明"><span class="nav-number">10.13.3.</span> <span class="nav-text">配置項說明</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#參考網址"><span class="nav-number">11.</span> <span class="nav-text">參考網址</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安裝-Git-和-Node-js"><span class="nav-number">1.</span> <span class="nav-text">安裝 Git 和 Node.js</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安裝和設定-Git"><span class="nav-number">1.1.</span> <span class="nav-text">安裝和設定 Git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安裝-Node-js"><span class="nav-number">1.2.</span> <span class="nav-text">安裝 Node.js</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置-Github"><span class="nav-number">2.</span> <span class="nav-text">配置 Github</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置-Hexo"><span class="nav-number">3.</span> <span class="nav-text">配置 Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#初始化-Hexo"><span class="nav-number">3.1.</span> <span class="nav-text">初始化 Hexo</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用-Hexo"><span class="nav-number">4.</span> <span class="nav-text">使用 Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置-Deployment"><span class="nav-number">5.</span> <span class="nav-text">配置 Deployment</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加新文章"><span class="nav-number">6.</span> <span class="nav-text">添加新文章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Markdown-記錄"><span class="nav-number">7.</span> <span class="nav-text">Markdown 記錄</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML-錨點跳轉"><span class="nav-number">7.1.</span> <span class="nav-text">HTML 錨點跳轉</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#部署時保證-README-md-不被渲染"><span class="nav-number">7.2.</span> <span class="nav-text">部署時保證 README.md 不被渲染</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改主題為-Next"><span class="nav-number">8.</span> <span class="nav-text">修改主題為 Next</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Gitalk-評論系統"><span class="nav-number">9.</span> <span class="nav-text">Gitalk 評論系統</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#註冊新應用"><span class="nav-number">9.1.</span> <span class="nav-text">註冊新應用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#comments-swig"><span class="nav-number">9.2.</span> <span class="nav-text">comments.swig</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#index-swig"><span class="nav-number">9.3.</span> <span class="nav-text">index.swig</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#gitalk-styl"><span class="nav-number">9.4.</span> <span class="nav-text">gitalk.styl</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#third-party-styl"><span class="nav-number">9.5.</span> <span class="nav-text">third-party.styl</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Md5-加密-id-避免中文編碼過長"><span class="nav-number">9.6.</span> <span class="nav-text">Md5 加密 id 避免中文編碼過長</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#gitalk-swig"><span class="nav-number">9.7.</span> <span class="nav-text">gitalk.swig</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#config-yml"><span class="nav-number">9.7.1.</span> <span class="nav-text">_config.yml</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Next-其它功能完善"><span class="nav-number">10.</span> <span class="nav-text">Next 其它功能完善</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#顯示閱讀全文按鈕"><span class="nav-number">10.1.</span> <span class="nav-text">顯示閱讀全文按鈕</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#搜索功能"><span class="nav-number">10.2.</span> <span class="nav-text">搜索功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#功能表設置"><span class="nav-number">10.3.</span> <span class="nav-text">功能表設置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#標籤頁面"><span class="nav-number">10.4.</span> <span class="nav-text">標籤頁面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分類頁面"><span class="nav-number">10.5.</span> <span class="nav-text">分類頁面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#側邊欄頭像設置"><span class="nav-number">10.6.</span> <span class="nav-text">側邊欄頭像設置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改文章底部的-tag-為-號的標籤"><span class="nav-number">10.7.</span> <span class="nav-text">修改文章底部的 tag 為 #號的標籤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#網站底部字數統計"><span class="nav-number">10.8.</span> <span class="nav-text">網站底部字數統計</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#設置網站的圖示-Favicon"><span class="nav-number">10.9.</span> <span class="nav-text">設置網站的圖示 Favicon</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#隱藏網頁底部-powered-By-Hexo-強力驅動"><span class="nav-number">10.10.</span> <span class="nav-text">隱藏網頁底部 powered By Hexo / 強力驅動</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文章加密訪問"><span class="nav-number">10.11.</span> <span class="nav-text">文章加密訪問</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#第一步"><span class="nav-number">10.11.1.</span> <span class="nav-text">第一步</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第二步"><span class="nav-number">10.11.2.</span> <span class="nav-text">第二步</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#動態背景"><span class="nav-number">10.12.</span> <span class="nav-text">動態背景</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#修改主題配置文件"><span class="nav-number">10.12.1.</span> <span class="nav-text">修改主題配置文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修改-layout-swig-文件"><span class="nav-number">10.12.2.</span> <span class="nav-text">修改_layout.swig 文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置項說明"><span class="nav-number">10.12.3.</span> <span class="nav-text">配置項說明</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文章下設置版權訊息"><span class="nav-number">10.13.</span> <span class="nav-text">文章下設置版權訊息</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SEO-優化"><span class="nav-number">11.</span> <span class="nav-text">SEO 優化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#站點地圖"><span class="nav-number">11.1.</span> <span class="nav-text">站點地圖</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安裝插件"><span class="nav-number">11.1.1.</span> <span class="nav-text">安裝插件</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#在-Google-站點工具設置"><span class="nav-number">11.2.</span> <span class="nav-text">在 Google 站點工具設置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#獲取-google-site-verification-code"><span class="nav-number">11.3.</span> <span class="nav-text">獲取 google site verification code</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#設置主題"><span class="nav-number">11.4.</span> <span class="nav-text">設置主題</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#參考網址"><span class="nav-number">12.</span> <span class="nav-text">參考網址</span></a></li></ol></div>
             
 
           </div>
@@ -754,6 +804,13 @@ favicon: /favicon.ico
       <!--/noindex-->
       
 
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
       
 
     </div>
@@ -770,10 +827,24 @@ favicon: /favicon.ico
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">Harry</span>
+  <span class="author" itemprop="copyrightHolder">Flymia</span>
 
   
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+    <span title="網站總字數">13k</span>
+  
 
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    
+    <span title="網站總閱讀時間">0:13</span>
   
 </div>
 
@@ -795,7 +866,7 @@ favicon: /favicon.ico
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">全站共4.0k字</span>
+  <span class="post-count">全站共4.4k字</span>
 </div>
         
 
@@ -810,11 +881,6 @@ favicon: /favicon.ico
       </div>
     </footer>
 
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
     
 
     

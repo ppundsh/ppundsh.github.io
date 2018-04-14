@@ -79,7 +79,7 @@
     root: '/',
     scheme: 'Muse',
     version: '6.1.0',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":true},
     fancybox: false,
     fastclick: false,
     lazyload: false,
@@ -296,17 +296,7 @@
   
 
 
-
-<script>
-	(function(){
-		if(''){
-			if (prompt('請輸入文章密碼','') !== ''){
-				alert('密碼錯誤！');
-				history.back();
-			}
-		}
-	})();
-</script> </div>
+ </div>
     </header>
 
     
@@ -418,6 +408,8 @@
 
   <aside id="sidebar" class="sidebar">
     
+      <div id="sidebar-dimmer"></div>
+    
     <div class="sidebar-inner">
 
       
@@ -428,7 +420,7 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <p class="site-author-name" itemprop="name">Harry</p>
+              <p class="site-author-name" itemprop="name">Flymia</p>
               <p class="site-description motion-element" itemprop="description">MIS、生活、3C</p>
           </div>
 
@@ -502,6 +494,13 @@
       
 
       
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
 
     </div>
   </aside>
@@ -517,10 +516,24 @@
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">Harry</span>
+  <span class="author" itemprop="copyrightHolder">Flymia</span>
 
   
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+    <span title="網站總字數">13k</span>
+  
 
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    
+    <span title="網站總閱讀時間">0:13</span>
   
 </div>
 
@@ -542,7 +555,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">全站共4.0k字</span>
+  <span class="post-count">全站共4.4k字</span>
 </div>
         
 
@@ -557,11 +570,6 @@
       </div>
     </footer>
 
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
     
 
     
