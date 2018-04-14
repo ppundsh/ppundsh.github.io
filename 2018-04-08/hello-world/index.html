@@ -101,21 +101,19 @@
 
 
 
-  <meta name="description" content="設定上的記錄">
+  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
 <meta name="keywords" content="MIS,CJS,3C">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Cmder 筆記">
-<meta property="og:url" content="https://ppundsh.github.io/2018/04/13/Cmder-筆記/index.html">
+<meta property="og:title" content="Hello World">
+<meta property="og:url" content="https://ppundsh.github.io/2018-04-08/hello-world/index.html">
 <meta property="og:site_name" content="FFYY 凡事用心之事">
-<meta property="og:description" content="設定上的記錄">
+<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
 <meta property="og:locale" content="zh-TW">
-<meta property="og:updated_time" content="2018-04-13T07:26:58.139Z">
+<meta property="og:updated_time" content="2018-04-10T19:24:36.207Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Cmder 筆記">
-<meta name="twitter:description" content="設定上的記錄">
+<meta name="twitter:title" content="Hello World">
+<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
 
-
-  
 
 
   <link rel="alternate" href="/atom.xml" title="FFYY 凡事用心之事" type="application/atom+xml" />
@@ -123,7 +121,7 @@
 
 
 
-  <link rel="canonical" href="https://ppundsh.github.io/2018/04/13/Cmder-筆記/"/>
+  <link rel="canonical" href="https://ppundsh.github.io/2018-04-08/hello-world/"/>
 
 
 
@@ -133,7 +131,7 @@
   };
 </script>
 
-  <title>Cmder 筆記 | FFYY 凡事用心之事</title>
+  <title>Hello World | FFYY 凡事用心之事</title>
   
 
 
@@ -253,6 +251,19 @@
   
     
 
+    
+    
+      
+      
+    
+      
+      
+    
+    
+
+  
+
+
   
 
   
@@ -324,7 +335,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ppundsh.github.io/2018/04/13/Cmder-筆記/">
+    <link itemprop="mainEntityOfPage" href="https://ppundsh.github.io/2018-04-08/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Harry">
@@ -341,7 +352,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Cmder 筆記</h1>
+          <h1 class="post-title" itemprop="name headline">Hello World</h1>
         
 
         <div class="post-meta">
@@ -353,7 +364,7 @@
               
                 <span class="post-meta-item-text">發表於</span>
               
-              <time title="創建於" itemprop="dateCreated datePublished" datetime="2018-04-13T02:37:06+08:00">2018-04-13</time>
+              <time title="創建於" itemprop="dateCreated datePublished" datetime="2018-04-08T23:05:25+08:00">2018-04-08</time>
             
 
             
@@ -390,13 +401,16 @@
       
 
       
-        <p>設定上的記錄<br><a id="more"></a></p>
-<h2 id="安裝右鍵選單"><a href="#安裝右鍵選單" class="headerlink" title="安裝右鍵選單"></a>安裝右鍵選單</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Cmder.exe /REGISTER ALL</span><br></pre></td></tr></table></figure>
-<h2 id="開啟時自動到指定的位置："><a href="#開啟時自動到指定的位置：" class="headerlink" title="開啟時自動到指定的位置："></a>開啟時自動到指定的位置：</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">setting →Startup:Tasks→+</span><br><span class="line">cmd /k <span class="string">"%ConEmuDir%\..\init.bat"</span>  -new_console:d:D:\GitHub\Hexo\</span><br></pre></td></tr></table></figure>
-<h2 id="安裝後的調整："><a href="#安裝後的調整：" class="headerlink" title="安裝後的調整："></a>安裝後的調整：</h2><p>中文字體：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Font ，Mani font 下的 Aternative font 加入 CJK 字體，再設置 Unicode ranges 為 CJK</span><br></pre></td></tr></table></figure></p>
-<h2 id="中文亂碼"><a href="#中文亂碼" class="headerlink" title="中文亂碼:"></a>中文亂碼:</h2><p>順便把代碼頁換成 utf-8<br>Startup→Environnment 下，加入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">set</span> LANG=zh_CN.UTF-8</span><br><span class="line">chcp 65001</span><br></pre></td></tr></table></figure></p>
-<h2 id="無邊框"><a href="#無邊框" class="headerlink" title="無邊框"></a>無邊框</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">main&gt;&gt; appearence &gt;&gt; hide caption always</span><br></pre></td></tr></table></figure>
-<h2 id="避免殘留字"><a href="#避免殘留字" class="headerlink" title="避免殘留字"></a>避免殘留字</h2><p>默認的為λ，改成常用的$<br>打開\cmder\vendor目錄下面的clink.lua文件，搜索λ，全部替換成$即可！</p>
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<p><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank" rel="noopener">Markdown</a></p>
 
       
     </div>
@@ -424,18 +438,14 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/04/13/Windows改本機密碼/" rel="next" title="Windows 改本機密碼">
-                <i class="fa fa-chevron-left"></i> Windows 改本機密碼
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/04/14/學習單/" rel="prev" title="學習單">
-                學習單 <i class="fa fa-chevron-right"></i>
+              <a href="/2018-04-09/Hexo-GitHub-搭建記錄/" rel="prev" title="Hexo + GitHub 搭建記錄">
+                Hexo + GitHub 搭建記錄 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -583,7 +593,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安裝右鍵選單"><span class="nav-number">1.</span> <span class="nav-text">安裝右鍵選單</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#開啟時自動到指定的位置："><span class="nav-number">2.</span> <span class="nav-text">開啟時自動到指定的位置：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安裝後的調整："><span class="nav-number">3.</span> <span class="nav-text">安裝後的調整：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#中文亂碼"><span class="nav-number">4.</span> <span class="nav-text">中文亂碼:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#無邊框"><span class="nav-number">5.</span> <span class="nav-text">無邊框</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#避免殘留字"><span class="nav-number">6.</span> <span class="nav-text">避免殘留字</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
             
 
           </div>
