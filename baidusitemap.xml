@@ -4,6 +4,48 @@
 
     
   <url>
+    <loc>https://ppundsh.github.io/2018-04-15/VPN%20%E8%A8%98%E9%8C%84/</loc>
+    <lastmod>2018-04-15T22:49:48.928Z</lastmod>
+    <data>
+        <display>
+        <title>VPN 記錄</title>
+        <pubTime>2018-04-15T10:52:53.000Z</pubTime>
+        
+        <tag>VPN</tag>
+         
+        <tag>GFW</tag>
+         
+        <tag>V2Ray</tag>
+         
+        <tag>ShadowSocksR</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ppundsh.github.io/2018-04-16/Windows-Subsystem-Linux-%E7%AD%86%E8%A8%98/</loc>
+    <lastmod>2018-04-15T20:55:29.939Z</lastmod>
+    <data>
+        <display>
+        <title>Windows Subsystem Linux 筆記</title>
+        <pubTime>2018-04-15T19:02:36.000Z</pubTime>
+        
+        <tag>CMD</tag>
+         
+        <tag>Kali</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://ppundsh.github.io/2018-04-09/Hexo-GitHub-%E6%90%AD%E5%BB%BA%E8%A8%98%E9%8C%84/</loc>
     <lastmod>2018-04-15T15:29:33.986Z</lastmod>
     <data>
@@ -43,29 +85,6 @@
     </url>
 
     
-  <url>
-    <loc>https://ppundsh.github.io/2018-04-15/VPN%20%E8%A8%98%E9%8C%84/</loc>
-    <lastmod>2018-04-15T11:44:54.011Z</lastmod>
-    <data>
-        <display>
-        <title>VPN 記錄</title>
-        <pubTime>2018-04-15T10:52:53.000Z</pubTime>
-        
-        <tag>VPN</tag>
-         
-        <tag>GFW</tag>
-         
-        <tag>V2Ray</tag>
-         
-        <tag>ShadowSocksR</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
     
   <url>
     <loc>https://ppundsh.github.io/2018-04-14/%E5%AD%B8%E7%BF%92%E5%96%AE/</loc>
@@ -92,9 +111,9 @@
         <title>Cmder 筆記</title>
         <pubTime>2018-04-12T18:37:06.000Z</pubTime>
         
-        <tag>MIS</tag>
-         
         <tag>cmd</tag>
+         
+        <tag>MIS</tag>
          
         <tag>install</tag>
          
@@ -113,9 +132,9 @@
         <title>維運指令備忘</title>
         <pubTime>2018-04-10T18:38:35.000Z</pubTime>
         
-        <tag>MIS</tag>
-         
         <tag>cmd</tag>
+         
+        <tag>MIS</tag>
          
          
            
