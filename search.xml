@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[VPN 記錄]]></title>
     <url>%2F2018-04-15%2FVPN%20%E8%A8%98%E9%8C%84%2F</url>
-    <content type="text"><![CDATA[預定要寫記錄：購買 BanwagonHOST VPS 自建 Shadowsocks 記錄]]></content>
+    <content type="text"><![CDATA[預定要寫OpenConnet Server (ocserv) 通過實現 Cisco 的 AnyConnect 協議，用 DTLS 作為主無協議，UPD DTLS 失敗時會轉用 TCP TLS。1記錄：購買 BanwagonHOST VPS 自建 Shadowsocks 記錄1.加設 OpenConnect Server 給 iPhone 提供更順暢的網路生活 ↩]]></content>
       <tags>
         <tag>VPN</tag>
         <tag>GFW</tag>
