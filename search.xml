@@ -102,8 +102,8 @@
     <url>%2Fposts%2F89df%2F</url>
     <content type="text"><![CDATA[設定上的記錄，全新安裝後要做的設定安裝右鍵選單1Cmder.exe /REGISTER ALL開啟時自動到指定的位置：12setting →Startup:Tasks→+cmd /k "%ConEmuDir%\..\init.bat" -new_console:d:D:\GitHub\Hexo\安裝後的調整：中文字體：1Font ，Mani font 下的 Aternative font 加入 CJK 字體，再設置 Unicode ranges 為 CJK中文亂碼:順便把代碼頁換成 utf-8Startup→Environnment 下，加入12set LANG=zh_CN.UTF-8chcp 65001無邊框1main&gt;&gt; appearence &gt;&gt; hide caption always避免殘留字默認的為λ，改成常用的$打開\cmder\vendor目錄下面的clink.lua文件，搜索λ，全部替換成$即可！增加快捷鍵在 D:\Dropbox\Apps\Cmder\config\user-aliases.cmd 加入123456789101112131415e.=explorer .gl=git log --oneline --all --graph --decorate $*ls=ls --show-control-chars -F --color $*pwd=cdclear=clshistory=cat "%CMDER_ROOT%\config\.history"unalias=alias /d $1vi=vim $*cmderr=cd /d "%CMDER_ROOT%"gc=git commit -am $1sb="D:\Dropbox\Apps\Sublime Text\sublime_text.exe" $1sbl="D:\Dropbox\Apps\Sublime Text\sublime_text.exe" $1 -new_console:s50Hsbl2="D:\Dropbox\Apps\Sublime Text\sublime_text.exe" $1 -new_console:s75Vco="D:\Dropbox\Apps\VSCode\Code.exe" $1em="D:\Dropbox\Apps\EmEditor\EmEditor.exe" $1]]></content>
       <tags>
-        <tag>cmd</tag>
         <tag>MIS</tag>
+        <tag>cmd</tag>
         <tag>install</tag>
       </tags>
   </entry>
@@ -122,8 +122,8 @@
     <url>%2Fposts%2F283f%2F</url>
     <content type="text"><![CDATA[先記錄 CMD 、能直接執行的命令、控制台快捷鍵CMDCmd 用檔案總管開啟當前資料夾1start .檔案總管用 Cmd 開啟當前資料夾12shift + 右鍵位置列輸入 cmdRun開啟指令為1win + r創建新捷徑1rundll32.exe shell32.dll,Control_RunDLL ncpa.cpl命令功能calc小算盤gpedit.msc群組mstsc遠端桌面services.msc服務control userpasswords2自動登入netplwiz自動登入lusrmgr.msc本機使用者和群組certmgr.msc憑證管理perfmon.msc效能監視器裝置管理員devmgmt.msc電腦管理compmgmt.mscwinver查看 windows 版本群組原則物件編輯器gpedit.msc控制台指令ncpa.cpl控制台：網路連線sysdm.cpl系統appwize.cpl新增程式網際網路inetcpl.cpl電源選項powercfg.cpl資料夾選項control folders命令列工具工具功能systeminfo系統祥細訊息net use查看網路連線net user查看本機帳號whoami查看當前帳號狀態資料來源：http://jdev.tw/blog/73/windows%E7%B3%BB%E7%B5%B1%E5%91%BD%E4%BB%A4%E8%88%87%E5%BF%AB%E9%80%9F%E9%8D%B5&gt;]]></content>
       <tags>
-        <tag>cmd</tag>
         <tag>MIS</tag>
+        <tag>cmd</tag>
       </tags>
   </entry>
   <entry>
