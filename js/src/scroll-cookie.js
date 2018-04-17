@@ -1,3 +1,3 @@
-// build time:Tue Apr 17 2018 21:42:14 GMT+0800 (台北標準時間)
+// build time:Wed Apr 18 2018 01:47:51 GMT+0800 (台北標準時間)
 $(document).ready(function(){var o=window.location.href.replace(window.location.origin,"");var i;$(window).on("scroll",function(){clearTimeout(i);i=setTimeout(function(){Cookies.set("scroll-cookie",$(window).scrollTop()+"|"+o,{expires:365,path:""})},250)});if(Cookies.get("scroll-cookie")!==undefined){var e=Cookies.get("scroll-cookie").split("|");if(e[1]==o){$(window).scrollTop(e[0])}}});
 //rebuild by neat 
