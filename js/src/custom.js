@@ -1,9 +1,9 @@
-//此函数用于创建复制按钮
+//此函數用於創建複製按鈕
 function createCopyBtns() {
     var $codeArea = $("figure table");
-    //查看页面是否具有代码区域，没有代码块则不创建 复制按钮
+    //查看頁面是否具有代碼區域，沒有代碼塊則不創建 複製按鈕
     if ($codeArea.length > 0) {
-        //复制成功后将要干的事情
+        //複製成功後將要干的事情
         function changeToSuccess(item) {
              $imgOK = $("#copyBtn").find("#imgSuccess");
                 if ($imgOK.css("display") == "none") {
@@ -24,34 +24,34 @@ function createCopyBtns() {
                     }, 4000);
                 };
         };
-        //创建 全局复制按钮，仅有一组。包含：复制按钮，复制成功响应按钮
-        //值得注意的是：1.按钮默认隐藏，2.位置使用绝对位置 position: absolute; (position: fixed 也可以，需要修改代码)
+        //創建 全局複製按鈕，僅有一組。包含：複製按鈕，複製成功回應按鈕
+        //值得注意的是：1.按鈕默認隱藏，2.位置使用絕對位置 position: absolute; (position: fixed 也可以，需要修改代碼)
         $(".post-body").before('<div id="copyBtn" style="opacity: 0; position: absolute;top:0px;display: none;line-height: 1; font-size:1.5em"><span id="imgCopy" ><i class="fa fa-paste fa-fw"></i></span><span id="imgSuccess" style="display: none;"><i class="fa fa-check-circle fa-fw" aria-hidden="true"></i></span>');
-        //创建 复制 插件，绑定单机时间到 指定元素，支持JQuery
+        //創建 複製 插件，綁定單機時間到 指定元素，支援JQuery
         var clipboard = new Clipboard('#copyBtn', {
             target: function() {
-                //返回需要复制的元素内容
+                //返回需要複製的元素內容
                 return document.querySelector("[copyFlag]");
             },
             isSupported: function() {
-                //支持复制内容
+                //支援複製內容
                 return document.querySelector("[copyFlag]");
             }
         });
-        //复制成功事件绑定
+        //複製成功事件綁定
         clipboard.on('success',
             function(e) {
-                //清除内容被选择状态
+                //清除內容被選擇狀態
                 e.clearSelection();
                 changeToSuccess(e);
             });
-        //复制失败绑定事件
+        //複製失敗綁定事件
         clipboard.on('error',
             function(e) {
                 console.error('Action:', e.action);
                 console.error('Trigger:', e.trigger);
             });
-        //鼠标 在复制按钮上滑动和离开后渐变显示/隐藏效果
+        //滑鼠 在複製按鈕上滑動和離開後漸變顯示/隱藏效果
         $("#copyBtn").hover(
             function() {
                 $(this).stop();
@@ -65,22 +65,22 @@ function createCopyBtns() {
         );
     }
 }
-//感应鼠标是否在代码区
+//感應滑鼠是否在代碼區
 $("figure").hover(
     function() {
-        //-------鼠标活动在代码块内
-        //移除之前含有复制标志代码块的 copyFlag
+        //-------滑鼠活動在代碼塊內
+        //移除之前含有複製標誌代碼塊的 copyFlag
         $("[copyFlag]").removeAttr("copyFlag");
-        //在新的（当前鼠标所在代码区）代码块插入标志：copyFlag
+        //在新的（當前滑鼠所在代碼區）代碼塊插入標誌：copyFlag
         $(this).find(".code").attr("copyFlag", 1);
-        //获取复制按钮
+        //獲取複製按鈕
         $copyBtn = $("#copyBtn");
         if ($copyBtn.lenght != 0) {
-            //获取到按钮的前提下进行一下操作
-            //停止按钮动画效果
-            //设置为 显示状态
-            //修改 复制按钮 位置到 当前代码块开始部位
-            //设置代码块 左侧位置
+            //獲取到按鈕的前提下進行一下操作
+            //停止按鈕動畫效果
+            //設置為 顯示狀態
+            //修改 複製按鈕 位置到 當前代碼塊開始部位
+            //設置代碼塊 左側位置
             $copyBtn.stop();
             $copyBtn.css("opacity", 0.8);
             $copyBtn.css("display", "block");
@@ -89,14 +89,14 @@ $("figure").hover(
         }
     },
     function() {
-        //-------鼠标离开代码块
-        //设置复制按钮可见度 2秒内到 0
+        //-------滑鼠離開代碼塊
+        //設置複製按鈕可見度 2秒內到 0
         $("#copyBtn").animate({
             opacity: 0
         }, 2000);
     }
 );
-//页面载入完成后，创建复制按钮
+//頁面載入完成後，創建複製按鈕
 $(document).ready(function() {
   createCopyBtns();
 });
