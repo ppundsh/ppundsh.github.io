@@ -1,6 +1,6 @@
 //此函數用於創建複製按鈕
 function createCopyBtns() {
-    var $codeArea = $("figure table");
+    var $codeArea = $("figure");
     //查看頁面是否具有代碼區域，沒有代碼塊則不創建 複製按鈕
     if ($codeArea.length > 0) {
         //複製成功後將要干的事情
