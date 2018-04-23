@@ -135,7 +135,7 @@
 <meta property="og:site_name" content="Flymia 凡事用心之事">
 <meta property="og:description" content="作為第一篇記錄，圖片等之後確認圖床再補上。官網 https://hexo.io/">
 <meta property="og:locale" content="zh-TW">
-<meta property="og:updated_time" content="2018-04-20T08:05:15.207Z">
+<meta property="og:updated_time" content="2018-04-21T10:31:50.302Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo + GitHub 搭建記錄">
 <meta name="twitter:description" content="作為第一篇記錄，圖片等之後確認圖床再補上。官網 https://hexo.io/">
@@ -255,7 +255,7 @@
         
           
   
-  <li class="menu-item menu-item-tags menu-item-active">
+  <li class="menu-item menu-item-tags">
     <a href="/tags/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>標籤</a>
 </li>
@@ -412,7 +412,7 @@
               
                 <span class="post-meta-item-text">更新於：</span>
               
-              <time title="更新於" itemprop="dateModified" datetime="2018-04-20T16:05:15+08:00">2018-04-20</time>
+              <time title="更新於" itemprop="dateModified" datetime="2018-04-21T18:31:50+08:00">2018-04-21</time>
             
           </span>
 
@@ -567,7 +567,7 @@ https://post.zz173.com/posts/1690090958.html
 <figure class="highlight plain"><figcaption><span class="fileDir">file:///D:/Github/blog/theme/next/layout/_third-party/comments/</span><span class="caption">index</span><span class="suffix">.swig</span></figcaption><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">&#123;% include &apos;gitalk.swig&apos; %&#125;</div></pre></div></div></figure>
 <h3 id="gitalk-styl"><a href="#gitalk-styl" class="headerlink" title="gitalk.styl"></a>gitalk.styl</h3><p>新建/source/css/_common/components/third-party/gitalk.styl文件，添加內容：</p>
 <figure class="highlight css"><figcaption><span class="fileDir">file:///D:/Github/blog/theme/next/source/css/_common/components/third-party/</span><span class="caption">gitalk</span><span class="suffix">.styl</span></figcaption><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></div><div class="code"><pre><div class="line"><span class="selector-class">.gt-header</span> <span class="selector-tag">a</span>, <span class="selector-class">.gt-comments</span> <span class="selector-tag">a</span>, <span class="selector-class">.gt-popup</span> <span class="selector-tag">a</span></div><div class="line">  <span class="selector-tag">border-bottom</span>: <span class="selector-tag">none</span>;</div><div class="line"><span class="selector-class">.gt-container</span> <span class="selector-class">.gt-popup</span> <span class="selector-class">.gt-action</span><span class="selector-class">.is--active</span><span class="selector-pseudo">:before</span></div><div class="line">  <span class="selector-tag">top</span>: 0<span class="selector-class">.7em</span>;</div></pre></div></div></figure>
-<h3 id="third-party-styl"><a href="#third-party-styl" class="headerlink" title="third-party.styl"></a>third-party.styl</h3><p>修改/source/css/_common/components/third-party/third-party.styl，在最後一行上添加內容，引入樣式：</p>
+<h3 id="third-party-styl"><a href="#third-party-styl" class="headerlink" title="third-party.styl"></a>third-party.styl</h3><p>修改/source/css/_common/components   /third-party/third-party.styl，在最後一行上添加內容，引入樣式：</p>
 <figure class="highlight css"><figcaption><span class="fileDir">file:///D:/Github/blog/theme/next/source/css/_common/components/third-party/</span><span class="caption">third-party</span><span class="suffix">.styl</span></figcaption><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">@<span class="keyword">import</span> <span class="string">"gitalk"</span>;</div></pre></div></div></figure>
 <h3 id="Md5-加密-id-避免中文編碼過長"><a href="#Md5-加密-id-避免中文編碼過長" class="headerlink" title="Md5 加密 id 避免中文編碼過長"></a>Md5 加密 id 避免中文編碼過長</h3><p>參考資料與作者：<a href="https://qhh0205.github.io/2018/03/25/hexo-next-%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AEgitalk%E8%AF%84%E8%AE%BA-%E7%88%AC%E5%9D%91%E8%AE%B0/" rel="external nofollow noopener noreferrer" target="_blank">qhh0205</a>、<a href="https://gist.github.com/uolcano/70c3926a4716759ec6599f444a172e64" rel="external nofollow noopener noreferrer" target="_blank">uolcano</a><br>post 檔名為中文時，容易造成編碼出 github issue lables 50 字符限制而出現 Error: Validation Failed. ，解決方法為使用 md5 加密 id 來縮短長度。</p>
 <p>在此把 md5 加密的 js 放在 gist 上托管，在主頁面上右上角的頭像，點一下選 your gist<br>Gist description ：說明，選填<br>Filename including extension ：md5.min.js<br>內容請貼上以下 js 源碼點開後的內容：<a href="https://gist.githubusercontent.com/qhh0205/78e9e0b1f3114db6737f3ed8cdd51d3a/raw/3894c5be5aa2378336b1f5ee0f296fa0b22d06e9/md5.min.js" rel="external nofollow noopener noreferrer" target="_blank">點我</a></p>
