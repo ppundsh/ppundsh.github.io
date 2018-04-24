@@ -135,7 +135,7 @@
 <meta property="og:site_name" content="Flymia 凡事用心之事">
 <meta property="og:description" content="了解原理就不用特地裝外掛了">
 <meta property="og:locale" content="zh-TW">
-<meta property="og:updated_time" content="2018-04-24T21:45:17.344Z">
+<meta property="og:updated_time" content="2018-04-24T21:49:04.265Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Console 解鎖網頁右鍵功能">
 <meta name="twitter:description" content="了解原理就不用特地裝外掛了">
@@ -426,7 +426,7 @@
                 
                   <span class="post-meta-item-text">文章字數：</span>
                 
-                <span title="文章字數">994</span>
+                <span title="文章字數">1k</span>
               
 
               
@@ -462,14 +462,13 @@
       
         <p>了解原理就不用特地裝外掛了<br><a id="more"></a></p>
 <h1 id="Console"><a href="#Console" class="headerlink" title="Console"></a>Console</h1><p>在網頁上按 F12 叫出開發者工具，點選 console 分頁，輸入以下指令</p>
-<figure class="highlight plain"><div class="figcode"><div class="code"><pre><div class="line">$(&quot;body&quot;).attr(&quot;oncontextmenu&quot;,true)</div><div class="line">或等於</div><div class="line">document.body.oncontextmenu = function() &#123; return true; &#125;</div></pre></div></div></figure>
-<figure class="highlight plain"><div class="figcode"><div class="code"><pre><div class="line">$(&quot;body&quot;).attr(&quot;onselectstart&quot;,true)</div><div class="line">或等於</div><div class="line">document.body.onselectstart = function() &#123; return true; &#125;</div></pre></div></div></figure>
-<figure class="highlight plain"><div class="figcode"><div class="code"><pre><div class="line">$(&quot;body&quot;).attr(&quot;ondragstart&quot;,true)</div><div class="line">或等於</div><div class="line">document.body.ondragstart = function() &#123; return true; &#125;</div><div class="line">```   </div><div class="line"></div><div class="line">``` 複製 [line_number:false]</div><div class="line">document.oncopy = function()&#123; return false; &#125;;</div></pre></div></div></figure>
-<figure class="highlight plain"><div class="figcode"><div class="code"><pre><div class="line">document.oncut = function()&#123; return false; &#125;;</div></pre></div></div></figure>
-<figure class="highlight plain"><div class="figcode"><div class="code"><pre><div class="line">document.onpaste = function()&#123; return false; &#125;;</div></pre></div></div></figure>
-<p>來源<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup><br><figure class="highlight plain"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">document.designMode = &apos;on&apos;</div></pre></div></div></figure></p>
+<p>右鍵選單<br><figure class="highlight plain"><div class="figcode"><div class="code"><pre><div class="line">$(&quot;body&quot;).attr(&quot;oncontextmenu&quot;,true)</div><div class="line">或等於</div><div class="line">document.body.oncontextmenu = function() &#123; return true; &#125;</div></pre></div></div></figure></p>
+<p>文字選取功能<br><figure class="highlight plain"><div class="figcode"><div class="code"><pre><div class="line">$(&quot;body&quot;).attr(&quot;onselectstart&quot;,true)</div><div class="line">或等於</div><div class="line">document.body.onselectstart = function() &#123; return true; &#125;</div></pre></div></div></figure></p>
+<p>抓取文字功能<br><figure class="highlight plain"><div class="figcode"><div class="code"><pre><div class="line">$(&quot;body&quot;).attr(&quot;ondragstart&quot;,true)</div><div class="line">或等於</div><div class="line">document.body.ondragstart = function() &#123; return true; &#125;</div><div class="line">```   </div><div class="line"></div><div class="line">複製</div><div class="line">```  [line_number:false]</div><div class="line">document.oncopy = function()&#123; return false; &#125;;</div></pre></div></div></figure></p>
+<p>剪下<br><figure class="highlight plain"><div class="figcode"><div class="code"><pre><div class="line">document.oncut = function()&#123; return false; &#125;;</div></pre></div></div></figure></p>
+<p>貼上<br><figure class="highlight plain"><div class="figcode"><div class="code"><pre><div class="line">document.onpaste = function()&#123; return false; &#125;;</div></pre></div></div></figure></p>
+<p>來源<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup><br>直接編輯網頁<br><figure class="highlight plain"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">document.designMode = &apos;on&apos;</div></pre></div></div></figure></p>
 <h1 id="禁止-JavaScript"><a href="#禁止-JavaScript" class="headerlink" title="禁止 JavaScript"></a>禁止 JavaScript</h1><p>來源<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup><br>按下F12彈出開發者工具，再按下F1彈出設置，勾選Disable JavaScript<br>如果此時仍無法選擇文字，找到你要複製文字的地方，看看是不是添加了-webkit-user-select: none的樣式，如果有，將其去掉即可：</p>
-<hr>
 <div id="footnotes"><hr><div id="footnotelist"><ol style="list-style:none; padding-left: 0;"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline-block; vertical-align: top;"><a href="https://dotblogs.com.tw/brooke/2014/10/27/147106" rel="external nofollow noopener noreferrer" target="_blank">https://dotblogs.com.tw/brooke/2014/10/27/147106</a></span><a href="#fnref:1" rev="footnote"> ↩</a></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">2.</span><span style="display: inline-block; vertical-align: top;"><a href="http://blog.haoji.me/disable-html-copy-and-paste.html?from=xa" rel="external nofollow noopener noreferrer" target="_blank">http://blog.haoji.me/disable-html-copy-and-paste.html?from=xa</a></span><a href="#fnref:2" rev="footnote"> ↩</a></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">3.</span><span style="display: inline-block; vertical-align: top;"><a href="https://pjchender.blogspot.com/2017/06/chrome-dev-tools.html" rel="external nofollow noopener noreferrer" target="_blank">https://pjchender.blogspot.com/2017/06/chrome-dev-tools.html</a></span><a href="#fnref:3" rev="footnote"> ↩</a></li></ol></div></div>
       
     </div>
