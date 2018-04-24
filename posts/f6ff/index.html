@@ -127,18 +127,18 @@
 
 
 
-  <meta name="description" content="在不暴力替換下，將預設開啟程式(如 notepad)替換。">
-<meta name="keywords" content="MIS,VScode">
+  <meta name="description" content="在不暴力替換下，將預設開啟程式(如 notepad)替換並記錄何為映像劫持(IFEO)。">
+<meta name="keywords" content="MIS,crack,VScode">
 <meta property="og:type" content="article">
 <meta property="og:title" content="利用映像劫持替換預設系統程式">
 <meta property="og:url" content="https://ppundsh.github.io/posts/f6ff/index.html">
 <meta property="og:site_name" content="Flymia 凡事用心之事">
-<meta property="og:description" content="在不暴力替換下，將預設開啟程式(如 notepad)替換。">
+<meta property="og:description" content="在不暴力替換下，將預設開啟程式(如 notepad)替換並記錄何為映像劫持(IFEO)。">
 <meta property="og:locale" content="zh-TW">
-<meta property="og:updated_time" content="2018-04-24T21:06:49.606Z">
+<meta property="og:updated_time" content="2018-04-24T22:14:20.578Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="利用映像劫持替換預設系統程式">
-<meta name="twitter:description" content="在不暴力替換下，將預設開啟程式(如 notepad)替換。">
+<meta name="twitter:description" content="在不暴力替換下，將預設開啟程式(如 notepad)替換並記錄何為映像劫持(IFEO)。">
 
 
 
@@ -414,7 +414,7 @@
               
                 <span class="post-meta-item-text">更新於：</span>
               
-              <time title="更新於" itemprop="dateModified" datetime="2018-04-25T05:06:49+08:00">2018-04-25</time>
+              <time title="更新於" itemprop="dateModified" datetime="2018-04-25T06:14:20+08:00">2018-04-25</time>
             
           </span>
 
@@ -474,9 +474,9 @@
       
 
       
-        <p>在不暴力替換下，將預設開啟程式(如 notepad)替換。<br><a id="more"></a><br>內文作者<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>，實測後 Emeditor 仍會開啟 notepad，VS Code 則能正常替換，唯 UNC 路徑下的檔案編輯時仍會把目錄傳人，這點個人無解</p>
+        <p>在不暴力替換下，將預設開啟程式(如 notepad)替換並記錄何為映像劫持(IFEO)。<br><a id="more"></a><br>實測後 Emeditor 仍會開啟 notepad，VS Code 則能正常替換，唯 UNC 路徑下的檔案編輯時仍會把目錄傳人，這點個人無解</p>
 <hr>
-<h2 id="文件關聯"><a href="#文件關聯" class="headerlink" title="文件關聯"></a>文件關聯</h2><p>我們可能都遇到過需要更改系統默認文件關聯的情況。比如想用我們心愛的編輯器打開所有文本類型的文件。這就需要瞭解 Windows 的文件關聯。</p>
+<h2 id="文件關聯"><a href="#文件關聯" class="headerlink" title="文件關聯"></a>文件關聯</h2><p>作者<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup><br>我們可能都遇到過需要更改系統默認文件關聯的情況。比如想用我們心愛的編輯器打開所有文本類型的文件。這就需要瞭解 Windows 的文件關聯。</p>
 <p>簡單解釋一下，Windows 的資源管理器識別文件類型是由副檔名決定的（而並不是文件頭決定文件類型）。首先副檔名會對應一種文件類型，這種文件類型的不同操作再對應到不同的具體命令。</p>
 <pre><code>比如： .txt --&gt; txtfile --&gt; { &quot;open&quot;: &quot;notepad.exe %1&quot;, &quot;edit&quot;: &quot;notepad.exe %1&quot;, ... }
 </code></pre><p>這些對應關係保存於註冊表的HKEY_CLASSES_ROOT項，由 Explorer 讀取後，決定文件該用什麼命令處理。</p>
@@ -528,23 +528,14 @@ HKEY_LOCAL_MACHINE\Software\Microsoft\WindowsCurrent\Version\RunServicesOnce
 </code></pre><p>但是與一般的木馬，病毒不同的是，就有一些病毒偏偏不通過這些來載入自己，不隨著係統的啓動運行。木馬病毒的作者抓住了一些用戶的心理，等到用戶運行某個特定的程式的時候它才運行。因為一般的用戶，只要發覺自己的機子中了病毒，首先要察看的就是係統的載入項，很少有人會想到映射劫持，這也是這種病毒高明的地方。</p>
 <p>映射劫持病毒主要通過修改註冊表中的<br>    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\</p>
 <p>項來劫持正常的程式，比如有一個病毒 vires.exe 要劫持qq程式，它會在上面註冊表的位置新建一個qq.exe項，再在這個項下面新建一個字串的鍵　debugger把其值改為<code>C:\WINDOWS \SYSTEM32\VIRES.EXE</code>(這裡是病毒藏身的目錄)即可。</p>
-<h3 id="三、玩劫持"><a href="#三、玩劫持" class="headerlink" title="三、玩劫持"></a>三、玩劫持</h3><h4 id="1、禁止某些程式的運行"><a href="#1、禁止某些程式的運行" class="headerlink" title="1、禁止某些程式的運行"></a>1、禁止某些程式的運行</h4><pre><code>Windows Registry Editor Version 5.00
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\qq.exe]
-Debugger=123.exe
-</code></pre><p>把上面的代碼保存為norun_qq.reg，雙擊導入註冊表，每次雙擊運行QQ的時候，係統都會彈出一個框提示說找不到QQ，原因就QQ被重定向了。如果要讓QQ繼續運行的話，把123.exe改為其安裝目錄就可以了。</p>
+<h3 id="三、玩劫持"><a href="#三、玩劫持" class="headerlink" title="三、玩劫持"></a>三、玩劫持</h3><h4 id="1、禁止某些程式的運行"><a href="#1、禁止某些程式的運行" class="headerlink" title="1、禁止某些程式的運行"></a>1、禁止某些程式的運行</h4><figure class="highlight plain"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></div><div class="code"><pre><div class="line">Windows Registry Editor Version 5.00</div><div class="line">[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\qq.exe]</div><div class="line">Debugger=123.exe</div></pre></div></div></figure>
+<p>把上面的代碼保存為norun_qq.reg，雙擊導入註冊表，每次雙擊運行QQ的時候，係統都會彈出一個框提示說找不到QQ，原因就QQ被重定向了。如果要讓QQ繼續運行的話，把123.exe改為其安裝目錄就可以了。</p>
 <h4 id="2、偷樑換柱惡作劇"><a href="#2、偷樑換柱惡作劇" class="headerlink" title="2、偷樑換柱惡作劇"></a>2、偷樑換柱惡作劇</h4><p>每次我們按下CTRL+ALT+DEL鍵時，都會彈出任務管理器，想不想在我們按下這些鍵的時候讓它彈出命令提示符視窗，下面就教你怎麼玩：</p>
-<pre><code>Windows Registry Editor Version 5.00
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\taskmgr.exe]
-Debugger=D:\WINDOWS\pchealth\helpctr\binaries\mconfig.exe
-</code></pre><p>將上面的代碼另存為 task_cmd.reg，雙擊導入註冊表。按下那三個鍵打開了”係統配置實用程式”。</p>
+<figure class="highlight plain"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></div><div class="code"><pre><div class="line">Windows Registry Editor Version 5.00</div><div class="line">[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\taskmgr.exe]</div><div class="line">Debugger=D:\WINDOWS\pchealth\helpctr\binaries\mconfig.exe</div></pre></div></div></figure>
+<p>將上面的代碼另存為 task_cmd.reg，雙擊導入註冊表。按下那三個鍵打開了”係統配置實用程式”。</p>
 <h4 id="3、讓病毒迷失自我"><a href="#3、讓病毒迷失自我" class="headerlink" title="3、讓病毒迷失自我"></a>3、讓病毒迷失自我</h4><p>同上面的道理一樣，如果我們把病毒程式給重定向了，是不是病毒就不能運行了，答案是肯定的。</p>
-<pre><code>Windows Registry Editor Version 5.00
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\sppoolsv.exe]
-Debugger=123.exe
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\logo_1.exe]
-Debugger=123.exe
-</code></pre><p>上面的代碼是以金豬病毒和威金病毒為例，這樣即使這些病毒在係統啓動項裡面，即使隨係統運行了，但是由於映像劫持的重定向作用，還是會被係統提示無法找到病毒文件(這裡是logo_1.exe和sppoolsv.exe)。</p>
+<figure class="highlight plain"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></div><div class="code"><pre><div class="line">Windows Registry Editor Version 5.00</div><div class="line">[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\sppoolsv.exe]</div><div class="line">Debugger=123.exe</div><div class="line"></div><div class="line">[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\logo_1.exe]</div><div class="line">Debugger=123.exe</div></pre></div></div></figure>
+<p>上面的代碼是以金豬病毒和威金病毒為例，這樣即使這些病毒在係統啓動項裡面，即使隨係統運行了，但是由於映像劫持的重定向作用，還是會被係統提示無法找到病毒文件(這裡是logo_1.exe和sppoolsv.exe)。</p>
 <h3 id="四、防劫持"><a href="#四、防劫持" class="headerlink" title="四、防劫持"></a>四、防劫持</h3><h4 id="1、權限限制法"><a href="#1、權限限制法" class="headerlink" title="1、權限限制法"></a>1、權限限制法</h4><p>打開註冊表編輯器，定位到</p>
 <pre><code>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\
 </code></pre><p>，選中該項，右鍵→權限→高級，取消 administrator 和 system 用戶的寫權限即可。</p>
@@ -594,6 +585,8 @@ Debugger=123.exe
           
             <a href="/tags/MIS/" rel="tag"><i class="fa fa-tag"></i> MIS</a>
           
+            <a href="/tags/crack/" rel="tag"><i class="fa fa-tag"></i> crack</a>
+          
             <a href="/tags/VScode/" rel="tag"><i class="fa fa-tag"></i> VScode</a>
           
         </div>
@@ -607,8 +600,8 @@ Debugger=123.exe
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/posts/ffce/" rel="next" title="翻牆歷史">
-                <i class="fa fa-chevron-left"></i> 翻牆歷史
+              <a href="/posts/1bae/" rel="next" title="微軟開發的工具">
+                <i class="fa fa-chevron-left"></i> 微軟開發的工具
               </a>
             
           </div>
@@ -822,7 +815,7 @@ Debugger=123.exe
           <h3 class="widget-title">Tag Cloud</h3>
           <div id="myCanvasContainer" class="widget tagcloud">
             <canvas width="250" height="250" id="resCanvas" style="width=100%">
-              <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/APP/">APP</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Brower/">Brower</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CMD/">CMD</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/EIGRP/">EIGRP</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GFW/">GFW</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Git/">Git</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kali/">Kali</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MIS/">MIS</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OVSDB/">OVSDB</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/RIP/">RIP</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SDN/">SDN</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tor/">Tor</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/V2Ray/">V2Ray</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/VPN/">VPN</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/VScode/">VScode</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vim/">Vim</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cmd/">cmd</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/crack/">crack</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/install/">install</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/windows/">windows</a><span class="tag-list-count">1</span></li></ul>
+              <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/APP/">APP</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Brower/">Brower</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CMD/">CMD</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/EIGRP/">EIGRP</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GFW/">GFW</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Git/">Git</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kali/">Kali</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MIS/">MIS</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OVSDB/">OVSDB</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/RIP/">RIP</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SDN/">SDN</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tor/">Tor</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/V2Ray/">V2Ray</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/VPN/">VPN</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/VScode/">VScode</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vim/">Vim</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cmd/">cmd</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/crack/">crack</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/install/">install</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/windows/">windows</a><span class="tag-list-count">1</span></li></ul>
             </canvas>
           </div>
         </div>
@@ -863,7 +856,7 @@ Debugger=123.exe
     
       <span class="post-meta-item-text">網站總閱讀時間：</span>
     
-    <span title="網站總閱讀時間">8:53</span>
+    <span title="網站總閱讀時間">8:54</span>
   
 </div>
 
