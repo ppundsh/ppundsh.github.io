@@ -103,3 +103,12 @@ $(document).ready(function () {
   }
 });
 
+//摺疊代碼塊
+$(document).ready(function(){
+  $(document).on('click', '.fold_hider', function(){
+      $('>.fold', this.parentNode).slideToggle();
+      $('>:first', this).toggleClass('open');
+  });
+  //默認情況下摺疊
+  $("div.fold").css("display","none");
+});

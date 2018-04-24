@@ -135,7 +135,7 @@
 <meta property="og:site_name" content="Flymia 凡事用心之事">
 <meta property="og:description" content="在不暴力替換下，將預設開啟程式(如 notepad)替換。">
 <meta property="og:locale" content="zh-TW">
-<meta property="og:updated_time" content="2018-04-18T20:34:55.910Z">
+<meta property="og:updated_time" content="2018-04-24T21:06:49.606Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="利用映像劫持替換預設系統程式">
 <meta name="twitter:description" content="在不暴力替換下，將預設開啟程式(如 notepad)替換。">
@@ -255,7 +255,7 @@
         
           
   
-  <li class="menu-item menu-item-tags">
+  <li class="menu-item menu-item-tags menu-item-active">
     <a href="/tags/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>標籤</a>
 </li>
@@ -412,7 +412,7 @@
               
                 <span class="post-meta-item-text">更新於：</span>
               
-              <time title="更新於" itemprop="dateModified" datetime="2018-04-19T04:34:55+08:00">2018-04-19</time>
+              <time title="更新於" itemprop="dateModified" datetime="2018-04-25T05:06:49+08:00">2018-04-25</time>
             
           </span>
 
@@ -438,7 +438,7 @@
                 
                   <span class="post-meta-item-text">文章字數：</span>
                 
-                <span title="文章字數">1.9k</span>
+                <span title="文章字數">4.6k</span>
               
 
               
@@ -452,7 +452,7 @@
                 
                   <span class="post-meta-item-text">閱讀時間&asymp;</span>
                 
-                <span title="閱讀時間">0:10</span>
+                <span title="閱讀時間">0:23</span>
               
             </div>
           
@@ -479,16 +479,20 @@
 <pre><code>比如： .txt --&gt; txtfile --&gt; { &quot;open&quot;: &quot;notepad.exe %1&quot;, &quot;edit&quot;: &quot;notepad.exe %1&quot;, ... }
 </code></pre><p>這些對應關係保存於註冊表的HKEY_CLASSES_ROOT項，由 Explorer 讀取後，決定文件該用什麼命令處理。</p>
 <p>文件副檔名與文件類型的對應關係，可以通過assoc命令查看或修改。</p>
-<p>例如：<br>查看後綴關聯：<br>    assoc .txt<br>    .txt=txtfile</p>
-<p>新增 / 更改關聯：<br>    assoc .json=txtfile<br>    .jpg=txtfile</p>
-<p>刪除關聯：<br>    assoc .json=<br>    (無返回內容)</p>
+<p>例如：<br>查看後綴關聯：</p>
+<pre><code>assoc .txt
+.txt=txtfile
+</code></pre><p>新增 / 更改關聯：</p>
+<pre><code>assoc .json=txtfile
+.jpg=txtfile
+</code></pre><p>刪除關聯：<br>    assoc .json=<br>    (無返回內容)</p>
 <p>文件類型與 open command 的對應關係，可以通過ftype命令查看或修改。用法與assoc類似，使用%1表示目標文件，%2等表示其他參數，%*代表所有參數。 例如：</p>
 <pre><code>ftype txtfile
 
 txtfile=%SystemRoot%\system32\NOTEPAD.EXE %1
 </code></pre><p>進而，文件副檔名就與相應程式關聯上了。</p>
 <p>以上的命令只改變副檔名對應的打開方式，文件類型的其他相關資訊不受影響。</p>
-<h2 id="使用-IFEO"><a href="#使用-IFEO" class="headerlink" title="使用 IFEO"></a>使用 IFEO</h2><p>我們發現，想使用指定程式打開特定後綴的文件，只需 assoc 和 ftype 就可以搞定了。</p>
+<h2 id="使用-IFEO-Image-File-Execution-Options"><a href="#使用-IFEO-Image-File-Execution-Options" class="headerlink" title="使用 IFEO (Image File Execution Options)"></a>使用 IFEO (Image File Execution Options)</h2><p>我們發現，想使用指定程式打開特定後綴的文件，只需 assoc 和 ftype 就可以搞定了。</p>
 <pre><code>assoc .json=txtfile
 ftype txtfile=MY_FAVOURITE_EDITOR.exe %1
 </code></pre><p>不過這種方案只能更改 open command。比如. bat 後綴的批處理文件，右鍵點擊編輯，還是用回（很挫的）notepad 打開了。</p>
@@ -505,6 +509,47 @@ ftype txtfile=MY_FAVOURITE_EDITOR.exe %1
 <p>至此，使用 IFEO 替換默認編輯器就已經完成了。快去開心地擼代碼吧！</p>
 <hr>
 <p>另，也可將以下內容修改後存成 <code>.reg</code> 再執行亦可<br><figure class="highlight plain"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></div><div class="code"><pre><div class="line">Windows Registry Editor Version 5.00</div><div class="line">[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\notepad.exe]</div><div class="line">&quot;Debugger&quot;=&quot;\&quot;D:\\Apps\\VSCode\\Code.exe\&quot; -z&quot;</div></pre></div></div></figure></p>
+<h2 id="何謂映射劫持-IFEO"><a href="#何謂映射劫持-IFEO" class="headerlink" title="何謂映射劫持(IFEO)"></a>何謂映射劫持(IFEO)</h2><p><a href="https://jay-fva.blogspot.com/2010/02/ifeo.html" rel="external nofollow noopener noreferrer" target="_blank">文章來源</a></p>
+<h3 id="一、原理"><a href="#一、原理" class="headerlink" title="一、原理"></a>一、原理</h3><p>所謂的映射劫持(IFEO)就是Image File Execution Options，它位於註冊表的</p>
+<pre><code>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\
+</code></pre><p>鍵值下。由於這個項主要是用來調試程式用的，對一般用戶意義不大，默認是只有管理員和 local system 有權讀寫修改。<br>比如我想運行 QQ.exe，結果運行的卻是 FlashGet.exe，這種情況下，QQ 程式被 FLASHGET 給劫持了，即你想運行的程式被另外一個程式代替了。</p>
+<h3 id="二、被劫持"><a href="#二、被劫持" class="headerlink" title="二、被劫持"></a>二、被劫持</h3><p>雖然映射劫持是係統自帶的功能，對一般用戶來說根本沒什麼用的必要，但是就有一些病毒通過映射劫持來做文章，表面上看起來是運行了一個正常的程式，實際上病毒已經在後台運行了。<br>大部分的病毒和木馬都是通過載入係統啓動項來運行的，也有一些是註冊成為係統服務來啓動，他們主要通過修改註冊表來實現這個目的，主要有以下幾個鍵值：</p>
+<pre><code>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsCurrent\Version\Run
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows\AppInit_DLLs
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\Notify
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsCurrent\Version\RunOnce
+
+HKEY_LOCAL_MACHINE\Software\Microsoft\WindowsCurrent\Version\RunServicesOnce
+</code></pre><p>但是與一般的木馬，病毒不同的是，就有一些病毒偏偏不通過這些來載入自己，不隨著係統的啓動運行。木馬病毒的作者抓住了一些用戶的心理，等到用戶運行某個特定的程式的時候它才運行。因為一般的用戶，只要發覺自己的機子中了病毒，首先要察看的就是係統的載入項，很少有人會想到映射劫持，這也是這種病毒高明的地方。</p>
+<p>映射劫持病毒主要通過修改註冊表中的<br>    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\</p>
+<p>項來劫持正常的程式，比如有一個病毒 vires.exe 要劫持qq程式，它會在上面註冊表的位置新建一個qq.exe項，再在這個項下面新建一個字串的鍵　debugger把其值改為<code>C:\WINDOWS \SYSTEM32\VIRES.EXE</code>(這裡是病毒藏身的目錄)即可。</p>
+<h3 id="三、玩劫持"><a href="#三、玩劫持" class="headerlink" title="三、玩劫持"></a>三、玩劫持</h3><h4 id="1、禁止某些程式的運行"><a href="#1、禁止某些程式的運行" class="headerlink" title="1、禁止某些程式的運行"></a>1、禁止某些程式的運行</h4><pre><code>Windows Registry Editor Version 5.00
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\qq.exe]
+Debugger=123.exe
+</code></pre><p>把上面的代碼保存為norun_qq.reg，雙擊導入註冊表，每次雙擊運行QQ的時候，係統都會彈出一個框提示說找不到QQ，原因就QQ被重定向了。如果要讓QQ繼續運行的話，把123.exe改為其安裝目錄就可以了。</p>
+<h4 id="2、偷樑換柱惡作劇"><a href="#2、偷樑換柱惡作劇" class="headerlink" title="2、偷樑換柱惡作劇"></a>2、偷樑換柱惡作劇</h4><p>每次我們按下CTRL+ALT+DEL鍵時，都會彈出任務管理器，想不想在我們按下這些鍵的時候讓它彈出命令提示符視窗，下面就教你怎麼玩：</p>
+<pre><code>Windows Registry Editor Version 5.00
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\taskmgr.exe]
+Debugger=D:\WINDOWS\pchealth\helpctr\binaries\mconfig.exe
+</code></pre><p>將上面的代碼另存為 task_cmd.reg，雙擊導入註冊表。按下那三個鍵打開了”係統配置實用程式”。</p>
+<h4 id="3、讓病毒迷失自我"><a href="#3、讓病毒迷失自我" class="headerlink" title="3、讓病毒迷失自我"></a>3、讓病毒迷失自我</h4><p>同上面的道理一樣，如果我們把病毒程式給重定向了，是不是病毒就不能運行了，答案是肯定的。</p>
+<pre><code>Windows Registry Editor Version 5.00
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\sppoolsv.exe]
+Debugger=123.exe
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\logo_1.exe]
+Debugger=123.exe
+</code></pre><p>上面的代碼是以金豬病毒和威金病毒為例，這樣即使這些病毒在係統啓動項裡面，即使隨係統運行了，但是由於映像劫持的重定向作用，還是會被係統提示無法找到病毒文件(這裡是logo_1.exe和sppoolsv.exe)。</p>
+<h3 id="四、防劫持"><a href="#四、防劫持" class="headerlink" title="四、防劫持"></a>四、防劫持</h3><h4 id="1、權限限制法"><a href="#1、權限限制法" class="headerlink" title="1、權限限制法"></a>1、權限限制法</h4><p>打開註冊表編輯器，定位到</p>
+<pre><code>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\
+</code></pre><p>，選中該項，右鍵→權限→高級，取消 administrator 和 system 用戶的寫權限即可。</p>
+<h4 id="2、快刀斬亂麻法"><a href="#2、快刀斬亂麻法" class="headerlink" title="2、快刀斬亂麻法"></a>2、快刀斬亂麻法</h4><p>打開註冊表編輯器，定位到</p>
+<pre><code>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\
+</code></pre><p>，把”Image File Execution Options”項刪除即可。</p>
+<p>總結：以上關於映射劫持的解析與利用但願對於大家查殺木馬病毒有所幫助，也希望大家能夠挖掘更多更實用的功能。</p>
 <div id="footnotes"><hr><div id="footnotelist"><ol style="list-style:none; padding-left: 0;"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline-block; vertical-align: top;"><a href="https://github.com/wings27/blogs/blob/master/%E5%88%A9%E7%94%A8Windows%E6%98%A0%E5%83%8F%E5%8A%AB%E6%8C%81%E5%AE%9E%E7%8E%B0%E9%BB%98%E8%AE%A4%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%9B%BF%E6%8D%A2.md" rel="external nofollow noopener noreferrer" target="_blank">利用 Windows 映像劫持实现默认程序的替换</a></span><a href="#fnref:1" rev="footnote"> ↩</a></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">2.</span><span style="display: inline-block; vertical-align: top;"><a href="https://msdn.microsoft.com/en-us/library/a329t4ed%28VS.71%29.aspx" rel="external nofollow noopener noreferrer" target="_blank">Launching the Debugger Automatically - MSDN</a></span><a href="#fnref:2" rev="footnote"> ↩</a></li></ol></div></div>
       
     </div>
@@ -570,8 +615,8 @@ ftype txtfile=MY_FAVOURITE_EDITOR.exe %1
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/posts/f4f2/" rel="prev" title="CISCO Router 筆記">
-                CISCO Router 筆記 <i class="fa fa-chevron-right"></i>
+              <a href="/posts/2c27/" rel="prev" title="Hexo編緝方式筆記">
+                Hexo編緝方式筆記 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -651,7 +696,7 @@ ftype txtfile=MY_FAVOURITE_EDITOR.exe %1
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">16</span>
+                    <span class="site-state-item-count">17</span>
                     <span class="site-state-item-name">文章</span>
                   </a>
                 </div>
@@ -749,7 +794,7 @@ ftype txtfile=MY_FAVOURITE_EDITOR.exe %1
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#文件關聯"><span class="nav-number">1.</span> <span class="nav-text">文件關聯</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用-IFEO"><span class="nav-number">2.</span> <span class="nav-text">使用 IFEO</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#詳細操作"><span class="nav-number">3.</span> <span class="nav-text">詳細操作</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#文件關聯"><span class="nav-number">1.</span> <span class="nav-text">文件關聯</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用-IFEO-Image-File-Execution-Options"><span class="nav-number">2.</span> <span class="nav-text">使用 IFEO (Image File Execution Options)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#詳細操作"><span class="nav-number">3.</span> <span class="nav-text">詳細操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#何謂映射劫持-IFEO"><span class="nav-number">4.</span> <span class="nav-text">何謂映射劫持(IFEO)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、原理"><span class="nav-number">4.1.</span> <span class="nav-text">一、原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、被劫持"><span class="nav-number">4.2.</span> <span class="nav-text">二、被劫持</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三、玩劫持"><span class="nav-number">4.3.</span> <span class="nav-text">三、玩劫持</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、禁止某些程式的運行"><span class="nav-number">4.3.1.</span> <span class="nav-text">1、禁止某些程式的運行</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、偷樑換柱惡作劇"><span class="nav-number">4.3.2.</span> <span class="nav-text">2、偷樑換柱惡作劇</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3、讓病毒迷失自我"><span class="nav-number">4.3.3.</span> <span class="nav-text">3、讓病毒迷失自我</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#四、防劫持"><span class="nav-number">4.4.</span> <span class="nav-text">四、防劫持</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、權限限制法"><span class="nav-number">4.4.1.</span> <span class="nav-text">1、權限限制法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、快刀斬亂麻法"><span class="nav-number">4.4.2.</span> <span class="nav-text">2、快刀斬亂麻法</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -773,7 +818,7 @@ ftype txtfile=MY_FAVOURITE_EDITOR.exe %1
           <h3 class="widget-title">Tag Cloud</h3>
           <div id="myCanvasContainer" class="widget tagcloud">
             <canvas width="250" height="250" id="resCanvas" style="width=100%">
-              <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/APP/">APP</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CMD/">CMD</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/EIGRP/">EIGRP</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GFW/">GFW</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Git/">Git</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kali/">Kali</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MIS/">MIS</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OVSDB/">OVSDB</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/RIP/">RIP</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SDN/">SDN</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tor/">Tor</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/V2Ray/">V2Ray</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/VPN/">VPN</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/VScode/">VScode</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vim/">Vim</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cmd/">cmd</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/crack/">crack</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/install/">install</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/windows/">windows</a><span class="tag-list-count">1</span></li></ul>
+              <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/APP/">APP</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CMD/">CMD</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/EIGRP/">EIGRP</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GFW/">GFW</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Git/">Git</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kali/">Kali</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MIS/">MIS</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OVSDB/">OVSDB</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/RIP/">RIP</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SDN/">SDN</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tor/">Tor</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/V2Ray/">V2Ray</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/VPN/">VPN</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/VScode/">VScode</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vim/">Vim</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cmd/">cmd</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/crack/">crack</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/install/">install</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/windows/">windows</a><span class="tag-list-count">1</span></li></ul>
             </canvas>
           </div>
         </div>
@@ -803,7 +848,7 @@ ftype txtfile=MY_FAVOURITE_EDITOR.exe %1
     
       <span class="post-meta-item-text">網站總字數：</span>
     
-    <span title="網站總字數">100k</span>
+    <span title="網站總字數">106k</span>
   
 
   
@@ -814,7 +859,7 @@ ftype txtfile=MY_FAVOURITE_EDITOR.exe %1
     
       <span class="post-meta-item-text">網站總閱讀時間：</span>
     
-    <span title="網站總閱讀時間">8:18</span>
+    <span title="網站總閱讀時間">8:48</span>
   
 </div>
 
