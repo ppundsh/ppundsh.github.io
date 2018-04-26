@@ -1819,7 +1819,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffffac;
+  background: #09fff0;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3023,15 +3023,45 @@ pre .attr {
   margin-bottom: 40px;
   background: rgba(255,255,255,0.8);
   padding: 25px;
-  -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
-  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
+  -webkit-box-shadow: 0 0 10px rgba(202,203,203,0.5);
+  -moz-box-shadow: 0 0 10px rgba(202,203,204,0.5);
 }
 .posts-expand .post {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50% 50%;
   background-size: cover;
+}
+.post-button {
+  margin-top: 30px;
+  text-align: center;
+}
+.post-button .btn {
+  color: #fff;
+  font-size: 15px;
+  background: #686868;
+  border-radius: 16px;
+  line-height: 2;
+  margin: 0 4px 8px 4px;
+  padding: 0 20px;
+  border: none;
+  -webkit-box-shadow: 0px 5px 30px -3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 5px 30px -3px rgba(0,0,0,0.75);
+}
+.post-button .btn:hover {
+  color: #000;
+  background: #fff;
+}
+.posts-expand .post-title {
+  text-align: center;
+  font-size: 26px;
+}
+.posts-expand .post-meta {
+  text-align: center;
+}
+.posts-expand .post-tags {
+  text-align: center;
 }
