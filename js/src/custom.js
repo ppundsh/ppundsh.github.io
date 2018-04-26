@@ -26,7 +26,7 @@ function createCopyBtns() {
         };
         //創建 全局複製按鈕，僅有一組。包含：複製按鈕，複製成功回應按鈕
         //值得注意的是：1.按鈕默認隱藏，2.位置使用絕對位置 position: absolute; (position: fixed 也可以，需要修改代碼)
-        $(".post-body").before('<div id="copyBtn" style="opacity: 0; position: absolute;top:0px;display: none;line-height: 1; font-size:1.5em"><span id="imgCopy" ><i class="fa fa-paste fa-fw"></i></span><span id="imgSuccess" style="display: none;"><i class="fa fa-check-circle fa-fw" aria-hidden="true"></i></span>');
+        $(".post-body").before('<div id="copyBtn" style="opacity: 0; position: absolute;top:0px;left:0px;display: none;line-height: 1; font-size:1.5em"><span id="imgCopy" ><i class="fa fa-paste fa-fw"></i></span><span id="imgSuccess" style="display: none;"><i class="fa fa-check-circle fa-fw" aria-hidden="true"></i></span>');
         //創建 複製 插件，綁定單機時間到 指定元素，支援JQuery
         var clipboard = new Clipboard('#copyBtn', {
             target: function() {
@@ -85,7 +85,8 @@ $("figure").hover(
             $copyBtn.css("opacity", 0.8);
             $copyBtn.css("display", "block");
             $copyBtn.css("top", parseInt($copyBtn.css("top")) + $(this).offset().top - $copyBtn.offset().top + 3);
-            $copyBtn.css("left", -$copyBtn.width() - 3);
+//            $copyBtn.css("left", -$copyBtn.width() - 3);
+            $copyBtn.css("left",$(this).offset().left -$copyBtn.width() - 3);
         }
     },
     function() {
