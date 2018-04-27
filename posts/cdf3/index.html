@@ -138,18 +138,18 @@
 
 
 
-  <meta name="description" content="剛好遇到，記錄一下">
-<meta name="keywords" content="Linux">
+  <meta name="description" content="筆記一下，過去沒用過的功能用法">
+<meta name="keywords" content="Hexo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CentOS NTP 設定">
-<meta property="og:url" content="https://ppundsh.github.io/posts/7007/index.html">
+<meta property="og:title" content="Hexo 文章編輯技巧-流程圖、按扭、分頁、小圖示">
+<meta property="og:url" content="https://ppundsh.github.io/posts/cdf3/index.html">
 <meta property="og:site_name" content="Flymia 凡事用心之事">
-<meta property="og:description" content="剛好遇到，記錄一下">
+<meta property="og:description" content="筆記一下，過去沒用過的功能用法">
 <meta property="og:locale" content="zh-TW">
-<meta property="og:updated_time" content="2018-04-25T17:23:00.279Z">
+<meta property="og:updated_time" content="2018-04-27T06:44:48.752Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CentOS NTP 設定">
-<meta name="twitter:description" content="剛好遇到，記錄一下">
+<meta name="twitter:title" content="Hexo 文章編輯技巧-流程圖、按扭、分頁、小圖示">
+<meta name="twitter:description" content="筆記一下，過去沒用過的功能用法">
 
 
 
@@ -158,7 +158,7 @@
 
 
 
-  <link rel="canonical" href="https://ppundsh.github.io/posts/7007/">
+  <link rel="canonical" href="https://ppundsh.github.io/posts/cdf3/">
 
 
 
@@ -168,7 +168,7 @@
   };
 </script>
 
-  <title>CentOS NTP 設定 | Flymia 凡事用心之事</title>
+  <title>Hexo 文章編輯技巧-流程圖、按扭、分頁、小圖示 | Flymia 凡事用心之事</title>
   
 
 
@@ -373,7 +373,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ppundsh.github.io/posts/7007/">
+    <link itemprop="mainEntityOfPage" href="https://ppundsh.github.io/posts/cdf3/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Flymia">
@@ -390,7 +390,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">CentOS NTP 設定</h2>
+          <h2 class="post-title" itemprop="name headline">Hexo 文章編輯技巧-流程圖、按扭、分頁、小圖示</h2>
         
 
         <div class="post-meta">
@@ -402,7 +402,7 @@
               
                 <span class="post-meta-item-text">發表於</span>
               
-              <time title="創建於" itemprop="dateCreated datePublished" datetime="2018-04-26T01:19:50+08:00">2018-04-26</time>
+              <time title="創建於" itemprop="dateCreated datePublished" datetime="2018-04-27T01:02:08+08:00">2018-04-27</time>
             
 
             
@@ -435,7 +435,7 @@
                 
                   <span class="post-meta-item-text">文章字數：</span>
                 
-                <span title="文章字數">107</span>
+                <span title="文章字數">2.7k</span>
               
 
               
@@ -449,7 +449,7 @@
                 
                   <span class="post-meta-item-text">閱讀時間&asymp;</span>
                 
-                <span title="閱讀時間">0:01</span>
+                <span title="閱讀時間">0:14</span>
               
             </div>
           
@@ -469,9 +469,66 @@
       
 
       
-        <p>剛好遇到，記錄一下<br><a id="more"></a><br><figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></div><div class="code"><pre><div class="line">yum install ntp</div><div class="line">chkconfig ntpd on</div><div class="line">ntpdate time.stdtime.gov.tw</div><div class="line">service ntpd start</div></pre></div></div></figure></p>
-<p>可以用以下指令檢查時間<br><code>date</code></p>
+        <p>筆記一下，過去沒用過的功能用法<br><a id="more"></a></p>
+<h1 id="流程圖"><a href="#流程圖" class="headerlink" title="流程圖"></a>流程圖</h1><p>官網<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup><br>需要安裝插件</p>
+<figure class="highlight plain"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">npm install --save hexo-filter-flowchart</div></pre></div></div></figure>
+<p>線上測試 <a href="http://flowchart.js.org/" rel="external nofollow noopener noreferrer" target="_blank">flowchart.js</a> 貼一下官方的範例：<br>目前暫無法成功。</p>
+<h1 id="按扭"><a href="#按扭" class="headerlink" title="按扭"></a>按扭</h1><p>參考資料<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup></p>
+<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></div><div class="code"><pre><div class="line">Usage: &#123;% button /path/to/url/, text, icon [class], title %&#125;</div><div class="line">Alias: &#123;% btn /path/to/url/, text, icon [class], title %&#125;</div></pre></div></div></figure>
+<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">&#123;% button <span class="comment">#, Text %&#125;&#123;% btn #,, home fa-lg %&#125;&#123;% btn #,, home %&#125;</span></div></pre></div></div></figure>
+<a class="btn" href="#">Text</a><a class="btn" href="#"><i class="fa fa-home fa-lg"></i></a><a class="btn" href="#"><i class="fa fa-home"></i></a>
+<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">&#123;% btn <span class="comment">#,, home fa-4x %&#125;</span></div></pre></div></div></figure>
+<a class="btn" href="#"><i class="fa fa-home fa-4x"></i></a>
+<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></div><div class="code"><pre><div class="line">&#123;% btn <span class="comment">#, Text &amp; Icon (buggy), home %&#125;</span></div><div class="line">&#123;% btn <span class="comment">#, Text &amp; Large Icon, home fa-fw fa-lg %&#125;</span></div></pre></div></div></figure>
+<a class="btn" href="#"><i class="fa fa-home"></i>Text & Icon (buggy)</a>
+<a class="btn" href="#"><i class="fa fa-home fa-fw fa-lg"></i>Text & Large Icon</a>
+<h1 id="分頁"><a href="#分頁" class="headerlink" title="分頁"></a>分頁</h1><figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></div><div class="code"><pre><div class="line">&#123;% tabs First unique name %&#125;</div><div class="line">&lt;!-- tab --&gt;</div><div class="line">**This is Tab 1.**</div><div class="line">&lt;!-- endtab --&gt;</div><div class="line">&lt;!-- tab --&gt;</div><div class="line">**This is Tab 2.**</div><div class="line">&lt;!-- endtab --&gt;</div><div class="line">&lt;!-- tab --&gt;</div><div class="line">**This is Tab 3.**</div><div class="line">&lt;!-- endtab --&gt;</div><div class="line">&#123;% endtabs %&#125;</div></pre></div></div></figure>
+<h2 id="Tab-tag-simple-sample"><a href="#Tab-tag-simple-sample" class="headerlink" title="Tab tag simple sample"></a>Tab tag simple sample</h2><div class="tabs" id="first-unique-name"><ul class="nav-tabs"><li class="tab active"><a href="#first-unique-name-1">First unique name 1</a></li><li class="tab"><a href="#first-unique-name-2">First unique name 2</a></li><li class="tab"><a href="#first-unique-name-3">First unique name 3</a></li></ul><div class="tab-content"><div class="tab-pane active" id="first-unique-name-1"><p><strong>This is Tab 1.</strong></p>
+</div><div class="tab-pane" id="first-unique-name-2"><p><strong>This is Tab 2.</strong></p>
+</div><div class="tab-pane" id="first-unique-name-3"><p><strong>This is Tab 3.</strong></p>
+</div></div></div>
+<h2 id="Tab-tag-with-3rd-tab-selected"><a href="#Tab-tag-with-3rd-tab-selected" class="headerlink" title="Tab tag with 3rd tab selected"></a>Tab tag with 3rd tab selected</h2><figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></div><div class="code"><pre><div class="line">&#123;% tabs Second unique name, 3 %&#125;</div><div class="line">&lt;!-- tab --&gt;</div><div class="line">**This is Tab 1.**</div><div class="line">&lt;!-- endtab --&gt;</div><div class="line">&lt;!-- tab --&gt;</div><div class="line">**This is Tab 2.**</div><div class="line">&lt;!-- endtab --&gt;</div><div class="line">&lt;!-- tab --&gt;</div><div class="line">**This is Tab 3.**</div><div class="line">&lt;!-- endtab --&gt;</div><div class="line">&#123;% endtabs %&#125;</div></pre></div></div></figure>
+<div class="tabs" id="second-unique-name"><ul class="nav-tabs"><li class="tab"><a href="#second-unique-name-1">Second unique name 1</a></li><li class="tab"><a href="#second-unique-name-2">Second unique name 2</a></li><li class="tab active"><a href="#second-unique-name-3">Second unique name 3</a></li></ul><div class="tab-content"><div class="tab-pane" id="second-unique-name-1"><p><strong>This is Tab 1.</strong></p>
+</div><div class="tab-pane" id="second-unique-name-2"><p><strong>This is Tab 2.</strong></p>
+</div><div class="tab-pane active" id="second-unique-name-3"><p><strong>This is Tab 3.</strong></p>
+</div></div></div>
+<h2 id="Tab-tag-with-no-tab-selected"><a href="#Tab-tag-with-no-tab-selected" class="headerlink" title="Tab tag with no tab selected"></a>Tab tag with no tab selected</h2><figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></div><div class="code"><pre><div class="line">&#123;% tabs Third unique name, -1 %&#125;</div><div class="line">&lt;!-- tab --&gt;</div><div class="line">**This is Tab 1.**</div><div class="line">&lt;!-- endtab --&gt;</div><div class="line">&lt;!-- tab --&gt;</div><div class="line">**This is Tab 2.**</div><div class="line">&lt;!-- endtab --&gt;</div><div class="line">&lt;!-- tab --&gt;</div><div class="line">**This is Tab 3.**</div><div class="line">&lt;!-- endtab --&gt;</div><div class="line">&#123;% endtabs %&#125;</div></pre></div></div></figure>
+<div class="tabs" id="third-unique-name"><ul class="nav-tabs"><li class="tab"><a href="#third-unique-name-1">Third unique name 1</a></li><li class="tab"><a href="#third-unique-name-2">Third unique name 2</a></li><li class="tab"><a href="#third-unique-name-3">Third unique name 3</a></li></ul><div class="tab-content"><div class="tab-pane" id="third-unique-name-1"><p><strong>This is Tab 1.</strong></p>
+</div><div class="tab-pane" id="third-unique-name-2"><p><strong>This is Tab 2.</strong></p>
+</div><div class="tab-pane" id="third-unique-name-3"><p><strong>This is Tab 3.</strong></p>
+</div></div></div>
+<h2 id="Tab-tag-with-custom-labels"><a href="#Tab-tag-with-custom-labels" class="headerlink" title="Tab tag with custom labels"></a>Tab tag with custom labels</h2><figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></div><div class="code"><pre><div class="line">&#123;% tabs Fourth unique name %&#125;</div><div class="line">&lt;!-- tab Solution 1 --&gt;</div><div class="line">**This is Tab 一.**</div><div class="line">&lt;!-- endtab --&gt;</div><div class="line">&lt;!-- tab Solution 2 --&gt;</div><div class="line">**This is Tab 二.**</div><div class="line">&lt;!-- endtab --&gt;</div><div class="line">&lt;!-- tab Solution 3 --&gt;</div><div class="line">**This is Tab 三.**</div><div class="line">&lt;!-- endtab --&gt;</div><div class="line">&#123;% endtabs %&#125;</div></pre></div></div></figure>
+<div class="tabs" id="fourth-unique-name"><ul class="nav-tabs"><li class="tab active"><a href="#fourth-unique-name-1">Solution 1</a></li><li class="tab"><a href="#fourth-unique-name-2">Solution 2</a></li><li class="tab"><a href="#fourth-unique-name-3">Solution 3</a></li></ul><div class="tab-content"><div class="tab-pane active" id="fourth-unique-name-1"><p><strong>This is Tab 一.</strong></p>
+</div><div class="tab-pane" id="fourth-unique-name-2"><p><strong>This is Tab 二.</strong></p>
+</div><div class="tab-pane" id="fourth-unique-name-3"><p><strong>This is Tab 三.</strong></p>
+</div></div></div>
+<h2 id="Tab-tag-with-icons-only"><a href="#Tab-tag-with-icons-only" class="headerlink" title="Tab tag with icons only"></a>Tab tag with icons only</h2><figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></div><div class="code"><pre><div class="line">&#123;% tabs Fifth unique name %&#125;</div><div class="line">&lt;!-- tab @text-width --&gt;</div><div class="line">**This is Tab 1.**</div><div class="line">&lt;!-- endtab --&gt;</div><div class="line">&lt;!-- tab @amazon --&gt;</div><div class="line">**This is Tab 2.**</div><div class="line">&lt;!-- endtab --&gt;</div><div class="line">&lt;!-- tab @bold --&gt;</div><div class="line">**This is Tab 3.**</div><div class="line">&lt;!-- endtab --&gt;</div><div class="line">&#123;% endtabs %&#125;</div></pre></div></div></figure>
+<div class="tabs" id="fifth-unique-name"><ul class="nav-tabs"><li class="tab active"><a href="#fifth-unique-name-1"><i class="fa fa-text-width" style="text-align: center;"></i></a></li><li class="tab"><a href="#fifth-unique-name-2"><i class="fa fa-amazon" style="text-align: center;"></i></a></li><li class="tab"><a href="#fifth-unique-name-3"><i class="fa fa-bold" style="text-align: center;"></i></a></li></ul><div class="tab-content"><div class="tab-pane active" id="fifth-unique-name-1"><p><strong>This is Tab 1.</strong></p>
+</div><div class="tab-pane" id="fifth-unique-name-2"><p><strong>This is Tab 2.</strong></p>
+</div><div class="tab-pane" id="fifth-unique-name-3"><p><strong>This is Tab 3.</strong></p>
+</div></div></div>
+<h2 id="Tab-tag-with-icons-and-labels"><a href="#Tab-tag-with-icons-and-labels" class="headerlink" title="Tab tag with icons and labels"></a>Tab tag with icons and labels</h2><figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></div><div class="code"><pre><div class="line">&#123;% tabs Sixth unique name %&#125;</div><div class="line">&lt;!-- tab Solution 1@text-width --&gt;</div><div class="line">**This is Tab 1.**</div><div class="line">&lt;!-- endtab --&gt;</div><div class="line">&lt;!-- tab Solution 2@amazon --&gt;</div><div class="line">**This is Tab 2.**</div><div class="line">&lt;!-- endtab --&gt;</div><div class="line">&lt;!-- tab Solution 3@bold --&gt;</div><div class="line">**This is Tab 3.**</div><div class="line">&lt;!-- endtab --&gt;</div><div class="line">&#123;% endtabs %&#125;</div></pre></div></div></figure>
+<div class="tabs" id="sixth-unique-name"><ul class="nav-tabs"><li class="tab active"><a href="#sixth-unique-name-1"><i class="fa fa-text-width" "=""></i>Solution 1</a></li><li class="tab"><a href="#sixth-unique-name-2"><i class="fa fa-amazon" "=""></i>Solution 2</a></li><li class="tab"><a href="#sixth-unique-name-3"><i class="fa fa-bold" "=""></i>Solution 3</a></li></ul><div class="tab-content"><div class="tab-pane active" id="sixth-unique-name-1"><p><strong>This is Tab 1.</strong></p>
+</div><div class="tab-pane" id="sixth-unique-name-2"><p><strong>This is Tab 2.</strong></p>
+</div><div class="tab-pane" id="sixth-unique-name-3"><p><strong>This is Tab 3.</strong></p>
+</div></div></div>
+<h2 id="小圖示"><a href="#小圖示" class="headerlink" title="小圖示"></a>小圖示</h2><p>用法來源<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup>，可以看官網的範例，更多圖示可去官網找<sup id="fnref:5"><a href="#fn:5" rel="footnote">5</a></sup></p>
+<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></div><div class="code"><pre><div class="line">&lt;i class=<span class="string">"fa fa-pencil"</span>&gt;&lt;/i&gt; 鉛筆</div><div class="line">&lt;i class=<span class="string">"fa fa-cloud-upload"</span>&gt;&lt;/i&gt; 上傳</div><div class="line">&lt;i class=<span class="string">"fa fa-download"</span>&gt;&lt;/i&gt; 下載</div></pre></div></div></figure>
+<p><i class="fa fa-pencil"></i> 鉛筆<br><i class="fa fa-cloud-upload"></i> 上傳<br><i class="fa fa-download"></i> 下載</p>
+<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></div><div class="code"><pre><div class="line">&lt;i class=<span class="string">"fa fa-download"</span>&gt;&lt;/i&gt; 下載</div><div class="line">&lt;i class=<span class="string">"fa fa-download fa-lg"</span>&gt;&lt;/i&gt; 下載變大 33%</div><div class="line">&lt;i class=<span class="string">"fa fa-download fa-2x"</span>&gt;&lt;/i&gt; 下載兩倍大</div></pre></div></div></figure>
+<p><i class="fa fa-download"></i> 下載<br><i class="fa fa-download fa-lg"></i> 下載變大 33%<br><i class="fa fa-download fa-2x"></i> 下載兩倍大</p>
+<h3 id="Bordered-amp-Pulled-Icons"><a href="#Bordered-amp-Pulled-Icons" class="headerlink" title="Bordered &amp; Pulled Icons"></a>Bordered &amp; Pulled Icons</h3><p>Use <code>fa-border</code> and <code>fa-pull-right</code> or <code>fa-pull-left</code> for easy pull quotes or article icons.</p>
+<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></div><div class="code"><pre><div class="line">&lt;i class=<span class="string">"fas fa-quote-left fa-2x fa-pull-left fa-border"</span>&gt;&lt;/i&gt;</div><div class="line">Gatsby believed <span class="keyword">in</span> the green light, the orgastic future that year by year recedes before us.</div><div class="line">It eluded us <span class="keyword">then</span>, but that’s no matter — tomorrow we will run faster, stretch our arms further...</div><div class="line">And one fine morning — So we beat on, boats against the current, borne back ceaselessly into the past.</div></pre></div></div></figure>
+<p><i class="fas fa-quote-left fa-2x fa-pull-left fa-border"></i><br>Gatsby believed in the green light, the orgastic future that year by year recedes before us.<br>It eluded us then, but that’s no matter — tomorrow we will run faster, stretch our arms further…<br>And one fine morning — So we beat on, boats against the current, borne back ceaselessly into the past.</p>
+<h3 id="Animated-Icons"><a href="#Animated-Icons" class="headerlink" title="Animated Icons"></a>Animated Icons</h3><p>Use the <code>fa-spin</code> class to get any icon to rotate, and use <code>fa-pulse</code> to have it rotate with 8 steps. Works especially well with <code>fa-spinner</code> &amp; everything in the <a href="https://fontawesome.com/icons?c=spinners" rel="external nofollow noopener noreferrer" target="_blank">spinner icons category</a>.</p>
+<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></div><div class="code"><pre><div class="line">&lt;div class=<span class="string">"fa-3x"</span>&gt;</div><div class="line">  &lt;i class=<span class="string">"fa fa-cog fa-spin"</span>&gt;&lt;/i&gt;</div><div class="line">  &lt;i class=<span class="string">"fa fa-spinner fa-pulse"</span>&gt;&lt;/i&gt;</div><div class="line">&lt;/div&gt;</div></pre></div></div></figure>
+<div class="fa-3x"><br>  <i class="fa fa-cog fa-spin"></i><br>  <i class="fa fa-spinner fa-pulse"></i><br></div>
 
+<h3 id="Masking"><a href="#Masking" class="headerlink" title="Masking"></a>Masking</h3><p>Inner Icon (cut out)：Set using typical <code>class</code> attribute. Transform using any <code>data-fa-transform</code> properties.<br>Outer Icon：Set using <code>data-fa-mask</code> attribute.</p>
+<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></div><div class="code"><pre><div class="line">&lt;div class=<span class="string">"fa-4x"</span>&gt;</div><div class="line">  &lt;i class=<span class="string">"fa fa-facebook-f"</span> data-fa-transform=<span class="string">"shrink-3.5 down-1.6 right-1.25"</span> data-fa-mask=<span class="string">"fa fa-circle"</span> style=<span class="string">"background:MistyRose"</span>&gt;&lt;/i&gt;</div><div class="line">  &lt;i class=<span class="string">"fa fa-headphones"</span> data-fa-transform=<span class="string">"shrink-6"</span> data-fa-mask=<span class="string">"fa fa-square"</span> style=<span class="string">"background:MistyRose"</span>&gt;&lt;/i&gt;</div><div class="line">&lt;/div&gt;</div></pre></div></div></figure>
+<div class="fa-4x"><br>  <i class="fa fa-facebook-f" data-fa-transform="shrink-3.5 down-1.6 right-1.25" data-fa-mask="fa fa-circle" style="background:MistyRose"></i><br>  <i class="fa fa-headphones" data-fa-transform="shrink-6" data-fa-mask="fa fa-square" style="background:MistyRose"></i><br></div>
+
+<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style:none; padding-left: 0;"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline-block; vertical-align: top;"><a href="https://github.com/bubkoo/hexo-filter-flowchart" rel="external nofollow noopener noreferrer" target="_blank"> hexo-filter-flowchart </a></span><a href="#fnref:1" rev="footnote"> ↩</a></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">2.</span><span style="display: inline-block; vertical-align: top;"><a href="https://almostover.ru/2016-01/hexo-theme-next-test" rel="external nofollow noopener noreferrer" target="_blank"> Hexo Theme Next Test </a></span><a href="#fnref:2" rev="footnote"> ↩</a></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">3.</span><span style="display: inline-block; vertical-align: top;"><a href="https://reuixiy.github.io/technology/computer/computer-aided-art/2017/06/09/hexo-next-optimization.html#%E5%A5%BD%E7%8E%A9%E7%9A%84%E5%86%99%E4%BD%9C%E6%A0%B7%E5%BC%8F" rel="external nofollow noopener noreferrer" target="_blank"> 打造個性超贊博客Hexo+NexT+GithubPages的超深度優化 </a></span><a href="#fnref:3" rev="footnote"> ↩</a></li><li id="fn:4"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">4.</span><span style="display: inline-block; vertical-align: top;"><a href="https://fontawesome.com/icons?d=gallery" rel="external nofollow noopener noreferrer" target="_blank"> Font Awesome </a></span><a href="#fnref:4" rev="footnote"> ↩</a></li><li id="fn:5"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">5.</span><span style="display: inline-block; vertical-align: top;"><a href="https://fontawesome.com/how-to-use/svg-with-js" rel="external nofollow noopener noreferrer" target="_blank"> SVG with JavaScript </a></span><a href="#fnref:5" rev="footnote"> ↩</a></li></ol></div></div>
       
     </div>
 
@@ -498,7 +555,7 @@
     <strong>作者： </strong>Flymia</li>
   <li class="post-copyright-link">
     <strong>文章連結：</strong>
-    <a href="https://ppundsh.github.io/posts/7007/" title="CentOS NTP 設定">https://ppundsh.github.io/posts/7007/</a>
+    <a href="https://ppundsh.github.io/posts/cdf3/" title="Hexo 文章編輯技巧-流程圖、按扭、分頁、小圖示">https://ppundsh.github.io/posts/cdf3/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版權聲明： </strong>本網誌所有文章除特別聲明外，均採用 <a rel="external nofollow noopener noreferrer" href="http://creativecommons.org/licenses/by-nc-sa/3.0/tw/" target="_blank">創用 CC 姓名標示-非商業性-相同方式分享 3.0 台灣 授權條款</a> 授權<a rel="external nofollow noopener noreferrer" href="http://creativecommons.org/licenses/by-nc-sa/3.0/tw/" target="_blank"><img alt="創用 CC 授權條款" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/3.0/tw/88x31.png" align="right"></a> </li>
@@ -511,7 +568,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Linux/" rel="tag"><i class="fa fa-tag"></i> Linux</a>
+            <a href="/tags/Hexo/" rel="tag"><i class="fa fa-tag"></i> Hexo</a>
           
         </div>
       
@@ -524,8 +581,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/posts/2e00/" rel="next" title="Console 解鎖網頁右鍵功能">
-                <i class="fa fa-chevron-left"></i> Console 解鎖網頁右鍵功能
+              <a href="/posts/cb53/" rel="next" title="Hexo 使用 imgur 圖床跟並列顯示圖片">
+                <i class="fa fa-chevron-left"></i> Hexo 使用 imgur 圖床跟並列顯示圖片
               </a>
             
           </div>
@@ -533,10 +590,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/posts/b545/" rel="prev" title="國際海纜">
-                國際海纜 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -590,8 +643,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目錄
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            本站概要
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -700,6 +762,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#流程圖"><span class="nav-number">1.</span> <span class="nav-text">流程圖</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#按扭"><span class="nav-number">2.</span> <span class="nav-text">按扭</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#分頁"><span class="nav-number">3.</span> <span class="nav-text">分頁</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Tab-tag-simple-sample"><span class="nav-number">3.1.</span> <span class="nav-text">Tab tag simple sample</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Tab-tag-with-3rd-tab-selected"><span class="nav-number">3.2.</span> <span class="nav-text">Tab tag with 3rd tab selected</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Tab-tag-with-no-tab-selected"><span class="nav-number">3.3.</span> <span class="nav-text">Tab tag with no tab selected</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Tab-tag-with-custom-labels"><span class="nav-number">3.4.</span> <span class="nav-text">Tab tag with custom labels</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Tab-tag-with-icons-only"><span class="nav-number">3.5.</span> <span class="nav-text">Tab tag with icons only</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Tab-tag-with-icons-and-labels"><span class="nav-number">3.6.</span> <span class="nav-text">Tab tag with icons and labels</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小圖示"><span class="nav-number">3.7.</span> <span class="nav-text">小圖示</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Bordered-amp-Pulled-Icons"><span class="nav-number">3.7.1.</span> <span class="nav-text">Bordered &amp; Pulled Icons</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Animated-Icons"><span class="nav-number">3.7.2.</span> <span class="nav-text">Animated Icons</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Masking"><span class="nav-number">3.7.3.</span> <span class="nav-text">Masking</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

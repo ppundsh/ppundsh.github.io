@@ -146,7 +146,7 @@
 <meta property="og:site_name" content="Flymia 凡事用心之事">
 <meta property="og:description" content="記錄 CMD 、能直接執行的命令、控制台快捷鍵">
 <meta property="og:locale" content="zh-TW">
-<meta property="og:updated_time" content="2018-04-18T13:18:47.302Z">
+<meta property="og:updated_time" content="2018-04-26T15:22:24.652Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="維運指令備忘">
 <meta name="twitter:description" content="記錄 CMD 、能直接執行的命令、控制台快捷鍵">
@@ -266,7 +266,7 @@
         
           
   
-  <li class="menu-item menu-item-tags">
+  <li class="menu-item menu-item-tags menu-item-active">
     <a href="/tags/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>標籤</a>
 </li>
@@ -423,7 +423,7 @@
               
                 <span class="post-meta-item-text">更新於：</span>
               
-              <time title="更新於" itemprop="dateModified" datetime="2018-04-18T21:18:47+08:00">2018-04-18</time>
+              <time title="更新於" itemprop="dateModified" datetime="2018-04-26T23:22:24+08:00">2018-04-26</time>
             
           </span>
 
@@ -449,7 +449,7 @@
                 
                   <span class="post-meta-item-text">文章字數：</span>
                 
-                <span title="文章字數">652</span>
+                <span title="文章字數">674</span>
               
 
               
@@ -484,12 +484,140 @@
 
       
         <p>記錄 CMD 、能直接執行的命令、控制台快捷鍵<br><a id="more"></a></p>
-<h1 id="CMD"><a href="#CMD" class="headerlink" title="CMD"></a>CMD</h1><p>Cmd 用檔案總管開啟當前資料夾</p>
+<h2 id="CMD"><a href="#CMD" class="headerlink" title="CMD"></a>CMD</h2><p>Cmd 用檔案總管開啟當前資料夾</p>
 <p>start .<br>檔案總管用 Cmd 開啟當前資料夾</p>
-<p>shift + 右鍵<br>位置列輸入 cmd<br>Run<br>開啟指令為</p>
-<p>win + r<br>創建新捷徑</p>
-<p>rundll32.exe shell32.dll,Control_RunDLL ncpa.cpl<br>命令    功能<br>calc    小算盤<br>gpedit.msc    群組<br>mstsc    遠端桌面<br>services.msc    服務<br>control userpasswords2    自動登入<br>netplwiz    自動登入<br>lusrmgr.msc    本機使用者和群組<br>certmgr.msc    憑證管理<br>perfmon.msc    效能監視器<br>裝置管理員    devmgmt.msc<br>電腦管理    compmgmt.msc<br>winver    查看 windows 版本<br>群組原則物件編輯器    gpedit.msc<br>ftype    查看、設定副檔名的關聯<br>控制台    指令<br>ncpa.cpl    控制台：網路連線<br>sysdm.cpl    系統<br>appwize.cpl    新增程式<br>網際網路    inetcpl.cpl<br>電源選項    powercfg.cpl<br>資料夾選項    control folders</p>
-<h1 id="命令列工具"><a href="#命令列工具" class="headerlink" title="命令列工具"></a>命令列工具</h1><p>工具    功能<br>systeminfo    系統祥細訊息<br>net use    查看網路連線<br>net user    查看本機帳號<br>whoami    查看當前帳號狀態</p>
+<p>shift + 右鍵<br>位置列輸入 cmd</p>
+<p>創建新捷徑<br><figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">rundll32.exe shell32.dll,Control_RunDLL ncpa.cpl</div></pre></div></div></figure></p>
+<h2 id="Run"><a href="#Run" class="headerlink" title="Run"></a>Run</h2><p>開啟指令為<br><figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">win + r</div></pre></div></div></figure></p>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>calc</td>
+<td>小算盤</td>
+</tr>
+<tr>
+<td>gpedit.msc</td>
+<td>群組</td>
+</tr>
+<tr>
+<td>mstsc</td>
+<td>遠端桌面</td>
+</tr>
+<tr>
+<td>services.msc</td>
+<td>服務</td>
+</tr>
+<tr>
+<td>control userpasswords2</td>
+<td>自動登入</td>
+</tr>
+<tr>
+<td>netplwiz</td>
+<td>自動登入</td>
+</tr>
+<tr>
+<td>lusrmgr.msc</td>
+<td>本機使用者和群組</td>
+</tr>
+<tr>
+<td>certmgr.msc</td>
+<td>憑證管理</td>
+</tr>
+<tr>
+<td>perfmon.msc</td>
+<td>效能監視器</td>
+</tr>
+<tr>
+<td>devmgmt.msc</td>
+<td>裝置管理員</td>
+</tr>
+<tr>
+<td>compmgmt.msc</td>
+<td>電腦管理</td>
+</tr>
+<tr>
+<td>winver</td>
+<td>查看 windows 版本</td>
+</tr>
+<tr>
+<td>gpedit.msc</td>
+<td>群組原則物件編輯器</td>
+</tr>
+<tr>
+<td>ftype</td>
+<td>查看、設定副檔名的關聯</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>控制台</th>
+<th>指令</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ncpa.cpl</td>
+<td>控制台：網路連線</td>
+</tr>
+<tr>
+<td>sysdm.cpl</td>
+<td>系統</td>
+</tr>
+<tr>
+<td>appwize.cpl</td>
+<td>新增程式</td>
+</tr>
+<tr>
+<td>inetcpl.cpl</td>
+<td>網際網路</td>
+<td></td>
+</tr>
+<tr>
+<td>powercfg.cpl</td>
+<td>電源選項</td>
+<td></td>
+</tr>
+<tr>
+<td>control folders</td>
+<td>資料夾選項</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="命令列工具"><a href="#命令列工具" class="headerlink" title="命令列工具"></a>命令列工具</h2><table>
+<thead>
+<tr>
+<th>工具</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>systeminfo</td>
+<td>系統祥細訊息</td>
+</tr>
+<tr>
+<td>net use</td>
+<td>查看網路連線</td>
+</tr>
+<tr>
+<td>net user</td>
+<td>查看本機帳號</td>
+</tr>
+<tr>
+<td>whoami</td>
+<td>查看當前帳號狀態</td>
+</tr>
+</tbody>
+</table>
 
       
     </div>
@@ -636,7 +764,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">21</span>
+                    <span class="site-state-item-count">24</span>
                     <span class="site-state-item-name">文章</span>
                   </a>
                 </div>
@@ -740,7 +868,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#CMD"><span class="nav-number">1.</span> <span class="nav-text">CMD</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#命令列工具"><span class="nav-number">2.</span> <span class="nav-text">命令列工具</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#CMD"><span class="nav-number">1.</span> <span class="nav-text">CMD</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Run"><span class="nav-number">2.</span> <span class="nav-text">Run</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令列工具"><span class="nav-number">3.</span> <span class="nav-text">命令列工具</span></a></li></ol></div>
             
 
           </div>
@@ -756,19 +884,6 @@
           
         </div>
       
-
-      <!--
-        <script type="text/javascript" charset="utf-8" src="/js/tagcloud.js"></script>
-        <script type="text/javascript" charset="utf-8" src="/js/tagcanvas.js"></script>
-        <div class="widget-wrap">
-          <h3 class="widget-title">Tag Cloud</h3>
-          <div id="myCanvasContainer" class="widget tagcloud">
-            <canvas width="250" height="250" id="resCanvas" style="width=100%">
-              <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/APP/">APP</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Brower/">Brower</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CMD/">CMD</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/EIGRP/">EIGRP</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GFW/">GFW</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Git/">Git</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HEXO/">HEXO</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kali/">Kali</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/">Linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MIS/">MIS</a><span class="tag-list-count">8</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OVSDB/">OVSDB</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/RIP/">RIP</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SDN/">SDN</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tor/">Tor</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/V2Ray/">V2Ray</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/VPN/">VPN</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/VScode/">VScode</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vim/">Vim</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cmd/">cmd</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/crack/">crack</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/install/">install</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/windows/">windows</a><span class="tag-list-count">1</span></li></ul>
-            </canvas>
-          </div>
-        </div>
-      -->
 
     </div>
   </aside>
@@ -794,7 +909,7 @@
     
       <span class="post-meta-item-text">網站總字數：</span>
     
-    <span title="網站總字數">116k</span>
+    <span title="網站總字數">129k</span>
   
 
   
@@ -805,7 +920,7 @@
     
       <span class="post-meta-item-text">網站總閱讀時間：</span>
     
-    <span title="網站總閱讀時間">9:41</span>
+    <span title="網站總閱讀時間">10:44</span>
   
 </div>
 
