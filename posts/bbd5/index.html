@@ -138,18 +138,18 @@
 
 
 
-  <meta name="description" content="處理了非常久，總算找齊所有的問題點並成功做出該功能。">
-<meta name="keywords" content="Hexo">
+  <meta name="description" content="講通就需要念出來，記錄一下常用符號英文">
+<meta name="keywords" content="MIS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="HEXO添加複製功能">
-<meta property="og:url" content="https://ppundsh.github.io/posts/8e7e/index.html">
+<meta property="og:title" content="符號念法">
+<meta property="og:url" content="https://ppundsh.github.io/posts/bbd5/index.html">
 <meta property="og:site_name" content="Flymia 凡事用心之事">
-<meta property="og:description" content="處理了非常久，總算找齊所有的問題點並成功做出該功能。">
+<meta property="og:description" content="講通就需要念出來，記錄一下常用符號英文">
 <meta property="og:locale" content="zh-TW">
-<meta property="og:updated_time" content="2018-04-26T18:37:25.346Z">
+<meta property="og:updated_time" content="2018-04-29T17:56:01.881Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="HEXO添加複製功能">
-<meta name="twitter:description" content="處理了非常久，總算找齊所有的問題點並成功做出該功能。">
+<meta name="twitter:title" content="符號念法">
+<meta name="twitter:description" content="講通就需要念出來，記錄一下常用符號英文">
 
 
 
@@ -158,7 +158,7 @@
 
 
 
-  <link rel="canonical" href="https://ppundsh.github.io/posts/8e7e/">
+  <link rel="canonical" href="https://ppundsh.github.io/posts/bbd5/">
 
 
 
@@ -168,7 +168,7 @@
   };
 </script>
 
-  <title>HEXO添加複製功能 | Flymia 凡事用心之事</title>
+  <title>符號念法 | Flymia 凡事用心之事</title>
   
 
 
@@ -373,7 +373,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ppundsh.github.io/posts/8e7e/">
+    <link itemprop="mainEntityOfPage" href="https://ppundsh.github.io/posts/bbd5/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Flymia">
@@ -390,7 +390,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">HEXO添加複製功能</h2>
+          <h2 class="post-title" itemprop="name headline">符號念法</h2>
         
 
         <div class="post-meta">
@@ -402,28 +402,14 @@
               
                 <span class="post-meta-item-text">發表於</span>
               
-              <time title="創建於" itemprop="dateCreated datePublished" datetime="2018-04-26T09:00:51+08:00">2018-04-26</time>
+              <time title="創建於" itemprop="dateCreated datePublished" datetime="2018-04-30T01:19:26+08:00">2018-04-30</time>
             
 
             
             
               
-                
-              
             
 
-            
-              
-              <span class="post-meta-divider">|</span>
-              
-
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新於：</span>
-              
-              <time title="更新於" itemprop="dateModified" datetime="2018-04-27T02:37:25+08:00">2018-04-27</time>
             
           </span>
 
@@ -449,7 +435,7 @@
                 
                   <span class="post-meta-item-text">文章字數：</span>
                 
-                <span title="文章字數">6.3k</span>
+                <span title="文章字數">748</span>
               
 
               
@@ -463,7 +449,7 @@
                 
                   <span class="post-meta-item-text">閱讀時間&asymp;</span>
                 
-                <span title="閱讀時間">0:32</span>
+                <span title="閱讀時間">0:04</span>
               
             </div>
           
@@ -483,22 +469,198 @@
       
 
       
-        <p>處理了非常久，總算找齊所有的問題點並成功做出該功能。<br><a id="more"></a><br>本文取自於這邊<a href="https://www.ofind.cn/blog/HEXO/HEXO%E4%BC%98%E5%8C%96%E4%B9%8B%EF%BC%88%E4%BA%8C%EF%BC%89-%E6%B7%BB%E5%8A%A0%E5%A4%8D%E5%88%B6%E5%8A%9F%E8%83%BD.html" rel="external nofollow noopener noreferrer" target="_blank">HEXO優化之（二）-添加複製功能</a></p>
-<p>但有幾點不同，<code>custom.js</code>要修改以下幾點：</p>
-<ol>
-<li>原教學的 <code>clipboard.min.js</code> 是使用 1.7.1 版 <a class="btn" href="https://github.com/zenorocha/clipboard.js/releases/tag/v1.7.1 " rel="external nofollow noopener noreferrer" target="_blank"><i class="fa fa-fal fa-download" "=""></i></a>，若要用最新的 2.0.0 版<a class="btn" href="https://raw.githubusercontent.com/zenorocha/clipboard.js/v2.0.0/dist/clipboard.min.js " rel="external nofollow noopener noreferrer" target="_blank"><i class="fa fa-fal fa-download" "=""></i></a>，需要將 <code>var clipboard = new Clipboard(&#39;#copyBtn&#39;, {</code> 修改為 <code>var clipboard = new ClipboardJS(&#39;#copyBtn&#39;, {</code></li>
-<li><code>var $codeArea = $(&quot;figure table&quot;);</code><br> 改為<br> <code>var $codeArea = $(&quot;figure&quot;);</code></li>
-<li><code>$(&quot;.post-body&quot;).before(&#39;&lt;div id=&quot;copyBtn&quot; style=&quot;opacity: 0; position: absolute;top:0px;display: none;line-height: 1; font-size:1.5em&quot;&gt;&lt;span id=&quot;imgCopy&quot; &gt;&lt;i class=&quot;fa fa-paste fa-fw&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;span id=&quot;imgSuccess&quot; style=&quot;display: none;&quot;&gt;&lt;i class=&quot;fa fa-check-circle fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;&#39;);</code><br> 改為<br> <code>$(&quot;.post-body&quot;).before(&#39;&lt;div id=&quot;copyBtn&quot; style=&quot;opacity: 0; position: absolute;top:0px;left:0px;display: none;line-height: 1; font-size:1.5em&quot;&gt;&lt;span id=&quot;imgCopy&quot; &gt;&lt;i class=&quot;fa fa-paste fa-fw&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;span id=&quot;imgSuccess&quot; style=&quot;display: none;&quot;&gt;&lt;i class=&quot;fa fa-check-circle fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;&#39;);</code></li>
-<li><code>$copyBtn.css(&quot;left&quot;, -$copyBtn.width() - 3);</code><br> 改為<br> <code>$copyBtn.css(&quot;left&quot;,$(this).offset().left -$copyBtn.width() - 3);</code></li>
-</ol>
-<p>完整過程代碼如下：<br>保存文件 clipboard.min.js (壓縮檔的話是在 dist 資料夾內)至 <code>.\themes\next\source\lib\zclip\clipboard.min.js</code></p>
-<p>新建文件 custom.js 至 <code>.\themes\next\source\js\src\custom.js</code></p>
-<p>內容如下<br><figure class="highlight plain"><figcaption><span class="fileDir">file:~\themes\next\source\js\src\</span><span class="caption">custom</span><span class="suffix">.js</span></figcaption><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div></pre></div><div class="code"><pre><div class="line">//此函數用於創建複製按鈕</div><div class="line">function createCopyBtns() &#123;</div><div class="line marked">    var $codeArea = $(&quot;figure&quot;);</div><div class="line">    //查看頁面是否具有代碼區域，沒有代碼塊則不創建 複製按鈕</div><div class="line">    if ($codeArea.length &gt; 0) &#123;</div><div class="line">        //複製成功後將要干的事情</div><div class="line">        function changeToSuccess(item) &#123;</div><div class="line">             $imgOK = $(&quot;#copyBtn&quot;).find(&quot;#imgSuccess&quot;);</div><div class="line">                if ($imgOK.css(&quot;display&quot;) == &quot;none&quot;) &#123;</div><div class="line">                    $imgOK.css(&#123;</div><div class="line">                        opacity: 0,</div><div class="line">                        display: &quot;block&quot;</div><div class="line">                    &#125;);</div><div class="line">                    $imgOK.animate(&#123;</div><div class="line">                        opacity: 1</div><div class="line">                    &#125;, 1000);</div><div class="line">                    setTimeout(function() &#123;</div><div class="line">                        $imgOK.animate(&#123;</div><div class="line">                            opacity: 0</div><div class="line">                        &#125;, 2000);</div><div class="line">                    &#125;, 2000);</div><div class="line">                    setTimeout(function() &#123;</div><div class="line">                        $imgOK.css(&quot;display&quot;, &quot;none&quot;);</div><div class="line">                    &#125;, 4000);</div><div class="line">                &#125;;</div><div class="line">        &#125;;</div><div class="line">        //創建 全局複製按鈕，僅有一組。包含：複製按鈕，複製成功回應按鈕</div><div class="line">        //值得注意的是：1.按鈕默認隱藏，2.位置使用絕對位置 position: absolute; (position: fixed 也可以，需要修改代碼)</div><div class="line marked">        $(&quot;.post-body&quot;).before(&apos;&lt;div id=&quot;copyBtn&quot; style=&quot;opacity: 0; position: absolute;top:0px;left:0px;display: none;line-height: 1; font-size:1.5em&quot;&gt;&lt;span id=&quot;imgCopy&quot; &gt;&lt;i class=&quot;fa fa-paste fa-fw&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;span id=&quot;imgSuccess&quot; style=&quot;display: none;&quot;&gt;&lt;i class=&quot;fa fa-check-circle fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;&apos;);</div><div class="line">        //創建 複製 插件，綁定單機時間到 指定元素，支援JQuery</div><div class="line marked">        var clipboard = new ClipboardJS(&apos;#copyBtn&apos;, &#123;</div><div class="line">            target: function() &#123;</div><div class="line">                //返回需要複製的元素內容</div><div class="line">                return document.querySelector(&quot;[copyFlag]&quot;);</div><div class="line">            &#125;,</div><div class="line">            isSupported: function() &#123;</div><div class="line">                //支援複製內容</div><div class="line">                return document.querySelector(&quot;[copyFlag]&quot;);</div><div class="line">            &#125;</div><div class="line">        &#125;);</div><div class="line">        //複製成功事件綁定</div><div class="line">        clipboard.on(&apos;success&apos;,</div><div class="line">            function(e) &#123;</div><div class="line">                //清除內容被選擇狀態</div><div class="line">                e.clearSelection();</div><div class="line">                changeToSuccess(e);</div><div class="line">            &#125;);</div><div class="line">        //複製失敗綁定事件</div><div class="line">        clipboard.on(&apos;error&apos;,</div><div class="line">            function(e) &#123;</div><div class="line">                console.error(&apos;Action:&apos;, e.action);</div><div class="line">                console.error(&apos;Trigger:&apos;, e.trigger);</div><div class="line">            &#125;);</div><div class="line">        //滑鼠 在複製按鈕上滑動和離開後漸變顯示/隱藏效果</div><div class="line">        $(&quot;#copyBtn&quot;).hover(</div><div class="line">            function() &#123;</div><div class="line">                $(this).stop();</div><div class="line">                $(this).css(&quot;opacity&quot;, 1);</div><div class="line">            &#125;,</div><div class="line">            function() &#123;</div><div class="line">                $(this).animate(&#123;</div><div class="line">                    opacity: 0</div><div class="line">                &#125;, 2000);</div><div class="line">            &#125;</div><div class="line">        );</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">//感應滑鼠是否在代碼區</div><div class="line">$(&quot;figure&quot;).hover(</div><div class="line">    function() &#123;</div><div class="line">        //-------滑鼠活動在代碼塊內</div><div class="line">        //移除之前含有複製標誌代碼塊的 copyFlag</div><div class="line">        $(&quot;[copyFlag]&quot;).removeAttr(&quot;copyFlag&quot;);</div><div class="line">        //在新的（當前滑鼠所在代碼區）代碼塊插入標誌：copyFlag</div><div class="line">        $(this).find(&quot;.code&quot;).attr(&quot;copyFlag&quot;, 1);</div><div class="line">        //獲取複製按鈕</div><div class="line">        $copyBtn = $(&quot;#copyBtn&quot;);</div><div class="line">        if ($copyBtn.lenght != 0) &#123;</div><div class="line">            //獲取到按鈕的前提下進行一下操作</div><div class="line">            //停止按鈕動畫效果</div><div class="line">            //設置為 顯示狀態</div><div class="line">            //修改 複製按鈕 位置到 當前代碼塊開始部位</div><div class="line">            //設置代碼塊 左側位置</div><div class="line">            $copyBtn.stop();</div><div class="line">            $copyBtn.css(&quot;opacity&quot;, 0.8);</div><div class="line">            $copyBtn.css(&quot;display&quot;, &quot;block&quot;);</div><div class="line">            $copyBtn.css(&quot;top&quot;, parseInt($copyBtn.css(&quot;top&quot;)) + $(this).offset().top - $copyBtn.offset().top + 3);</div><div class="line marked">            $copyBtn.css(&quot;left&quot;,$(this).offset().left -$copyBtn.width() - 3);</div><div class="line">        &#125;</div><div class="line">    &#125;,</div><div class="line">    function() &#123;</div><div class="line">        //-------滑鼠離開代碼塊</div><div class="line">        //設置複製按鈕可見度 2秒內到 0</div><div class="line">        $(&quot;#copyBtn&quot;).animate(&#123;</div><div class="line">            opacity: 0</div><div class="line">        &#125;, 2000);</div><div class="line">    &#125;</div><div class="line">);</div><div class="line">//頁面載入完成後，創建複製按鈕</div><div class="line">$(document).ready(function() &#123;</div><div class="line">  createCopyBtns();</div><div class="line">&#125;);</div></pre></div></div></figure></p>
-<p>新建文件 custom.swig 至 <code>.\themes\next\layout_custom\custom.swig</code></p>
-<figure class="highlight plain"><figcaption><span class="fileDir">file:~\themes\next\layout\_custom\</span><span class="caption">custom</span><span class="suffix">.swig</span></figcaption><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></div><div class="code"><pre><div class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;/lib/zclip/clipboard.min.js&quot;&gt;&lt;/script&gt;	</div><div class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;/js/src/custom.js&quot;&gt;&lt;/script&gt;</div></pre></div></div></figure>
-<p>修改文件 _layout.swig 位置<code>.\themes\next\layout_layout.swig</code><br>在&lt;\/body>上方插入<br><figure class="highlight plain"><figcaption><span class="fileDir">file:~themes\next\</span><span class="caption">layout_layout</span><span class="suffix">.swig</span></figcaption><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">&#123;% include &apos;_custom/custom.swig&apos; %&#125;</div></pre></div></div></figure></p>
-<hr>
-<p>再次感謝作者 zhuzhuxia 的創作！</p>
+        <p>講通就需要念出來，記錄一下常用符號英文<br><a id="more"></a></p>
+<table>
+<thead>
+<tr>
+<th>符號</th>
+<th>英文</th>
+<th>中文</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#124;</td>
+<td>pipeline/vertical bar</td>
+<td>管線/垂直號</td>
+</tr>
+<tr>
+<td>@</td>
+<td>at</td>
+<td></td>
+</tr>
+<tr>
+<td>#</td>
+<td>hashtag/Number sign</td>
+<td>井字號</td>
+</tr>
+<tr>
+<td>/</td>
+<td>slash</td>
+<td>斜線</td>
+</tr>
+<tr>
+<td>\</td>
+<td>backslash</td>
+<td>反斜線</td>
+</tr>
+<tr>
+<td>~</td>
+<td>tilde</td>
+<td>波浪號</td>
+</tr>
+<tr>
+<td>-</td>
+<td>hyphen/minus</td>
+<td>連字號；減號</td>
+</tr>
+<tr>
+<td>ー</td>
+<td>dash</td>
+<td>破折號</td>
+</tr>
+<tr>
+<td>_</td>
+<td>underline</td>
+<td>底線</td>
+</tr>
+<tr>
+<td>.</td>
+<td>dot</td>
+<td>點</td>
+</tr>
+<tr>
+<td>&amp;</td>
+<td>ampersand/and</td>
+<td>以及</td>
+</tr>
+<tr>
+<td>*</td>
+<td>asterisk</td>
+<td></td>
+</tr>
+<tr>
+<td>,</td>
+<td>comma</td>
+<td>逗號</td>
+</tr>
+<tr>
+<td>‘</td>
+<td>apostrophe</td>
+<td>撇號</td>
+</tr>
+<tr>
+<td>〝</td>
+<td>quote</td>
+<td>雙引號</td>
+</tr>
+<tr>
+<td>、</td>
+<td>single quote</td>
+<td>號引號</td>
+</tr>
+<tr>
+<td>“</td>
+<td>ditto</td>
+<td>雙引號</td>
+</tr>
+<tr>
+<td>&#124;&#124;</td>
+<td>parallel</td>
+<td>平行</td>
+</tr>
+<tr>
+<td>→</td>
+<td>arrow</td>
+<td>箭號；參加號</td>
+</tr>
+<tr>
+<td>:</td>
+<td>colon</td>
+<td>冒號</td>
+</tr>
+<tr>
+<td>;</td>
+<td>semi-colon</td>
+<td>分號</td>
+</tr>
+<tr>
+<td>…</td>
+<td>ellipsis</td>
+<td>刪節號</td>
+</tr>
+<tr>
+<td>()</td>
+<td>parentheses/round brackets</td>
+<td>小括號</td>
+</tr>
+<tr>
+<td>[]</td>
+<td>brackets/squard brackets</td>
+<td>中括號</td>
+</tr>
+<tr>
+<td>{}</td>
+<td>braces/curly brackets</td>
+<td>大括號</td>
+</tr>
+<tr>
+<td>&lt;&gt;</td>
+<td>angle brackets</td>
+<td>尖括號</td>
+</tr>
+<tr>
+<td>《》</td>
+<td>french quotes</td>
+<td>書名號</td>
+</tr>
+<tr>
+<td>!</td>
+<td>exclamation point</td>
+<td>驚歎</td>
+</tr>
+<tr>
+<td>^</td>
+<td>caret</td>
+<td>脫字元號/小三角</td>
+</tr>
+<tr>
+<td>+</td>
+<td>plus</td>
+<td>加號</td>
+</tr>
+<tr>
+<td>=</td>
+<td>equals</td>
+<td>等號</td>
+</tr>
+<tr>
+<td>∞</td>
+<td>infinity</td>
+<td>無限大</td>
+</tr>
+<tr>
+<td>∵</td>
+<td>since/beacus</td>
+<td>因為</td>
+</tr>
+<tr>
+<td>∴</td>
+<td>hence</td>
+<td>所以</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>greater than</td>
+<td>大於</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>less than</td>
+<td>小兩</td>
+</tr>
+</tbody>
+</table>
 
       
     </div>
@@ -526,7 +688,7 @@
     <strong>作者： </strong>Flymia</li>
   <li class="post-copyright-link">
     <strong>文章連結：</strong>
-    <a href="https://ppundsh.github.io/posts/8e7e/" title="HEXO添加複製功能">https://ppundsh.github.io/posts/8e7e/</a>
+    <a href="https://ppundsh.github.io/posts/bbd5/" title="符號念法">https://ppundsh.github.io/posts/bbd5/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版權聲明： </strong>本網誌所有文章除特別聲明外，均採用 <a rel="external nofollow noopener noreferrer" href="http://creativecommons.org/licenses/by-nc-sa/3.0/tw/" target="_blank">創用 CC 姓名標示-非商業性-相同方式分享 3.0 台灣 授權條款</a> 授權<a rel="external nofollow noopener noreferrer" href="http://creativecommons.org/licenses/by-nc-sa/3.0/tw/" target="_blank"><img alt="創用 CC 授權條款" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/3.0/tw/88x31.png" align="right"></a> </li>
@@ -539,7 +701,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Hexo/" rel="tag"><i class="fa fa-tag"></i> Hexo</a>
+            <a href="/tags/MIS/" rel="tag"><i class="fa fa-tag"></i> MIS</a>
           
         </div>
       
@@ -552,8 +714,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/posts/b545/" rel="next" title="國際海纜">
-                <i class="fa fa-chevron-left"></i> 國際海纜
+              <a href="/posts/140e/" rel="next" title="Kali 安裝指令">
+                <i class="fa fa-chevron-left"></i> Kali 安裝指令
               </a>
             
           </div>
@@ -561,10 +723,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/posts/c073/" rel="prev" title="在 Hexo new 時自動用 VS Code 開啟新建文章">
-                在 Hexo new 時自動用 VS Code 開啟新建文章 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>

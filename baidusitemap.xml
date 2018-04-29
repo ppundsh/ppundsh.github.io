@@ -4,6 +4,40 @@
 
     
   <url>
+    <loc>https://ppundsh.github.io/posts/bbd5/</loc>
+    <lastmod>2018-04-29T17:56:01.881Z</lastmod>
+    <data>
+        <display>
+        <title>符號念法</title>
+        <pubTime>2018-04-29T17:19:26.000Z</pubTime>
+        
+        <tag>MIS</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ppundsh.github.io/posts/140e/</loc>
+    <lastmod>2018-04-29T17:49:12.509Z</lastmod>
+    <data>
+        <display>
+        <title>Kali 安裝指令</title>
+        <pubTime>2018-04-29T16:30:58.000Z</pubTime>
+        
+        <tag>Linux</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://ppundsh.github.io/posts/cdf3/</loc>
     <lastmod>2018-04-27T06:44:48.752Z</lastmod>
     <data>
@@ -374,9 +408,9 @@
         <title>Cmder 筆記</title>
         <pubTime>2018-04-12T18:37:06.000Z</pubTime>
         
-        <tag>MIS</tag>
-         
         <tag>cmd</tag>
+         
+        <tag>MIS</tag>
          
         <tag>install</tag>
          

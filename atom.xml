@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ppundsh.github.io/"/>
-  <updated>2018-04-27T06:44:48.752Z</updated>
+  <updated>2018-04-29T17:56:01.881Z</updated>
   <id>https://ppundsh.github.io/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>符號念法</title>
+    <link href="https://ppundsh.github.io/posts/bbd5/"/>
+    <id>https://ppundsh.github.io/posts/bbd5/</id>
+    <published>2018-04-29T17:19:26.000Z</published>
+    <updated>2018-04-29T17:56:01.881Z</updated>
+    
+    <content type="html"><![CDATA[<p>講通就需要念出來，記錄一下常用符號英文<br><a id="more"></a></p><table><thead><tr><th>符號</th><th>英文</th><th>中文</th></tr></thead><tbody><tr><td>&#124;</td><td>pipeline/vertical bar</td><td>管線/垂直號</td></tr><tr><td>@</td><td>at</td><td></td></tr><tr><td>#</td><td>hashtag/Number sign</td><td>井字號</td></tr><tr><td>/</td><td>slash</td><td>斜線</td></tr><tr><td>\</td><td>backslash</td><td>反斜線</td></tr><tr><td>~</td><td>tilde</td><td>波浪號</td></tr><tr><td>-</td><td>hyphen/minus</td><td>連字號；減號</td></tr><tr><td>ー</td><td>dash</td><td>破折號</td></tr><tr><td>_</td><td>underline</td><td>底線</td></tr><tr><td>.</td><td>dot</td><td>點</td></tr><tr><td>&amp;</td><td>ampersand/and</td><td>以及</td></tr><tr><td>*</td><td>asterisk</td><td></td></tr><tr><td>,</td><td>comma</td><td>逗號</td></tr><tr><td>‘</td><td>apostrophe</td><td>撇號</td></tr><tr><td>〝</td><td>quote</td><td>雙引號</td></tr><tr><td>、</td><td>single quote</td><td>號引號</td></tr><tr><td>“</td><td>ditto</td><td>雙引號</td></tr><tr><td>&#124;&#124;</td><td>parallel</td><td>平行</td></tr><tr><td>→</td><td>arrow</td><td>箭號；參加號</td></tr><tr><td>:</td><td>colon</td><td>冒號</td></tr><tr><td>;</td><td>semi-colon</td><td>分號</td></tr><tr><td>…</td><td>ellipsis</td><td>刪節號</td></tr><tr><td>()</td><td>parentheses/round brackets</td><td>小括號</td></tr><tr><td>[]</td><td>brackets/squard brackets</td><td>中括號</td></tr><tr><td>{}</td><td>braces/curly brackets</td><td>大括號</td></tr><tr><td>&lt;&gt;</td><td>angle brackets</td><td>尖括號</td></tr><tr><td>《》</td><td>french quotes</td><td>書名號</td></tr><tr><td>!</td><td>exclamation point</td><td>驚歎</td></tr><tr><td>^</td><td>caret</td><td>脫字元號/小三角</td></tr><tr><td>+</td><td>plus</td><td>加號</td></tr><tr><td>=</td><td>equals</td><td>等號</td></tr><tr><td>∞</td><td>infinity</td><td>無限大</td></tr><tr><td>∵</td><td>since/beacus</td><td>因為</td></tr><tr><td>∴</td><td>hence</td><td>所以</td></tr><tr><td>&gt;</td><td>greater than</td><td>大於</td></tr><tr><td>&lt;</td><td>less than</td><td>小兩</td></tr></tbody></table>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;講通就需要念出來，記錄一下常用符號英文&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="MIS" scheme="https://ppundsh.github.io/tags/MIS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Kali 安裝指令</title>
+    <link href="https://ppundsh.github.io/posts/140e/"/>
+    <id>https://ppundsh.github.io/posts/140e/</id>
+    <published>2018-04-29T16:30:58.000Z</published>
+    <updated>2018-04-29T17:49:12.509Z</updated>
+    
+    <content type="html"><![CDATA[<p>重裝後的備忘<br><a id="more"></a><br>安裝 NTP</p><figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></div><div class="code"><pre><div class="line">apt-get install ntp</div><div class="line"></div><div class="line"><span class="comment">#vim etc/ntp.conf</span></div><div class="line">server time.stdtime.gov.tw</div><div class="line">server clock.stdtime.gov.tw</div><div class="line"></div><div class="line">ntpdate time.stdtime.gov.tw</div></pre></div></div></figure><p>更改時區<br><figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">dpkg-reconfigure tzdata</div></pre></div></div></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;重裝後的備忘&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="https://ppundsh.github.io/tags/Linux/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo 文章編輯技巧-流程圖、按扭、分頁、小圖示</title>
@@ -225,26 +265,6 @@
   </entry>
   
   <entry>
-    <title>翻牆歷史</title>
-    <link href="https://ppundsh.github.io/posts/ffce/"/>
-    <id>https://ppundsh.github.io/posts/ffce/</id>
-    <published>2018-04-17T17:04:38.000Z</published>
-    <updated>2018-04-18T13:18:47.291Z</updated>
-    
-    <content type="html"><![CDATA[<p>看到令人懷念的文章，感謝此文作者，後續有機會我會再編輯下去。<br><a id="more"></a></p><p>來源：<a href="https://blog.yandere.moe/moe/gfw-vs-proxy/97.html" rel="external nofollow noopener noreferrer" target="_blank">牆與梯的較量——那些年我們一起用過的翻牆手段</a></p><p>在某個 Telegram 群討論到了現在很多 10 多歲的年輕人都學會翻牆了，想起我小的時候，大概也是在 10 歲左右第一次翻牆。作為經歷過多次牆與梯的升級的網蟲，把這個寫下來也算是一個對童年的回憶了……</p><p>HTTP 代理 &amp; SOCKS 代理年代：</p><p>早期的牆遮罩網站是通過 IP 位址和 DNS 污染進行定點遮罩，那時候被遮罩的網站也沒像現在這麼多。大部分被遮罩的都是法輪功的網站，一般人也用不到。那個時候可以很容易的通過 HTTP 代理進行審查規避。那個時候有一款瀏覽器不知道大家聽說過沒，叫 MyIE，有一個很方便的切換代理功能，由於作者是法輪功成員，他開發的瀏覽器的主頁也有提供很多 HTTP 代理來翻牆用（BTW：根據網路上的傳言，作者已經死於 2002.5.13。）不過根據這個軟件開發的日期以及維基百科，可能在上個世紀 90 年代就已經有牆了。不過我第一次上網是 2004 年，比這更之前的我是不知道了，歡迎有更老網齡的網蟲在評論區回憶一下？</p><p>早期的翻牆軟件——代理獵手（Proxy Hunter）：</p><p>確切地說這個並不能被稱為翻牆軟件，這只是一個幫助你搜索可用 HTTP 代理的軟件，利用搜索出來的 HTTP 代理來完成翻牆操作。</p><p>網頁代理：</p><p>相信這個大家也用過，一個網站，把網址輸入進去就能透過代理訪問被遮罩的網站了。</p><p>現在情況：</p><p>在不知道哪次的 GFW 升級過程中，HTTP 代理和 SOCKS 代理已經完全可以被檢測（畢竟沒有加密）並阻斷，於是這種翻牆手段只能留在我們的回憶中了。。。</p><p>至於網頁代理，聰明的開發者想到了一個方法——在發送資料包之前將網頁內容 BASE64 編碼了一下，這樣 GFW 就無法探測被封鎖的關鍵字了，這個方法在 GFW 的又一次升級之後而成為了歷史…</p><p>修改 DNS 時代：</p><p>同樣是在牆的早期階段，GFW 還沒有解析 DNS 資料包的能力，而且那時候 ISP 也比較流氓。比如在你訪問一個不存在的域名的時候，（北京地區）聯通會把你劫持到 “北京寬帶網 BBN” 這個網站的一個廣告頁面，然後展示給你一些很黃很暴力的廣告。那時候就有人提議修改 DNS，不再使用 ISP 提供的 DNS。</p><p>208.67.222.222 / 208.67.220.220</p><p>8.8.8.8 / 8.8.4.4</p><p>這兩組神聖的 IP 還有人記得麼？修改用境外的 DNS 之後也起到了一定的翻牆效果。</p><p>現在情況：</p><p>GFW 的某次升級之後可以解析並篡改 DNS 包了，於是此方法失效，淡出了人們的視線中…</p><p>自由門 &amp; 無界瀏覽時代：</p><p>之後不知道從什麼時候開始，各位的郵箱裡就經常收到一個名為《退 X 保平安》的郵件，裡面附帶了一個自由門軟件。於是自由門這個翻牆軟件開始流行了起來。（題外話：是不是你的第一次翻牆就是用的自由門？）</p><p>無界瀏覽和自由門一樣，都是法輪功組織開發的</p><p>當然這個軟件不僅僅只有中國用戶在使用，在其他國家如：伊朗、敘利亞、阿聯酋等有網路審查國家的用戶也有在用。</p><p>現在情況：</p><p>仍然處於活躍開發過程中，但是身邊用的人基本沒有了，這個軟件自帶內牆（遮罩法輪功組織不喜歡的網站、色情網站等）、不開源、連接不穩定而飽受詬病而漸漸的消失在了人們的記憶中…</p><p>HTTPS 代理年代：</p><p>HTTPS 代理，比 HTTP 代理多了個 S，代表的東西可就大不同了。那時候的 GFW 是無法識別 SSL 流量的，所以網頁代理以及 HTTP 代理都在這個 S 的光環下復活了。</p><p>現在情況：</p><p>仍然可用，比如石斑魚的翻牆軟件就是利用 squid 產生一個 HTTPS 代理進行翻牆的，網頁代理也藏在加密的 HTTPS 之後，這對 GFW 的維護工作產生了不利的影響，因為不像 HTTP 那樣可以直接獲取到內容。不過在某次的 GFW 升級之後，特徵比較明顯的 HTTPS 代理被 active probe 檢測到而遮罩，只剩下那些藏在子目錄的網頁代理以及增加了認證（不管是證書認證還是密碼認證）的 HTTPS 代理可用…</p><p>修改 hosts 文件年代：</p><p>在上面提到的修改 DNS 規避審查的方法已經無效了，又有別有用心的群眾找到了一些網站可用的 IP，並修改到 hosts 文件進行翻牆。這種方法實際是鑽了個 GFW 沒有發現這些 IP 的空子。</p><p>現在情況：</p><p>事實上這個方法輝煌了 2 次，第一次是把網站的 IP 放到 hosts 裡然後通過 HTTPS 訪問，之後 GFW 以主動收集 IP 並遮罩的方法廢掉了此方法。第二次是 CDN 的普及，很多網站用了如 CloudFlare 的 CDN，一個 IP 被封了，可以 hosts 到另一個 CloudFlare 的 IP 然後以 HTTPS 繼續訪問。隨後在 GFW 的某次升級後可以檢測到證書 SNI 並阻斷之後淡出了人們的視線…</p><p>PPTP 年代：</p><p>Windows 和 iOS 等系統自帶支援的 VPN 協定——PPTP。可以說是最便捷的方式了，不用下載額外的軟件，只需要一個 IP、用戶名、密碼就可以翻牆。不過這麼便捷的翻牆軟件朝廷肯定是看不下去的啦。。。</p><p>現在情況：</p><p>PPTP 已經徹底被干擾，無論你怎麼設置都是連接不上的哦，PPTP 實在是死的不能再死了，而且加密強度也不高，而漸漸的被人們所遺忘…</p><p>SSH 翻牆年代：</p><p>不知道從什麼時候開始，各路折騰 VPS 的折騰黨就猛然發現：SSH 可不僅僅是安全管理伺服器的工具，更可以用於翻牆。</p><p>於是 SSH 翻牆的方法在一瞬間火了起來。</p><p>ssh -qTfnN -D 7070 <a href="mailto:fq@blog.yandere.moe" rel="external nofollow noopener noreferrer" target="_blank">fq@blog.yandere.moe</a> &lt;– 這是我學會的第一句比較長的 linux 命令</p><p>現在情況：</p><p>在某次的 GFW 升級後，可以根據流量大小識別你是在管理伺服器還是在翻牆。之後，那時候還各種百度谷歌搜索免費 SSH 賬號和國外的提供免費空間 + SSH 的平台，翻牆圈子裡互相幫助共用 SSH 賬號的場景就一去不復返了…</p><p>賽風年代：</p><p>賽風是多倫多大學公民實驗室開發的一款開源翻牆軟件，基本原理就是利用打了混淆補丁的 SSH 進行翻牆。發郵件給賽風的郵箱或者去官網下載就能獲得該軟件了。</p><p>(圖為舊版賽風)</p><p>支援很多國家的伺服器</p><p>現在情況：</p><p>仍然可用，速度一般，比較穩定，身邊很多人在用這個免費且開源的翻牆軟件。客官不妨下一份留作備用？</p><p>西廂計畫：</p><p>這個可以說是真正的翻牆軟件而非代理軟件，因為這款軟件並沒有使用任何代理伺服器進行翻牆。相反，這個軟件的開發人員發現了牆在編寫的時候的一些漏洞，並利用這個漏洞翻牆。</p><p>現在情況：</p><p>由於西廂計畫宗旨是說明這個漏洞，而不是一款可以大規模使用的翻牆軟件，所以使用的人很少，而且需要懂一些 Linux 才可以使它工作。在某次的 GFW 核心模組升級之後失效。</p><p>GoAgent、XXNET 翻牆：</p><p>GoAgent 是一個可以運行在雲平台上的代理軟件，大多數用在 Google Appspot 上，也是很老牌的。那時候 Google 還沒有被遮罩，很多人申請一堆 appspot 然後 GoAgent 負載均衡翻牆，然後小圈子裡共用高速的 IP 位址。然後有了另一個 fork 叫 XXNET，自帶掃瞄 IP 的功能以及集成了好心人提供的節點，也是基於 GoAgent 的。</p><p>現在情況：</p><p>隨著 Google 所有 IP 被 GFW 河蟹，這種方法也消失在了歷史的長河中。</p><p>Lantern、FireFly、Meek 年代：</p><p>自從很多大型服務上了 CDN 業務（Amazon、Azure 等），一群充滿研究精神的人發明了一個新的方法 “依附的自由（Collateral Freedom）”，通過將目標位址放入 CDN 服務的 Host 頭中，GFW 只能檢測到訪問了 CDN，而無法檢測到真正的目標位址。而很多網站都在使用 CDN，無法將所有的 CDN 都牆了。</p><p>目前使用本方法的：Lantern、FireFly、Tor Browser – Meek</p><p>fqrouter 翻牆：</p><p>fqrouter，顧名思義 翻牆路由器。是一個在 Android 平台的翻牆軟件，使用 GoAgent 進行翻牆。就連人民日報記者都在用這款軟件。</p><p>現在情況：</p><p>其作者在 Twitter 上宣佈停止開發 fqrouter 了。感謝 fqrouter 作者為翻牆事業作出的貢獻：）</p><p>OpenVPN 年代：</p><p>牆再怎麼升級也擋不住嚮往自由的人們，於是開源軟件 OpenVPN 又成為翻牆的主力軍。OpenVPN 支援高強度的加密，不過就是特徵太明顯了，你看，又被遮罩了。。。</p><p>現在情況：</p><p>差不多已經沒辦法用了，因為特徵是在太明顯了，GFW 很輕鬆就會探測到 OpenVPN 伺服器然後加以封鎖。不過通過修改配置文件或加混淆補丁等方法還是可以用的。</p><p>Cisco AnyConnect 年代：</p><p>雖然 AnyConnect 和 OpenVPN 一樣，有著很明顯的特徵，但是 AnyConnect 被很多跨國大公司所使用，所以 GFW 也不敢那麼草率的遮罩掉 AnyConnect。也是一種 “依附的自由”</p><p>現在情況：</p><p>截至目前仍然可用，不過配置起來太麻煩。少數技術流會用這個翻牆…</p><p>VPNGate 年代：</p><p>說到 VPNGate，不得不提到 SoftEther VPN，很早之前這個 SoftEther 提供一個日本的學術 VPN，當然在天朝就是用於翻牆了。可能是受到了 SoftEther 的啟發，VPNGate 這個軟件被日本築波大學開發了出來，準確地說 VPNGate 是 SoftEther VPN 的一個插件，用了 SoftEther VPN 的 HTTPS 流量模仿。</p><p>現在情況：</p><p>在時斷時續中仍然堅挺，可以作為備用使用。不過要記得更新為最新版本哦。</p><p>後起之秀——Shadowsocks、V2Ray、ShadowsocksR、ShadowsocksRR…</p><p>Shadowsocks：相信大家都不陌生，作者 clowwindy 是全國首例因為開發翻牆軟件被喝茶的。之後專案交由另外的人維護。（向 clowwindy 致敬）</p><p>V2Ray：在 Shadowsocks 作者被喝茶之後由一名在國外的華裔程式員開發，目的是翻越防火長城，是一個定製性很高的翻牆軟件，算是一個 “翻牆框架”。基於這個框架你可以開發出屬於自己的翻牆協定。目前支援 VMess 協定以及 Shadowsocks 協定、支援流量混淆、支援 KCP。就是配置起來麻煩點，但是配置好之後很好用。</p><p>ShadowsocksR(R)：是一個 Shadowsocks 的 fork，作者說 ShadowsocksR 的目的是在於加強混淆以應對 QoS。ShadowsocksRR 是在 ShadowsocksR 作者停止更新之後的另一個 fork，目前觀望中…</p><p>結尾：</p><p>如果有發現有缺少的在記憶中的翻牆軟件可以留言補充哦。</p><p>翻牆的時候不要忘記那些曾經為了自由的網路而默默付出的人們</p><p>即使再高的牆也阻止不了追求自由的人們，希望我們能看到真正的互聯網。</p><p>Across the Great Wall we can reach every corner in the world.</p><p>1.HTTPS 代理也曾很流行，直到 GFW 能是別 SNI 之後才消停。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;看到令人懷念的文章，感謝此文作者，後續有機會我會再編輯下去。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="GFW" scheme="https://ppundsh.github.io/tags/GFW/"/>
-    
-  </entry>
-  
-  <entry>
     <title>微軟開發的工具</title>
     <link href="https://ppundsh.github.io/posts/1bae/"/>
     <id>https://ppundsh.github.io/posts/1bae/</id>
@@ -282,6 +302,26 @@
     
     
       <category term="MIS" scheme="https://ppundsh.github.io/tags/MIS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>翻牆歷史</title>
+    <link href="https://ppundsh.github.io/posts/ffce/"/>
+    <id>https://ppundsh.github.io/posts/ffce/</id>
+    <published>2018-04-17T17:04:38.000Z</published>
+    <updated>2018-04-18T13:18:47.291Z</updated>
+    
+    <content type="html"><![CDATA[<p>看到令人懷念的文章，感謝此文作者，後續有機會我會再編輯下去。<br><a id="more"></a></p><p>來源：<a href="https://blog.yandere.moe/moe/gfw-vs-proxy/97.html" rel="external nofollow noopener noreferrer" target="_blank">牆與梯的較量——那些年我們一起用過的翻牆手段</a></p><p>在某個 Telegram 群討論到了現在很多 10 多歲的年輕人都學會翻牆了，想起我小的時候，大概也是在 10 歲左右第一次翻牆。作為經歷過多次牆與梯的升級的網蟲，把這個寫下來也算是一個對童年的回憶了……</p><p>HTTP 代理 &amp; SOCKS 代理年代：</p><p>早期的牆遮罩網站是通過 IP 位址和 DNS 污染進行定點遮罩，那時候被遮罩的網站也沒像現在這麼多。大部分被遮罩的都是法輪功的網站，一般人也用不到。那個時候可以很容易的通過 HTTP 代理進行審查規避。那個時候有一款瀏覽器不知道大家聽說過沒，叫 MyIE，有一個很方便的切換代理功能，由於作者是法輪功成員，他開發的瀏覽器的主頁也有提供很多 HTTP 代理來翻牆用（BTW：根據網路上的傳言，作者已經死於 2002.5.13。）不過根據這個軟件開發的日期以及維基百科，可能在上個世紀 90 年代就已經有牆了。不過我第一次上網是 2004 年，比這更之前的我是不知道了，歡迎有更老網齡的網蟲在評論區回憶一下？</p><p>早期的翻牆軟件——代理獵手（Proxy Hunter）：</p><p>確切地說這個並不能被稱為翻牆軟件，這只是一個幫助你搜索可用 HTTP 代理的軟件，利用搜索出來的 HTTP 代理來完成翻牆操作。</p><p>網頁代理：</p><p>相信這個大家也用過，一個網站，把網址輸入進去就能透過代理訪問被遮罩的網站了。</p><p>現在情況：</p><p>在不知道哪次的 GFW 升級過程中，HTTP 代理和 SOCKS 代理已經完全可以被檢測（畢竟沒有加密）並阻斷，於是這種翻牆手段只能留在我們的回憶中了。。。</p><p>至於網頁代理，聰明的開發者想到了一個方法——在發送資料包之前將網頁內容 BASE64 編碼了一下，這樣 GFW 就無法探測被封鎖的關鍵字了，這個方法在 GFW 的又一次升級之後而成為了歷史…</p><p>修改 DNS 時代：</p><p>同樣是在牆的早期階段，GFW 還沒有解析 DNS 資料包的能力，而且那時候 ISP 也比較流氓。比如在你訪問一個不存在的域名的時候，（北京地區）聯通會把你劫持到 “北京寬帶網 BBN” 這個網站的一個廣告頁面，然後展示給你一些很黃很暴力的廣告。那時候就有人提議修改 DNS，不再使用 ISP 提供的 DNS。</p><p>208.67.222.222 / 208.67.220.220</p><p>8.8.8.8 / 8.8.4.4</p><p>這兩組神聖的 IP 還有人記得麼？修改用境外的 DNS 之後也起到了一定的翻牆效果。</p><p>現在情況：</p><p>GFW 的某次升級之後可以解析並篡改 DNS 包了，於是此方法失效，淡出了人們的視線中…</p><p>自由門 &amp; 無界瀏覽時代：</p><p>之後不知道從什麼時候開始，各位的郵箱裡就經常收到一個名為《退 X 保平安》的郵件，裡面附帶了一個自由門軟件。於是自由門這個翻牆軟件開始流行了起來。（題外話：是不是你的第一次翻牆就是用的自由門？）</p><p>無界瀏覽和自由門一樣，都是法輪功組織開發的</p><p>當然這個軟件不僅僅只有中國用戶在使用，在其他國家如：伊朗、敘利亞、阿聯酋等有網路審查國家的用戶也有在用。</p><p>現在情況：</p><p>仍然處於活躍開發過程中，但是身邊用的人基本沒有了，這個軟件自帶內牆（遮罩法輪功組織不喜歡的網站、色情網站等）、不開源、連接不穩定而飽受詬病而漸漸的消失在了人們的記憶中…</p><p>HTTPS 代理年代：</p><p>HTTPS 代理，比 HTTP 代理多了個 S，代表的東西可就大不同了。那時候的 GFW 是無法識別 SSL 流量的，所以網頁代理以及 HTTP 代理都在這個 S 的光環下復活了。</p><p>現在情況：</p><p>仍然可用，比如石斑魚的翻牆軟件就是利用 squid 產生一個 HTTPS 代理進行翻牆的，網頁代理也藏在加密的 HTTPS 之後，這對 GFW 的維護工作產生了不利的影響，因為不像 HTTP 那樣可以直接獲取到內容。不過在某次的 GFW 升級之後，特徵比較明顯的 HTTPS 代理被 active probe 檢測到而遮罩，只剩下那些藏在子目錄的網頁代理以及增加了認證（不管是證書認證還是密碼認證）的 HTTPS 代理可用…</p><p>修改 hosts 文件年代：</p><p>在上面提到的修改 DNS 規避審查的方法已經無效了，又有別有用心的群眾找到了一些網站可用的 IP，並修改到 hosts 文件進行翻牆。這種方法實際是鑽了個 GFW 沒有發現這些 IP 的空子。</p><p>現在情況：</p><p>事實上這個方法輝煌了 2 次，第一次是把網站的 IP 放到 hosts 裡然後通過 HTTPS 訪問，之後 GFW 以主動收集 IP 並遮罩的方法廢掉了此方法。第二次是 CDN 的普及，很多網站用了如 CloudFlare 的 CDN，一個 IP 被封了，可以 hosts 到另一個 CloudFlare 的 IP 然後以 HTTPS 繼續訪問。隨後在 GFW 的某次升級後可以檢測到證書 SNI 並阻斷之後淡出了人們的視線…</p><p>PPTP 年代：</p><p>Windows 和 iOS 等系統自帶支援的 VPN 協定——PPTP。可以說是最便捷的方式了，不用下載額外的軟件，只需要一個 IP、用戶名、密碼就可以翻牆。不過這麼便捷的翻牆軟件朝廷肯定是看不下去的啦。。。</p><p>現在情況：</p><p>PPTP 已經徹底被干擾，無論你怎麼設置都是連接不上的哦，PPTP 實在是死的不能再死了，而且加密強度也不高，而漸漸的被人們所遺忘…</p><p>SSH 翻牆年代：</p><p>不知道從什麼時候開始，各路折騰 VPS 的折騰黨就猛然發現：SSH 可不僅僅是安全管理伺服器的工具，更可以用於翻牆。</p><p>於是 SSH 翻牆的方法在一瞬間火了起來。</p><p>ssh -qTfnN -D 7070 <a href="mailto:fq@blog.yandere.moe" rel="external nofollow noopener noreferrer" target="_blank">fq@blog.yandere.moe</a> &lt;– 這是我學會的第一句比較長的 linux 命令</p><p>現在情況：</p><p>在某次的 GFW 升級後，可以根據流量大小識別你是在管理伺服器還是在翻牆。之後，那時候還各種百度谷歌搜索免費 SSH 賬號和國外的提供免費空間 + SSH 的平台，翻牆圈子裡互相幫助共用 SSH 賬號的場景就一去不復返了…</p><p>賽風年代：</p><p>賽風是多倫多大學公民實驗室開發的一款開源翻牆軟件，基本原理就是利用打了混淆補丁的 SSH 進行翻牆。發郵件給賽風的郵箱或者去官網下載就能獲得該軟件了。</p><p>(圖為舊版賽風)</p><p>支援很多國家的伺服器</p><p>現在情況：</p><p>仍然可用，速度一般，比較穩定，身邊很多人在用這個免費且開源的翻牆軟件。客官不妨下一份留作備用？</p><p>西廂計畫：</p><p>這個可以說是真正的翻牆軟件而非代理軟件，因為這款軟件並沒有使用任何代理伺服器進行翻牆。相反，這個軟件的開發人員發現了牆在編寫的時候的一些漏洞，並利用這個漏洞翻牆。</p><p>現在情況：</p><p>由於西廂計畫宗旨是說明這個漏洞，而不是一款可以大規模使用的翻牆軟件，所以使用的人很少，而且需要懂一些 Linux 才可以使它工作。在某次的 GFW 核心模組升級之後失效。</p><p>GoAgent、XXNET 翻牆：</p><p>GoAgent 是一個可以運行在雲平台上的代理軟件，大多數用在 Google Appspot 上，也是很老牌的。那時候 Google 還沒有被遮罩，很多人申請一堆 appspot 然後 GoAgent 負載均衡翻牆，然後小圈子裡共用高速的 IP 位址。然後有了另一個 fork 叫 XXNET，自帶掃瞄 IP 的功能以及集成了好心人提供的節點，也是基於 GoAgent 的。</p><p>現在情況：</p><p>隨著 Google 所有 IP 被 GFW 河蟹，這種方法也消失在了歷史的長河中。</p><p>Lantern、FireFly、Meek 年代：</p><p>自從很多大型服務上了 CDN 業務（Amazon、Azure 等），一群充滿研究精神的人發明了一個新的方法 “依附的自由（Collateral Freedom）”，通過將目標位址放入 CDN 服務的 Host 頭中，GFW 只能檢測到訪問了 CDN，而無法檢測到真正的目標位址。而很多網站都在使用 CDN，無法將所有的 CDN 都牆了。</p><p>目前使用本方法的：Lantern、FireFly、Tor Browser – Meek</p><p>fqrouter 翻牆：</p><p>fqrouter，顧名思義 翻牆路由器。是一個在 Android 平台的翻牆軟件，使用 GoAgent 進行翻牆。就連人民日報記者都在用這款軟件。</p><p>現在情況：</p><p>其作者在 Twitter 上宣佈停止開發 fqrouter 了。感謝 fqrouter 作者為翻牆事業作出的貢獻：）</p><p>OpenVPN 年代：</p><p>牆再怎麼升級也擋不住嚮往自由的人們，於是開源軟件 OpenVPN 又成為翻牆的主力軍。OpenVPN 支援高強度的加密，不過就是特徵太明顯了，你看，又被遮罩了。。。</p><p>現在情況：</p><p>差不多已經沒辦法用了，因為特徵是在太明顯了，GFW 很輕鬆就會探測到 OpenVPN 伺服器然後加以封鎖。不過通過修改配置文件或加混淆補丁等方法還是可以用的。</p><p>Cisco AnyConnect 年代：</p><p>雖然 AnyConnect 和 OpenVPN 一樣，有著很明顯的特徵，但是 AnyConnect 被很多跨國大公司所使用，所以 GFW 也不敢那麼草率的遮罩掉 AnyConnect。也是一種 “依附的自由”</p><p>現在情況：</p><p>截至目前仍然可用，不過配置起來太麻煩。少數技術流會用這個翻牆…</p><p>VPNGate 年代：</p><p>說到 VPNGate，不得不提到 SoftEther VPN，很早之前這個 SoftEther 提供一個日本的學術 VPN，當然在天朝就是用於翻牆了。可能是受到了 SoftEther 的啟發，VPNGate 這個軟件被日本築波大學開發了出來，準確地說 VPNGate 是 SoftEther VPN 的一個插件，用了 SoftEther VPN 的 HTTPS 流量模仿。</p><p>現在情況：</p><p>在時斷時續中仍然堅挺，可以作為備用使用。不過要記得更新為最新版本哦。</p><p>後起之秀——Shadowsocks、V2Ray、ShadowsocksR、ShadowsocksRR…</p><p>Shadowsocks：相信大家都不陌生，作者 clowwindy 是全國首例因為開發翻牆軟件被喝茶的。之後專案交由另外的人維護。（向 clowwindy 致敬）</p><p>V2Ray：在 Shadowsocks 作者被喝茶之後由一名在國外的華裔程式員開發，目的是翻越防火長城，是一個定製性很高的翻牆軟件，算是一個 “翻牆框架”。基於這個框架你可以開發出屬於自己的翻牆協定。目前支援 VMess 協定以及 Shadowsocks 協定、支援流量混淆、支援 KCP。就是配置起來麻煩點，但是配置好之後很好用。</p><p>ShadowsocksR(R)：是一個 Shadowsocks 的 fork，作者說 ShadowsocksR 的目的是在於加強混淆以應對 QoS。ShadowsocksRR 是在 ShadowsocksR 作者停止更新之後的另一個 fork，目前觀望中…</p><p>結尾：</p><p>如果有發現有缺少的在記憶中的翻牆軟件可以留言補充哦。</p><p>翻牆的時候不要忘記那些曾經為了自由的網路而默默付出的人們</p><p>即使再高的牆也阻止不了追求自由的人們，希望我們能看到真正的互聯網。</p><p>Across the Great Wall we can reach every corner in the world.</p><p>1.HTTPS 代理也曾很流行，直到 GFW 能是別 SNI 之後才消停。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;看到令人懷念的文章，感謝此文作者，後續有機會我會再編輯下去。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="GFW" scheme="https://ppundsh.github.io/tags/GFW/"/>
     
   </entry>
   
@@ -390,50 +430,6 @@
       <category term="VPN" scheme="https://ppundsh.github.io/tags/VPN/"/>
     
       <category term="V2Ray" scheme="https://ppundsh.github.io/tags/V2Ray/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SDN 筆記</title>
-    <link href="https://ppundsh.github.io/posts/2a39/"/>
-    <id>https://ppundsh.github.io/posts/2a39/</id>
-    <published>2018-04-15T09:12:24.000Z</published>
-    <updated>2018-04-17T13:29:55.294Z</updated>
-    
-    <content type="html"><![CDATA[<p>SDN (Software-defined networking) 是利用 Data link Layer 層中的 OpenFlow 協定<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>，將 Forwording 的硬體和控制行為分離，而得設置 Programmable network (程式化的網路行為), 比起用 ACL 和路由協定，能作更複雜的管理<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>。<br><a id="more"></a><br>資料來源<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup><br>SDN 將網路架構簡化為封包轉送硬體與網路決策控制器 (decision-making network controller) 二個單元，其中封包轉送硬體由<br>(1) 包含了條目 (entry) 以及對於活躍的流程 (active flows) 所必須採取的行動的流程表 (flow table)；<br>(2) 以及能夠與控制器經由安全的通道溝通對於尚未在流程表上的新條目所必須採取行動的階層 (layer) 所構成。</p><p>1. 現存的 SDN 架構 ForCES 與 OpenFlow 為前最具影響力的主流 SDN 介面，二者皆遵守 SDN 的基本精神，也就是將資料傳輸與控制單元分離以及使得兩者經由安全通道交換訊息；但二者在架構、封包轉送模式與通訊協定介面上有顯著的不同。</p><p>2. ForCES 由 IETF ForCES(Forwarding and Control Element Separation) Working Group 所提出，將網路元件內部重新定義為控制單元以及封包轉送單元分離的架構，但網路元件依然被視為一個個體；如此一來不但網路元件巨觀上與傳統網路元件極為類似，控制單元的決策亦可由第三方軟體來控制。<br>ForCES 定義了一個稱為稱為 Forwarding Element(FE)，實施 ForCES 通訊協定的邏輯個體 (logic entity)，負責利用其下層的硬體處理封包；一個負責執行控制訊號函數的邏輯個體稱為 Control Element(CE)，告訴 FE 如何處理封包；另外一個在 FE 上、被 CE 根據 ForCES 通訊協定所控制的函數區塊稱為 Logical Function Block(LFB)，允許 CE 控制 FE 的組態。</p><p>3. OpenFlow<br>在 OpenFlow 的架構中，封包轉送裝置稱為 OpenFlow Switch，包含了一個或多個流程表，流程表由流程條目 (flow entry) 所組成，由它們決定屬於一個流程的封包應該如何處理與轉送。流程條目由<br>(1)    配對區域 (match fields)：配對流入封包位於標頭區 (header) 的資訊。<br>(2)    計數器 (counters)：蒐集特定流程的資料，例如接收封包數、封包大小、流程持續時間等。<br>(3)    採取的動作：封包符合配對的話應該採取處理封包的動作所組成。</p><p>當 OpenFlow Switch 接收到一個封包時，它會解開封包的標頭區並根據流程表進行配對，若配對未通過則進行至下一個流程表，直到通過配對並決定應該採取的動作為止；如果該封包沒有通過任何一個流程表的配對，所採取的動作將由表上無名流程條目 (table-miss flow entry) 決定，這個條目尚包含的動作可能是丟棄封包、將封包經由 OpenFlow 的頻道 (channel) 傳給控制元件等。</p><p>其它</p><hr><p>SDN 是由 SUN 在1995年首次提出。<br>OpenFlow 是由 2008 年在史丹褔大學開使。<br>IBM 的控制器為 PNC (Programmable Network Controller)<br>Cisco 的 OF 控制器為 Cisco XNC<br>Cisco ONE (Cisco Open Network Environment) 提供開放 API 讓開發人員可使用自已熟悉的語言開發符合企業網路管理的應用<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup><br>Microsoft 的網路虛擬化協定 NVGRE (Network Virtualization using Generic Routing Encapsulation)<br>IBM 的網路虛擬化協定 DOVE (Distributed Overlay Virtual Ethernet)<br>VMware 的網路虛擬化協定VXLAN (Virtual eXtensible Local Area Network)</p><p>Nicira 被 VMware 收購，而其創辨人參與了 OF 的制定和發展，SDN 解決方案為 NVP (Network Virtualization Platform) ，NTT、AT&amp;T、ebay 皆是其客戶<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup></p><p>資料來源：</p><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style:none; padding-left: 0;"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline-block; vertical-align: top;"><a href="https://zh.wikipedia.org/wiki/%E8%BB%9F%E9%AB%94%E5%AE%9A%E7%BE%A9%E7%B6%B2%E8%B7%AF" rel="external nofollow noopener noreferrer" target="_blank">SDN Wiki</a></span><a href="#fnref:1" rev="footnote"> ↩</a></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">2.</span><span style="display: inline-block; vertical-align: top;"><a href="http://www.cc.ntu.edu.tw/chinese/epaper/0029/20140620_2908.html" rel="external nofollow noopener noreferrer" target="_blank">軟體定義網路架構簡介</a></span><a href="#fnref:2" rev="footnote"> ↩</a></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">3.</span><span style="display: inline-block; vertical-align: top;"><a href="https://www.ithome.com.tw/node/77354" rel="external nofollow noopener noreferrer" target="_blank">3種SDN架構的産品策略</a></span><a href="#fnref:3" rev="footnote"> ↩</a></li></ol></div></div>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;SDN (Software-defined networking) 是利用 Data link Layer 層中的 OpenFlow 協定&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;，將 Forwording 的硬體和控制行為分離，而得設置 Programmable network (程式化的網路行為), 比起用 ACL 和路由協定，能作更複雜的管理&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="MIS" scheme="https://ppundsh.github.io/tags/MIS/"/>
-    
-      <category term="SDN" scheme="https://ppundsh.github.io/tags/SDN/"/>
-    
-      <category term="OVSDB" scheme="https://ppundsh.github.io/tags/OVSDB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>學習單</title>
-    <link href="https://ppundsh.github.io/posts/21d4/"/>
-    <id>https://ppundsh.github.io/posts/21d4/</id>
-    <published>2018-04-13T16:33:15.000Z</published>
-    <updated>2018-04-18T12:03:33.661Z</updated>
-    
-    <content type="html"><![CDATA[<p>以後學習用的記錄<br><a id="more"></a></p><h2 id="Trace"><a href="#Trace" class="headerlink" title="Trace"></a>Trace</h2><ul><li>Grafana</li><li>Rancher</li><li>Spunk</li><li>ELK</li><li><a href="https://joshhu.gitbooks.io/docker_theory_install/content/index.html" rel="external nofollow noopener noreferrer" target="_blank">Docker</a></li><li>Probe</li></ul><h2 id="系統"><a href="#系統" class="headerlink" title="系統"></a>系統</h2><ul><li>SIEM</li><li>DLP</li></ul><h3 id="1-作業系統基礎"><a href="#1-作業系統基礎" class="headerlink" title="1.作業系統基礎"></a>1.作業系統基礎</h3><ul><li>CentOS7 mionimal</li><li>修改 hostname，查看hostname ，分暫時與永久</li><li>ip 修改為固定 ip/dhcp ，查看 gateway, 暫時DNS</li><li>停用防火牆，查看開機是否執行</li><li>查看系統時間/怎麼看對時，如何強制對時，手動修改時間</li><li>查看 SELINUX 狀態，暫時/永久停用</li><li>查看現在的 DNS 為何，暫時/水久停用</li><li>安裝 telnet，nslookup、man、wget</li></ul><h3 id="2-Log"><a href="#2-Log" class="headerlink" title="2.Log"></a>2.Log</h3><ul><li>查看系統訊息log</li><li>查看目前登入人員，查看目前登入人員正在下什麼指令，查看曾經登入使用者</li><li>查看硬體 log</li><li>查看 crontab log</li><li>查看曾經輸入過的指令</li><li>查看誰成功登入，誰失敗登入</li><li>cat 最後十筆記錄，最前十筆紀錄，一修改就跳 log</li><li>資料夾欄位的意思 root,root 意思</li></ul><p>tail<br>grep<br>OpenResty</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;以後學習用的記錄&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="MIS" scheme="https://ppundsh.github.io/tags/MIS/"/>
     
   </entry>
   
