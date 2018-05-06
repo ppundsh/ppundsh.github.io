@@ -146,7 +146,7 @@
 <meta property="og:site_name" content="Flymia 凡事用心之事">
 <meta property="og:description" content="重裝後的備忘">
 <meta property="og:locale" content="zh-TW">
-<meta property="og:updated_time" content="2018-04-29T17:49:12.509Z">
+<meta property="og:updated_time" content="2018-05-01T14:43:20.445Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Kali 安裝指令">
 <meta name="twitter:description" content="重裝後的備忘">
@@ -408,8 +408,22 @@
             
             
               
+                
+              
             
 
+            
+              
+              <span class="post-meta-divider">|</span>
+              
+
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新於：</span>
+              
+              <time title="更新於" itemprop="dateModified" datetime="2018-05-01T22:43:20+08:00">2018-05-01</time>
             
           </span>
 
@@ -435,7 +449,7 @@
                 
                   <span class="post-meta-item-text">文章字數：</span>
                 
-                <span title="文章字數">166</span>
+                <span title="文章字數">219</span>
               
 
               
@@ -472,6 +486,7 @@
         <p>重裝後的備忘<br><a id="more"></a><br>安裝 NTP</p>
 <figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></div><div class="code"><pre><div class="line">apt-get install ntp</div><div class="line"></div><div class="line"><span class="comment">#vim etc/ntp.conf</span></div><div class="line">server time.stdtime.gov.tw</div><div class="line">server clock.stdtime.gov.tw</div><div class="line"></div><div class="line">ntpdate time.stdtime.gov.tw</div></pre></div></div></figure>
 <p>更改時區<br><figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">dpkg-reconfigure tzdata</div></pre></div></div></figure></p>
+<p>開啟網卡、DHCP<br><figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></div><div class="code"><pre><div class="line">ipconfig -a</div><div class="line">ifconfig eth0 up</div><div class="line">dhclient eth0</div></pre></div></div></figure></p>
 
       
     </div>
@@ -607,7 +622,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">26</span>
+                    <span class="site-state-item-count">28</span>
                     <span class="site-state-item-name">文章</span>
                   </a>
                 </div>
@@ -668,7 +683,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">23</span>
+                      
+                    
+                    <span class="site-state-item-count">24</span>
                     <span class="site-state-item-name">標籤</span>
                   </a>
                 </div>
@@ -736,7 +753,7 @@
     
       <span class="post-meta-item-text">網站總字數：</span>
     
-    <span title="網站總字數">130k</span>
+    <span title="網站總字數">133k</span>
   
 
   
@@ -747,7 +764,7 @@
     
       <span class="post-meta-item-text">網站總閱讀時間：</span>
     
-    <span title="網站總閱讀時間">10:48</span>
+    <span title="網站總閱讀時間">11:06</span>
   
 </div>
 

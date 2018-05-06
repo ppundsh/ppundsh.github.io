@@ -138,18 +138,18 @@
 
 
 
-  <meta name="description" content="記錄一下">
-<meta name="keywords" content="Vim">
+  <meta name="description" content="最近發覺不知不覺對 Vim 更加上手，突然想到 chrome 上是有名為 cVim 的擴充功能的，加上再練習的單手打字，應該能很好的加強 chrome 的使用用效率。">
+<meta name="keywords" content="Brower,Vim">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Vim 指令">
-<meta property="og:url" content="https://ppundsh.github.io/posts/6edb/index.html">
+<meta property="og:title" content="cVim for Chrome ">
+<meta property="og:url" content="https://ppundsh.github.io/posts/78d/index.html">
 <meta property="og:site_name" content="Flymia 凡事用心之事">
-<meta property="og:description" content="記錄一下">
+<meta property="og:description" content="最近發覺不知不覺對 Vim 更加上手，突然想到 chrome 上是有名為 cVim 的擴充功能的，加上再練習的單手打字，應該能很好的加強 chrome 的使用用效率。">
 <meta property="og:locale" content="zh-TW">
-<meta property="og:updated_time" content="2018-04-17T13:29:55.312Z">
+<meta property="og:updated_time" content="2018-05-06T08:01:30.755Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Vim 指令">
-<meta name="twitter:description" content="記錄一下">
+<meta name="twitter:title" content="cVim for Chrome ">
+<meta name="twitter:description" content="最近發覺不知不覺對 Vim 更加上手，突然想到 chrome 上是有名為 cVim 的擴充功能的，加上再練習的單手打字，應該能很好的加強 chrome 的使用用效率。">
 
 
 
@@ -158,7 +158,7 @@
 
 
 
-  <link rel="canonical" href="https://ppundsh.github.io/posts/6edb/">
+  <link rel="canonical" href="https://ppundsh.github.io/posts/78d/">
 
 
 
@@ -168,7 +168,7 @@
   };
 </script>
 
-  <title>Vim 指令 | Flymia 凡事用心之事</title>
+  <title>cVim for Chrome  | Flymia 凡事用心之事</title>
   
 
 
@@ -373,7 +373,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ppundsh.github.io/posts/6edb/">
+    <link itemprop="mainEntityOfPage" href="https://ppundsh.github.io/posts/78d/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Flymia">
@@ -390,7 +390,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">Vim 指令</h2>
+          <h2 class="post-title" itemprop="name headline">cVim for Chrome </h2>
         
 
         <div class="post-meta">
@@ -402,28 +402,14 @@
               
                 <span class="post-meta-item-text">發表於</span>
               
-              <time title="創建於" itemprop="dateCreated datePublished" datetime="2018-04-16T09:21:50+08:00">2018-04-16</time>
+              <time title="創建於" itemprop="dateCreated datePublished" datetime="2018-05-06T13:49:15+08:00">2018-05-06</time>
             
 
             
             
               
-                
-              
             
 
-            
-              
-              <span class="post-meta-divider">|</span>
-              
-
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新於：</span>
-              
-              <time title="更新於" itemprop="dateModified" datetime="2018-04-17T21:29:55+08:00">2018-04-17</time>
             
           </span>
 
@@ -449,7 +435,7 @@
                 
                   <span class="post-meta-item-text">文章字數：</span>
                 
-                <span title="文章字數">4.3k</span>
+                <span title="文章字數">3k</span>
               
 
               
@@ -463,7 +449,7 @@
                 
                   <span class="post-meta-item-text">閱讀時間&asymp;</span>
                 
-                <span title="閱讀時間">0:21</span>
+                <span title="閱讀時間">0:15</span>
               
             </div>
           
@@ -483,49 +469,516 @@
       
 
       
-        <p>記錄一下<br><a id="more"></a></p>
-<p>顯示行數<br>    set number</p>
-<p>隱藏行數<br>    set nonumber</p>
-<p>刪除一行：dd</p>
-<p>刪除一個單詞 / 游標之後的單詞剩餘部分：dw</p>
-<p>刪除當前字符：x</p>
-<p>游標之後的該行部分：d$</p>
-<p>文本刪除</p>
-<p>dd 刪除一行</p>
-<p>d$ 刪除以當前字符開始的一行字符</p>
-<p>ndd 刪除以當前行開始的 n 行</p>
-<p>dw 刪除以當前字符開始的一個字</p>
-<p>ndw 刪除以當前字符開始的 n 個字</p>
-<p>D 與 d$ 同義</p>
-<p>d) 刪除到下一句的開始</p>
-<p>d} 刪除到下一段的開始</p>
-<p>d 回車 刪除 2 行</p>
-<p>ndw 或 ndW 刪除游標處開始及其後的 n-1 個字符。<br>d0 刪至行首。<br>d$ 刪至行尾。<br>ndd 刪除當前行及其後 n-1 行。<br>x 或 X 刪除一個字符。<br>Ctrl+u 刪除輸入方式下所輸入的文本。<br>^R 恢復 u 的操作<br>J 把下一行合併到當前行尾<br>V 選擇一行<br>^V 按下 ^V 後即可進行矩形的選擇了<br>aw 選擇單詞<br>iw 內部單詞 (無空格)<br>as 選擇句子<br>is 選擇句子 (無空格)<br>ap 選擇段落<br>ip 選擇段落 (無空格)<br>D 刪除到行尾<br>x,y 刪除與複製包含高亮區</p>
-<p>dl 刪除當前字符（與 x 命令功能相同）<br>d0 刪除到某一行的開始位置<br>d^ 刪除到某一行的第一個字符位置（不包括空格或 TAB 字符）<br>dw 刪除到某個單詞的結尾位置<br>d3w 刪除到第三個單詞的結尾位置<br>db 刪除到某個單詞的開始位置<br>dW 刪除到某個以空格作為分隔符的單詞的結尾位置<br>dB 刪除到某個以空格作為分隔符的單詞的開始位置<br>d7B 刪除到前面 7 個以空格作為分隔符的單詞的開始位置<br>d） 刪除到某個語句的結尾位置<br>d4） 刪除到第四個語句的結尾位置<br>d（ 刪除到某個語句的開始位置<br>d） 刪除到某個段落的結尾位置<br>d{ 刪除到某個段落的開始位置<br>d7{ 刪除到當前段落起始位置之前的第 7 個段落位置<br>dd 刪除當前行<br>d/text 刪除從文本中出現 “text” 中所指定字樣的位置，<br>一直向前直到下一個該字樣所出現的位置（但不包括該字樣）之間的內容<br>dfc 刪除從文本中出現字符 “c” 的位置，一直向前直到下一個該字符所出現的位置（包括該字符）之間的內容<br>dtc 刪除當前行直到下一個字符 “c” 所出現位置之間的內容<br>D 刪除到某一行的結尾<br>d$ 刪除到某一行的結尾<br>5dd 刪除從當前行所開始的 5 行內容<br>dL 刪除直到螢幕上最後一行的內容<br>dH 刪除直到螢幕上第一行的內容<br>dG 刪除直到工作緩存區結尾的內容<br>d1G 刪除直到工作緩存區開始的內容</p>
-<p>在 Vi 中移動游標<br>  k        上<br>h   l    左  右<br>  j        下</p>
-<p>^        移動到該行第一個非空格的字符處<br>w        向前移動一個單詞，將符號或標點當作單詞處理<br>W        向前移動一個單詞，不把符號或標點當作單詞處理<br>b        向後移動一個單詞，把符號或標點當作單詞處理<br>B        向後移動一個單詞，不把符號或標點當作單詞處理<br>(        游標移至句首<br>)        游標移至句尾<br>{        游標移至段落開頭<br>}        游標移至段落結尾<br>H        游標移至螢幕頂行<br>M        游標移至螢幕中間行<br>L        游標移至螢幕最後行<br>0        到行首<br>$        到行尾<br>gg       到頁首<br>G        到頁末<br>行號+G   跳轉到指定行<br>n+       游標下移n行<br>n-       游標上移n行<br>Ctrl+g   查詢當前行資訊和當前文件資訊</p>
-<p>fx       向右跳到本行字符x處（x可以是任何字符）<br>Fx       向左跳到本行字符x處（x可以是任何字符）</p>
-<p>tx       和fx相同，區別是跳到字符x前<br>Tx       和Fx相同，區別是跳到字符x後</p>
-<p>C-b      向上滾動一屏<br>C-f      向下滾動一屏<br>C-u      向上滾動半屏<br>C-d      向下滾動半屏<br>C-y      向上滾動一行<br>C-e      向下滾動一行</p>
-<p>nz       將第n行滾至螢幕頂部，不指定n時將當前行滾至螢幕頂部。<br>進入和退出 Vi 命令<br>vi filename               打開或新建文件，並將游標置於第一行首<br>vi +n filename            打開文件，並將游標置於第n行首<br>vi + filename             打開文件，並將游標置於最後一行首<br>vi +/pattern filename     打開文件，並將游標置於第一個與pattern匹配的串處<br>vi -r filename            在上次正用vi編輯時發生系統崩潰，恢復filename<br>vi filename … filename  打開多個文件，依次進行編輯 </p>
-<p>ZZ                        退出vi並保存<br>:q!                       退出vi，不保存<br>:wq                       退出vi並保存<br>重複操作<br>.        重複上一次操作<br>自動補齊<br>C-n      匹配下一個關鍵字<br>C-p      匹配上一個關鍵字<br>插入<br>o        在游標下方新開一行並將游標置於新行行首，進入插入模式。<br>O        同上，在游標上方。</p>
-<p>a        在游標之後進入插入模式。<br>A        同上，在游標之前。</p>
-<p>R        進入替換模式，直到按下Esc<br>set xxx  設置XXX選項。<br>行合併<br>J        把下面一行合併到本行後面<br>Vi 中查找及替換命令<br>/pattern         從游標開始處向文件尾搜索pattern<br>?pattern         從游標開始處向文件首搜索pattern<br>n                在同一方向重複上一次搜索命令<br>N                在反方向上重複上一次搜索命令<br>%                查找配對的括弧<br>:s/p1/p2/g       將當前行中所有p1均用p2替代，若要每個替換都向用戶詢問則應該用gc選項<br>:n1,n2s/p1/p2/g  將第n1至n2行中所有p1均用p2替代<br>:g/p1/s//p2/g    將文件中所有p1均用p2替換</p>
-<p>.*[]^%~$ 在Vi中具有特殊含義，若需要查找則應該加上轉義字符”\”<br>查找的一些選項<br>設置高亮<br>:set hlsearch    設置高亮<br>:set nohlsearch  關閉高亮<br>:nohlsearch      關閉當前已經設置的高亮<br>增量查找<br>:set incsearch   設置增量查找<br>:set noincsearch 關閉增量查找<br>在 Vi 中刪除<br>x        刪除當前游標下的字符<br>dw       刪除游標之後的單詞剩餘部分。<br>d$       刪除游標之後的該行剩餘部分。<br>dd       刪除當前行。</p>
-<p>c        功能和d相同，區別在於完成刪除操作後進入INSERT MODE<br>cc       也是刪除當前行，然後進入INSERT MODE</p>
-<p>更改字符<br>rx       將當前游標下的字符更改為x（x為任意字符）<br>~        更改當前游標下的字符的大小寫 </p>
-<p>鍵盤宏操作<br>qcharacter  開始錄製宏，character為a到z的任意字符<br>q           終止錄製宏<br>@character  調用先前錄製的宏</p>
-<p>恢復誤操作<br>u        撤銷最後執行的命令<br>U        修正之前對該行的操作<br>Ctrl+R   Redo<br>在 Vi 中操作 Frame<br>c-w c-n  增加frame<br>c-w c-c  減少frame<br>c-w c-w  切換frame<br>c-w c-r  交換兩個frame<br>VIM 中的塊操作<br>Vim 支援多達 26 個剪貼板</p>
-<p>  選塊   先用v，C-v，V選擇一塊，然後用y複製，再用p粘貼。<br>  yy     複製當前整行<br>  nyy    複製當前行開始的n行內容<br>  ?nyy   將游標當前行及其下n行的內容保存到寄存器?中，其中?為一個字母，n為一個數字<br>  ?nyw   將游標當前行及其下n個詞保存到寄存器?中，其中?為一個字母，n為一個數字<br>  ?nyl   將游標當前行及其下n個字符保存到寄存器?中，其中?為一個字母，n為一個數字<br>  ?p     將寄存器?中的內容粘貼到游標位置之後。如果?是用yy複製的完整行，<br>         則粘貼在游標所在行下面。這裡?可以是一個字母，也可以是一個數字<br>  ?P     將寄存器a中的內容粘貼到游標位置之前。如果?是用yy複製的完整行，<br>         則粘貼在游標所在行上面。這裡?可以是一個字母，也可以是一個數字<br>  ay[motion]<br>            ay$    複製游標位置到行末並保存在寄存器a中<br>            ayft   複製游標位置到當前行第一個字母t並保存在寄存器a中<br>以上指令皆可去掉 a 工作，則 y,p 對未命名寄存器工作（所有 d,c,x,y 的對象都被保存在這裡）。</p>
-<p>剪切 / 複製 / 粘貼<br>所有刪除的內容自動被保存，可以用 p 鍵粘貼</p>
-<p>Vi 的選項設置<br>all         列出所有選項設置情況<br>term        設置終端類型<br>ignorance   在搜索中忽略大小寫<br>list        顯示製表位(Ctrl+I)和行尾標誌($)<br>number      顯示行號<br>report      顯示由面向行的命令修改過的數目<br>terse       顯示簡短的警告資訊<br>warn        在轉到別的文件時若沒保存當前文件則顯示NO write資訊<br>nomagic     允許在搜索模式中，使用前面不帶“\”的特殊字符<br>nowrapscan  禁止vi在搜索到達文件兩端時，又從另一端開始<br>mesg        允許vi顯示其他用戶用write寫到自己終端上的資訊<br>tips<br>對代碼自動格式化 gg=G</p>
-<p>在 vi/vim 中，跳到文件首尾快捷鍵:</p>
-<p>文件開始: shift + g</p>
-<p>文件結束: g g</p>
-<p>from:<a href="http://lxs647.iteye.com/blog/1245948" rel="external nofollow noopener noreferrer" target="_blank">http://lxs647.iteye.com/blog/1245948</a></p>
-<p>from:<a href="http://dsec.pku.edu.cn/~jinlong/vi/Vi.html" rel="external nofollow noopener noreferrer" target="_blank">http://dsec.pku.edu.cn/~jinlong/vi/Vi.html</a></p>
-<p>from:<a href="http://www.caole.net/diary/vim.html#sec-1" rel="external nofollow noopener noreferrer" target="_blank">http://www.caole.net/diary/vim.html#sec-1</a></p>
-
+        <p>最近發覺不知不覺對 Vim 更加上手，突然想到 chrome 上是有名為 <a href="https://chrome.google.com/webstore/detail/cvim/ihlenndgcmojhcghmfjfneahoeklbjjh" rel="external nofollow noopener noreferrer" target="_blank">cVim</a> 的擴充功能的，加上再練習的單手打字，應該能很好的加強 chrome 的使用用效率。<br><a id="more"></a></p>
+<h2 id="安裝"><a href="#安裝" class="headerlink" title="安裝"></a>安裝</h2><p><a href="https://chrome.google.com/webstore/detail/cvim/ihlenndgcmojhcghmfjfneahoeklbjjh" rel="external nofollow noopener noreferrer" target="_blank">cVim</a></p>
+<h2 id="基本認知："><a href="#基本認知：" class="headerlink" title="基本認知："></a>基本認知：</h2><p>就同 Vim 的羅輯，整個介面會分為多種狀態，不同狀態下可以使用不同的指令達成不同功能</p>
+<ol>
+<li>一般模式：開新分頁、打開連結、切換分頁、切換分頁、頁面捲動等</li>
+<li>搜尋模式：可用來輸入要搜尋的文字，可支援正則表達式</li>
+<li>Visual Mode (圈選模式） 、Caret Mode（移動游標模式)：純用鍵盤做頁面內文字選取</li>
+<li>命令模式</li>
+</ol>
+<p>命令支援用 tab 補完，只要打出前幾個字，按 <a class="btn" href="#">tab</a> 鍵會自動把符合的內容補完。</p>
+<p>個人習慣開啟平滑捲動，開啟方法為在命令模式下：</p>
+<pre><code>:set smoothscroll
+</code></pre><p>這行指令的輸入方法為：先輸入 <code>:</code>，再繼續輸入 <code>se</code> &amp; <a class="btn" href="#">tab</a> ，再輸入 <code>smoot</code> &amp; <a class="btn" href="#">tab</a>，依此類推。</p>
+<h2 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h2><p>建議練習一下單手輸入(左手放在 JHGF 上)，單手操作效率才會體現出來。<br>如果遊標跑到網址列，可以按 <a class="btn" href="">F6</a> 將焦點移回網頁。<br>下面內容整理自電腦玩物原創作者 esor huang（異塵行者）<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>與 Vosky<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup></p>
+<h3 id="捲動網頁"><a href="#捲動網頁" class="headerlink" title="捲動網頁"></a>捲動網頁</h3><table>
+<thead>
+<tr>
+<th>功能</th>
+<th>按鍵(區分大小寫)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>往下捲動</td>
+<td>j s</td>
+</tr>
+<tr>
+<td>往上捲動</td>
+<td>k w</td>
+</tr>
+<tr>
+<td>往左右捲動</td>
+<td>h l</td>
+</tr>
+<tr>
+<td>往上下捲動半頁</td>
+<td>e d</td>
+</tr>
+<tr>
+<td>跳到頁首</td>
+<td>gg</td>
+</tr>
+<tr>
+<td>跳到頁尾</td>
+<td>G</td>
+</tr>
+<tr>
+<td>切換到第一個輸入欄</td>
+<td>gi</td>
+</tr>
+<tr>
+<td>頁面最左</td>
+<td>0</td>
+</tr>
+<tr>
+<td>頁面最右</td>
+<td>$</td>
+</tr>
+</tbody>
+</table>
+<h3 id="上一頁、下一頁"><a href="#上一頁、下一頁" class="headerlink" title="上一頁、下一頁"></a>上一頁、下一頁</h3><table>
+<thead>
+<tr>
+<th>功能</th>
+<th>按鍵(區分大小寫)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>前一頁</td>
+<td>H</td>
+</tr>
+<tr>
+<td>下一頁</td>
+<td>L</td>
+</tr>
+<tr>
+<td>重新整理網頁</td>
+<td>r</td>
+</tr>
+</tbody>
+</table>
+<h3 id="輸入欄"><a href="#輸入欄" class="headerlink" title="輸入欄"></a>輸入欄</h3><table>
+<thead>
+<tr>
+<th>功能</th>
+<th>按鍵(區分大小寫)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>切換到第一個輸入欄</td>
+<td>gi</td>
+</tr>
+</tbody>
+</table>
+<p>按 <a class="btn" href="#">Tab</a> 切換下一個輸入欄<br>按 <a class="btn" href="#">Esc</a> 跳出</p>
+<h3 id="圈選文字、複製文字"><a href="#圈選文字、複製文字" class="headerlink" title="圈選文字、複製文字"></a>圈選文字、複製文字</h3><table>
+<thead>
+<tr>
+<th>功能</th>
+<th>按鍵(區分大小寫)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>切換 Visual Mode（圈選模式） 、Caret Mode（移動游標模式）</td>
+<td>v</td>
+</tr>
+<tr>
+<td>移動游標</td>
+<td>h（左）j（下）k（上）l（右）</td>
+</tr>
+<tr>
+<td>複製圈選內容</td>
+<td>y</td>
+</tr>
+<tr>
+<td>打開圈選內容在新分頁</td>
+<td>P</td>
+</tr>
+</tbody>
+</table>
+<p>操作方式是這樣的，先按下 <code>v</code> 切換到 Caret Mode（移動游標模式），這時候用「h（左）j（下）k（上）l（右）」調整游標的位置。<br>然後再按一次 <code>v</code> 切換到 Visual Mode（圈選模式），這時候用「h（左）j（下）k（上）l（右）」移動游標可以開始圈選前後的內容文字。<br>把文字圈選起來後，按下 <code>y</code> 可以複製。按下 <code>p</code> 則會將圈選內容丟到 Google 搜尋。</p>
+<h3 id="打開網頁中的各種連結、按鈕、選單"><a href="#打開網頁中的各種連結、按鈕、選單" class="headerlink" title="打開網頁中的各種連結、按鈕、選單"></a>打開網頁中的各種連結、按鈕、選單</h3><table>
+<thead>
+<tr>
+<th>功能</th>
+<th>按鍵(區分大小寫)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>在目前分頁打開連結</td>
+<td>f</td>
+</tr>
+<tr>
+<td>在新分頁打開連結</td>
+<td>F</td>
+</tr>
+<tr>
+<td>滑鼠游標移動到其上</td>
+<td>q</td>
+</tr>
+<tr>
+<td>滑鼠游標離開其上</td>
+<td>Q</td>
+</tr>
+<tr>
+<td>一次打開多個分頁</td>
+<td>mf</td>
+</tr>
+</tbody>
+</table>
+<h3 id="切換與管理分頁"><a href="#切換與管理分頁" class="headerlink" title="切換與管理分頁"></a>切換與管理分頁</h3><table>
+<thead>
+<tr>
+<th>功能</th>
+<th>按鍵(區分大小寫)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>開新分頁</td>
+<td>t</td>
+</tr>
+<tr>
+<td>當前頁面開新連結</td>
+<td>o</td>
+</tr>
+<tr>
+<td>下一個分頁</td>
+<td>K</td>
+</tr>
+<tr>
+<td>前一個分頁</td>
+<td>J</td>
+</tr>
+<tr>
+<td>最開始的分頁</td>
+<td>g0</td>
+</tr>
+<tr>
+<td>最後一個分頁</td>
+<td>g$</td>
+</tr>
+<tr>
+<td>關閉目前分頁</td>
+<td>x</td>
+</tr>
+<tr>
+<td>打開最近關閉的分頁</td>
+<td>X</td>
+</tr>
+<tr>
+<td>固定分頁、取消固定</td>
+<td>gp</td>
+</tr>
+<tr>
+<td>當前分頁左移</td>
+<td>&lt;</td>
+</tr>
+<tr>
+<td>當前分頁右移</td>
+<td>&gt;</td>
+</tr>
+<tr>
+<td>移動到第 N個分頁</td>
+<td>N%</td>
+</tr>
+</tbody>
+</table>
+<h3 id="複製網址與搜尋"><a href="#複製網址與搜尋" class="headerlink" title="複製網址與搜尋"></a>複製網址與搜尋</h3><table>
+<thead>
+<tr>
+<th>功能</th>
+<th>按鍵(區分大小寫)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>複製網頁中指定連結的網址</td>
+<td>gy</td>
+</tr>
+<tr>
+<td>複製目前分頁網址</td>
+<td>yy</td>
+</tr>
+<tr>
+<td>開啟新的 Google 搜尋</td>
+<td>a</td>
+</tr>
+<tr>
+<td>搜尋瀏覽器書籤</td>
+<td>b</td>
+</tr>
+<tr>
+<td>搜尋瀏覽器歷史</td>
+<td>I</td>
+</tr>
+</tbody>
+</table>
+<h3 id="頁面內搜尋"><a href="#頁面內搜尋" class="headerlink" title="頁面內搜尋"></a>頁面內搜尋</h3><table>
+<thead>
+<tr>
+<th>功能</th>
+<th>按鍵(區分大小寫)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>網頁頁面內搜尋</td>
+<td>/</td>
+</tr>
+<tr>
+<td>下一個符合</td>
+<td>n</td>
+</tr>
+<tr>
+<td>上一個符合</td>
+<td>N</td>
+</tr>
+</tbody>
+</table>
+<h3 id="標記"><a href="#標記" class="headerlink" title="標記"></a>標記</h3><p>可以隨時回到之前標記的頁面上。</p>
+<table>
+<thead>
+<tr>
+<th>功能</th>
+<th>按鍵(區分大小寫)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>標記分頁到 *(可以是任意字母)</td>
+<td>M*</td>
+</tr>
+<tr>
+<td>當前頁面開啟*</td>
+<td>go*</td>
+</tr>
+<tr>
+<td>新分頁開啟*</td>
+<td>gn*</td>
+</tr>
+<tr>
+<td>新視窗開啟*</td>
+<td>gw*</td>
+</tr>
+</tbody>
+</table>
+<h3 id="輸入框操作"><a href="#輸入框操作" class="headerlink" title="輸入框操作"></a>輸入框操作</h3><p>在搜討或回應欄等可做的快捷鍵</p>
+<table>
+<thead>
+<tr>
+<th>功能</th>
+<th>按鍵(區分大小寫)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>移動遊標到行開頭</td>
+<td><a class="btn" href="#">Ctrl</a> i</td>
+</tr>
+<tr>
+<td>移動遊標到行尾部</td>
+<td><a class="btn" href="#">Ctrl</a> e</td>
+</tr>
+<tr>
+<td>刪除最頂的一行</td>
+<td><a class="btn" href="#">Ctrl</a> u</td>
+</tr>
+<tr>
+<td>刪除最後一行</td>
+<td><a class="btn" href="#">Ctrl</a> o</td>
+</tr>
+<tr>
+<td>刪除之前的一個字</td>
+<td><a class="btn" href="#">Ctrl</a> y</td>
+</tr>
+<tr>
+<td>刪除後一個字</td>
+<td><a class="btn" href="#">Ctrl</a> p</td>
+</tr>
+<tr>
+<td>移動遊標到左一個字</td>
+<td><a class="btn" href="#">Ctrl</a> h</td>
+</tr>
+<tr>
+<td>移動遊標到右一個字</td>
+<td><a class="btn" href="#">Ctrl</a> l</td>
+</tr>
+<tr>
+<td>移動遊標到右一個字符</td>
+<td><a class="btn" href="#">Ctrl</a> f</td>
+</tr>
+<tr>
+<td>移動遊標到左一個字符</td>
+<td><a class="btn" href="#">Ctrl</a> b</td>
+</tr>
+<tr>
+<td>移動遊標到下一行</td>
+<td><a class="btn" href="#">Ctrl</a> j</td>
+</tr>
+<tr>
+<td>移動遊標到上一行</td>
+<td><a class="btn" href="#">Ctrl</a> k</td>
+</tr>
+</tbody>
+</table>
+<h3 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h3><table>
+<thead>
+<tr>
+<th>功能</th>
+<th>按鍵(區分大小寫)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>開啟命令列</td>
+<td>:</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Chrome-原生快捷鍵"><a href="#Chrome-原生快捷鍵" class="headerlink" title="Chrome 原生快捷鍵"></a>Chrome 原生快捷鍵</h2><p>有時分頁要是進分有快捷鍵或 chrome 原生分頁(如空白首頁)， cVim 的快捷鍵將無法使用，這時就只能用原生的快捷鍵了<br>來源<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup></p>
+<h3 id="分頁與視窗快速鍵"><a href="#分頁與視窗快速鍵" class="headerlink" title="分頁與視窗快速鍵"></a>分頁與視窗快速鍵</h3><table>
+<thead>
+<tr>
+<th>動作</th>
+<th>快速鍵</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>開啟新視窗</td>
+<td><a class="btn" href="#">Ctrl</a> N</td>
+</tr>
+<tr>
+<td>以無痕模式開啟新視窗</td>
+<td><a class="btn" href="#">Ctrl</a> <a class="btn" href="#">Shift</a> N</td>
+</tr>
+<tr>
+<td>開啟並切換至新分頁</td>
+<td><a class="btn" href="#">Ctrl</a> T</td>
+</tr>
+<tr>
+<td>重新開啟並切換至最近關閉的分頁</td>
+<td><a class="btn" href="#">Ctrl</a> <a class="btn" href="#">Shift</a> T</td>
+</tr>
+<tr>
+<td>切換至下一個開啟的分頁</td>
+<td><a class="btn" href="#">Ctrl</a> + <a class="btn" href="#">Tab</a> 或 <a class="btn" href="#">Ctrl</a> <a class="btn" href="#">PgDn</a></td>
+</tr>
+<tr>
+<td>切換至上一個開啟的分頁</td>
+<td><a class="btn" href="#">Ctrl</a> <a class="btn" href="#">Shift</a> <a class="btn" href="#">Tab</a> 或 <a class="btn" href="#">Ctrl</a> <a class="btn" href="#">PgUp</a></td>
+</tr>
+<tr>
+<td>切換至特定分頁</td>
+<td><a class="btn" href="#">Ctrl</a> + 1 到 8 鍵</td>
+</tr>
+<tr>
+<td>切換至最後一個分頁</td>
+<td><a class="btn" href="#">Ctrl</a> + 9 鍵</td>
+</tr>
+<tr>
+<td>開啟目前分頁瀏覽記錄中的上一頁</td>
+<td><a class="btn" href="#">Alt</a> + 向左鍵</td>
+</tr>
+<tr>
+<td>開啟目前分頁瀏覽記錄中的下一頁</td>
+<td><a class="btn" href="#">Alt</a> + 向右鍵</td>
+</tr>
+<tr>
+<td>關閉目前的分頁</td>
+<td><a class="btn" href="#">Ctrl</a> + W 鍵或 <a class="btn" href="#">Ctrl</a> <a class="btn" href="#">F4</a></td>
+</tr>
+<tr>
+<td>關閉所有開啟的分頁和瀏覽器</td>
+<td><a class="btn" href="#">Ctrl</a> <a class="btn" href="#">Shift</a> W</td>
+</tr>
+<tr>
+<td>將目前的視窗縮到最小</td>
+<td><a class="btn" href="#">Alt</a> <a class="btn" href="#">空格鍵</a> N</td>
+</tr>
+<tr>
+<td>將目前的視窗放到最大</td>
+<td><a class="btn" href="#">Alt</a> <a class="btn" href="#">空格鍵</a> X</td>
+</tr>
+<tr>
+<td>關閉目前的視窗</td>
+<td><a class="btn" href="#">Alt</a> <a class="btn" href="#">F4</a></td>
+</tr>
+<tr>
+<td>退出 Google Chrome</td>
+<td><a class="btn" href="#">Ctrl</a> <a class="btn" href="#">Shift</a> + Q</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Google-Chrome-功能快速鍵"><a href="#Google-Chrome-功能快速鍵" class="headerlink" title="Google Chrome 功能快速鍵"></a>Google Chrome 功能快速鍵</h3><table>
+<thead>
+<tr>
+<th>動作</th>
+<th>快速鍵</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>開啟 Chrome 選單</td>
+<td><a class="btn" href="#">Alt</a> + F 鍵、<a class="btn" href="#">Alt</a> + E 鍵或 <a class="btn" href="#">F10</a></td>
+</tr>
+<tr>
+<td>顯示或隱藏書籤列</td>
+<td><a class="btn" href="#">Ctrl</a> <a class="btn" href="#">Shift</a> B</td>
+</tr>
+<tr>
+<td>開啟「書籤管理員」</td>
+<td><a class="btn" href="#">Ctrl</a> <a class="btn" href="#">Shift</a> O</td>
+</tr>
+<tr>
+<td>在新分頁中開啟「歷史記錄」頁面</td>
+<td><a class="btn" href="#">Ctrl</a> H</td>
+</tr>
+<tr>
+<td>在新分頁中開啟「下載」頁面</td>
+<td><a class="btn" href="#">Ctrl</a> J</td>
+</tr>
+<tr>
+<td>開啟「Chrome 工作管理員」</td>
+<td><a class="btn" href="#">Shift</a> <a class="btn" href="#">Esc</a></td>
+</tr>
+<tr>
+<td>將焦點設在 Chrome 工具列中的第一個項目</td>
+<td><a class="btn" href="#">Shift</a> <a class="btn" href="#">Alt</a> T</td>
+</tr>
+<tr>
+<td>在網址列、書籤列 (如有顯示) 和網頁內容之間，將焦點切換到下一個項目</td>
+<td><a class="btn" href="#">F6</a></td>
+</tr>
+<tr>
+<td>在網址列、書籤列 (如有顯示) 和網頁內容之間，將焦點切換到上一個項目</td>
+<td><a class="btn" href="#">Shift</a> <a class="btn" href="#">F6</a></td>
+</tr>
+<tr>
+<td>開啟搜尋列以便搜尋目前的網頁內容</td>
+<td><a class="btn" href="#">Ctrl</a> F 或 <a class="btn" href="#">F3</a></td>
+</tr>
+<tr>
+<td>跳至下一個與搜尋列查詢內容相符的項目</td>
+<td><a class="btn" href="#">Ctrl</a> G</td>
+</tr>
+<tr>
+<td>跳至上一個與搜尋列查詢內容相符的項目</td>
+<td><a class="btn" href="#">Ctrl</a> <a class="btn" href="#">Shift</a> G</td>
+</tr>
+<tr>
+<td>開啟「開發人員工具」</td>
+<td><a class="btn" href="#">Ctrl</a> <a class="btn" href="#">Shift</a> J鍵或 <a class="btn" href="#">F12</a></td>
+</tr>
+<tr>
+<td>開啟 [清除瀏覽資料] 選項</td>
+<td><a class="btn" href="#">Ctrl</a> <a class="btn" href="#">Shift</a> <a class="btn" href="#">Delete</a></td>
+</tr>
+<tr>
+<td>以其他使用者的身份登入或以訪客身份瀏覽</td>
+<td><a class="btn" href="#">Ctrl</a> <a class="btn" href="#">Shift</a> M</td>
+</tr>
+</tbody>
+</table>
+<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style:none; padding-left: 0;"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline-block; vertical-align: top;"><a href="https://www.playpcesor.com/2016/05/cvim-chrome.html" rel="external nofollow noopener noreferrer" target="_blank">上手技客的浪漫！ cVim 讓 Chrome 全鍵盤快捷操作</a></span><a href="#fnref:1" rev="footnote"> ↩</a></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">2.</span><span style="display: inline-block; vertical-align: top;"><a href="https://blog.csdn.net/hk2291976/article/details/51280816" rel="external nofollow noopener noreferrer" target="_blank">cVim——Chrome 上更強大的 vim 插件</a></span><a href="#fnref:2" rev="footnote"> ↩</a></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">3.</span><span style="display: inline-block; vertical-align: top;"><a href="https://support.google.com/chrome/answer/157179?hl=zh-Hant" rel="external nofollow noopener noreferrer" target="_blank">Chrome 鍵盤快速鍵</a></span><a href="#fnref:3" rev="footnote"> ↩</a></li></ol></div></div>
       
     </div>
 
@@ -552,7 +1005,7 @@
     <strong>作者： </strong>Flymia</li>
   <li class="post-copyright-link">
     <strong>文章連結：</strong>
-    <a href="https://ppundsh.github.io/posts/6edb/" title="Vim 指令">https://ppundsh.github.io/posts/6edb/</a>
+    <a href="https://ppundsh.github.io/posts/78d/" title="cVim for Chrome ">https://ppundsh.github.io/posts/78d/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版權聲明： </strong>本網誌所有文章除特別聲明外，均採用 <a rel="external nofollow noopener noreferrer" href="http://creativecommons.org/licenses/by-nc-sa/3.0/tw/" target="_blank">創用 CC 姓名標示-非商業性-相同方式分享 3.0 台灣 授權條款</a> 授權<a rel="external nofollow noopener noreferrer" href="http://creativecommons.org/licenses/by-nc-sa/3.0/tw/" target="_blank"><img alt="創用 CC 授權條款" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/3.0/tw/88x31.png" align="right"></a> </li>
@@ -564,6 +1017,8 @@
     <footer class="post-footer">
       
         <div class="post-tags">
+          
+            <a href="/tags/Brower/" rel="tag"><i class="fa fa-tag"></i> Brower</a>
           
             <a href="/tags/Vim/" rel="tag"><i class="fa fa-tag"></i> Vim</a>
           
@@ -578,8 +1033,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/posts/4037/" rel="next" title="Windows Subsystem Linux 筆記">
-                <i class="fa fa-chevron-left"></i> Windows Subsystem Linux 筆記
+              <a href="/posts/7b8d/" rel="next" title="7zip 高危險漏洞">
+                <i class="fa fa-chevron-left"></i> 7zip 高危險漏洞
               </a>
             
           </div>
@@ -587,10 +1042,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/posts/44c2/" rel="prev" title="Tor 指令備忘">
-                Tor 指令備忘 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -644,8 +1095,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目錄
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            本站概要
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -756,6 +1216,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安裝"><span class="nav-number">1.</span> <span class="nav-text">安裝</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基本認知："><span class="nav-number">2.</span> <span class="nav-text">基本認知：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基本用法"><span class="nav-number">3.</span> <span class="nav-text">基本用法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#捲動網頁"><span class="nav-number">3.1.</span> <span class="nav-text">捲動網頁</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#上一頁、下一頁"><span class="nav-number">3.2.</span> <span class="nav-text">上一頁、下一頁</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#輸入欄"><span class="nav-number">3.3.</span> <span class="nav-text">輸入欄</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#圈選文字、複製文字"><span class="nav-number">3.4.</span> <span class="nav-text">圈選文字、複製文字</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#打開網頁中的各種連結、按鈕、選單"><span class="nav-number">3.5.</span> <span class="nav-text">打開網頁中的各種連結、按鈕、選單</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#切換與管理分頁"><span class="nav-number">3.6.</span> <span class="nav-text">切換與管理分頁</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#複製網址與搜尋"><span class="nav-number">3.7.</span> <span class="nav-text">複製網址與搜尋</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#頁面內搜尋"><span class="nav-number">3.8.</span> <span class="nav-text">頁面內搜尋</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#標記"><span class="nav-number">3.9.</span> <span class="nav-text">標記</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#輸入框操作"><span class="nav-number">3.10.</span> <span class="nav-text">輸入框操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其它"><span class="nav-number">3.11.</span> <span class="nav-text">其它</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chrome-原生快捷鍵"><span class="nav-number">4.</span> <span class="nav-text">Chrome 原生快捷鍵</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#分頁與視窗快速鍵"><span class="nav-number">4.1.</span> <span class="nav-text">分頁與視窗快速鍵</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Google-Chrome-功能快速鍵"><span class="nav-number">4.2.</span> <span class="nav-text">Google Chrome 功能快速鍵</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

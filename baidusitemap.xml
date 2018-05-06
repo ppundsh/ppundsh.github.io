@@ -4,14 +4,33 @@
 
     
   <url>
-    <loc>https://ppundsh.github.io/posts/bbd5/</loc>
-    <lastmod>2018-04-29T17:56:01.881Z</lastmod>
+    <loc>https://ppundsh.github.io/posts/78d/</loc>
+    <lastmod>2018-05-06T08:01:30.755Z</lastmod>
     <data>
         <display>
-        <title>符號念法</title>
-        <pubTime>2018-04-29T17:19:26.000Z</pubTime>
+        <title>cVim for Chrome </title>
+        <pubTime>2018-05-06T05:49:15.000Z</pubTime>
         
-        <tag>MIS</tag>
+        <tag>Brower</tag>
+         
+        <tag>Vim</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ppundsh.github.io/posts/7b8d/</loc>
+    <lastmod>2018-05-06T05:47:46.879Z</lastmod>
+    <data>
+        <display>
+        <title>7zip 高危險漏洞</title>
+        <pubTime>2018-05-06T05:39:24.000Z</pubTime>
+        
+        <tag>Crack</tag>
          
          
            
@@ -22,13 +41,30 @@
     
   <url>
     <loc>https://ppundsh.github.io/posts/140e/</loc>
-    <lastmod>2018-04-29T17:49:12.509Z</lastmod>
+    <lastmod>2018-05-01T14:43:20.445Z</lastmod>
     <data>
         <display>
         <title>Kali 安裝指令</title>
         <pubTime>2018-04-29T16:30:58.000Z</pubTime>
         
         <tag>Linux</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ppundsh.github.io/posts/bbd5/</loc>
+    <lastmod>2018-04-29T17:56:01.881Z</lastmod>
+    <data>
+        <display>
+        <title>符號念法</title>
+        <pubTime>2018-04-29T17:19:26.000Z</pubTime>
+        
+        <tag>MIS</tag>
          
          
            
@@ -225,9 +261,9 @@
         
         <tag>MIS</tag>
          
-        <tag>crack</tag>
-         
         <tag>VScode</tag>
+         
+        <tag>crack</tag>
          
          
            
@@ -314,9 +350,9 @@
         
         <tag>cmd</tag>
          
-        <tag>windows</tag>
-         
         <tag>crack</tag>
+         
+        <tag>windows</tag>
          
          
            

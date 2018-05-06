@@ -138,18 +138,18 @@
 
 
 
-  <meta name="description" content="記錄一下">
-<meta name="keywords" content="Vim">
+  <meta name="description" content="7-zip 被發現在 18.05 版之前都存在有嚴重湄洞，建議有使用的都要更新">
+<meta name="keywords" content="Crack">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Vim 指令">
-<meta property="og:url" content="https://ppundsh.github.io/posts/6edb/index.html">
+<meta property="og:title" content="7zip 高危險漏洞">
+<meta property="og:url" content="https://ppundsh.github.io/posts/7b8d/index.html">
 <meta property="og:site_name" content="Flymia 凡事用心之事">
-<meta property="og:description" content="記錄一下">
+<meta property="og:description" content="7-zip 被發現在 18.05 版之前都存在有嚴重湄洞，建議有使用的都要更新">
 <meta property="og:locale" content="zh-TW">
-<meta property="og:updated_time" content="2018-04-17T13:29:55.312Z">
+<meta property="og:updated_time" content="2018-05-06T05:47:46.879Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Vim 指令">
-<meta name="twitter:description" content="記錄一下">
+<meta name="twitter:title" content="7zip 高危險漏洞">
+<meta name="twitter:description" content="7-zip 被發現在 18.05 版之前都存在有嚴重湄洞，建議有使用的都要更新">
 
 
 
@@ -158,7 +158,7 @@
 
 
 
-  <link rel="canonical" href="https://ppundsh.github.io/posts/6edb/">
+  <link rel="canonical" href="https://ppundsh.github.io/posts/7b8d/">
 
 
 
@@ -168,7 +168,7 @@
   };
 </script>
 
-  <title>Vim 指令 | Flymia 凡事用心之事</title>
+  <title>7zip 高危險漏洞 | Flymia 凡事用心之事</title>
   
 
 
@@ -373,7 +373,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ppundsh.github.io/posts/6edb/">
+    <link itemprop="mainEntityOfPage" href="https://ppundsh.github.io/posts/7b8d/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Flymia">
@@ -390,7 +390,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">Vim 指令</h2>
+          <h2 class="post-title" itemprop="name headline">7zip 高危險漏洞</h2>
         
 
         <div class="post-meta">
@@ -402,28 +402,14 @@
               
                 <span class="post-meta-item-text">發表於</span>
               
-              <time title="創建於" itemprop="dateCreated datePublished" datetime="2018-04-16T09:21:50+08:00">2018-04-16</time>
+              <time title="創建於" itemprop="dateCreated datePublished" datetime="2018-05-06T13:39:24+08:00">2018-05-06</time>
             
 
             
             
               
-                
-              
             
 
-            
-              
-              <span class="post-meta-divider">|</span>
-              
-
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新於：</span>
-              
-              <time title="更新於" itemprop="dateModified" datetime="2018-04-17T21:29:55+08:00">2018-04-17</time>
             
           </span>
 
@@ -449,7 +435,7 @@
                 
                   <span class="post-meta-item-text">文章字數：</span>
                 
-                <span title="文章字數">4.3k</span>
+                <span title="文章字數">416</span>
               
 
               
@@ -463,7 +449,7 @@
                 
                   <span class="post-meta-item-text">閱讀時間&asymp;</span>
                 
-                <span title="閱讀時間">0:21</span>
+                <span title="閱讀時間">0:02</span>
               
             </div>
           
@@ -483,49 +469,10 @@
       
 
       
-        <p>記錄一下<br><a id="more"></a></p>
-<p>顯示行數<br>    set number</p>
-<p>隱藏行數<br>    set nonumber</p>
-<p>刪除一行：dd</p>
-<p>刪除一個單詞 / 游標之後的單詞剩餘部分：dw</p>
-<p>刪除當前字符：x</p>
-<p>游標之後的該行部分：d$</p>
-<p>文本刪除</p>
-<p>dd 刪除一行</p>
-<p>d$ 刪除以當前字符開始的一行字符</p>
-<p>ndd 刪除以當前行開始的 n 行</p>
-<p>dw 刪除以當前字符開始的一個字</p>
-<p>ndw 刪除以當前字符開始的 n 個字</p>
-<p>D 與 d$ 同義</p>
-<p>d) 刪除到下一句的開始</p>
-<p>d} 刪除到下一段的開始</p>
-<p>d 回車 刪除 2 行</p>
-<p>ndw 或 ndW 刪除游標處開始及其後的 n-1 個字符。<br>d0 刪至行首。<br>d$ 刪至行尾。<br>ndd 刪除當前行及其後 n-1 行。<br>x 或 X 刪除一個字符。<br>Ctrl+u 刪除輸入方式下所輸入的文本。<br>^R 恢復 u 的操作<br>J 把下一行合併到當前行尾<br>V 選擇一行<br>^V 按下 ^V 後即可進行矩形的選擇了<br>aw 選擇單詞<br>iw 內部單詞 (無空格)<br>as 選擇句子<br>is 選擇句子 (無空格)<br>ap 選擇段落<br>ip 選擇段落 (無空格)<br>D 刪除到行尾<br>x,y 刪除與複製包含高亮區</p>
-<p>dl 刪除當前字符（與 x 命令功能相同）<br>d0 刪除到某一行的開始位置<br>d^ 刪除到某一行的第一個字符位置（不包括空格或 TAB 字符）<br>dw 刪除到某個單詞的結尾位置<br>d3w 刪除到第三個單詞的結尾位置<br>db 刪除到某個單詞的開始位置<br>dW 刪除到某個以空格作為分隔符的單詞的結尾位置<br>dB 刪除到某個以空格作為分隔符的單詞的開始位置<br>d7B 刪除到前面 7 個以空格作為分隔符的單詞的開始位置<br>d） 刪除到某個語句的結尾位置<br>d4） 刪除到第四個語句的結尾位置<br>d（ 刪除到某個語句的開始位置<br>d） 刪除到某個段落的結尾位置<br>d{ 刪除到某個段落的開始位置<br>d7{ 刪除到當前段落起始位置之前的第 7 個段落位置<br>dd 刪除當前行<br>d/text 刪除從文本中出現 “text” 中所指定字樣的位置，<br>一直向前直到下一個該字樣所出現的位置（但不包括該字樣）之間的內容<br>dfc 刪除從文本中出現字符 “c” 的位置，一直向前直到下一個該字符所出現的位置（包括該字符）之間的內容<br>dtc 刪除當前行直到下一個字符 “c” 所出現位置之間的內容<br>D 刪除到某一行的結尾<br>d$ 刪除到某一行的結尾<br>5dd 刪除從當前行所開始的 5 行內容<br>dL 刪除直到螢幕上最後一行的內容<br>dH 刪除直到螢幕上第一行的內容<br>dG 刪除直到工作緩存區結尾的內容<br>d1G 刪除直到工作緩存區開始的內容</p>
-<p>在 Vi 中移動游標<br>  k        上<br>h   l    左  右<br>  j        下</p>
-<p>^        移動到該行第一個非空格的字符處<br>w        向前移動一個單詞，將符號或標點當作單詞處理<br>W        向前移動一個單詞，不把符號或標點當作單詞處理<br>b        向後移動一個單詞，把符號或標點當作單詞處理<br>B        向後移動一個單詞，不把符號或標點當作單詞處理<br>(        游標移至句首<br>)        游標移至句尾<br>{        游標移至段落開頭<br>}        游標移至段落結尾<br>H        游標移至螢幕頂行<br>M        游標移至螢幕中間行<br>L        游標移至螢幕最後行<br>0        到行首<br>$        到行尾<br>gg       到頁首<br>G        到頁末<br>行號+G   跳轉到指定行<br>n+       游標下移n行<br>n-       游標上移n行<br>Ctrl+g   查詢當前行資訊和當前文件資訊</p>
-<p>fx       向右跳到本行字符x處（x可以是任何字符）<br>Fx       向左跳到本行字符x處（x可以是任何字符）</p>
-<p>tx       和fx相同，區別是跳到字符x前<br>Tx       和Fx相同，區別是跳到字符x後</p>
-<p>C-b      向上滾動一屏<br>C-f      向下滾動一屏<br>C-u      向上滾動半屏<br>C-d      向下滾動半屏<br>C-y      向上滾動一行<br>C-e      向下滾動一行</p>
-<p>nz       將第n行滾至螢幕頂部，不指定n時將當前行滾至螢幕頂部。<br>進入和退出 Vi 命令<br>vi filename               打開或新建文件，並將游標置於第一行首<br>vi +n filename            打開文件，並將游標置於第n行首<br>vi + filename             打開文件，並將游標置於最後一行首<br>vi +/pattern filename     打開文件，並將游標置於第一個與pattern匹配的串處<br>vi -r filename            在上次正用vi編輯時發生系統崩潰，恢復filename<br>vi filename … filename  打開多個文件，依次進行編輯 </p>
-<p>ZZ                        退出vi並保存<br>:q!                       退出vi，不保存<br>:wq                       退出vi並保存<br>重複操作<br>.        重複上一次操作<br>自動補齊<br>C-n      匹配下一個關鍵字<br>C-p      匹配上一個關鍵字<br>插入<br>o        在游標下方新開一行並將游標置於新行行首，進入插入模式。<br>O        同上，在游標上方。</p>
-<p>a        在游標之後進入插入模式。<br>A        同上，在游標之前。</p>
-<p>R        進入替換模式，直到按下Esc<br>set xxx  設置XXX選項。<br>行合併<br>J        把下面一行合併到本行後面<br>Vi 中查找及替換命令<br>/pattern         從游標開始處向文件尾搜索pattern<br>?pattern         從游標開始處向文件首搜索pattern<br>n                在同一方向重複上一次搜索命令<br>N                在反方向上重複上一次搜索命令<br>%                查找配對的括弧<br>:s/p1/p2/g       將當前行中所有p1均用p2替代，若要每個替換都向用戶詢問則應該用gc選項<br>:n1,n2s/p1/p2/g  將第n1至n2行中所有p1均用p2替代<br>:g/p1/s//p2/g    將文件中所有p1均用p2替換</p>
-<p>.*[]^%~$ 在Vi中具有特殊含義，若需要查找則應該加上轉義字符”\”<br>查找的一些選項<br>設置高亮<br>:set hlsearch    設置高亮<br>:set nohlsearch  關閉高亮<br>:nohlsearch      關閉當前已經設置的高亮<br>增量查找<br>:set incsearch   設置增量查找<br>:set noincsearch 關閉增量查找<br>在 Vi 中刪除<br>x        刪除當前游標下的字符<br>dw       刪除游標之後的單詞剩餘部分。<br>d$       刪除游標之後的該行剩餘部分。<br>dd       刪除當前行。</p>
-<p>c        功能和d相同，區別在於完成刪除操作後進入INSERT MODE<br>cc       也是刪除當前行，然後進入INSERT MODE</p>
-<p>更改字符<br>rx       將當前游標下的字符更改為x（x為任意字符）<br>~        更改當前游標下的字符的大小寫 </p>
-<p>鍵盤宏操作<br>qcharacter  開始錄製宏，character為a到z的任意字符<br>q           終止錄製宏<br>@character  調用先前錄製的宏</p>
-<p>恢復誤操作<br>u        撤銷最後執行的命令<br>U        修正之前對該行的操作<br>Ctrl+R   Redo<br>在 Vi 中操作 Frame<br>c-w c-n  增加frame<br>c-w c-c  減少frame<br>c-w c-w  切換frame<br>c-w c-r  交換兩個frame<br>VIM 中的塊操作<br>Vim 支援多達 26 個剪貼板</p>
-<p>  選塊   先用v，C-v，V選擇一塊，然後用y複製，再用p粘貼。<br>  yy     複製當前整行<br>  nyy    複製當前行開始的n行內容<br>  ?nyy   將游標當前行及其下n行的內容保存到寄存器?中，其中?為一個字母，n為一個數字<br>  ?nyw   將游標當前行及其下n個詞保存到寄存器?中，其中?為一個字母，n為一個數字<br>  ?nyl   將游標當前行及其下n個字符保存到寄存器?中，其中?為一個字母，n為一個數字<br>  ?p     將寄存器?中的內容粘貼到游標位置之後。如果?是用yy複製的完整行，<br>         則粘貼在游標所在行下面。這裡?可以是一個字母，也可以是一個數字<br>  ?P     將寄存器a中的內容粘貼到游標位置之前。如果?是用yy複製的完整行，<br>         則粘貼在游標所在行上面。這裡?可以是一個字母，也可以是一個數字<br>  ay[motion]<br>            ay$    複製游標位置到行末並保存在寄存器a中<br>            ayft   複製游標位置到當前行第一個字母t並保存在寄存器a中<br>以上指令皆可去掉 a 工作，則 y,p 對未命名寄存器工作（所有 d,c,x,y 的對象都被保存在這裡）。</p>
-<p>剪切 / 複製 / 粘貼<br>所有刪除的內容自動被保存，可以用 p 鍵粘貼</p>
-<p>Vi 的選項設置<br>all         列出所有選項設置情況<br>term        設置終端類型<br>ignorance   在搜索中忽略大小寫<br>list        顯示製表位(Ctrl+I)和行尾標誌($)<br>number      顯示行號<br>report      顯示由面向行的命令修改過的數目<br>terse       顯示簡短的警告資訊<br>warn        在轉到別的文件時若沒保存當前文件則顯示NO write資訊<br>nomagic     允許在搜索模式中，使用前面不帶“\”的特殊字符<br>nowrapscan  禁止vi在搜索到達文件兩端時，又從另一端開始<br>mesg        允許vi顯示其他用戶用write寫到自己終端上的資訊<br>tips<br>對代碼自動格式化 gg=G</p>
-<p>在 vi/vim 中，跳到文件首尾快捷鍵:</p>
-<p>文件開始: shift + g</p>
-<p>文件結束: g g</p>
-<p>from:<a href="http://lxs647.iteye.com/blog/1245948" rel="external nofollow noopener noreferrer" target="_blank">http://lxs647.iteye.com/blog/1245948</a></p>
-<p>from:<a href="http://dsec.pku.edu.cn/~jinlong/vi/Vi.html" rel="external nofollow noopener noreferrer" target="_blank">http://dsec.pku.edu.cn/~jinlong/vi/Vi.html</a></p>
-<p>from:<a href="http://www.caole.net/diary/vim.html#sec-1" rel="external nofollow noopener noreferrer" target="_blank">http://www.caole.net/diary/vim.html#sec-1</a></p>
-
+        <p>7-zip 被發現在 18.05 版之前都存在有嚴重湄洞，建議有使用的都要更新<br><a id="more"></a><br>官網<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup><br>文章來源<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup><br>7-Zip 由於簡單、實用，是很多人裝機首選的壓縮軟件，最近剛剛發佈了 18.05 正式版本。CIS 此次發現的漏洞覆蓋了 18.05 之前的所有版本，也就是說，除非用戶這幾天已將軟件升級到最新版本，否則都可能受到該漏洞的威脅。</p>
+<p>CIS 指出，攻擊者可利用此安全漏洞，在 PC 上安裝程序，查看、編輯或刪除數據，或創建具有完全訪問權限的新用戶帳戶。好消息是目前還沒有關於該漏洞威脅安全的報導，而且解決方法也很簡單，只要升級到最新版本即可。</p>
+<p>CIS 還建議，在安裝應用軟件時，不應授予其完全的權限，而是儘可能地在所有的系統和服務上採取 “ 最低權限原則 ”，以便出現問題時將損害降至最小化。這可能不是一個從根源解決問題的辦法，但確實能有效預防惡意攻擊。</p>
+<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style:none; padding-left: 0;"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline-block; vertical-align: top;"><a href="https://www.developershome.com/7-zip/download.asp" rel="external nofollow noopener noreferrer" target="_blank"> 7zip </a></span><a href="#fnref:1" rev="footnote"> ↩</a></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">2.</span><span style="display: inline-block; vertical-align: top;"><a href="https://www.oschina.net/news/95786/security-vulnerability-found-in-7zip" rel="external nofollow noopener noreferrer" target="_blank">流行開源壓縮軟件 7-Zip 被曝嚴重漏洞，影響所有老版本</a></span><a href="#fnref:2" rev="footnote"> ↩</a></li></ol></div></div>
       
     </div>
 
@@ -552,7 +499,7 @@
     <strong>作者： </strong>Flymia</li>
   <li class="post-copyright-link">
     <strong>文章連結：</strong>
-    <a href="https://ppundsh.github.io/posts/6edb/" title="Vim 指令">https://ppundsh.github.io/posts/6edb/</a>
+    <a href="https://ppundsh.github.io/posts/7b8d/" title="7zip 高危險漏洞">https://ppundsh.github.io/posts/7b8d/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版權聲明： </strong>本網誌所有文章除特別聲明外，均採用 <a rel="external nofollow noopener noreferrer" href="http://creativecommons.org/licenses/by-nc-sa/3.0/tw/" target="_blank">創用 CC 姓名標示-非商業性-相同方式分享 3.0 台灣 授權條款</a> 授權<a rel="external nofollow noopener noreferrer" href="http://creativecommons.org/licenses/by-nc-sa/3.0/tw/" target="_blank"><img alt="創用 CC 授權條款" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/3.0/tw/88x31.png" align="right"></a> </li>
@@ -565,7 +512,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Vim/" rel="tag"><i class="fa fa-tag"></i> Vim</a>
+            <a href="/tags/Crack/" rel="tag"><i class="fa fa-tag"></i> Crack</a>
           
         </div>
       
@@ -578,8 +525,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/posts/4037/" rel="next" title="Windows Subsystem Linux 筆記">
-                <i class="fa fa-chevron-left"></i> Windows Subsystem Linux 筆記
+              <a href="/posts/bbd5/" rel="next" title="符號念法">
+                <i class="fa fa-chevron-left"></i> 符號念法
               </a>
             
           </div>
@@ -588,8 +535,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/posts/44c2/" rel="prev" title="Tor 指令備忘">
-                Tor 指令備忘 <i class="fa fa-chevron-right"></i>
+              <a href="/posts/78d/" rel="prev" title="cVim for Chrome ">
+                cVim for Chrome  <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
