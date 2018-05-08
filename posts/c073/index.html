@@ -452,7 +452,7 @@
                 
                   <span class="post-meta-item-text">文章字數：</span>
                 
-                <span title="文章字數">466</span>
+                <span title="文章字數">434</span>
               
 
               
@@ -490,7 +490,7 @@
 <h2 id="系統路徑"><a href="#系統路徑" class="headerlink" title="系統路徑"></a>系統路徑</h2><p>本文參考來源<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup><br>Visual Studio Code 安裝時要勾選<code>添加到 PATCH</code><br>如果是免安裝版的，請輸入 <code>Win+R</code> 叫出執行，再輸入<code>sysdm.cpl</code>，到<code>進階→環境變數</code>中，編輯<code>Path</code>，將 VS code 的資料夾路徑也加入。</p>
 <div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 50%;"><img src="https://i.imgur.com/tWmI9Sc.png" alt="添加 PATCH"></div><div class="group-picture-column" style="width: 50%;"><img src="https://i.imgur.com/XquQujU.png" alt="添加 PATCH2"></div></div><div class="group-picture-row"></div></div></div>
 <h2 id="自動打開編輯器腳本"><a href="#自動打開編輯器腳本" class="headerlink" title="自動打開編輯器腳本"></a>自動打開編輯器腳本</h2><p>在 Blog 根目錄下新建 /scripts/AutoOpenEditor.js 文件（取其他名字也可以，不影響），並加入以下代碼。</p>
-<figure class="highlight plain"><figcaption><span class="fileDir">file:~/scripts/</span><span class="caption">AutoOpenEditor</span><span class="suffix">.js</span></figcaption><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></div><div class="code"><pre><div class="line">let spawn = require(&apos;hexo-util/lib/spawn&apos;);</div><div class="line"></div><div class="line">hexo.on(&apos;new&apos;, (data) =&gt; &#123;</div><div class="line">  spawn(&apos;code&apos;, [hexo.base_dir, data.path]);</div><div class="line">&#125;);</div></pre></div></div></figure>
+<figure class="highlight plain"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></div><div class="code"><pre><div class="line">let spawn = require(&apos;hexo-util/lib/spawn&apos;);</div><div class="line"></div><div class="line">hexo.on(&apos;new&apos;, (data) =&gt; &#123;</div><div class="line">  spawn(&apos;code&apos;, [hexo.base_dir, data.path]);</div><div class="line">&#125;);</div></pre></div></div></figure>
 <div id="footnotes"><hr><div id="footnotelist"><ol style="list-style:none; padding-left: 0;"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline-block; vertical-align: top;"><a href="https://leaferx.online/2018/03/17/hexo-auto-open-vscode/" rel="external nofollow noopener noreferrer" target="_blank">https://leaferx.online/2018/03/17/hexo-auto-open-vscode/</a></span><a href="#fnref:1" rev="footnote"> ↩</a></li></ol></div></div>
       
     </div>
@@ -799,7 +799,7 @@
     
       <span class="post-meta-item-text">網站總閱讀時間：</span>
     
-    <span title="網站總閱讀時間">12:01</span>
+    <span title="網站總閱讀時間">11:59</span>
   
 </div>
 
@@ -808,7 +808,7 @@
 
 
 
-<!--  <div class="powered-by">由 <a class="theme-link" target="_blank" rel="external nofollow" href="https://hexo.io">Hexo</a> 強力驅動 v3.7.0</div>
+<!--  <div class="powered-by">由 <a class="theme-link" target="_blank" rel="external nofollow" href="https://hexo.io">Hexo</a> 強力驅動 v3.7.1</div>
 
 -->
 
