@@ -148,7 +148,7 @@
 <meta property="og:locale" content="zh-TW">
 <meta property="og:image" content="https://i.imgur.com/pvAh791.png">
 <meta property="og:image" content="https://i.imgur.com/NpkGSNI.png">
-<meta property="og:updated_time" content="2018-05-08T19:21:56.153Z">
+<meta property="og:updated_time" content="2018-05-08T19:26:54.596Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="VMware Workstation on Windows 發生 Guard&#x2F;Device Guard is enabled 錯誤">
 <meta name="twitter:description" content="一開始還以為是 Win10 1803 的核心隔離設定造的，但實際上是另一個設定。">
@@ -478,13 +478,13 @@
 <p>解決方法：</p>
 <ol>
 <li>將開啟 Credential Guard 的群組原則關閉<ol>
-<li><a class="btn" href="#">Win</a><a class="btn" href="#">R</a>R，輸入<code>gpedit.msc</code></li>
+<li>按 <a class="btn" href="#">Win</a>+<a class="btn" href="#">R</a>，輸入<code>gpedit.msc</code></li>
 <li>本機電腦原則→電腦設定→系統管理範本→系統→Device Guard：打開<code>開啟虛擬化安全性</code></li>
 <li>選擇<code>已停用</code><br><img src="https://i.imgur.com/pvAh791.png" alt="關閉Device Guard01"><br><img src="https://i.imgur.com/NpkGSNI.png" alt="關閉Device Guard02"></li>
 </ol>
 </li>
 <li>如果已啟用 Hyper-V，需裝其關閉<ol>
-<li><a class="btn" href="#">Win</a><a class="btn" href="#">R</a>R，輸入<code>appwiz.cpl</code></li>
+<li>按 <a class="btn" href="#">Win</a>+<a class="btn" href="#">R</a>，輸入<code>appwiz.cpl</code></li>
 <li>開啟或關閉 Windows 功能→取消掉 Hyper-V</li>
 </ol>
 </li>
