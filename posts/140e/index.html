@@ -146,7 +146,7 @@
 <meta property="og:site_name" content="Flymia 凡事用心之事">
 <meta property="og:description" content="重裝後的備忘">
 <meta property="og:locale" content="zh-TW">
-<meta property="og:updated_time" content="2018-05-07T22:36:29.910Z">
+<meta property="og:updated_time" content="2018-05-08T18:08:44.053Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Kali 安裝指令">
 <meta name="twitter:description" content="重裝後的備忘">
@@ -423,7 +423,7 @@
               
                 <span class="post-meta-item-text">更新於：</span>
               
-              <time title="更新於" itemprop="dateModified" datetime="2018-05-08T06:36:29+08:00">2018-05-08</time>
+              <time title="更新於" itemprop="dateModified" datetime="2018-05-09T02:08:44+08:00">2018-05-09</time>
             
           </span>
 
@@ -449,7 +449,7 @@
                 
                   <span class="post-meta-item-text">文章字數：</span>
                 
-                <span title="文章字數">227</span>
+                <span title="文章字數">1.4k</span>
               
 
               
@@ -463,7 +463,7 @@
                 
                   <span class="post-meta-item-text">閱讀時間&asymp;</span>
                 
-                <span title="閱讀時間">0:01</span>
+                <span title="閱讀時間">0:07</span>
               
             </div>
           
@@ -483,11 +483,46 @@
       
 
       
-        <p>重裝後的備忘<br><a id="more"></a><br>安裝 NTP</p>
-<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></div><div class="code"><pre><div class="line">apt-get install ntp ntpdate</div><div class="line"></div><div class="line"><span class="comment">#vim etc/ntp.conf</span></div><div class="line">server time.stdtime.gov.tw</div><div class="line">server clock.stdtime.gov.tw</div><div class="line"></div><div class="line">ntpdate time.stdtime.gov.tw</div></pre></div></div></figure>
-<p>更改時區<br><figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">dpkg-reconfigure tzdata</div></pre></div></div></figure></p>
-<p>開啟網卡、DHCP<br><figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></div><div class="code"><pre><div class="line">ipconfig -a</div><div class="line">ifconfig eth0 up</div><div class="line">dhclient eth0</div></pre></div></div></figure></p>
-
+        <h1 id="重裝後的備忘"><a href="#重裝後的備忘" class="headerlink" title="重裝後的備忘"></a>重裝後的備忘</h1><a id="more"></a>
+<h2 id="安裝-NTP"><a href="#安裝-NTP" class="headerlink" title="安裝 NTP"></a>安裝 NTP</h2><figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></div><div class="code"><pre><div class="line">apt-get install ntp ntpdate</div><div class="line"></div><div class="line"><span class="comment">#vim etc/ntp.conf</span></div><div class="line">server time.stdtime.gov.tw</div><div class="line">server clock.stdtime.gov.tw</div><div class="line"></div><div class="line">ntpdate time.stdtime.gov.tw</div></pre></div></div></figure>
+<h2 id="更改時區"><a href="#更改時區" class="headerlink" title="更改時區"></a>更改時區</h2><figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></div><div class="code"><pre><div class="line">dpkg-reconfigure tzdata</div><div class="line">date <span class="comment">#檢查</span></div></pre></div></div></figure>
+<h2 id="開啟網卡、DHCP"><a href="#開啟網卡、DHCP" class="headerlink" title="開啟網卡、DHCP"></a>開啟網卡、DHCP</h2><figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></div><div class="code"><pre><div class="line">ifconfig -a</div><div class="line">ifconfig eth0 up</div><div class="line">dhclient eth0</div><div class="line">ifconfig <span class="comment">#檢查</span></div></pre></div></div></figure>
+<h2 id="設定新使用者"><a href="#設定新使用者" class="headerlink" title="設定新使用者"></a>設定新使用者</h2><p>kali 預設 root 無法用於 ssh 登入</p>
+<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></div><div class="code"><pre><div class="line">useradd -m usern <span class="comment">#新增使用者 -m 的意思是創建用戶的主目錄</span></div><div class="line">passwd usern <span class="comment">#設置密碼</span></div><div class="line">usermod -a -G sudo usern <span class="comment">#. 為添加的用戶賦予權限 (-a 添加 ；-G 群組) ，如果沒有這一步，我們創建的用戶只有瀏覽的權限而沒有修改等其它的特殊權限</span></div><div class="line">chsh -s /bin/bash usern <span class="comment">#將用戶 usern 的默認外殼改成 bash ，還可以改其它的，比如 csh 、zsh、fish 等，如果沒有什麼特別的用途，一般用 bash</span></div><div class="line">id usern <span class="comment">#檢查</span></div><div class="line">userdel usern <span class="comment">#刪除</span></div></pre></div></div></figure>
+<h2 id="安裝-SSH-Server"><a href="#安裝-SSH-Server" class="headerlink" title="安裝 SSH Server"></a>安裝 SSH Server</h2><p><a href="https://lmgsecurity.com/enable-start-ssh-kali-linux/" rel="external nofollow noopener noreferrer" target="_blank">來源</a></p>
+<p>檢查有無安裝</p>
+<pre><code>apt list openssh-server
+</code></pre><p>如果看到如 [installed] 字樣，代表有裝過。<br>如果沒有，執行下列步驟：</p>
+<p>先做更新再安裝</p>
+<pre><code>apt-get update
+apt install openssh-server
+</code></pre><p>Kali 帶有預設的 SSH 密鑰，為了安全先備份再生成新密鑰：</p>
+<pre><code>mkdir /etc/ssh/default_keys
+mv /etc/ssh/ssh_host_* /etc/ssh/default_keys/
+</code></pre><p>生成新密鑰</p>
+<pre><code>dpkg-reconfigure openssh-server
+</code></pre><p>編輯 SSH Server 設定</p>
+<pre><code>vim /etc/ssh/sshd_config
+</code></pre><p>如果只是計劃簡單使用 SSH，則默認值可能沒問題。如果你認為你會使用它一段時間，我會建議至少啟用公鑰認證：</p>
+<pre><code>PubkeyAuthentication yes
+</code></pre><p>然後禁用密碼認證</p>
+<pre><code>PasswordAuthentication no
+</code></pre><p>您也可以在此處允許 root 用戶登錄，但應考慮創建非特權用戶帳戶。</p>
+<p>與 SSH 相關的單元是 ssh.service 和 ssh.socket。在基本級別上，service 控制進程，socket 控製文件系統或網絡套接字。如果您只需要暫時啟動 SSH 服務，建議使用 ssh.socket：</p>
+<pre><code>systemctl start ssh.socket
+</code></pre><p>要停止時：</p>
+<pre><code>systemctl stop ssh.socket
+</code></pre><p>要永久啟用 SSH 服務，請用以下指令：</p>
+<pre><code>systemctl enable ssh.service
+</code></pre><p>立即使用SSH而無需重新啟動：</p>
+<pre><code>systemctl start ssh.service
+</code></pre><p>檢查 SSH 服務狀態</p>
+<pre><code>systemctl status ssh.service
+</code></pre><p>關閉服務</p>
+<pre><code>systemctl stop ssh.service
+</code></pre><p>禁用服務</p>
+<pre><code>systemctl disable ssh.service
+</code></pre>
       
     </div>
 
@@ -606,8 +641,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目錄
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            本站概要
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -723,6 +767,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#重裝後的備忘"><span class="nav-number">1.</span> <span class="nav-text">重裝後的備忘</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安裝-NTP"><span class="nav-number">1.1.</span> <span class="nav-text">安裝 NTP</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更改時區"><span class="nav-number">1.2.</span> <span class="nav-text">更改時區</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#開啟網卡、DHCP"><span class="nav-number">1.3.</span> <span class="nav-text">開啟網卡、DHCP</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#設定新使用者"><span class="nav-number">1.4.</span> <span class="nav-text">設定新使用者</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安裝-SSH-Server"><span class="nav-number">1.5.</span> <span class="nav-text">安裝 SSH Server</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
         <div class="back-to-top">
@@ -757,7 +817,7 @@
     
       <span class="post-meta-item-text">網站總字數：</span>
     
-    <span title="網站總字數">144k</span>
+    <span title="網站總字數">145k</span>
   
 
   
@@ -768,7 +828,7 @@
     
       <span class="post-meta-item-text">網站總閱讀時間：</span>
     
-    <span title="網站總閱讀時間">11:59</span>
+    <span title="網站總閱讀時間">12:05</span>
   
 </div>
 
