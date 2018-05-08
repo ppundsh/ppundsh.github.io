@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[VMware Workstation on Windows 發生 Guard/Device Guard is enabled 錯誤]]></title>
+    <url>%2Fposts%2F9770%2F</url>
+    <content type="text"><![CDATA[一開始還以為是 Win10 1803 的核心隔離設定造的，但實際上是另一個設定。一樣忘了截圖，來源1此錯誤會提示 VMware Workstation and Device/Credential Guard are not compatible. VMware Workstation can be run after disabling Device/Credential Guard. 詳細訊習參考2 解決方法： 將開啟 Credential Guard 的群組原則關閉 WinRR，輸入gpedit.msc 本機電腦原則→電腦設定→系統管理範本→系統→Device Guard：打開開啟虛擬化安全性 選擇已停用 如果已啟用 Hyper-V，需裝其關閉 WinRR，輸入appwiz.cpl 開啟或關閉 Windows 功能→取消掉 Hyper-V 不要選擇重新啟動 用系統管理員開啟 CMD ，輸入以下指令刪除 EFI 相關變量，注意 X 必需不為任何使用中的硬碟機代號 12345678mountvol X：/ scopy％WINDIR％\ System32 \ SecConfig.efi X：\ EFI \ Microsoft \ Boot \ SecConfig.efi / Y bcdedit / create &#123;0cb3b571-2f2e-4343-a879-d86a476d7215&#125; / d“DebugTool”/ application osloader bcdedit / set &#123;0cb3b571-2f2e-4343-a879-d86a476d7215&#125; path“\ EFI \ Microsoft \ Boot \ SecConfig.efi “ bcdedit / set &#123;bootmgr&#125; bootsequence &#123;0cb3b571-2f2e-4343-a879-d86a476d7215&#125; bcdedit / set &#123;0cb3b571-2f2e-4343-a879-d86a476d7215&#125; loadoptions DISABLE-LSA-ISO，DISABLE-VBS bcdedit / set &#123;0cb3b571-2f2e -4343-a879-d86a476d7215&#125; 設備分區 = X：mountvol X：/ d 重新開機 案照螢幕上指示按Win或F3 禁用 Device Guard 或 Credential Guard (有兩個項目，都要禁用。) 1.Powering on a vm in VMware Workstation on Windows 10 host where Credential Guard/Device Guard is enabled fails with BSOD (2146361) ↩2.Windows 10 host where Credential Guard or Device Guard is enabled fails when running Workstation (2146361) ↩]]></content>
+      <tags>
+        <tag>VM</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Token2Shell 連進 VMware 方法]]></title>
     <url>%2Fposts%2Ff9d%2F</url>
     <content type="text"><![CDATA[Token2Shell 是個人認為在 Windows 上最美的 SSH console 軟體，但在 VM 搭建後開啟 SSH 連線卻一直失敗，沒想原因是 UWP 的特殊限制…記錄一下官網的教學。 VMware與傳統 APP 不同，UMP 需要設定可允許訪問 loopback addresses (ex. localhost, 127.0.0.1 and etc.) ，只要在在 Host 端的 cmd ，輸入以下指令即可 1 1CheckNetIsolation LoopbackExempt -a -n="ChoungNetworksUS.68307A65C913_vvzc8y2tzcnsr" 刪除許可 1CheckNetIsolation LoopbackExempt -d -n="ChoungNetworksUS.68307A65C913_vvzc8y2tzcnsr" 檢查已允許的列表 1CheckNetIsolation LoopbackExempt -s VirtualBox官網有說到對 Token2Shell/MD 要連到 VirtualBox 還需要用 netsh 下監聽許可，因為個人沒有在用 Vitrtualbox ，所以單純記錄2 假如要連的位置是 192.168.55.101，端口是22： 1netsh interface portproxy add v4tov4 listenaddress=localhost listenport=22 connectaddress=192.168.56.101 connectport=22 protocol=tcp 重新開機後添加的項目仍會繼續存在，如要刪除需用以下指令： 1netsh interface portproxy delete v4tov4 listenaddress=localhost listenport=22 查看當前的 portproxy設定 1netsh interface portproxy show all 1.Accessing Loopback Addresses (X11 Forwarding) ↩2.Cannot connect to your VirtualBox or VMware from Token2Shell/MD? Here’s a workaround! ↩]]></content>
