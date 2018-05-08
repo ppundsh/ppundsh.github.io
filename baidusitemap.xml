@@ -4,14 +4,54 @@
 
     
   <url>
-    <loc>https://ppundsh.github.io/posts/f82e/</loc>
-    <lastmod>2018-05-08T18:14:09.527Z</lastmod>
+    <loc>https://ppundsh.github.io/posts/f9d/</loc>
+    <lastmod>2018-05-08T18:52:32.466Z</lastmod>
     <data>
         <display>
-        <title>test</title>
-        <pubTime>2018-05-08T18:13:46.000Z</pubTime>
+        <title>Token2Shell 連進 VMware 方法</title>
+        <pubTime>2018-05-08T18:29:43.000Z</pubTime>
         
-        <tag>test</tag>
+        <tag>Linux</tag>
+         
+        <tag>Console</tag>
+         
+        <tag>VM</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ppundsh.github.io/posts/3e4b/</loc>
+    <lastmod>2018-05-08T18:51:42.550Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo + GitHub 搭建記錄</title>
+        <pubTime>2018-04-08T16:45:23.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+        <tag>Git</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ppundsh.github.io/posts/ef2f/</loc>
+    <lastmod>2018-05-08T18:29:01.895Z</lastmod>
+    <data>
+        <display>
+        <title>方法</title>
+        <pubTime>2018-05-08T18:29:01.000Z</pubTime>
+        
+        <tag>[,]</tag>
          
          
            
@@ -22,7 +62,7 @@
     
   <url>
     <loc>https://ppundsh.github.io/posts/140e/</loc>
-    <lastmod>2018-05-08T18:08:44.053Z</lastmod>
+    <lastmod>2018-05-08T18:26:43.527Z</lastmod>
     <data>
         <display>
         <title>Kali 安裝指令</title>
@@ -48,25 +88,6 @@
         <tag>Brower</tag>
          
         <tag>Vim</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ppundsh.github.io/posts/3e4b/</loc>
-    <lastmod>2018-05-07T22:25:14.664Z</lastmod>
-    <data>
-        <display>
-        <title>Hexo + GitHub 搭建記錄</title>
-        <pubTime>2018-04-08T16:45:23.000Z</pubTime>
-        
-        <tag>Hexo</tag>
-         
-        <tag>Git</tag>
          
          
            
@@ -298,23 +319,6 @@
         <pubTime>2018-04-25T18:56:49.000Z</pubTime>
         
         <tag>MIS</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ppundsh.github.io/posts/7007/</loc>
-    <lastmod>2018-04-25T17:23:00.279Z</lastmod>
-    <data>
-        <display>
-        <title>CentOS NTP 設定</title>
-        <pubTime>2018-04-25T17:19:50.000Z</pubTime>
-        
-        <tag>Linux</tag>
          
          
            
