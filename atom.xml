@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ppundsh.github.io/"/>
-  <updated>2018-05-08T18:52:32.466Z</updated>
+  <updated>2018-05-08T18:54:31.156Z</updated>
   <id>https://ppundsh.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://ppundsh.github.io/posts/f9d/"/>
     <id>https://ppundsh.github.io/posts/f9d/</id>
     <published>2018-05-08T18:29:43.000Z</published>
-    <updated>2018-05-08T18:52:32.466Z</updated>
+    <updated>2018-05-08T18:54:31.156Z</updated>
     
-    <content type="html"><![CDATA[<p>Token2Shell 是個人認為在 Windows 上最美的 SSH console 軟體，但在 VM 搭建後開啟 SSH 連線卻一直失敗，沒想原因是 UWP 的特殊限制…記錄一下官網的教學。<br><a id="more"></a><br><img src="https://i.imgur.com/gAQ9sAw.png" alt="Token2Shell-kali"></p><h2 id="VMware"><a href="#VMware" class="headerlink" title="VMware"></a>VMware</h2><p>與傳統 APP 不同，UMP 需要設定可允許訪問 loopback addresses (ex. localhost, 127.0.0.1 and etc.) ，只要在在 Host 端的 cmd ，輸入以下指令即可 <sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup></p><figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">CheckNetIsolation LoopbackExempt -a -n=<span class="string">"ChoungNetworksUS.68307A65C913_vvzc8y2tzcnsr"</span></div></pre></div></div></figure><p>刪除許可</p><figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">CheckNetIsolation LoopbackExempt -d -n=<span class="string">"ChoungNetworksUS.68307A65C913_vvzc8y2tzcnsr"</span></div></pre></div></div></figure><p>檢查已允許的列表</p><figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">CheckNetIsolation LoopbackExempt -s</div></pre></div></div></figure><h2 id="VirtualBox"><a href="#VirtualBox" class="headerlink" title="VirtualBox"></a>VirtualBox</h2><p>官網有說到對 Token2Shell/MD 要連到 VirtualBox 還需要用 <code>netsh</code> 下監聽許可，因為個人沒有在用 Vitrtualbox ，所以單純記錄<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup></p><p>假如要連的位置是 <code>192.168.55.101</code>，端口是<code>22</code>：</p><figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">netsh interface portproxy add v4tov4 listenaddress=localhost listenport=22 connectaddress=192.168.56.101 connectport=22 protocol=tcp</div></pre></div></div></figure><p>重新開機後添加的項目仍會繼續存在，如要刪除需用以下指令：</p><figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">netsh interface portproxy delete v4tov4 listenaddress=localhost listenport=22</div></pre></div></div></figure><p>查看當前的 <code>portproxy</code>設定</p><figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">netsh interface portproxy show all</div></pre></div></div></figure><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style:none; padding-left: 0;"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline-block; vertical-align: top;"><a href="http://choung.net/howto/token2shell-md/accessing-loopback/" rel="external nofollow noopener noreferrer" target="_blank">Accessing Loopback Addresses (X11 Forwarding)</a></span><a href="#fnref:1" rev="footnote"> ↩</a></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">2.</span><span style="display: inline-block; vertical-align: top;"><a href="http://choung.net/howto/token2shell-md/workaround-for-connecting-to-host-only-virtualbox-or-vmware/" rel="external nofollow noopener noreferrer" target="_blank">Cannot connect to your VirtualBox or VMware from Token2Shell/MD? Here’s a workaround!</a></span><a href="#fnref:2" rev="footnote"> ↩</a></li></ol></div></div>]]></content>
+    <content type="html"><![CDATA[<p>Token2Shell 是個人認為在 Windows 上最美的 SSH console 軟體，但在 VM 搭建後開啟 SSH 連線卻一直失敗，沒想原因是 UWP 的特殊限制…記錄一下官網的教學。<br><a id="more"></a><br><img src="https://i.imgur.com/YJ1xqsL.png" alt="Token2Shell-kali"></p><h2 id="VMware"><a href="#VMware" class="headerlink" title="VMware"></a>VMware</h2><p>與傳統 APP 不同，UMP 需要設定可允許訪問 loopback addresses (ex. localhost, 127.0.0.1 and etc.) ，只要在在 Host 端的 cmd ，輸入以下指令即可 <sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup></p><figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">CheckNetIsolation LoopbackExempt -a -n=<span class="string">"ChoungNetworksUS.68307A65C913_vvzc8y2tzcnsr"</span></div></pre></div></div></figure><p>刪除許可</p><figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">CheckNetIsolation LoopbackExempt -d -n=<span class="string">"ChoungNetworksUS.68307A65C913_vvzc8y2tzcnsr"</span></div></pre></div></div></figure><p>檢查已允許的列表</p><figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">CheckNetIsolation LoopbackExempt -s</div></pre></div></div></figure><h2 id="VirtualBox"><a href="#VirtualBox" class="headerlink" title="VirtualBox"></a>VirtualBox</h2><p>官網有說到對 Token2Shell/MD 要連到 VirtualBox 還需要用 <code>netsh</code> 下監聽許可，因為個人沒有在用 Vitrtualbox ，所以單純記錄<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup></p><p>假如要連的位置是 <code>192.168.55.101</code>，端口是<code>22</code>：</p><figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">netsh interface portproxy add v4tov4 listenaddress=localhost listenport=22 connectaddress=192.168.56.101 connectport=22 protocol=tcp</div></pre></div></div></figure><p>重新開機後添加的項目仍會繼續存在，如要刪除需用以下指令：</p><figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">netsh interface portproxy delete v4tov4 listenaddress=localhost listenport=22</div></pre></div></div></figure><p>查看當前的 <code>portproxy</code>設定</p><figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">netsh interface portproxy show all</div></pre></div></div></figure><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style:none; padding-left: 0;"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline-block; vertical-align: top;"><a href="http://choung.net/howto/token2shell-md/accessing-loopback/" rel="external nofollow noopener noreferrer" target="_blank">Accessing Loopback Addresses (X11 Forwarding)</a></span><a href="#fnref:1" rev="footnote"> ↩</a></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">2.</span><span style="display: inline-block; vertical-align: top;"><a href="http://choung.net/howto/token2shell-md/workaround-for-connecting-to-host-only-virtualbox-or-vmware/" rel="external nofollow noopener noreferrer" target="_blank">Cannot connect to your VirtualBox or VMware from Token2Shell/MD? Here’s a workaround!</a></span><a href="#fnref:2" rev="footnote"> ↩</a></li></ol></div></div>]]></content>
     
     <summary type="html">
     
@@ -37,30 +37,6 @@
       <category term="Console" scheme="https://ppundsh.github.io/tags/Console/"/>
     
       <category term="VM" scheme="https://ppundsh.github.io/tags/VM/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>方法</title>
-    <link href="https://ppundsh.github.io/posts/ef2f/"/>
-    <id>https://ppundsh.github.io/posts/ef2f/</id>
-    <published>2018-05-08T18:29:01.000Z</published>
-    <updated>2018-05-08T18:29:01.895Z</updated>
-    
-    <content type="html"><![CDATA[<a id="more"></a><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style:none; padding-left: 0;"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline-block; vertical-align: top;"></span><a href="#fnref:1" rev="footnote"> ↩</a></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">2.</span><span style="display: inline-block; vertical-align: top;"></span><a href="#fnref:2" rev="footnote"> ↩</a></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">3.</span><span style="display: inline-block; vertical-align: top;"></span><a href="#fnref:3" rev="footnote"> ↩</a></li><li id="fn:4"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">4.</span><span style="display: inline-block; vertical-align: top;"></span><a href="#fnref:4" rev="footnote"> ↩</a></li></ol></div></div>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;div id=&quot;footnotes&quot;&gt;&lt;hr&gt;&lt;div id=&quot;footnotelist&quot;&gt;&lt;ol style=&quot;list-style:none; padding-left: 0;&quot;&gt;&lt;li id=&quot;fn:1&quot;&gt;&lt;span style=&quot;di
-      
-    
-    </summary>
-    
-    
-      <category term="[,]" scheme="https://ppundsh.github.io/tags//"/>
     
   </entry>
   
@@ -435,6 +411,26 @@
     
     
       <category term="MIS" scheme="https://ppundsh.github.io/tags/MIS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>翻牆歷史</title>
+    <link href="https://ppundsh.github.io/posts/ffce/"/>
+    <id>https://ppundsh.github.io/posts/ffce/</id>
+    <published>2018-04-17T17:04:38.000Z</published>
+    <updated>2018-04-18T13:18:47.291Z</updated>
+    
+    <content type="html"><![CDATA[<p>看到令人懷念的文章，感謝此文作者，後續有機會我會再編輯下去。<br><a id="more"></a></p><p>來源：<a href="https://blog.yandere.moe/moe/gfw-vs-proxy/97.html" rel="external nofollow noopener noreferrer" target="_blank">牆與梯的較量——那些年我們一起用過的翻牆手段</a></p><p>在某個 Telegram 群討論到了現在很多 10 多歲的年輕人都學會翻牆了，想起我小的時候，大概也是在 10 歲左右第一次翻牆。作為經歷過多次牆與梯的升級的網蟲，把這個寫下來也算是一個對童年的回憶了……</p><p>HTTP 代理 &amp; SOCKS 代理年代：</p><p>早期的牆遮罩網站是通過 IP 位址和 DNS 污染進行定點遮罩，那時候被遮罩的網站也沒像現在這麼多。大部分被遮罩的都是法輪功的網站，一般人也用不到。那個時候可以很容易的通過 HTTP 代理進行審查規避。那個時候有一款瀏覽器不知道大家聽說過沒，叫 MyIE，有一個很方便的切換代理功能，由於作者是法輪功成員，他開發的瀏覽器的主頁也有提供很多 HTTP 代理來翻牆用（BTW：根據網路上的傳言，作者已經死於 2002.5.13。）不過根據這個軟件開發的日期以及維基百科，可能在上個世紀 90 年代就已經有牆了。不過我第一次上網是 2004 年，比這更之前的我是不知道了，歡迎有更老網齡的網蟲在評論區回憶一下？</p><p>早期的翻牆軟件——代理獵手（Proxy Hunter）：</p><p>確切地說這個並不能被稱為翻牆軟件，這只是一個幫助你搜索可用 HTTP 代理的軟件，利用搜索出來的 HTTP 代理來完成翻牆操作。</p><p>網頁代理：</p><p>相信這個大家也用過，一個網站，把網址輸入進去就能透過代理訪問被遮罩的網站了。</p><p>現在情況：</p><p>在不知道哪次的 GFW 升級過程中，HTTP 代理和 SOCKS 代理已經完全可以被檢測（畢竟沒有加密）並阻斷，於是這種翻牆手段只能留在我們的回憶中了。。。</p><p>至於網頁代理，聰明的開發者想到了一個方法——在發送資料包之前將網頁內容 BASE64 編碼了一下，這樣 GFW 就無法探測被封鎖的關鍵字了，這個方法在 GFW 的又一次升級之後而成為了歷史…</p><p>修改 DNS 時代：</p><p>同樣是在牆的早期階段，GFW 還沒有解析 DNS 資料包的能力，而且那時候 ISP 也比較流氓。比如在你訪問一個不存在的域名的時候，（北京地區）聯通會把你劫持到 “北京寬帶網 BBN” 這個網站的一個廣告頁面，然後展示給你一些很黃很暴力的廣告。那時候就有人提議修改 DNS，不再使用 ISP 提供的 DNS。</p><p>208.67.222.222 / 208.67.220.220</p><p>8.8.8.8 / 8.8.4.4</p><p>這兩組神聖的 IP 還有人記得麼？修改用境外的 DNS 之後也起到了一定的翻牆效果。</p><p>現在情況：</p><p>GFW 的某次升級之後可以解析並篡改 DNS 包了，於是此方法失效，淡出了人們的視線中…</p><p>自由門 &amp; 無界瀏覽時代：</p><p>之後不知道從什麼時候開始，各位的郵箱裡就經常收到一個名為《退 X 保平安》的郵件，裡面附帶了一個自由門軟件。於是自由門這個翻牆軟件開始流行了起來。（題外話：是不是你的第一次翻牆就是用的自由門？）</p><p>無界瀏覽和自由門一樣，都是法輪功組織開發的</p><p>當然這個軟件不僅僅只有中國用戶在使用，在其他國家如：伊朗、敘利亞、阿聯酋等有網路審查國家的用戶也有在用。</p><p>現在情況：</p><p>仍然處於活躍開發過程中，但是身邊用的人基本沒有了，這個軟件自帶內牆（遮罩法輪功組織不喜歡的網站、色情網站等）、不開源、連接不穩定而飽受詬病而漸漸的消失在了人們的記憶中…</p><p>HTTPS 代理年代：</p><p>HTTPS 代理，比 HTTP 代理多了個 S，代表的東西可就大不同了。那時候的 GFW 是無法識別 SSL 流量的，所以網頁代理以及 HTTP 代理都在這個 S 的光環下復活了。</p><p>現在情況：</p><p>仍然可用，比如石斑魚的翻牆軟件就是利用 squid 產生一個 HTTPS 代理進行翻牆的，網頁代理也藏在加密的 HTTPS 之後，這對 GFW 的維護工作產生了不利的影響，因為不像 HTTP 那樣可以直接獲取到內容。不過在某次的 GFW 升級之後，特徵比較明顯的 HTTPS 代理被 active probe 檢測到而遮罩，只剩下那些藏在子目錄的網頁代理以及增加了認證（不管是證書認證還是密碼認證）的 HTTPS 代理可用…</p><p>修改 hosts 文件年代：</p><p>在上面提到的修改 DNS 規避審查的方法已經無效了，又有別有用心的群眾找到了一些網站可用的 IP，並修改到 hosts 文件進行翻牆。這種方法實際是鑽了個 GFW 沒有發現這些 IP 的空子。</p><p>現在情況：</p><p>事實上這個方法輝煌了 2 次，第一次是把網站的 IP 放到 hosts 裡然後通過 HTTPS 訪問，之後 GFW 以主動收集 IP 並遮罩的方法廢掉了此方法。第二次是 CDN 的普及，很多網站用了如 CloudFlare 的 CDN，一個 IP 被封了，可以 hosts 到另一個 CloudFlare 的 IP 然後以 HTTPS 繼續訪問。隨後在 GFW 的某次升級後可以檢測到證書 SNI 並阻斷之後淡出了人們的視線…</p><p>PPTP 年代：</p><p>Windows 和 iOS 等系統自帶支援的 VPN 協定——PPTP。可以說是最便捷的方式了，不用下載額外的軟件，只需要一個 IP、用戶名、密碼就可以翻牆。不過這麼便捷的翻牆軟件朝廷肯定是看不下去的啦。。。</p><p>現在情況：</p><p>PPTP 已經徹底被干擾，無論你怎麼設置都是連接不上的哦，PPTP 實在是死的不能再死了，而且加密強度也不高，而漸漸的被人們所遺忘…</p><p>SSH 翻牆年代：</p><p>不知道從什麼時候開始，各路折騰 VPS 的折騰黨就猛然發現：SSH 可不僅僅是安全管理伺服器的工具，更可以用於翻牆。</p><p>於是 SSH 翻牆的方法在一瞬間火了起來。</p><p>ssh -qTfnN -D 7070 <a href="mailto:fq@blog.yandere.moe" rel="external nofollow noopener noreferrer" target="_blank">fq@blog.yandere.moe</a> &lt;– 這是我學會的第一句比較長的 linux 命令</p><p>現在情況：</p><p>在某次的 GFW 升級後，可以根據流量大小識別你是在管理伺服器還是在翻牆。之後，那時候還各種百度谷歌搜索免費 SSH 賬號和國外的提供免費空間 + SSH 的平台，翻牆圈子裡互相幫助共用 SSH 賬號的場景就一去不復返了…</p><p>賽風年代：</p><p>賽風是多倫多大學公民實驗室開發的一款開源翻牆軟件，基本原理就是利用打了混淆補丁的 SSH 進行翻牆。發郵件給賽風的郵箱或者去官網下載就能獲得該軟件了。</p><p>(圖為舊版賽風)</p><p>支援很多國家的伺服器</p><p>現在情況：</p><p>仍然可用，速度一般，比較穩定，身邊很多人在用這個免費且開源的翻牆軟件。客官不妨下一份留作備用？</p><p>西廂計畫：</p><p>這個可以說是真正的翻牆軟件而非代理軟件，因為這款軟件並沒有使用任何代理伺服器進行翻牆。相反，這個軟件的開發人員發現了牆在編寫的時候的一些漏洞，並利用這個漏洞翻牆。</p><p>現在情況：</p><p>由於西廂計畫宗旨是說明這個漏洞，而不是一款可以大規模使用的翻牆軟件，所以使用的人很少，而且需要懂一些 Linux 才可以使它工作。在某次的 GFW 核心模組升級之後失效。</p><p>GoAgent、XXNET 翻牆：</p><p>GoAgent 是一個可以運行在雲平台上的代理軟件，大多數用在 Google Appspot 上，也是很老牌的。那時候 Google 還沒有被遮罩，很多人申請一堆 appspot 然後 GoAgent 負載均衡翻牆，然後小圈子裡共用高速的 IP 位址。然後有了另一個 fork 叫 XXNET，自帶掃瞄 IP 的功能以及集成了好心人提供的節點，也是基於 GoAgent 的。</p><p>現在情況：</p><p>隨著 Google 所有 IP 被 GFW 河蟹，這種方法也消失在了歷史的長河中。</p><p>Lantern、FireFly、Meek 年代：</p><p>自從很多大型服務上了 CDN 業務（Amazon、Azure 等），一群充滿研究精神的人發明了一個新的方法 “依附的自由（Collateral Freedom）”，通過將目標位址放入 CDN 服務的 Host 頭中，GFW 只能檢測到訪問了 CDN，而無法檢測到真正的目標位址。而很多網站都在使用 CDN，無法將所有的 CDN 都牆了。</p><p>目前使用本方法的：Lantern、FireFly、Tor Browser – Meek</p><p>fqrouter 翻牆：</p><p>fqrouter，顧名思義 翻牆路由器。是一個在 Android 平台的翻牆軟件，使用 GoAgent 進行翻牆。就連人民日報記者都在用這款軟件。</p><p>現在情況：</p><p>其作者在 Twitter 上宣佈停止開發 fqrouter 了。感謝 fqrouter 作者為翻牆事業作出的貢獻：）</p><p>OpenVPN 年代：</p><p>牆再怎麼升級也擋不住嚮往自由的人們，於是開源軟件 OpenVPN 又成為翻牆的主力軍。OpenVPN 支援高強度的加密，不過就是特徵太明顯了，你看，又被遮罩了。。。</p><p>現在情況：</p><p>差不多已經沒辦法用了，因為特徵是在太明顯了，GFW 很輕鬆就會探測到 OpenVPN 伺服器然後加以封鎖。不過通過修改配置文件或加混淆補丁等方法還是可以用的。</p><p>Cisco AnyConnect 年代：</p><p>雖然 AnyConnect 和 OpenVPN 一樣，有著很明顯的特徵，但是 AnyConnect 被很多跨國大公司所使用，所以 GFW 也不敢那麼草率的遮罩掉 AnyConnect。也是一種 “依附的自由”</p><p>現在情況：</p><p>截至目前仍然可用，不過配置起來太麻煩。少數技術流會用這個翻牆…</p><p>VPNGate 年代：</p><p>說到 VPNGate，不得不提到 SoftEther VPN，很早之前這個 SoftEther 提供一個日本的學術 VPN，當然在天朝就是用於翻牆了。可能是受到了 SoftEther 的啟發，VPNGate 這個軟件被日本築波大學開發了出來，準確地說 VPNGate 是 SoftEther VPN 的一個插件，用了 SoftEther VPN 的 HTTPS 流量模仿。</p><p>現在情況：</p><p>在時斷時續中仍然堅挺，可以作為備用使用。不過要記得更新為最新版本哦。</p><p>後起之秀——Shadowsocks、V2Ray、ShadowsocksR、ShadowsocksRR…</p><p>Shadowsocks：相信大家都不陌生，作者 clowwindy 是全國首例因為開發翻牆軟件被喝茶的。之後專案交由另外的人維護。（向 clowwindy 致敬）</p><p>V2Ray：在 Shadowsocks 作者被喝茶之後由一名在國外的華裔程式員開發，目的是翻越防火長城，是一個定製性很高的翻牆軟件，算是一個 “翻牆框架”。基於這個框架你可以開發出屬於自己的翻牆協定。目前支援 VMess 協定以及 Shadowsocks 協定、支援流量混淆、支援 KCP。就是配置起來麻煩點，但是配置好之後很好用。</p><p>ShadowsocksR(R)：是一個 Shadowsocks 的 fork，作者說 ShadowsocksR 的目的是在於加強混淆以應對 QoS。ShadowsocksRR 是在 ShadowsocksR 作者停止更新之後的另一個 fork，目前觀望中…</p><p>結尾：</p><p>如果有發現有缺少的在記憶中的翻牆軟件可以留言補充哦。</p><p>翻牆的時候不要忘記那些曾經為了自由的網路而默默付出的人們</p><p>即使再高的牆也阻止不了追求自由的人們，希望我們能看到真正的互聯網。</p><p>Across the Great Wall we can reach every corner in the world.</p><p>1.HTTPS 代理也曾很流行，直到 GFW 能是別 SNI 之後才消停。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;看到令人懷念的文章，感謝此文作者，後續有機會我會再編輯下去。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="GFW" scheme="https://ppundsh.github.io/tags/GFW/"/>
     
   </entry>
   
