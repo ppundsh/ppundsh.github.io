@@ -139,14 +139,14 @@
 
 
   <meta name="description" content="設定上的記錄，全新安裝後要做的設定">
-<meta name="keywords" content="MIS,cmd,install">
+<meta name="keywords" content="MIS,Consloe,install">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Cmder 筆記">
 <meta property="og:url" content="https://ppundsh.github.io/posts/89df/index.html">
 <meta property="og:site_name" content="Flymia 凡事用心之事">
 <meta property="og:description" content="設定上的記錄，全新安裝後要做的設定">
 <meta property="og:locale" content="zh-TW">
-<meta property="og:updated_time" content="2018-04-17T19:33:20.414Z">
+<meta property="og:updated_time" content="2018-05-09T22:24:34.044Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Cmder 筆記">
 <meta name="twitter:description" content="設定上的記錄，全新安裝後要做的設定">
@@ -423,7 +423,7 @@
               
                 <span class="post-meta-item-text">更新於：</span>
               
-              <time title="更新於" itemprop="dateModified" datetime="2018-04-18T03:33:20+08:00">2018-04-18</time>
+              <time title="更新於" itemprop="dateModified" datetime="2018-05-10T06:24:34+08:00">2018-05-10</time>
             
           </span>
 
@@ -449,7 +449,7 @@
                 
                   <span class="post-meta-item-text">文章字數：</span>
                 
-                <span title="文章字數">1k</span>
+                <span title="文章字數">1.1k</span>
               
 
               
@@ -463,7 +463,7 @@
                 
                   <span class="post-meta-item-text">閱讀時間&asymp;</span>
                 
-                <span title="閱讀時間">0:05</span>
+                <span title="閱讀時間">0:06</span>
               
             </div>
           
@@ -490,7 +490,9 @@
 <h2 id="中文亂碼"><a href="#中文亂碼" class="headerlink" title="中文亂碼:"></a>中文亂碼:</h2><p>順便把代碼頁換成 utf-8<br>Startup→Environnment 下，加入<br><figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></div><div class="code"><pre><div class="line"><span class="built_in">set</span> LANG=zh_CN.UTF-8</div><div class="line">chcp 65001</div></pre></div></div></figure></p>
 <h2 id="無邊框"><a href="#無邊框" class="headerlink" title="無邊框"></a>無邊框</h2><p>要調整大小需將鼠放在邊框上兩秒，時間可在後方調整<br><figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">main&gt;&gt; appearence &gt;&gt; hide caption always</div></pre></div></div></figure></p>
 <h2 id="避免殘留字"><a href="#避免殘留字" class="headerlink" title="避免殘留字"></a>避免殘留字</h2><p>默認的為λ，改成常用的$<br>打開\cmder\vendor目錄下面的clink.lua文件，搜索λ，全部替換成$即可！</p>
+<h2 id="遊標多一個空白"><a href="#遊標多一個空白" class="headerlink" title="遊標多一個空白"></a>遊標多一個空白</h2><p>設定→Straup→Environment 加上 chcp 65001 </p>
 <h2 id="增加快捷鍵"><a href="#增加快捷鍵" class="headerlink" title="增加快捷鍵"></a>增加快捷鍵</h2><p>在 <code>D:\Dropbox\Apps\Cmder\config\user-aliases.cmd</code> 加入<br><figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></div><div class="code"><pre><div class="line">e.=explorer .</div><div class="line">gl=git <span class="built_in">log</span> --oneline --all --graph --decorate  $*</div><div class="line">ls=ls --show-control-chars -F --color $*</div><div class="line"><span class="built_in">pwd</span>=<span class="built_in">cd</span></div><div class="line">clear=cls</div><div class="line"><span class="built_in">history</span>=cat <span class="string">"%CMDER_ROOT%\config\.history"</span></div><div class="line"><span class="built_in">unalias</span>=<span class="built_in">alias</span> /d <span class="variable">$1</span></div><div class="line">vi=vim $*</div><div class="line">cmderr=<span class="built_in">cd</span> /d <span class="string">"%CMDER_ROOT%"</span></div><div class="line">gc=git commit -am <span class="variable">$1</span></div><div class="line">sb=<span class="string">"D:\Dropbox\Apps\Sublime Text\sublime_text.exe"</span> <span class="variable">$1</span></div><div class="line">sbl=<span class="string">"D:\Dropbox\Apps\Sublime Text\sublime_text.exe"</span> <span class="variable">$1</span> -new_console:s50H</div><div class="line">sbl2=<span class="string">"D:\Dropbox\Apps\Sublime Text\sublime_text.exe"</span> <span class="variable">$1</span> -new_console:s75V</div><div class="line">co=<span class="string">"D:\Dropbox\Apps\VSCode\Code.exe"</span> <span class="variable">$1</span></div><div class="line">em=<span class="string">"D:\Dropbox\Apps\EmEditor\EmEditor.exe"</span> <span class="variable">$1</span></div></pre></div></div></figure></p>
+<p><a href="https://blog.miniasp.com/post/2015/09/27/Useful-tool-Cmder.aspx" rel="external nofollow noopener noreferrer" target="_blank">介紹好用工具：Cmder (具有 Linux 溫度的 Windows 命令提示字元工具)</a></p>
 
       
     </div>
@@ -533,7 +535,7 @@
           
             <a href="/tags/MIS/" rel="tag"><i class="fa fa-tag"></i> MIS</a>
           
-            <a href="/tags/cmd/" rel="tag"><i class="fa fa-tag"></i> cmd</a>
+            <a href="/tags/Consloe/" rel="tag"><i class="fa fa-tag"></i> Consloe</a>
           
             <a href="/tags/install/" rel="tag"><i class="fa fa-tag"></i> install</a>
           
@@ -639,7 +641,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">32</span>
+                    <span class="site-state-item-count">36</span>
                     <span class="site-state-item-name">文章</span>
                   </a>
                 </div>
@@ -710,7 +712,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">28</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">30</span>
                     <span class="site-state-item-name">標籤</span>
                   </a>
                 </div>
@@ -753,7 +759,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安裝右鍵選單"><span class="nav-number">1.</span> <span class="nav-text">安裝右鍵選單</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#開啟時自動到指定的位置："><span class="nav-number">2.</span> <span class="nav-text">開啟時自動到指定的位置：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安裝後的調整："><span class="nav-number">3.</span> <span class="nav-text">安裝後的調整：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#中文亂碼"><span class="nav-number">4.</span> <span class="nav-text">中文亂碼:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#無邊框"><span class="nav-number">5.</span> <span class="nav-text">無邊框</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#避免殘留字"><span class="nav-number">6.</span> <span class="nav-text">避免殘留字</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#增加快捷鍵"><span class="nav-number">7.</span> <span class="nav-text">增加快捷鍵</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安裝右鍵選單"><span class="nav-number">1.</span> <span class="nav-text">安裝右鍵選單</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#開啟時自動到指定的位置："><span class="nav-number">2.</span> <span class="nav-text">開啟時自動到指定的位置：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安裝後的調整："><span class="nav-number">3.</span> <span class="nav-text">安裝後的調整：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#中文亂碼"><span class="nav-number">4.</span> <span class="nav-text">中文亂碼:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#無邊框"><span class="nav-number">5.</span> <span class="nav-text">無邊框</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#避免殘留字"><span class="nav-number">6.</span> <span class="nav-text">避免殘留字</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#遊標多一個空白"><span class="nav-number">7.</span> <span class="nav-text">遊標多一個空白</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#增加快捷鍵"><span class="nav-number">8.</span> <span class="nav-text">增加快捷鍵</span></a></li></ol></div>
             
 
           </div>
@@ -794,7 +800,7 @@
     
       <span class="post-meta-item-text">網站總字數：</span>
     
-    <span title="網站總字數">148k</span>
+    <span title="網站總字數">152k</span>
   
 
   
@@ -805,7 +811,7 @@
     
       <span class="post-meta-item-text">網站總閱讀時間：</span>
     
-    <span title="網站總閱讀時間">12:18</span>
+    <span title="網站總閱讀時間">12:40</span>
   
 </div>
 
