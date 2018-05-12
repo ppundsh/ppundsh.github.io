@@ -139,7 +139,7 @@
 
 
   <meta name="description" content="做為 Windows 的基本 Console 軟體，在編寫腳本時還是得仰賴其運行，讓其美麗一點是很自然的事XD">
-<meta name="keywords" content="Consloe">
+<meta name="keywords" content="Console">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CMD、PowerShell 改顏色、字體">
 <meta property="og:url" content="https://ppundsh.github.io/posts/e1a/index.html">
@@ -151,7 +151,7 @@
 <meta property="og:image" content="https://i.imgur.com/afMnuIX.png">
 <meta property="og:image" content="https://i.imgur.com/V08Fwe7.png">
 <meta property="og:image" content="https://i.imgur.com/PYxxACG.png">
-<meta property="og:updated_time" content="2018-05-09T22:23:01.003Z">
+<meta property="og:updated_time" content="2018-05-12T13:20:25.640Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CMD、PowerShell 改顏色、字體">
 <meta name="twitter:description" content="做為 Windows 的基本 Console 軟體，在編寫腳本時還是得仰賴其運行，讓其美麗一點是很自然的事XD">
@@ -414,8 +414,22 @@
             
             
               
+                
+              
             
 
+            
+              
+              <span class="post-meta-divider">|</span>
+              
+
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新於：</span>
+              
+              <time title="更新於" itemprop="dateModified" datetime="2018-05-12T21:20:25+08:00">2018-05-12</time>
             
           </span>
 
@@ -441,7 +455,7 @@
                 
                   <span class="post-meta-item-text">文章字數：</span>
                 
-                <span title="文章字數">991</span>
+                <span title="文章字數">740</span>
               
 
               
@@ -455,7 +469,7 @@
                 
                   <span class="post-meta-item-text">閱讀時間&asymp;</span>
                 
-                <span title="閱讀時間">0:05</span>
+                <span title="閱讀時間">0:04</span>
               
             </div>
           
@@ -490,14 +504,10 @@
 <hr>
 <h2 id="CMD-改字體和背景色"><a href="#CMD-改字體和背景色" class="headerlink" title="CMD 改字體和背景色"></a>CMD 改字體和背景色</h2><p><img src="https://i.imgur.com/q3Rot1n.png" alt="CMD"><br><a class="btn" href="## CMD 改字體和背景色">Win</a><a class="btn" href="## CMD 改字體和背景色">R</a> 輸入<code>CMD</code>，對標題按右鍵→預設值，可在字體和色彩分頁修改上述安裝的字體和背景色、透明度等。<br><img src="https://i.imgur.com/bbLzTS9.png" alt="CMD 背景"><br><img src="https://i.imgur.com/afMnuIX.png" alt="CMD 字型"></p>
 <hr>
-<h2 id="Power-改字體和背景色"><a href="#Power-改字體和背景色" class="headerlink" title="Power 改字體和背景色"></a>Power 改字體和背景色</h2><p>來源<sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup><br><a class="btn" href="## 更改背景色">Win</a><a class="btn" href="## 更改背景色">R</a> 輸入</p>
+<h2 id="Power-改字體和背景色"><a href="#Power-改字體和背景色" class="headerlink" title="Power 改字體和背景色"></a>Power 改字體和背景色</h2><p>來源<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup><br><a class="btn" href="## 更改背景色">Win</a><a class="btn" href="## 更改背景色">R</a> 輸入</p>
 <figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">%Appdata%\Microsoft\Windows\Start Menu\Programs\Windows PowerShell</div></pre></div></div></figure>
 <p><img src="https://i.imgur.com/V08Fwe7.png" alt="PowerShell Folder"><br>可以看到四捷徑，對 Windows PowerShell 右鍵→內容，點選<code>色彩</code>分頁，可以設定背景顏色和透明度。<br><img src="https://i.imgur.com/PYxxACG.png" alt="PowerShell 內容"></p>
-<p>## </p>
-<h3 id="“系統上已停用指令碼執執行“錯誤"><a href="#“系統上已停用指令碼執執行“錯誤" class="headerlink" title="“系統上已停用指令碼執執行“錯誤"></a>“系統上已停用指令碼執執行“錯誤</h3><p>當我們使用 PowerShell 執行自定 script 檔，卻出現「檔案無法載入，因為這個系統已停用指令碼執行」的訊息，表示在目前作業系統中的執行原則 (Excution Policy) 預設狀態為 Restricted，也就是不允許執行。</p>
-<p>可用管理員權限打開 PowerShell，執行以下指令：<sup id="fnref:5"><a href="#fn:5" rel="footnote">5</a></sup></p>
-<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">Set-ExecutionPolicy RemoteSigned</div></pre></div></div></figure>
-<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style:none; padding-left: 0;"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline-block; vertical-align: top;"><a href="https://walterlv.github.io/post/customize-fonts-of-command-window.html" rel="external nofollow noopener noreferrer" target="_blank">自定義 Windows PowerShell 和 cmd 的字體</a></span><a href="#fnref:1" rev="footnote"> ↩</a></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">2.</span><span style="display: inline-block; vertical-align: top;"><a href="https://blog.miniasp.com/post/2017/12/06/Microsoft-YaHei-Mono-Chinese-Font-for-Command-Prompt-and-WSL.aspx" rel="external nofollow noopener noreferrer" target="_blank">讓你的命令提示字元或 WSL 擁有一個美麗等寬的字型設定</a></span><a href="#fnref:2" rev="footnote"> ↩</a></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">3.</span><span style="display: inline-block; vertical-align: top;"><a href=""></a></span><a href="#fnref:3" rev="footnote"> ↩</a></li><li id="fn:4"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">4.</span><span style="display: inline-block; vertical-align: top;"><a href="http://www.classnotes.cn/3557.html" rel="external nofollow noopener noreferrer" target="_blank">win10 修改 PowerShell 控制台的背景顏色</a></span><a href="#fnref:4" rev="footnote"> ↩</a></li><li id="fn:5"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">5.</span><span style="display: inline-block; vertical-align: top;"><a href="http://asika.windspeaker.co/post/3500-powershell-remotesigned" rel="external nofollow noopener noreferrer" target="_blank">PowerShell 執行 ps1 檔時出現「系統上已停用指令碼執行」錯誤</a></span><a href="#fnref:5" rev="footnote"> ↩</a></li></ol></div></div>
+<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style:none; padding-left: 0;"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline-block; vertical-align: top;"><a href="https://walterlv.github.io/post/customize-fonts-of-command-window.html" rel="external nofollow noopener noreferrer" target="_blank">自定義 Windows PowerShell 和 cmd 的字體</a></span><a href="#fnref:1" rev="footnote"> ↩</a></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">2.</span><span style="display: inline-block; vertical-align: top;"><a href="https://blog.miniasp.com/post/2017/12/06/Microsoft-YaHei-Mono-Chinese-Font-for-Command-Prompt-and-WSL.aspx" rel="external nofollow noopener noreferrer" target="_blank">讓你的命令提示字元或 WSL 擁有一個美麗等寬的字型設定</a></span><a href="#fnref:2" rev="footnote"> ↩</a></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">3.</span><span style="display: inline-block; vertical-align: top;"><a href="http://www.classnotes.cn/3557.html" rel="external nofollow noopener noreferrer" target="_blank">win10 修改 PowerShell 控制台的背景顏色</a></span><a href="#fnref:3" rev="footnote"> ↩</a></li></ol></div></div>
       
     </div>
 
@@ -537,7 +547,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Consloe/" rel="tag"><i class="fa fa-tag"></i> Consloe</a>
+            <a href="/tags/Console/" rel="tag"><i class="fa fa-tag"></i> Console</a>
           
         </div>
       
@@ -641,7 +651,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">36</span>
+                    <span class="site-state-item-count">39</span>
                     <span class="site-state-item-name">文章</span>
                   </a>
                 </div>
@@ -710,13 +720,7 @@
                     
                       
                     
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">30</span>
+                    <span class="site-state-item-count">27</span>
                     <span class="site-state-item-name">標籤</span>
                   </a>
                 </div>
@@ -759,7 +763,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#字體"><span class="nav-number">1.</span> <span class="nav-text">字體</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#CMD-改字體和背景色"><span class="nav-number">1.1.</span> <span class="nav-text">CMD 改字體和背景色</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Power-改字體和背景色"><span class="nav-number">1.2.</span> <span class="nav-text">Power 改字體和背景色</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#“系統上已停用指令碼執執行“錯誤"><span class="nav-number">1.2.1.</span> <span class="nav-text">“系統上已停用指令碼執執行“錯誤</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#字體"><span class="nav-number">1.</span> <span class="nav-text">字體</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#CMD-改字體和背景色"><span class="nav-number">1.1.</span> <span class="nav-text">CMD 改字體和背景色</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Power-改字體和背景色"><span class="nav-number">1.2.</span> <span class="nav-text">Power 改字體和背景色</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -800,7 +804,7 @@
     
       <span class="post-meta-item-text">網站總字數：</span>
     
-    <span title="網站總字數">152k</span>
+    <span title="網站總字數">168k</span>
   
 
   
@@ -811,7 +815,7 @@
     
       <span class="post-meta-item-text">網站總閱讀時間：</span>
     
-    <span title="網站總閱讀時間">12:40</span>
+    <span title="網站總閱讀時間">14:01</span>
   
 </div>
 

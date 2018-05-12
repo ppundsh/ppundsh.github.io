@@ -146,10 +146,14 @@
 <meta property="og:site_name" content="Flymia 凡事用心之事">
 <meta property="og:description" content="先記錄安裝後要裝的">
 <meta property="og:locale" content="zh-TW">
-<meta property="og:updated_time" content="2018-05-09T19:42:50.561Z">
+<meta property="og:image" content="https://i.imgur.com/n5JstU3.png 非Powerline">
+<meta property="og:image" content="https://i.imgur.com/tlrhIem.png">
+<meta property="og:image" content="https://i.imgur.com/oBYCjA7.png">
+<meta property="og:updated_time" content="2018-05-12T11:33:45.938Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Windows Subsystem Linux 筆記">
 <meta name="twitter:description" content="先記錄安裝後要裝的">
+<meta name="twitter:image" content="https://i.imgur.com/n5JstU3.png 非Powerline">
 
 
 
@@ -423,7 +427,7 @@
               
                 <span class="post-meta-item-text">更新於：</span>
               
-              <time title="更新於" itemprop="dateModified" datetime="2018-05-10T03:42:50+08:00">2018-05-10</time>
+              <time title="更新於" itemprop="dateModified" datetime="2018-05-12T19:33:45+08:00">2018-05-12</time>
             
           </span>
 
@@ -449,7 +453,7 @@
                 
                   <span class="post-meta-item-text">文章字數：</span>
                 
-                <span title="文章字數">2.4k</span>
+                <span title="文章字數">2.6k</span>
               
 
               
@@ -463,7 +467,7 @@
                 
                   <span class="post-meta-item-text">閱讀時間&asymp;</span>
                 
-                <span title="閱讀時間">0:12</span>
+                <span title="閱讀時間">0:13</span>
               
             </div>
           
@@ -489,14 +493,18 @@
 <figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></div><div class="code"><pre><div class="line">$ sudo apt-get update</div><div class="line">$ sudo apt-get install zsh</div><div class="line">$ <span class="built_in">which</span> zsh</div><div class="line">/usr/bin/zsh</div><div class="line">$ chsh -s /usr/bin/zsh</div></pre></div></div></figure>
 <p>Exit 退出再進入後，選 2 </p>
 <p>另外，也推薦一併安裝 Oh My Zsh 以及幾個方便的套件 (zsh-completions、zsh-autosuggestions、zsh-syntax-highlighting) 來達到類似 fish shell 的命令列功能。</p>
-<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></div><div class="code"><pre><div class="line">$ sudo apt-get install git</div><div class="line">$ sh -c <span class="string">"<span class="variable">$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)</span>"</span></div><div class="line">$ git <span class="built_in">clone</span> https://github.com/zsh-users/zsh-completions ~/.oh-my-zsh/custom/plugins/zsh-completions</div><div class="line">$ git <span class="built_in">clone</span> https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions.z</div><div class="line">$ git <span class="built_in">clone</span> https://github.com/zsh-users/zsh-syntax-highlighting.git <span class="variable">$&#123;ZSH_CUSTOM:-~/.oh-my-zsh/custom&#125;</span>/plugins/zsh-syntax-highlighting</div></pre></div></div></figure>
+<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></div><div class="code"><pre><div class="line">sudo apt-get install git</div><div class="line">sh -c <span class="string">"<span class="variable">$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)</span>"</span></div><div class="line">git <span class="built_in">clone</span> https://github.com/zsh-users/zsh-completions ~/.oh-my-zsh/custom/plugins/zsh-completions</div><div class="line">git <span class="built_in">clone</span> https://github.com/zsh-users/zsh-autosuggestions <span class="variable">$&#123;ZSH_CUSTOM:-~/.oh-my-zsh/custom&#125;</span>/plugins/zsh-autosuggestions</div><div class="line">git <span class="built_in">clone</span> https://github.com/zsh-users/zsh-syntax-highlighting.git <span class="variable">$&#123;ZSH_CUSTOM:-~/.oh-my-zsh/custom&#125;</span>/plugins/zsh-syntax-highlighting</div></pre></div></div></figure>
 <p>使用 vim 編輯 .zshrc 以啟用 plugin。同時，也建議更換 zsh 佈景主題，因為某些主題疑似因為 Powerline <sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup>字體所以會讓 Console Emulator 沒辦法正常顯示游標位置，至於有哪些主題是沒有問題的可以自行嘗試，這邊將以 bira 為例。</p>
-<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></div><div class="code"><pre><div class="line">vi ~/.zshrc</div><div class="line"></div><div class="line"></div><div class="line">ZSH_THEME=<span class="string">"bira"</span></div><div class="line">......</div><div class="line">plugins=(… zsh-completions zsh-autosuggestions zsh-syntax-highlighting)</div></pre></div></div></figure>
+<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></div><div class="code"><pre><div class="line">vi ~/.zshrc</div><div class="line"></div><div class="line"></div><div class="line">ZSH_THEME=<span class="string">"agnoster"</span></div><div class="line">......</div><div class="line">plugins=(</div><div class="line">    … zsh-completions zsh-autosuggestions zsh-syntax-highlighting</div><div class="line">    )</div></pre></div></div></figure>
 <p>重新開啟 shell 後，此時我們可以透過 lsb_release -a 或是 screenfetch（安裝指令如下，可參考這篇<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>文章）驗明正身，確認這真的是一個 Ubuntu Linux 環境。</p>
 <figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">sudo apt-get install screenfetch</div></pre></div></div></figure>
 <p>WSL 環境下還可以直接執行 Windows 程式，甚至可以透過 pipe 做溝通。例如以下的指令會將 Linux Kernel 的版本資訊複製到 Windows 環境的剪貼簿（即 clip.exe）：</p>
-<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">$ uname -a | clip.exe</div></pre></div></div></figure>
-<h2 id="Cmder-設定"><a href="#Cmder-設定" class="headerlink" title="Cmder 設定"></a>Cmder 設定</h2><p>字形選用打過 Powerline patch 的字型，<a href="https://github.com/powerline/fonts/tree/master/Meslo%20Slashed" rel="external nofollow noopener noreferrer" target="_blank">Meslo LG M Regular for Powerline</a> 字型或 <a href="https://github.com/tonsky/FiraCode" rel="external nofollow noopener noreferrer" target="_blank">Fira Code</a> <sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup> 都可以</p>
+<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">uname -a | clip.exe</div></pre></div></div></figure>
+<h2 id="Cmder-設定"><a href="#Cmder-設定" class="headerlink" title="Cmder 設定"></a>Cmder 設定</h2><p>佈景 agnoster 是需要用打過 Powerline patch 的字型才能正常顯示的，否則符號部份會成階亂碼，更改 CMD 或 PowerShell 字體是很困難的，在這裡直接使用 Cmder 來做為 Console 。</p>
+<p><img src="https://i.imgur.com/n5JstU3.png 非Powerline" alt="非Powerline"></p>
+<p>字形選用打過 Powerline patch 的字型，<a href="https://github.com/powerline/fonts/tree/master/Meslo%20Slashed" rel="external nofollow noopener noreferrer" target="_blank">Meslo LG M Regular for Powerline</a> 字型或 <a href="https://github.com/tonsky/FiraCode" rel="external nofollow noopener noreferrer" target="_blank">Fira Code</a> <sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup> 都可以</p>
+<p>另外，如果有開啟背景圖片，需要將 <code>Main→Background：Replace color indexes</code>設為背景色 (此圖為 #0)</p>
+<p><img src="https://i.imgur.com/tlrhIem.png" alt="Replace color indexes 01"><br><img src="https://i.imgur.com/oBYCjA7.png" alt="Replace color indexes 01"></p>
 <p>[Startup] &gt; [Tasks] 頁面，新增一個 kali 的 Task。其中，-cur_console:p 參數是為了讓方向鍵能正常運作。<br>    kali.exe -cur_console:p</p>
 <h2 id="設定-distro"><a href="#設定-distro" class="headerlink" title="設定 distro"></a>設定 distro</h2><p>在最新版本的 Windows 10 中，由於 WSL 支援多種 distro，並且這些 distro 是可以同時執行的，所以也多提供了一個工具 wslconfig.exe 可以查詢目前可用的 distro 以及設定預設的 distro。以下示範使用 wslconfig.exe /list 指令列出目前系統上所有安裝的 Linux distro。若需要修改預設設定，可以使用 /setdefault 參數。</p>
 <p>為了支援多種 distro，有別於過去的版本只有一個 bash.exe 存在系統中，最新版本的 WSL 又做了一些改變。首先，透過 where 指令（類似 Linux 中的 which）可以看到以下這些執行檔的存放位置。其中，因為目前 Linux distro 是以 Windows App 的型式透過市集發佈的，所以 Ubuntu 與 openSUSE 會各自有一個執行檔存放在 WindowsApps資料夾底下，也是它們各自的進入點。</p>
@@ -506,7 +514,6 @@ wsl.exe: 進入預設 Linux distro 的 default shell
 ubuntu.exe: 進入 Ubuntu 的 default shell
 opensuse-42.exe: 進入 openSUSE 的 default shell
 </code></pre><p>在 Ubuntu 執行的同時，於新的命令列介面執行 opensuse-42.exe 便可同時運行一個 openSUSE 環境。</p>
-<h2 id="Powerline"><a href="#Powerline" class="headerlink" title="Powerline"></a>Powerline</h2><p>測試後，似乎無法使用有 Powerline 的主題，深感可惜…</p>
 <h2 id="Dig-安裝"><a href="#Dig-安裝" class="headerlink" title="Dig 安裝"></a>Dig 安裝</h2><figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">sudo apt-get install dnsutils</div></pre></div></div></figure>
 <p>參考資料：<br>-<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style:none; padding-left: 0;"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline-block; vertical-align: top;"><a href="https://medium.com/hungys-blog/windows-subsystem-for-linux-configuration-caf2f47d0dfb" rel="external nofollow noopener noreferrer" target="_blank">Windows Subsystem for Linux 環境配置 (最新 1709 版)</a><br>-</span><a href="#fnref:1" rev="footnote"> ↩</a></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">2.</span><span style="display: inline-block; vertical-align: top;"><a href="http://note.drx.tw/2016/01/screenfetch-cli.html" rel="external nofollow noopener noreferrer" target="_blank">screenfetch - 命令列 (cli) 裡的檢視系統工具 </a><br>-</span><a href="#fnref:2" rev="footnote"> ↩</a></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">3.</span><span style="display: inline-block; vertical-align: top;"><a href="https://mogeko.github.io/2017/09/16/Fira-Code-%E4%B8%BA%E5%86%99%E7%A8%8B%E5%BA%8F%E8%80%8C%E7%94%9F%E7%9A%84%E5%AD%97%E4%BD%93/" rel="external nofollow noopener noreferrer" target="_blank">Fira Code | 為寫程序而生的字體</a></span><a href="#fnref:3" rev="footnote"> ↩</a></li></ol></div></div></p>
 
@@ -655,7 +662,7 @@ opensuse-42.exe: 進入 openSUSE 的 default shell
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">36</span>
+                    <span class="site-state-item-count">39</span>
                     <span class="site-state-item-name">文章</span>
                   </a>
                 </div>
@@ -724,13 +731,7 @@ opensuse-42.exe: 進入 openSUSE 的 default shell
                     
                       
                     
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">30</span>
+                    <span class="site-state-item-count">27</span>
                     <span class="site-state-item-name">標籤</span>
                   </a>
                 </div>
@@ -773,7 +774,7 @@ opensuse-42.exe: 進入 openSUSE 的 default shell
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Cmder-設定"><span class="nav-number">1.</span> <span class="nav-text">Cmder 設定</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#設定-distro"><span class="nav-number">2.</span> <span class="nav-text">設定 distro</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Powerline"><span class="nav-number">3.</span> <span class="nav-text">Powerline</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Dig-安裝"><span class="nav-number">4.</span> <span class="nav-text">Dig 安裝</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Cmder-設定"><span class="nav-number">1.</span> <span class="nav-text">Cmder 設定</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#設定-distro"><span class="nav-number">2.</span> <span class="nav-text">設定 distro</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Dig-安裝"><span class="nav-number">3.</span> <span class="nav-text">Dig 安裝</span></a></li></ol></div>
             
 
           </div>
@@ -814,7 +815,7 @@ opensuse-42.exe: 進入 openSUSE 的 default shell
     
       <span class="post-meta-item-text">網站總字數：</span>
     
-    <span title="網站總字數">152k</span>
+    <span title="網站總字數">168k</span>
   
 
   
@@ -825,7 +826,7 @@ opensuse-42.exe: 進入 openSUSE 的 default shell
     
       <span class="post-meta-item-text">網站總閱讀時間：</span>
     
-    <span title="網站總閱讀時間">12:40</span>
+    <span title="網站總閱讀時間">14:01</span>
   
 </div>
 
