@@ -4,8 +4,392 @@
 
     
   <url>
+    <loc>https://ppundsh.github.io/posts/87f1/</loc>
+    <lastmod>2018-05-13T01:04:01.084Z</lastmod>
+    <data>
+        <display>
+        <title>N66U 全改造，KMS Server、ARIA2、SWAP、SSR Server、SSH 安全</title>
+        <pubTime>2018-05-11T19:55:28.000Z</pubTime>
+        
+        <tag>Linux</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ppundsh.github.io/posts/283f/</loc>
+    <lastmod>2018-05-12T22:21:10.224Z</lastmod>
+    <data>
+        <display>
+        <title>維運指令備忘</title>
+        <pubTime>2018-04-10T17:04:38.000Z</pubTime>
+        
+        <tag>MIS</tag>
+         
+        <tag>Console</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ppundsh.github.io/posts/c073/</loc>
+    <lastmod>2018-05-12T22:20:51.803Z</lastmod>
+    <data>
+        <display>
+        <title>在 Hexo new 時自動用 VS Code 開啟新建文章</title>
+        <pubTime>2018-04-26T15:16:11.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+        <tag>APP</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ppundsh.github.io/posts/f6ff/</loc>
+    <lastmod>2018-05-12T22:20:40.795Z</lastmod>
+    <data>
+        <display>
+        <title>利用映像劫持替換預設系統程式</title>
+        <pubTime>2018-04-17T18:57:21.000Z</pubTime>
+        
+        <tag>Crack</tag>
+         
+        <tag>MIS</tag>
+         
+        <tag>APP</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ppundsh.github.io/posts/8a4a/</loc>
+    <lastmod>2018-05-12T22:20:33.986Z</lastmod>
+    <data>
+        <display>
+        <title>Windows 改本機密碼</title>
+        <pubTime>2018-04-12T17:51:39.000Z</pubTime>
+        
+        <tag>Crack</tag>
+         
+        <tag>Console</tag>
+         
+        <tag>Windows</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ppundsh.github.io/posts/8fab/</loc>
+    <lastmod>2018-05-12T22:20:15.535Z</lastmod>
+    <data>
+        <display>
+        <title>Windows 重灌後安裝的軟體和設定</title>
+        <pubTime>2018-04-17T13:16:16.000Z</pubTime>
+        
+        <tag>APP</tag>
+         
+        <tag>Install</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ppundsh.github.io/posts/4037/</loc>
+    <lastmod>2018-05-12T22:20:08.896Z</lastmod>
+    <data>
+        <display>
+        <title>Windows Subsystem Linux 筆記</title>
+        <pubTime>2018-04-15T19:02:36.000Z</pubTime>
+        
+        <tag>Console</tag>
+         
+        <tag>Kali</tag>
+         
+        <tag>Install</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ppundsh.github.io/posts/eb31/</loc>
+    <lastmod>2018-05-12T22:20:00.515Z</lastmod>
+    <data>
+        <display>
+        <title>VScode 小記</title>
+        <pubTime>2018-05-12T11:02:39.000Z</pubTime>
+        
+        <tag>APP</tag>
+         
+        <tag>Install</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ppundsh.github.io/posts/9770/</loc>
+    <lastmod>2018-05-12T22:19:54.897Z</lastmod>
+    <data>
+        <display>
+        <title>VMware Workstation on Windows 發生 Guard/Device Guard is enabled 錯誤</title>
+        <pubTime>2018-05-08T19:01:49.000Z</pubTime>
+        
+        <tag>Install</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ppundsh.github.io/posts/44c2/</loc>
+    <lastmod>2018-05-12T22:19:42.346Z</lastmod>
+    <data>
+        <display>
+        <title>Tor 指令備忘</title>
+        <pubTime>2018-04-16T20:55:45.000Z</pubTime>
+        
+        <tag>APP</tag>
+         
+        <tag>GFW</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ppundsh.github.io/posts/f9d/</loc>
+    <lastmod>2018-05-12T22:19:29.639Z</lastmod>
+    <data>
+        <display>
+        <title>Token2Shell 連進 VMware 方法</title>
+        <pubTime>2018-05-08T18:29:43.000Z</pubTime>
+        
+        <tag>Console</tag>
+         
+        <tag>Linux</tag>
+         
+        <tag>Install</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ppundsh.github.io/posts/2a39/</loc>
+    <lastmod>2018-05-12T22:19:20.886Z</lastmod>
+    <data>
+        <display>
+        <title>SDN 筆記</title>
+        <pubTime>2018-04-15T09:12:24.000Z</pubTime>
+        
+        <tag>MIS</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ppundsh.github.io/posts/ad6e/</loc>
+    <lastmod>2018-05-12T22:19:14.803Z</lastmod>
+    <data>
+        <display>
+        <title>PowerShell 美化：oh my posh</title>
+        <pubTime>2018-05-12T13:19:16.000Z</pubTime>
+        
+        <tag>Console</tag>
+         
+        <tag>Install</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ppundsh.github.io/posts/eb39/</loc>
+    <lastmod>2018-05-12T22:19:04.904Z</lastmod>
+    <data>
+        <display>
+        <title>Photoshop_New_File_ERROR</title>
+        <pubTime>2018-05-08T23:19:27.000Z</pubTime>
+        
+        <tag>APP</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ppundsh.github.io/posts/140e/</loc>
+    <lastmod>2018-05-12T22:18:57.573Z</lastmod>
+    <data>
+        <display>
+        <title>Kali 安裝指令</title>
+        <pubTime>2018-04-29T16:30:58.000Z</pubTime>
+        
+        <tag>Linux</tag>
+         
+        <tag>Kali</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ppundsh.github.io/posts/3e4b/</loc>
+    <lastmod>2018-05-12T22:18:39.066Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo + GitHub 搭建記錄</title>
+        <pubTime>2018-04-08T16:45:23.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+        <tag>Install</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ppundsh.github.io/posts/78d/</loc>
+    <lastmod>2018-05-12T22:18:29.203Z</lastmod>
+    <data>
+        <display>
+        <title>cVim for Chrome </title>
+        <pubTime>2018-05-06T05:49:15.000Z</pubTime>
+        
+        <tag>Brower</tag>
+         
+        <tag>APP</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ppundsh.github.io/posts/e1a/</loc>
+    <lastmod>2018-05-12T22:18:15.587Z</lastmod>
+    <data>
+        <display>
+        <title>CMD、PowerShell 改顏色、字體</title>
+        <pubTime>2018-05-09T18:55:57.000Z</pubTime>
+        
+        <tag>Console</tag>
+         
+        <tag>Install</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ppundsh.github.io/posts/89df/</loc>
+    <lastmod>2018-05-12T22:18:07.166Z</lastmod>
+    <data>
+        <display>
+        <title>Cmder 筆記</title>
+        <pubTime>2018-04-12T18:37:06.000Z</pubTime>
+        
+        <tag>MIS</tag>
+         
+        <tag>Console</tag>
+         
+        <tag>Install</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ppundsh.github.io/posts/f4f2/</loc>
+    <lastmod>2018-05-12T22:17:49.954Z</lastmod>
+    <data>
+        <display>
+        <title>CISCO Router 筆記</title>
+        <pubTime>2018-04-24T16:01:20.000Z</pubTime>
+        
+        <tag>RIP</tag>
+         
+        <tag>EIGRP</tag>
+         
+        <tag>MIS</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://ppundsh.github.io/posts/991f/</loc>
-    <lastmod>2018-05-12T17:54:30.462Z</lastmod>
+    <lastmod>2018-05-12T17:55:14.959Z</lastmod>
     <data>
         <display>
         <title>PowerShell 學習資源</title>
@@ -21,120 +405,14 @@
 
     
   <url>
-    <loc>https://ppundsh.github.io/posts/ad6e/</loc>
-    <lastmod>2018-05-12T15:24:42.073Z</lastmod>
+    <loc>https://ppundsh.github.io/posts/6edb/</loc>
+    <lastmod>2018-05-12T11:36:02.525Z</lastmod>
     <data>
         <display>
-        <title>PowerShell 美化：oh my posh</title>
-        <pubTime>2018-05-12T13:19:16.000Z</pubTime>
-        
-        <tag>Console</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ppundsh.github.io/posts/8fab/</loc>
-    <lastmod>2018-05-12T15:15:03.062Z</lastmod>
-    <data>
-        <display>
-        <title>Windows 重灌後安裝的軟體和設定</title>
-        <pubTime>2018-04-17T13:16:16.000Z</pubTime>
+        <title>Vim 指令</title>
+        <pubTime>2018-04-16T01:21:50.000Z</pubTime>
         
         <tag>APP</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ppundsh.github.io/posts/87f1/</loc>
-    <lastmod>2018-05-12T14:53:12.388Z</lastmod>
-    <data>
-        <display>
-        <title>N66U 全改造，KMS Server、ARIA2、SWAP、SSR Server</title>
-        <pubTime>2018-05-11T19:55:28.000Z</pubTime>
-        
-        <tag>Linux</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ppundsh.github.io/posts/eb31/</loc>
-    <lastmod>2018-05-12T14:48:32.276Z</lastmod>
-    <data>
-        <display>
-        <title>VScode 小記</title>
-        <pubTime>2018-05-12T11:02:39.000Z</pubTime>
-        
-        <tag>APP</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ppundsh.github.io/posts/e1a/</loc>
-    <lastmod>2018-05-12T13:20:25.640Z</lastmod>
-    <data>
-        <display>
-        <title>CMD、PowerShell 改顏色、字體</title>
-        <pubTime>2018-05-09T18:55:57.000Z</pubTime>
-        
-        <tag>Console</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ppundsh.github.io/posts/9770/</loc>
-    <lastmod>2018-05-12T13:00:30.875Z</lastmod>
-    <data>
-        <display>
-        <title>VMware Workstation on Windows 發生 Guard/Device Guard is enabled 錯誤</title>
-        <pubTime>2018-05-08T19:01:49.000Z</pubTime>
-        
-        <tag>VM</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ppundsh.github.io/posts/89df/</loc>
-    <lastmod>2018-05-12T12:54:34.572Z</lastmod>
-    <data>
-        <display>
-        <title>Cmder 筆記</title>
-        <pubTime>2018-04-12T18:37:06.000Z</pubTime>
-        
-        <tag>MIS</tag>
-         
-        <tag>Consloe</tag>
-         
-        <tag>install</tag>
          
          
            
@@ -163,44 +441,6 @@
 
     
   <url>
-    <loc>https://ppundsh.github.io/posts/6edb/</loc>
-    <lastmod>2018-05-12T11:36:02.525Z</lastmod>
-    <data>
-        <display>
-        <title>Vim 指令</title>
-        <pubTime>2018-04-16T01:21:50.000Z</pubTime>
-        
-        <tag>APP</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ppundsh.github.io/posts/8a4a/</loc>
-    <lastmod>2018-05-12T11:36:02.514Z</lastmod>
-    <data>
-        <display>
-        <title>Windows 改本機密碼</title>
-        <pubTime>2018-04-12T17:51:39.000Z</pubTime>
-        
-        <tag>Console</tag>
-         
-        <tag>windows</tag>
-         
-        <tag>crack</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://ppundsh.github.io/posts/1bae/</loc>
     <lastmod>2018-05-12T11:36:02.513Z</lastmod>
     <data>
@@ -211,63 +451,6 @@
         <tag>MIS</tag>
          
         <tag>APP</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ppundsh.github.io/posts/4037/</loc>
-    <lastmod>2018-05-12T11:33:45.938Z</lastmod>
-    <data>
-        <display>
-        <title>Windows Subsystem Linux 筆記</title>
-        <pubTime>2018-04-15T19:02:36.000Z</pubTime>
-        
-        <tag>Consloe</tag>
-         
-        <tag>Kali</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ppundsh.github.io/posts/f9d/</loc>
-    <lastmod>2018-05-11T21:17:01.704Z</lastmod>
-    <data>
-        <display>
-        <title>Token2Shell 連進 VMware 方法</title>
-        <pubTime>2018-05-08T18:29:43.000Z</pubTime>
-        
-        <tag>Console</tag>
-         
-        <tag>Linux</tag>
-         
-        <tag>VM</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ppundsh.github.io/posts/eb39/</loc>
-    <lastmod>2018-05-11T00:37:26.529Z</lastmod>
-    <data>
-        <display>
-        <title>Photoshop_New_File_ERROR</title>
-        <pubTime>2018-05-08T23:19:27.000Z</pubTime>
-        
-        <tag>PS</tag>
          
          
            
@@ -302,99 +485,6 @@
         <pubTime>2018-05-09T20:12:41.000Z</pubTime>
         
         <tag>Python</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ppundsh.github.io/posts/44c2/</loc>
-    <lastmod>2018-05-09T19:42:45.278Z</lastmod>
-    <data>
-        <display>
-        <title>Tor 指令備忘</title>
-        <pubTime>2018-04-16T20:55:45.000Z</pubTime>
-        
-        <tag>Tor</tag>
-         
-        <tag>GFW</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ppundsh.github.io/posts/283f/</loc>
-    <lastmod>2018-05-09T18:59:00.910Z</lastmod>
-    <data>
-        <display>
-        <title>維運指令備忘</title>
-        <pubTime>2018-04-10T17:04:38.000Z</pubTime>
-        
-        <tag>MIS</tag>
-         
-        <tag>Consloe</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ppundsh.github.io/posts/3e4b/</loc>
-    <lastmod>2018-05-08T18:51:42.550Z</lastmod>
-    <data>
-        <display>
-        <title>Hexo + GitHub 搭建記錄</title>
-        <pubTime>2018-04-08T16:45:23.000Z</pubTime>
-        
-        <tag>Hexo</tag>
-         
-        <tag>Git</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ppundsh.github.io/posts/140e/</loc>
-    <lastmod>2018-05-08T18:26:43.527Z</lastmod>
-    <data>
-        <display>
-        <title>Kali 安裝指令</title>
-        <pubTime>2018-04-29T16:30:58.000Z</pubTime>
-        
-        <tag>Linux</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ppundsh.github.io/posts/78d/</loc>
-    <lastmod>2018-05-07T23:53:19.883Z</lastmod>
-    <data>
-        <display>
-        <title>cVim for Chrome </title>
-        <pubTime>2018-05-06T05:49:15.000Z</pubTime>
-        
-        <tag>Brower</tag>
-         
-        <tag>Vim</tag>
          
          
            
@@ -544,44 +634,6 @@
 
     
   <url>
-    <loc>https://ppundsh.github.io/posts/c073/</loc>
-    <lastmod>2018-04-26T16:53:39.816Z</lastmod>
-    <data>
-        <display>
-        <title>在 Hexo new 時自動用 VS Code 開啟新建文章</title>
-        <pubTime>2018-04-26T15:16:11.000Z</pubTime>
-        
-        <tag>Hexo</tag>
-         
-        <tag>VS code</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ppundsh.github.io/posts/f4f2/</loc>
-    <lastmod>2018-04-26T09:56:06.160Z</lastmod>
-    <data>
-        <display>
-        <title>CISCO Router 筆記</title>
-        <pubTime>2018-04-24T16:01:20.000Z</pubTime>
-        
-        <tag>RIP</tag>
-         
-        <tag>EIGRP</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://ppundsh.github.io/posts/b545/</loc>
     <lastmod>2018-04-25T20:40:12.694Z</lastmod>
     <data>
@@ -607,27 +659,6 @@
         <pubTime>2018-04-17T17:04:38.000Z</pubTime>
         
         <tag>MIS</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ppundsh.github.io/posts/f6ff/</loc>
-    <lastmod>2018-04-24T22:14:20.578Z</lastmod>
-    <data>
-        <display>
-        <title>利用映像劫持替換預設系統程式</title>
-        <pubTime>2018-04-17T18:57:21.000Z</pubTime>
-        
-        <tag>MIS</tag>
-         
-        <tag>crack</tag>
-         
-        <tag>VScode</tag>
          
          
            
@@ -697,27 +728,6 @@
         <pubTime>2018-04-13T16:33:15.000Z</pubTime>
         
         <tag>MIS</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ppundsh.github.io/posts/2a39/</loc>
-    <lastmod>2018-04-17T13:29:55.294Z</lastmod>
-    <data>
-        <display>
-        <title>SDN 筆記</title>
-        <pubTime>2018-04-15T09:12:24.000Z</pubTime>
-        
-        <tag>MIS</tag>
-         
-        <tag>SDN</tag>
-         
-        <tag>OVSDB</tag>
          
          
            
