@@ -146,7 +146,7 @@
 <meta property="og:site_name" content="Flymia 凡事用心之事">
 <meta property="og:description" content="重裝後的備忘">
 <meta property="og:locale" content="zh-TW">
-<meta property="og:updated_time" content="2018-05-12T22:18:57.573Z">
+<meta property="og:updated_time" content="2018-05-14T16:06:27.172Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Kali 安裝指令">
 <meta name="twitter:description" content="重裝後的備忘">
@@ -423,7 +423,7 @@
               
                 <span class="post-meta-item-text">更新於：</span>
               
-              <time title="更新於" itemprop="dateModified" datetime="2018-05-13T06:18:57+08:00">2018-05-13</time>
+              <time title="更新於" itemprop="dateModified" datetime="2018-05-15T00:06:27+08:00">2018-05-15</time>
             
           </span>
 
@@ -449,7 +449,7 @@
                 
                   <span class="post-meta-item-text">文章字數：</span>
                 
-                <span title="文章字數">1.4k</span>
+                <span title="文章字數">2k</span>
               
 
               
@@ -463,7 +463,7 @@
                 
                   <span class="post-meta-item-text">閱讀時間&asymp;</span>
                 
-                <span title="閱讀時間">0:07</span>
+                <span title="閱讀時間">0:10</span>
               
             </div>
           
@@ -505,6 +505,16 @@ apt install openssh-server
 <p>與 SSH 相關的單元是 ssh.service 和 ssh.socket。在基本級別上，service 控制進程，socket 控製文件系統或網絡套接字。如果您只需要暫時啟動 SSH 服務，建議使用 ssh.socket：</p>
 <figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></div><div class="code"><pre><div class="line">systemctl start ssh.socket <span class="comment">#暫時啟動 SSH 服務</span></div><div class="line">systemctl stop ssh.socket <span class="comment">#停止</span></div></pre></div></div></figure>
 <figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></div><div class="code"><pre><div class="line">systemctl <span class="built_in">enable</span> ssh.service <span class="comment">#永久啟用 SSH 服務</span></div><div class="line">systemctl start ssh.service <span class="comment">#立即使用SSH而無需重新啟動</span></div><div class="line">systemctl status ssh.service <span class="comment">#檢查 SSH 服務狀態</span></div><div class="line">systemctl stop ssh.service <span class="comment">#關閉服務</span></div><div class="line">systemctl <span class="built_in">disable</span> ssh.service <span class="comment">#禁用服務</span></div></pre></div></div></figure>
+<h2 id="Powerline"><a href="#Powerline" class="headerlink" title="Powerline"></a>Powerline</h2><p><a href="https://github.com/powerline/powerline" rel="external nofollow noopener noreferrer" target="_blank">官網</a><br><div class="note info"><p><a href="https://blog.gtwang.org/linux/powerline-adds-powerful-statuslines-and-prompts-to-vim-and-bash/" rel="external nofollow noopener noreferrer" target="_blank">來源</a><br>Powerline 是一個 Vim 狀態列與 Shell 命令提示字元的外掛，除了 Vim 之外也可以用於各種 Shell 與應用程式中，如 zsh、bash、tmux、IPython、Awesome 與 Qtile。</p>
+<p>Powerline 是使用 Python 所開發的一個外掛小工具，支援各種常見的 Shell 與應用程式，可以產生非常漂亮的提示字串與狀態列文字，讓終端機的文字看起來更舒服。</p></div></p>
+<p>自動安裝</p>
+<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">sudo apt-get install powerline</div></pre></div></div></figure>
+<p>使用</p>
+<p>在 Bash Shell 中使用，只要在 ~/.bashrc 中加入下面這段程式碼後重開即可</p>
+<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></div><div class="code"><pre><div class="line">POWERLINE_SCRIPT=/usr/share/powerline/bindings/bash/powerline.sh</div><div class="line"><span class="keyword">if</span> [ -f <span class="variable">$POWERLINE_SCRIPT</span> ]; <span class="keyword">then</span></div><div class="line">  <span class="built_in">source</span> <span class="variable">$POWERLINE_SCRIPT</span></div><div class="line"><span class="keyword">fi</span></div></pre></div></div></figure>
+<p>若要在 Vim 的狀態列中使用 Powerline，則在 ~/.vimrc 中加入這幾行：<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup></p>
+<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></div><div class="code"><pre><div class="line"><span class="built_in">set</span> laststatus=2</div><div class="line"><span class="built_in">set</span> t_Co=256</div><div class="line">python3 from powerline.vim import setup as powerline_setup</div><div class="line">python3 powerline_setup()</div><div class="line">python3 del powerline_setup</div></pre></div></div></figure>
+<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style:none; padding-left: 0;"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline-block; vertical-align: top;"><a href="https://powerline.readthedocs.io/en/latest/usage/other.html#vim-statusline" rel="external nofollow noopener noreferrer" target="_blank">Vim statusline</a></span><a href="#fnref:1" rev="footnote"> ↩</a></li></ol></div></div>
       
     </div>
 
@@ -738,7 +748,7 @@ apt install openssh-server
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#重裝後的備忘"><span class="nav-number">1.</span> <span class="nav-text">重裝後的備忘</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安裝-NTP"><span class="nav-number">1.1.</span> <span class="nav-text">安裝 NTP</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更改時區"><span class="nav-number">1.2.</span> <span class="nav-text">更改時區</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#開啟網卡、DHCP"><span class="nav-number">1.3.</span> <span class="nav-text">開啟網卡、DHCP</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#設定新使用者"><span class="nav-number">1.4.</span> <span class="nav-text">設定新使用者</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安裝-SSH-Server"><span class="nav-number">1.5.</span> <span class="nav-text">安裝 SSH Server</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#重裝後的備忘"><span class="nav-number">1.</span> <span class="nav-text">重裝後的備忘</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安裝-NTP"><span class="nav-number">1.1.</span> <span class="nav-text">安裝 NTP</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更改時區"><span class="nav-number">1.2.</span> <span class="nav-text">更改時區</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#開啟網卡、DHCP"><span class="nav-number">1.3.</span> <span class="nav-text">開啟網卡、DHCP</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#設定新使用者"><span class="nav-number">1.4.</span> <span class="nav-text">設定新使用者</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安裝-SSH-Server"><span class="nav-number">1.5.</span> <span class="nav-text">安裝 SSH Server</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Powerline"><span class="nav-number">1.6.</span> <span class="nav-text">Powerline</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -779,7 +789,7 @@ apt install openssh-server
     
       <span class="post-meta-item-text">網站總字數：</span>
     
-    <span title="網站總字數">177k</span>
+    <span title="網站總字數">178k</span>
   
 
   
@@ -790,7 +800,7 @@ apt install openssh-server
     
       <span class="post-meta-item-text">網站總閱讀時間：</span>
     
-    <span title="網站總閱讀時間">14:44</span>
+    <span title="網站總閱讀時間">14:50</span>
   
 </div>
 
