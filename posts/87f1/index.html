@@ -147,12 +147,12 @@
 <meta property="og:description" content="ASUS N66U 是個人買過最貴的 Router ，也是個人第一次認真學 Linux 指令的對像。這邊記錄個人對它安裝的服務，包含 KMS 啟動用的 KMS Server 、ARIA2 下載器、掛載虛擬記憶體、翻牆工具等。">
 <meta property="og:locale" content="zh-TW">
 <meta property="og:image" content="https://i.imgur.com/d3tQtqJ.png">
+<meta property="og:image" content="https://i.imgur.com/xX6Nx7M.png">
 <meta property="og:image" content="https://i.imgur.com/Wv1be2p.png">
 <meta property="og:image" content="https://i.imgur.com/B3HAC7k.png">
 <meta property="og:image" content="https://i.imgur.com/8faxqXq.png">
 <meta property="og:image" content="https://i.imgur.com/ujxZ9QF.png">
 <meta property="og:image" content="https://i.imgur.com/3RYgpFq.png">
-<meta property="og:image" content="https://i.imgur.com/xX6Nx7M.png">
 <meta property="og:image" content="https://i.imgur.com/wDVboi5.png">
 <meta property="og:image" content="https://i.imgur.com/7OK4HHp.png">
 <meta property="og:image" content="https://i.imgur.com/ItAxwrk.png">
@@ -170,7 +170,7 @@
 <meta property="og:image" content="https://i.imgur.com/DWCqoAg.png">
 <meta property="og:image" content="https://i.imgur.com/mouuIbp.png">
 <meta property="og:image" content="https://i.imgur.com/o9lEKLW.png">
-<meta property="og:updated_time" content="2018-05-15T07:53:27.258Z">
+<meta property="og:updated_time" content="2018-12-31T22:44:48.791Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="N66U 全改造，KMS Server、ARIA2、SWAP、SSR Server、SSH 安全">
 <meta name="twitter:description" content="ASUS N66U 是個人買過最貴的 Router ，也是個人第一次認真學 Linux 指令的對像。這邊記錄個人對它安裝的服務，包含 KMS 啟動用的 KMS Server 、ARIA2 下載器、掛載虛擬記憶體、翻牆工具等。">
@@ -448,7 +448,7 @@
               
                 <span class="post-meta-item-text">更新於：</span>
               
-              <time title="更新於" itemprop="dateModified" datetime="2018-05-15T15:53:27+08:00">2018-05-15</time>
+              <time title="更新於" itemprop="dateModified" datetime="2019-01-01T06:44:48+08:00">2019-01-01</time>
             
           </span>
 
@@ -474,7 +474,7 @@
                 
                   <span class="post-meta-item-text">文章字數：</span>
                 
-                <span title="文章字數">18k</span>
+                <span title="文章字數">20k</span>
               
 
               
@@ -488,7 +488,7 @@
                 
                   <span class="post-meta-item-text">閱讀時間&asymp;</span>
                 
-                <span title="閱讀時間">1:30</span>
+                <span title="閱讀時間">1:39</span>
               
             </div>
           
@@ -521,6 +521,18 @@
 <li>Setting up an NTP Server for your local lan <a href="https://github.com/RMerl/asuswrt-merlin/wiki/Setting-up-an-NTP-Server-for-your-local-lan" rel="external nofollow noopener noreferrer" target="_blank">https://github.com/RMerl/asuswrt-merlin/wiki/Setting-up-an-NTP-Server-for-your-local-lan</a></li>
 </ol>
 <hr>
+<h2 id="安裝-Entware"><a href="#安裝-Entware" class="headerlink" title="安裝 Entware"></a>安裝 Entware</h2><p><a href="https://github.com/RMerl/asuswrt-merlin/wiki/Entware" rel="external nofollow noopener noreferrer" target="_blank">官方教學</a></p>
+<ol>
+<li>先將隨碟格式化為 Ext3 格式後再插入，之後要作為內部空間來使用。<ul>
+<li>Ext4 只有在 Arm 機型才可使用。</li>
+</ul>
+</li>
+<li>SSH 連入，下以下指令安裝環境</li>
+</ol>
+<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">entware-setup.sh</div></pre></div></div></figure>
+<pre><code>會跳出安裝路徑選擇，輸入數字確定。如果沒有選項，代表第一步驟沒有成功。
+</code></pre><p><img src="https://i.imgur.com/xX6Nx7M.png" alt="Install Entware"></p>
+<hr>
 <h2 id="安裝-KMS-Server-：-vlmcsd"><a href="#安裝-KMS-Server-：-vlmcsd" class="headerlink" title="安裝 KMS Server ： vlmcsd"></a>安裝 KMS Server ： vlmcsd</h2><p>看到這個做法真是覺得非常腦洞大開！<br>介紹<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup></p>
 <div class="note info"><p>常用的 KMS 啟用伺服器程式為 py-kms 與 vlmcsd，分別為 python 和 C 語言版本。可執行於各種類 linux 和 windows 及 mac os 環境中。<br>    <a href="http://forums.mydigitallife.info/threads/50234-Emulated-KMS-Servers-on-non-Windows-platforms" rel="external nofollow noopener noreferrer" target="_blank">vlmcsd 釋出地址</a><br>    <a href="https://github.com/dzacharo/py-kms" rel="external nofollow noopener noreferrer" target="_blank">py-kms 釋出地址</a></p></div>
 <h3 id="開啟-jffs"><a href="#開啟-jffs" class="headerlink" title="開啟 jffs"></a>開啟 jffs</h3><ol>
@@ -531,7 +543,7 @@
 </ol>
 <p><img src="https://i.imgur.com/Wv1be2p.png" alt="JFFS"></p>
 <h3 id="安裝-vlmcsd"><a href="#安裝-vlmcsd" class="headerlink" title="安裝 vlmcsd"></a>安裝 vlmcsd</h3><ol>
-<li>在官網下載 vlmcsd ，複製出執行檔<br> mips 架構的路由器使用 / binaries/Linux/mips/little-endian/static/vlmcsd-mips32el-uclibc-static<br> arm 架構的路由器使用 / binaries/Linux/armlittle-endian/static/vlmcsd-armv7el-uclibc-static</li>
+<li>在官網下載 vlmcsd ，複製出執行檔 <a href="https://mega.nz/#!qUlyjIrC!GMf3fHdgUw2hz-ET-GwE3JDHeG1HlctRC5fjhiHuXL4" rel="external nofollow noopener noreferrer" target="_blank">.</a><br> mips 架構的路由器使用 / binaries/Linux/mips/little-endian/static/vlmcsd-mips32el-uclibc-static<br> arm 架構的路由器使用 / binaries/Linux/armlittle-endian/static/vlmcsd-armv7el-uclibc-static</li>
 <li>將檔案重新命名為 vlmcsd，通過 xftp，winscp 等工具(連線類型還<code>SCP</code>，埠和 SSH 設定的一樣) 上傳到路由器 / jffs 目錄下</li>
 </ol>
 <p><img src="https://i.imgur.com/B3HAC7k.png" alt="vlmcsd"></p>
@@ -637,17 +649,6 @@
 <p>加入</p>
 <figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></div><div class="code"><pre><div class="line">mkdir /mnt/nas</div><div class="line">mount -t cifs <span class="string">"//192.168.1.241/Download"</span> -o username=帳號,password=密碼  /mnt/nas</div></pre></div></div></figure>
 <hr>
-<h2 id="安裝-Entware"><a href="#安裝-Entware" class="headerlink" title="安裝 Entware"></a>安裝 Entware</h2><p><a href="https://github.com/RMerl/asuswrt-merlin/wiki/Entware" rel="external nofollow noopener noreferrer" target="_blank">官方教學</a></p>
-<ol>
-<li>先將隨碟格式化為 Ext3 格式後再插入，之後要作為內部空間來使用。<ul>
-<li>Ext4 只有在 Arm 機型才可使用。</li>
-</ul>
-</li>
-<li>SSH 連入，下以下指令安裝環境</li>
-</ol>
-<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">entware-setup.sh</div></pre></div></div></figure>
-<pre><code>會跳出安裝路徑選擇，輸入數字確定。如果沒有選項，代表第一步驟沒有成功。
-</code></pre><p><img src="https://i.imgur.com/xX6Nx7M.png" alt="Install Entware"></p>
 <h2 id="ARIA2"><a href="#ARIA2" class="headerlink" title="ARIA2"></a>ARIA2</h2><div class="note info"><p><a href="https://aria2.github.io/" rel="external nofollow noopener noreferrer" target="_blank">官網</a><br>比原本內建的 ASUS Download Master 還好得多的下載器，快速、高效，特色有：</p>
 <ul>
 <li>多點下載</li>
@@ -664,10 +665,13 @@
 <ol start="2">
 <li>安裝 WEB GUI for Aria2</li>
 </ol>
+<p>webui-aria2 的安裝方式</p>
 <figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></div><div class="code"><pre><div class="line">wget -c -O /opt/tmp/webui-aria2.zip https://github.com/ziahamza/webui-aria2/archive/master.zip --no-check-certificate</div><div class="line">unzip /opt/tmp/webui-aria2.zip -d /opt/tmp/</div><div class="line">rm /opt/tmp/webui-aria2.zip</div><div class="line">mv /opt/tmp/webui-aria2-master /opt/share/www/aria2</div></pre></div></div></figure>
+<p>AriaNg<sup id="fnref:6"><a href="#fn:6" rel="footnote">6</a></sup> 的安裝方式 </p>
+<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></div><div class="code"><pre><div class="line">wget -c -O /opt/tmp/ariang.zip https://github.com/mayswind/AriaNg/archive/master.zip --no-check-certificate</div><div class="line">unzip /opt/tmp/ariang.zip -d /opt/tmp/</div><div class="line">rm /opt/tmp/ariang.zip</div><div class="line">mv /opt/tmp/AriaNg-master /opt/share/www/ariang</div></pre></div></div></figure>
 <p>  或選擇自已喜歡的 GUI ，解壓後放置在 web server 對應的目錄 <code>/mnt/磁碟機位置/entware/share/www/</code></p>
-<p><a href="https://github.com/mayswind/AriaNg" rel="external nofollow noopener noreferrer" target="_blank">AriaNg</a> <sup id="fnref:6"><a href="#fn:6" rel="footnote">6</a></sup><br><a href="https://github.com/binux/yaaw" rel="external nofollow noopener noreferrer" target="_blank">YAAW</a></p>
-<ol start="3">
+<p><a href="https://github.com/binux/yaaw" rel="external nofollow noopener noreferrer" target="_blank">YAAW</a><br><a href="https://github.com/mayswind/AriaNg" rel="external nofollow noopener noreferrer" target="_blank">AriaNg</a> <a href="https://mega.nz/#F!bd8SFARC!uiqTTgjCR7Nbo_Djb92igA" rel="external nofollow noopener noreferrer" target="_blank">.</a></p>
+<ol>
 <li>設定 lighttpd for php and port 81:<sup id="fnref:7"><a href="#fn:7" rel="footnote">7</a></sup></li>
 </ol>
 <figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></div><div class="code"><pre><div class="line">sed -i <span class="string">'s/#server.port = 81/server.port = 81/g'</span> <span class="string">"/opt/etc/lighttpd/lighttpd.conf"</span></div><div class="line">sed -i <span class="string">"/server.upload-dirs*/cserver.upload-dirs = ( \"/opt/tmp\" )"</span> <span class="string">"/opt/etc/lighttpd/lighttpd.conf"</span></div><div class="line">cat &gt;&gt; /opt/etc/lighttpd/conf.d/30-fastcgi.conf &lt;&lt; EOF </div><div class="line">server.modules += ( <span class="string">"mod_fastcgi"</span> ) fastcgi.server = ( <span class="string">".php"</span> =&gt;</div><div class="line">( <span class="string">"localhost"</span> =&gt;</div><div class="line">( <span class="string">"socket"</span> =&gt; <span class="string">"/tmp/php-fcgi.sock"</span>,</div><div class="line"><span class="string">"bin-path"</span> =&gt; <span class="string">"/opt/bin/php-fcgi"</span>,</div><div class="line"><span class="string">"max-procs"</span> =&gt; 1,</div><div class="line"><span class="string">"bin-environment"</span> =&gt;</div><div class="line">( <span class="string">"PHP_FCGI_CHILDREN"</span> =&gt; <span class="string">"2"</span>,</div><div class="line"><span class="string">"PHP_FCGI_MAX_REQUESTS"</span> =&gt; <span class="string">"1000"</span> )</div><div class="line">)</div><div class="line">)</div><div class="line">)</div><div class="line">EOF</div></pre></div></div></figure>
@@ -726,6 +730,45 @@
 <p>掃瞄 USB 裝置，選擇要停用哪個裝置的虛擬記憶體。Swap: Total 顯示 0，證明已經停用虛擬記憶體</p>
 <hr>
 <h2 id="SSR-Server"><a href="#SSR-Server" class="headerlink" title="SSR Server"></a>SSR Server</h2><p>待補<br><a href="https://www.mobile01.com/topicdetail.php?f=110&amp;t=5165732" rel="external nofollow noopener noreferrer" target="_blank">https://www.mobile01.com/topicdetail.php?f=110&amp;t=5165732</a></p>
+<hr>
+<h2 id="NTP-Daemon"><a href="#NTP-Daemon" class="headerlink" title="NTP Daemon"></a>NTP Daemon</h2><div class="note info"><p><a href="https://www.snbforums.com/threads/ntp-daemon-for-asuswrt-merlin.28041/" rel="external nofollow noopener noreferrer" target="_blank">網路校時守護程序</a><br><a href="https://github.com/kvic-z/goodies-asuswrt/wiki/Install-NTP-Daemon-for-Asuswrt-Merlin" rel="external nofollow noopener noreferrer" target="_blank">網路校時守護程序 安裝</a><br>比內建的 NTP 使用更少的 RAM 且更有效率，並提供圖示介面。</p></div>
+<ol>
+<li>Entware 要先裝好。</li>
+<li>以下以 ARM 為範例，mips 請參考原文作修改</li>
+<li>安裝 rrdtool 和 wget </li>
+</ol>
+<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></div><div class="code"><pre><div class="line">opkg install rrdtool</div><div class="line">opkg install wget</div></pre></div></div></figure>
+<ol start="4">
+<li>Copy /www to /opt/var/www in preparing WebGUI to run from /opt/var/www</li>
+</ol>
+<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">tar cf - /www | tar -C /opt/var -xvf -</div></pre></div></div></figure>
+<ol start="5">
+<li>install the package</li>
+</ol>
+<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">wget --no-check-certificate -O - https://github.com/kvic-z/goodies-asuswrt/blob/master/ntpd_stats-arm-R3-1.tar.gz?raw=<span class="literal">true</span> | tar -C / -xzf -</div></pre></div></div></figure>
+<ol start="6">
+<li>Run the following command to manually start ntpd as litmus test</li>
+</ol>
+<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></div><div class="code"><pre><div class="line">cp /jffs/configs/fstab /etc; mount -a</div><div class="line">/opt/etc/init.d/S77ntpd-custom start</div><div class="line">/jffs/bin/ntpstats.sh</div></pre></div></div></figure>
+<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">mount -a mounts /opt/var/www /www</div></pre></div></div></figure>
+<ol start="7">
+<li>(FW version&gt;= 380.68) Patch files for WebUI and restart httpd</li>
+</ol>
+<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></div><div class="code"><pre><div class="line">cp /opt/var/spool/ntp/Tools_NtpdStats.asp /www</div><div class="line">sed -i <span class="string">'/"Tools_OtherSettings.asp", tabName: "Other Settings"/a &#123;url: "Tools_NtpdStats.asp", tabName: "NTP Daemon"&#125;,'</span> /www/require/modules/menuTree.js</div><div class="line">service restart_httpd</div></pre></div></div></figure>
+<p>Stop and check if any error. If things go well, you shall see NTP Daemon on WebUI &gt; Tools page.</p>
+<ol start="8">
+<li>Create a cron job to collect NTPD stats. Add the following line to /jffs/scripts/services-start</li>
+</ol>
+<figure class="highlight bash"><figcaption><span>/jffs/scripts/services-start</span></figcaption><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">cru a NtpdStats <span class="string">"*/5 * * * * /jffs/bin/ntpstats.sh"</span></div></pre></div></div></figure>
+<ol start="9">
+<li>Append the following two lines to the end of /jffs/scripts/post-mount</li>
+</ol>
+<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></div><div class="code"><pre><div class="line">mount -a</div><div class="line">service restart_httpd</div></pre></div></div></figure>
+<ol start="10">
+<li><p>Reboot your router and enjoy!<br>Check the “server” entries in /jffs/etc/ntp.conf. You may want to replace those ip addresses with time servers near you. Preferrably put some stratum 1 servers there.</p>
+<p>要一點時間自動重整後圖示才會有變化，重整時要按F5清快取才可以看到更新。</p>
+</li>
+</ol>
 <hr>
 <h2 id="SSH-安全性"><a href="#SSH-安全性" class="headerlink" title="SSH 安全性"></a>SSH 安全性</h2><p>SSH 連線故然方便，但網路上很多自動程序在掃描這個服務，提升安全性有以下方向可設定</p>
 <ol>
@@ -806,9 +849,9 @@ The key&apos;s randomart image is:
 <figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line"><span class="built_in">echo</span> <span class="string">"iptables -t nat -A PREROUTING -m iprange --src-range 192.168.1.21-192.168.1.30 -p tcp -m tcp --dport 80 -j REDIRECT --to-ports 3128"</span> &gt;&gt; /jffs/scripts/firewall-start</div></pre></div></div></figure>
 <h3 id="Client-設置"><a href="#Client-設置" class="headerlink" title="Client 設置"></a>Client 設置</h3><p>設定 Proxy 為 <code>192.168.1.1</code> 通訊埠為 <code>3128</code> ，重開機即可。</p>
 <h3 id="更改訂閱、自動更新"><a href="#更改訂閱、自動更新" class="headerlink" title="更改訂閱、自動更新"></a>更改訂閱、自動更新</h3><p>如果要添加新訂閱列表，需先刪除舊訂閱</p>
-<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">./privoxy-blocklist_0.2sh -r</div></pre></div></div></figure>
+<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">./privoxy-blocklist_0.2.sh -r</div></pre></div></div></figure>
 <p>如果要手動更新更新，直接執行下列指令</p>
-<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">./privoxy-blocklist_0.2sh</div></pre></div></div></figure>
+<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">./privoxy-blocklist_0.2.sh</div></pre></div></div></figure>
 <p>要自動更新，編輯<code>/jffs/scripts/init-start</code>加入以下命令(每日凌晨 4 點更新)</p>
 <figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">cru a ScheduledReboot <span class="string">"0 4 * * * /opt/etc/privoxy/privoxy-blocklist_0.2.sh"</span></div></pre></div></div></figure>
 <div id="footnotes"><hr><div id="footnotelist"><ol style="list-style:none; padding-left: 0;"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline-block; vertical-align: top;"><a href="https://2formosa.blogspot.com/2015/12/asus-rt-n66uiperf.html" rel="external nofollow noopener noreferrer" target="_blank">在 Asus RT-N66U 原廠韌體上面安裝 iperf 服務，測量連線速度</a></span><a href="#fnref:1" rev="footnote"> ↩</a></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">2.</span><span style="display: inline-block; vertical-align: top;"><a href="http://koolshare.cn/thread-43602-1-1.html" rel="external nofollow noopener noreferrer" target="_blank">merlin 搭建區域網內免配置 KMS 自動啟用環境</a></span><a href="#fnref:2" rev="footnote"> ↩</a></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">3.</span><span style="display: inline-block; vertical-align: top;"><a href="https://wijtb.nctu.me/index.php/archives/54/" rel="external nofollow noopener noreferrer" target="_blank">Linux 上利用 vlmcsd 搭建 KMS 伺服器</a></span><a href="#fnref:3" rev="footnote"> ↩</a></li><li id="fn:4"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">4.</span><span style="display: inline-block; vertical-align: top;"><a href="http://pan.yangjinyou.com/post/2016/92.html" rel="external nofollow noopener noreferrer" target="_blank">Office 2016 自動轉換 VOL 版並啟用</a></span><a href="#fnref:4" rev="footnote"> ↩</a></li><li id="fn:5"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">5.</span><span style="display: inline-block; vertical-align: top;"><a href="https://tosiek.pl/aria2-on-asus-router-with-asuswrt-merlin/" rel="external nofollow noopener noreferrer" target="_blank">Aria2 on Asus Router with AsusWRT Merlin</a></span><a href="#fnref:5" rev="footnote"> ↩</a></li><li id="fn:6"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">6.</span><span style="display: inline-block; vertical-align: top;"><a href="http://www.senra.me/ariang-a-beautiful-aria2-webui-front-end/" rel="external nofollow noopener noreferrer" target="_blank">AriaNG——高顏值的 Aria2 WebUI</a></span><a href="#fnref:6" rev="footnote"> ↩</a></li><li id="fn:7"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">7.</span><span style="display: inline-block; vertical-align: top;"><a href="http://52asus.com/forum.php?mod=viewthread&amp;tid=5768&amp;extra=&amp;highlight=aria2&amp;page=2" rel="external nofollow noopener noreferrer" target="_blank">华硕 RT-N66U上安装aria2遇到的问题</a></span><a href="#fnref:7" rev="footnote"> ↩</a></li><li id="fn:8"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">8.</span><span style="display: inline-block; vertical-align: top;"><a href="http://koolshare.cn/thread-42723-1-1.html" rel="external nofollow noopener noreferrer" target="_blank">為路由器增加虛擬記憶體 SWAP</a></span><a href="#fnref:8" rev="footnote"> ↩</a></li><li id="fn:9"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">9.</span><span style="display: inline-block; vertical-align: top;"><a href="https://blog.gtwang.org/linux/linux-ssh-public-key-authentication/" rel="external nofollow noopener noreferrer" target="_blank">SSH 公開金鑰認證：不用打密碼登入 Linux 設定教學，安全又方便</a></span><a href="#fnref:9" rev="footnote"> ↩</a></li><li id="fn:10"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">10.</span><span style="display: inline-block; vertical-align: top;"><a href="http://koolshare.cn/forum.php?mod=viewthread&amp;tid=11523&amp;highlight=%E6%8C%82%E8%BD%BD%2BNAS" rel="external nofollow noopener noreferrer" target="_blank">[固件討論] 請教一下，梅林有沒有辦法掛載 NAS 上的 samba 或者 nfs 共享？</a></span><a href="#fnref:10" rev="footnote"> ↩</a></li><li id="fn:11"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">11.</span><span style="display: inline-block; vertical-align: top;"><a href="http://www.52asus.com/thread-802-1-1.html" rel="external nofollow noopener noreferrer" target="_blank">華碩路由器 Merlin 固件使用 Adblock + Privoxy 實現廣告過濾</a></span><a href="#fnref:11" rev="footnote"> ↩</a></li></ol></div></div>
@@ -957,7 +1000,7 @@ The key&apos;s randomart image is:
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">41</span>
+                    <span class="site-state-item-count">43</span>
                     <span class="site-state-item-name">文章</span>
                   </a>
                 </div>
@@ -1047,7 +1090,7 @@ The key&apos;s randomart image is:
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#刷-Merlin"><span class="nav-number">1.</span> <span class="nav-text">刷 Merlin</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安裝-KMS-Server-：-vlmcsd"><span class="nav-number">2.</span> <span class="nav-text">安裝 KMS Server ： vlmcsd</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#開啟-jffs"><span class="nav-number">2.1.</span> <span class="nav-text">開啟 jffs</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安裝-vlmcsd"><span class="nav-number">2.2.</span> <span class="nav-text">安裝 vlmcsd</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Windows-啟動"><span class="nav-number">2.3.</span> <span class="nav-text">Windows 啟動</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Office-啟用"><span class="nav-number">2.4.</span> <span class="nav-text">Office 啟用</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#自動啟用-尚末成功"><span class="nav-number">2.4.1.</span> <span class="nav-text">自動啟用(尚末成功)</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#掛載-NAS-路徑"><span class="nav-number">3.</span> <span class="nav-text">掛載 NAS 路徑</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#自動啟動"><span class="nav-number">3.1.</span> <span class="nav-text">自動啟動</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安裝-Entware"><span class="nav-number">4.</span> <span class="nav-text">安裝 Entware</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ARIA2"><span class="nav-number">5.</span> <span class="nav-text">ARIA2</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安裝-ARIA2"><span class="nav-number">5.1.</span> <span class="nav-text">安裝 ARIA2</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自動啟動-1"><span class="nav-number">5.2.</span> <span class="nav-text">自動啟動</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Chrome-整合"><span class="nav-number">5.3.</span> <span class="nav-text">Chrome 整合</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#虛擬記憶體-SWAP"><span class="nav-number">6.</span> <span class="nav-text">虛擬記憶體 SWAP</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SSR-Server"><span class="nav-number">7.</span> <span class="nav-text">SSR Server</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SSH-安全性"><span class="nav-number">8.</span> <span class="nav-text">SSH 安全性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#生成-SSH-金鑰"><span class="nav-number">8.1.</span> <span class="nav-text">生成 SSH 金鑰</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#設定-Router"><span class="nav-number">8.2.</span> <span class="nav-text">設定 Router</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#設定-Client-端"><span class="nav-number">8.3.</span> <span class="nav-text">設定 Client 端</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Token2Shell："><span class="nav-number">8.3.1.</span> <span class="nav-text">Token2Shell：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#WinSCP"><span class="nav-number">8.3.2.</span> <span class="nav-text">WinSCP</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#關閉-SSH-密碼登入"><span class="nav-number">8.3.3.</span> <span class="nav-text">關閉 SSH 密碼登入</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用-Adblock-Plus-Filter-對特定設備做廣告過濾"><span class="nav-number">9.</span> <span class="nav-text">使用 Adblock Plus Filter 對特定設備做廣告過濾</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安裝"><span class="nav-number">9.1.</span> <span class="nav-text">安裝</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#設定"><span class="nav-number">9.2.</span> <span class="nav-text">設定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#設定靜態-IP"><span class="nav-number">9.3.</span> <span class="nav-text">設定靜態 IP</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#在-iptables-添規則，攔截設備的流量並通過-privoxy-過濾廣告"><span class="nav-number">9.4.</span> <span class="nav-text">在 iptables 添規則，攔截設備的流量並通過 privoxy 過濾廣告</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Client-設置"><span class="nav-number">9.5.</span> <span class="nav-text">Client 設置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#更改訂閱、自動更新"><span class="nav-number">9.6.</span> <span class="nav-text">更改訂閱、自動更新</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#刷-Merlin"><span class="nav-number">1.</span> <span class="nav-text">刷 Merlin</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安裝-Entware"><span class="nav-number">2.</span> <span class="nav-text">安裝 Entware</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安裝-KMS-Server-：-vlmcsd"><span class="nav-number">3.</span> <span class="nav-text">安裝 KMS Server ： vlmcsd</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#開啟-jffs"><span class="nav-number">3.1.</span> <span class="nav-text">開啟 jffs</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安裝-vlmcsd"><span class="nav-number">3.2.</span> <span class="nav-text">安裝 vlmcsd</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Windows-啟動"><span class="nav-number">3.3.</span> <span class="nav-text">Windows 啟動</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Office-啟用"><span class="nav-number">3.4.</span> <span class="nav-text">Office 啟用</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#自動啟用-尚末成功"><span class="nav-number">3.4.1.</span> <span class="nav-text">自動啟用(尚末成功)</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#掛載-NAS-路徑"><span class="nav-number">4.</span> <span class="nav-text">掛載 NAS 路徑</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#自動啟動"><span class="nav-number">4.1.</span> <span class="nav-text">自動啟動</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ARIA2"><span class="nav-number">5.</span> <span class="nav-text">ARIA2</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安裝-ARIA2"><span class="nav-number">5.1.</span> <span class="nav-text">安裝 ARIA2</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自動啟動-1"><span class="nav-number">5.2.</span> <span class="nav-text">自動啟動</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Chrome-整合"><span class="nav-number">5.3.</span> <span class="nav-text">Chrome 整合</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#虛擬記憶體-SWAP"><span class="nav-number">6.</span> <span class="nav-text">虛擬記憶體 SWAP</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SSR-Server"><span class="nav-number">7.</span> <span class="nav-text">SSR Server</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#NTP-Daemon"><span class="nav-number">8.</span> <span class="nav-text">NTP Daemon</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SSH-安全性"><span class="nav-number">9.</span> <span class="nav-text">SSH 安全性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#生成-SSH-金鑰"><span class="nav-number">9.1.</span> <span class="nav-text">生成 SSH 金鑰</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#設定-Router"><span class="nav-number">9.2.</span> <span class="nav-text">設定 Router</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#設定-Client-端"><span class="nav-number">9.3.</span> <span class="nav-text">設定 Client 端</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Token2Shell："><span class="nav-number">9.3.1.</span> <span class="nav-text">Token2Shell：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#WinSCP"><span class="nav-number">9.3.2.</span> <span class="nav-text">WinSCP</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#關閉-SSH-密碼登入"><span class="nav-number">9.3.3.</span> <span class="nav-text">關閉 SSH 密碼登入</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用-Adblock-Plus-Filter-對特定設備做廣告過濾"><span class="nav-number">10.</span> <span class="nav-text">使用 Adblock Plus Filter 對特定設備做廣告過濾</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安裝"><span class="nav-number">10.1.</span> <span class="nav-text">安裝</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#設定"><span class="nav-number">10.2.</span> <span class="nav-text">設定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#設定靜態-IP"><span class="nav-number">10.3.</span> <span class="nav-text">設定靜態 IP</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#在-iptables-添規則，攔截設備的流量並通過-privoxy-過濾廣告"><span class="nav-number">10.4.</span> <span class="nav-text">在 iptables 添規則，攔截設備的流量並通過 privoxy 過濾廣告</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Client-設置"><span class="nav-number">10.5.</span> <span class="nav-text">Client 設置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#更改訂閱、自動更新"><span class="nav-number">10.6.</span> <span class="nav-text">更改訂閱、自動更新</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -1074,7 +1117,7 @@ The key&apos;s randomart image is:
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
@@ -1088,7 +1131,7 @@ The key&apos;s randomart image is:
     
       <span class="post-meta-item-text">網站總字數：</span>
     
-    <span title="網站總字數">180k</span>
+    <span title="網站總字數">184k</span>
   
 
   
@@ -1099,7 +1142,7 @@ The key&apos;s randomart image is:
     
       <span class="post-meta-item-text">網站總閱讀時間：</span>
     
-    <span title="網站總閱讀時間">14:58</span>
+    <span title="網站總閱讀時間">15:18</span>
   
 </div>
 
