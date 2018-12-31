@@ -146,7 +146,7 @@
 <meta property="og:site_name" content="Flymia 凡事用心之事">
 <meta property="og:description" content="不止是 Markdown 就是了。記錄一下，供查詢用。">
 <meta property="og:locale" content="zh-TW">
-<meta property="og:updated_time" content="2018-04-24T20:54:29.204Z">
+<meta property="og:updated_time" content="2018-12-31T23:07:49.723Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo編緝方式筆記">
 <meta name="twitter:description" content="不止是 Markdown 就是了。記錄一下，供查詢用。">
@@ -423,7 +423,7 @@
               
                 <span class="post-meta-item-text">更新於：</span>
               
-              <time title="更新於" itemprop="dateModified" datetime="2018-04-25T04:54:29+08:00">2018-04-25</time>
+              <time title="更新於" itemprop="dateModified" datetime="2019-01-01T07:07:49+08:00">2019-01-01</time>
             
           </span>
 
@@ -449,7 +449,7 @@
                 
                   <span class="post-meta-item-text">文章字數：</span>
                 
-                <span title="文章字數">1.8k</span>
+                <span title="文章字數">7.2k</span>
               
 
               
@@ -463,7 +463,7 @@
                 
                   <span class="post-meta-item-text">閱讀時間&asymp;</span>
                 
-                <span title="閱讀時間">0:09</span>
+                <span title="閱讀時間">0:36</span>
               
             </div>
           
@@ -534,7 +534,55 @@ danger
 <h2 id="不渲染"><a href="#不渲染" class="headerlink" title="不渲染"></a>不渲染</h2><figure class="highlight plain"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></div><div class="code"><pre><div class="line">&#123;% raw %&#125;</div><div class="line">&#123;% endraw %&#125;</div></pre></div></div></figure>
 <p>\的用法需在符號之前</p>
 <h2 id="代碼塊語法"><a href="#代碼塊語法" class="headerlink" title="代碼塊語法"></a>代碼塊語法</h2><p>作者<sup id="fnref:7"><a href="#fn:7" rel="footnote">7</a></sup></p>
-<figure class="highlight plain"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></div><div class="code"><pre><div class="line">```[language] [:title] [lang:language] [line_number:(true|false)] [first_line:number] [mark:#,#-#] [diff:true|false] [url:http...]</div><div class="line">code snippet</div><div class="line">`` `</div></pre></div></div></figure>
+<figure class="highlight plain"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></div><div class="code"><pre><div class="line">```[language] [:title] [lang:language] [line_number:(true|false)] [first_line:number] [mark:#,#-#] [diff:true|false] [url:http...]</div><div class="line">code snippet</div><div class="line">`` `</div><div class="line"></div><div class="line">本文主要記錄一下，修改 Hexo 下語法高亮的各種用法，修改後的語法可以快速設置多種樣式，主要功能如下：</div><div class="line"></div><div class="line">設置語法語言</div><div class="line">設置標題</div><div class="line">是否顯示行號</div><div class="line">設置起始行號</div><div class="line">選定行號標記</div><div class="line">設置代碼添加刪除標記 （2017 年 11 月 26 日新增）</div><div class="line">設置跳轉超級鏈接</div><div class="line">格式總覽</div><div class="line">主要功能如上，都是自帶功能，更重要的是只是想在``` ``` 後直接實現設置，不想使用&#123; % ... % &#125;去實現這些功能。</div><div class="line"></div><div class="line">格式</div><div class="line"></div><div class="line">```[language] [:title] [lang:language] [line_number:(true|false)] [first_line:number] [mark:#,#-#] [diff:true|false] [url:http...]</div><div class="line">code snippet</div></pre></div></div></figure>
+<p>自定義</p>
+<figure class="highlight plain"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></div><div class="code"><pre><div class="line">:编辑这里试一试</div><div class="line">code snippet</div></pre></div></div></figure>
+<p>效果</p>
+<p>編輯這裡試一試<br>1<br>not find language !<br>使用方法<br>設置語法語言<br>格式</p>
+<figure class="highlight plain"><figcaption><span> </span><a href="//注意">語言類型 需要寫在其他定義之前</a></figcaption><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">code snippet</div></pre></div></div></figure>
+<p>樣例</p>
+<figure class="highlight java"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></div><div class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> Class <span class="title">HelloWorldClass</span><span class="params">()</span></span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</div><div class="line">        System.Out.printl(<span class="string">"Hello World"</span>);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></div></div></figure>
+<p>效果</p>
+<p>1<br>2<br>3<br>4<br>5<br>public Class HelloWorldClass(){<br>    public static void main(String[] args){<br>        System.Out.printl(“Hello World”);<br>    }<br>}<br>設置標題<br>格式</p>
+<figure class="highlight plain"><figcaption><span> </span><a href="//以英文冒號開頭即可">link</a></figcaption><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">code snippet</div></pre></div></div></figure>
+<p>樣例</p>
+<figure class="highlight plain"><figcaption><span>xia/HelloWorldClass.java</span><a href="//如果沒有定義語言，詞後綴可輔助">link</a></figcaption><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></div><div class="code"><pre><div class="line">public Class HelloWorldClass()&#123;</div><div class="line">    public static void main(String[] args)&#123;</div><div class="line">        System.Out.printl(&quot;Hello World&quot;);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></div></div></figure>
+<p>效果</p>
+<p>file:///D:/zhuzhu xia/HelloWorldClass.java<br>1<br>2<br>3<br>4<br>5<br>public Class HelloWorldClass(){<br>    public static void main(String[] args){<br>        System.Out.printl(“Hello World”);<br>    }<br>}<br>是否顯示行號<br>格式</p>
+<figure class="highlight plain"><figcaption><span> </span><a href="//默認true">link</a></figcaption><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">code snippet</div></pre></div></div></figure>
+<p>樣例</p>
+<figure class="highlight java"><figcaption><span>line_number:false   </span></figcaption><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></div><div class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> Class <span class="title">HelloWorldClass</span><span class="params">()</span></span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</div><div class="line">        System.Out.printl(<span class="string">"Hello World"</span>);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></div></div></figure>
+<p>效果</p>
+<p>public Class HelloWorldClass(){<br>    public static void main(String[] args){<br>        System.Out.printl(“Hello World”);<br>    }<br>}<br>設置起始行號<br>格式</p>
+<p>1<br>2<br>3<br><figure class="highlight plain"><figcaption><span> </span><a href="//默認">link</a></figcaption><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">code snippet</div></pre></div></div></figure></p>
+<p>樣例</p>
+<figure class="highlight java"><figcaption><span>first_line:22   </span></figcaption><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></div><div class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> Class <span class="title">HelloWorldClass</span><span class="params">()</span></span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</div><div class="line">        System.Out.printl(<span class="string">"Hello World"</span>);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></div></div></figure>
+<p>效果</p>
+<p>22<br>23<br>24<br>25<br>26<br>public Class HelloWorldClass(){<br>    public static void main(String[] args){<br>        System.Out.printl(“Hello World”);<br>    }<br>}<br>選定行號標記<br>格式</p>
+<figure class="highlight plain"><figcaption><span> </span><a href="//#行號，#-#行號範圍">link</a></figcaption><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">code snippet</div></pre></div></div></figure>
+<p>樣例</p>
+<figure class="highlight java"><figcaption><span>mark:2,4,8,10-14,18   </span></figcaption><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></div><div class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> Class <span class="title">HelloWorldClass</span><span class="params">()</span></span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</div><div class="line">        System.Out.printl(<span class="string">"Hello World"</span>);</div><div class="line">        System.Out.printl(<span class="string">"Hello World"</span>);</div><div class="line">        System.Out.printl(<span class="string">"Hello World"</span>);</div><div class="line">        System.Out.printl(<span class="string">"Hello World"</span>);</div><div class="line">        System.Out.printl(<span class="string">"Hello World"</span>);</div><div class="line">        System.Out.printl(<span class="string">"Hello World"</span>);</div><div class="line">        System.Out.printl(<span class="string">"Hello World"</span>);</div><div class="line">        System.Out.printl(<span class="string">"Hello World"</span>);</div><div class="line">        System.Out.printl(<span class="string">"Hello World"</span>);</div><div class="line">        System.Out.printl(<span class="string">"Hello World"</span>);</div><div class="line">        System.Out.printl(<span class="string">"Hello World"</span>);</div><div class="line">        System.Out.printl(<span class="string">"Hello World"</span>);</div><div class="line">        System.Out.printl(<span class="string">"Hello World"</span>);</div><div class="line">        System.Out.printl(<span class="string">"Hello World"</span>);</div><div class="line">        System.Out.printl(<span class="string">"Hello World"</span>);</div><div class="line">        System.Out.printl(<span class="string">"Hello World"</span>);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></div></div></figure>
+<p>效果</p>
+<p>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20<br>public Class HelloWorldClass(){<br>    public static void main(String[] args){<br>        System.Out.printl(“Hello World”);<br>        System.Out.printl(“Hello World”);<br>        System.Out.printl(“Hello World”);<br>        System.Out.printl(“Hello World”);<br>        System.Out.printl(“Hello World”);<br>        System.Out.printl(“Hello World”);<br>        System.Out.printl(“Hello World”);<br>        System.Out.printl(“Hello World”);<br>        System.Out.printl(“Hello World”);<br>        System.Out.printl(“Hello World”);<br>        System.Out.printl(“Hello World”);<br>        System.Out.printl(“Hello World”);<br>        System.Out.printl(“Hello World”);<br>        System.Out.printl(“Hello World”);<br>        System.Out.printl(“Hello World”);<br>        System.Out.printl(“Hello World”);<br>    }<br>}<br>設置代碼添加刪除標記<br>格式</p>
+<figure class="highlight plain"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">code snippet</div></pre></div></div></figure>
+<p>樣例</p>
+<figure class="highlight js"><figcaption><span>diff:true   </span></figcaption><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></div><div class="code"><pre><div class="line"><span class="string">'use struct'</span>;</div><div class="line">-<span class="keyword">var</span> name = <span class="string">'zhu'</span></div><div class="line">+<span class="keyword">var</span> name = <span class="string">'zhuzhuxia'</span>;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">sayHello</span>(<span class="params"></span>)</span>&#123;</div><div class="line">-    alert(name);</div><div class="line">+    <span class="built_in">console</span>.log(name);</div><div class="line">&#125;</div></pre></div></div></figure>
+<p>效果</p>
+<p>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>‘use struct’;<br>var name = ‘zhu’<br>var name = ‘zhuzhuxia’;<br>function sayHello(){<br>    alert(name);<br>    console.log(name);<br>}<br>還有更驚喜的功能，你點擊左上角 複製 按鈕，粘貼出去試試看！只會複製出最新代碼哦。</p>
+<p>設置跳轉超級鏈接<br>格式</p>
+<figure class="highlight plain"><figcaption><span>download|下載]</span><a href="//url:http">開頭，無download則跳轉鏈接，有則下載內容</a></figcaption><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">code snippet</div></pre></div></div></figure>
+<p>樣例</p>
+<figure class="highlight plain"><figcaption><span>url:http://zhuzhuyule.com/images/avatar.png download</span></figcaption><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">這裡會下載我的頭像！</div></pre></div></div></figure>
+<p>效果</p>
+<p>需要標題 download<br>1<br>這裡會下載我的頭像！<br>修改代碼<br>如果需要實現以上功能，需要更改 ./node_modules/目錄下插件：</p>
+<p> node_module<br>|–hexo<br>|  |–lib<br>|     |–plugins<br>|        |–filter<br>|           |–before_post_render<br>|              |–backtick_code_block.js<br>|<br>|–hexo-util<br>|  |–lib<br>|     |–highlight.js<br>覆蓋以上文件即可，詳細不在這裡描述了。</p>
+<p>在添加樣式文件即可：</p>
+<p> themes<br>|–next<br>|  |–source<br>|     |–css<br>|        |–_custom<br>|           |–highlight.styl<br>|           |–custom.styl      //感謝 @maoshengyang 提醒，還需要添加文件引用：@import highlight;<br>custom.styl中添加樣式文件引用：</p>
+<p>custom.styl<br>@import highlight;<br>theme.styl中直接添加顏色，可以自己調整顏色（放在這裡好控制管理皮膚）：</p>
+<p>.\themes\next\source\css_common\components\highlight\theme.styl<br>$highlight-diffdeletion = #c7ffd7<br>$highlight-diffaddition = #ffd3d8<br>也可以這樣，這是我的 自己使用的皮膚配色：</p>
+<p>.\themes\next\source\css_common\components\highlight\theme.styl<br>if $highlight_theme == “custom light”<br>  $highlight-figcaptionBK   = #eee<br>  $highlight-figcaptionFont = #777<br>  $highlight-background   = #f8f8f8<br>  $highlight-emphasisBK   = #ffffff<br>  $highlight-emphasisFont = #111<br>  $highlight-current-line = #efefef<br>  $highlight-selection    = #d6d6d6<br>  $highlight-foreground   = #4d4d4c<br>  $highlight-comment      = #6eb55e<br>  $highlight-red          = #c82829<br>  $highlight-orange       = #f5871f<br>  $highlight-yellow       = #eab700<br>  $highlight-green        = #718c00<br>  $highlight-aqua         = #3e999f<br>  $highlight-blue         = #4271ae<br>  $highlight-purple       = #1212a0<br>  $highlight-diffdeletion = #c7ffd7<br>  $highlight-diffaddition = #ffd3d8<br>  $highlight-gutter       = {<br>    color: #5c5c5c,<br>    bg-color: #e7e5dc,<br>    right-border-color: #aed581<br>  }</p>
+<p>因原文已失，故做搬運…</p>
+<p><code>`</code></p>
 <div id="footnotes"><hr><div id="footnotelist"><ol style="list-style:none; padding-left: 0;"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline-block; vertical-align: top;"><a href="https://charlottehong.blogspot.com/2017/07/markdown-hackmd-github.html" rel="external nofollow noopener noreferrer" target="_blank">Markdown HackMD Github 同一頁文內跳轉</a></span><a href="#fnref:1" rev="footnote"> ↩</a></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">2.</span><span style="display: inline-block; vertical-align: top;"><a href="http://theme-next.iissnan.com/tag-plugins.html" rel="external nofollow noopener noreferrer" target="_blank">Next 內置標籤</a></span><a href="#fnref:2" rev="footnote"> ↩</a></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">3.</span><span style="display: inline-block; vertical-align: top;"><a href="http://markdown.tw/" rel="external nofollow noopener noreferrer" target="_blank">Markdown 文件</a></span><a href="#fnref:3" rev="footnote"> ↩</a></li><li id="fn:4"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">4.</span><span style="display: inline-block; vertical-align: top;"><a href="https://hyxxsfwy.github.io/2016/01/15/Hexo-Markdown-%E7%AE%80%E6%98%8E%E8%AF%AD%E6%B3%95%E6%89%8B%E5%86%8C/" rel="external nofollow noopener noreferrer" target="_blank">Hexo Markdown 簡明語法手冊</a></span><a href="#fnref:4" rev="footnote"> ↩</a></li><li id="fn:5"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">5.</span><span style="display: inline-block; vertical-align: top;"><a href="http://xianbai.me/learn-md/article/extension/task-list.html" rel="external nofollow noopener noreferrer" target="_blank">Task list</a></span><a href="#fnref:5" rev="footnote"> ↩</a></li><li id="fn:6"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">6.</span><span style="display: inline-block; vertical-align: top;"><a href="https://blog.rmiao.top/hexo-fold-block/" rel="external nofollow noopener noreferrer" target="_blank">Hexo next博客添加摺疊塊功能添加摺疊代碼塊</a></span><a href="#fnref:6" rev="footnote"> ↩</a></li><li id="fn:7"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">7.</span><span style="display: inline-block; vertical-align: top;"><a href="https://www.ofind.cn/blog/HEXO/HEXO%E4%B8%8B%E7%9A%84%E8%AF%AD%E6%B3%95%E9%AB%98%E4%BA%AE%E6%8B%93%E5%B1%95%E4%BF%AE%E6%94%B9.html" rel="external nofollow noopener noreferrer" target="_blank">HEXO下的語法高亮拓展修改</a></span><a href="#fnref:7" rev="footnote"> ↩</a></li></ol></div></div>
       
     </div>
@@ -810,7 +858,7 @@ danger
     
       <span class="post-meta-item-text">網站總字數：</span>
     
-    <span title="網站總字數">184k</span>
+    <span title="網站總字數">189k</span>
   
 
   
@@ -821,7 +869,7 @@ danger
     
       <span class="post-meta-item-text">網站總閱讀時間：</span>
     
-    <span title="網站總閱讀時間">15:18</span>
+    <span title="網站總閱讀時間">15:45</span>
   
 </div>
 

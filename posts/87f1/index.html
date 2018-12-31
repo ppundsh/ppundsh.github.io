@@ -170,7 +170,7 @@
 <meta property="og:image" content="https://i.imgur.com/DWCqoAg.png">
 <meta property="og:image" content="https://i.imgur.com/mouuIbp.png">
 <meta property="og:image" content="https://i.imgur.com/o9lEKLW.png">
-<meta property="og:updated_time" content="2018-12-31T22:44:48.791Z">
+<meta property="og:updated_time" content="2018-12-31T22:54:17.866Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="N66U 全改造，KMS Server、ARIA2、SWAP、SSR Server、SSH 安全">
 <meta name="twitter:description" content="ASUS N66U 是個人買過最貴的 Router ，也是個人第一次認真學 Linux 指令的對像。這邊記錄個人對它安裝的服務，包含 KMS 啟動用的 KMS Server 、ARIA2 下載器、掛載虛擬記憶體、翻牆工具等。">
@@ -448,7 +448,7 @@
               
                 <span class="post-meta-item-text">更新於：</span>
               
-              <time title="更新於" itemprop="dateModified" datetime="2019-01-01T06:44:48+08:00">2019-01-01</time>
+              <time title="更新於" itemprop="dateModified" datetime="2019-01-01T06:54:17+08:00">2019-01-01</time>
             
           </span>
 
@@ -708,9 +708,8 @@
 </li>
 </ol>
 <p><img src="https://i.imgur.com/UB5LrhU.png" alt="WEB GUISetting01"><br><img src="https://i.imgur.com/QpW1mN2.png" alt="WEB GUISetting02"><br><img src="https://i.imgur.com/FthUwDl.png" alt="WEB GUISetting03"></p>
-<h3 id="自動啟動-1"><a href="#自動啟動-1" class="headerlink" title="自動啟動"></a>自動啟動</h3><figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">vi /jffs/scripts/post-mount</div></pre></div></div></figure>
-<p>加入</p>
-<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></div><div class="code"><pre><div class="line">/opt/etc/init.d/S81aria2 start</div><div class="line">/opt/etc/init.d/S80lighttpd start</div></pre></div></div></figure>
+<h3 id="自動啟動-1"><a href="#自動啟動-1" class="headerlink" title="自動啟動"></a>自動啟動</h3><p>修改 /jffs/scripts/post-mount 加入以下內容：</p>
+<figure class="highlight bash"><figcaption><span>/jffs/scripts/post-mount</span></figcaption><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></div><div class="code"><pre><div class="line">/opt/etc/init.d/S81aria2 start</div><div class="line">/opt/etc/init.d/S80lighttpd start</div></pre></div></div></figure>
 <h3 id="Chrome-整合"><a href="#Chrome-整合" class="headerlink" title="Chrome 整合"></a>Chrome 整合</h3><p>安裝擴充功能 <a href="https://chrome.google.com/webstore/detail/yaaw2-for-chrome/mpkodccbngfoacfalldjimigbofkhgjn/related?hl=zh-CN" rel="external nofollow noopener noreferrer" target="_blank">YAAW2 for Chrome</a></p>
 <p>設定 Aria2 RPC 位置為 Router IP，Aria2 RPC 密鑰為 Token，預設：<code>Passw0rd</code></p>
 <p><img src="https://i.imgur.com/bKQ38Z7.png" alt="Chrome ExSetting"></p>
@@ -763,7 +762,7 @@
 <ol start="9">
 <li>Append the following two lines to the end of /jffs/scripts/post-mount</li>
 </ol>
-<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></div><div class="code"><pre><div class="line">mount -a</div><div class="line">service restart_httpd</div></pre></div></div></figure>
+<figure class="highlight bash"><figcaption><span>/jffs/scripts/post-mount</span></figcaption><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></div><div class="code"><pre><div class="line">mount -a</div><div class="line">service restart_httpd</div></pre></div></div></figure>
 <ol start="10">
 <li><p>Reboot your router and enjoy!<br>Check the “server” entries in /jffs/etc/ntp.conf. You may want to replace those ip addresses with time servers near you. Preferrably put some stratum 1 servers there.</p>
 <p>要一點時間自動重整後圖示才會有變化，重整時要按F5清快取才可以看到更新。</p>
@@ -1131,7 +1130,7 @@ The key&apos;s randomart image is:
     
       <span class="post-meta-item-text">網站總字數：</span>
     
-    <span title="網站總字數">184k</span>
+    <span title="網站總字數">189k</span>
   
 
   
@@ -1142,7 +1141,7 @@ The key&apos;s randomart image is:
     
       <span class="post-meta-item-text">網站總閱讀時間：</span>
     
-    <span title="網站總閱讀時間">15:18</span>
+    <span title="網站總閱讀時間">15:45</span>
   
 </div>
 
