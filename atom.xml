@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ppundsh.github.io/"/>
-  <updated>2018-12-31T22:47:54.603Z</updated>
+  <updated>2019-01-06T08:14:01.436Z</updated>
   <id>https://ppundsh.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>DEFT Pro 小記-更換微動、驅動</title>
+    <link href="https://ppundsh.github.io/posts/1416/"/>
+    <id>https://ppundsh.github.io/posts/1416/</id>
+    <published>2019-01-06T07:22:38.000Z</published>
+    <updated>2019-01-06T08:14:01.436Z</updated>
+    
+    <content type="html"><![CDATA[<p>去年中買了 Elecom DEFT Pro 軌跡球，一直沒有花時間寫個介紹，昨天因為發生左鍵連點，所以換了個微動開關。<br>在此紀錄一下。<br><img src="https://imgur.com/zVK9xFs.png" alt="DEFT Pro"><br><a id="more"></a></p><h2 id="驅動程序提供功能"><a href="#驅動程序提供功能" class="headerlink" title="驅動程序提供功能"></a>驅動程序提供功能</h2><p><img src="https://i.imgur.com/oEYoJ2Y.png" alt="Deft pro driver setting"></p><p>如圖所示，基本的任意鍵搭配，並且可以依據開啟的程式自動套用指定設定檔。<br>可設定一個按鍵為”手勢”，按住按鍵後再滾動球體來觸發指定功能。</p><h2 id="驅動下載"><a href="#驅動下載" class="headerlink" title="驅動下載"></a>驅動下載</h2><p>這款軌跡球的驅動讓我找了好久…中文網站的規畫實在讓人迷糊。<br><a href="https://www.elecom.co.jp.e.gj.hp.transer.com/support/download/peripheral/mouse/assistant/win/" rel="external nofollow noopener noreferrer" target="_blank">Elecom 日本官網載點</a></p><h2 id="拆解"><a href="#拆解" class="headerlink" title="拆解"></a>拆解</h2><p>螺絲圖就不拍了，參考來源：<br><a href="https://imgur.com/r/Trackballs/XzUOey1" rel="external nofollow noopener noreferrer" target="_blank">https://imgur.com/r/Trackballs/XzUOey1</a></p><p><img src="https://i.imgur.com/keosCr9.jpg" alt="縲絲孔位"><br>縲絲孔位</p><p><img src="https://i.imgur.com/ePLCoeu.jpg" alt="前方的卡扣"><br>前方的卡扣</p><p><img src="https://i.imgur.com/ROuEbI8.jpg" alt="注意排線"><br>注意排線，往上搬鬆開。</p><p><img src="https://i.imgur.com/iKX4sxI.jpg" alt="要更換的微動位置"><br>要更換的微動位置</p><p><img src="https://i.imgur.com/MotGGSt.jpg" alt="滾輪編碼器"><br>滾輪編碼器為光學方式，可望沿長壽命。</p><p><img src="https://i.imgur.com/4c2EMas.jpg" alt="更換完成"><br>左側為原 D2FC-F=7N(10M)，理論上是十萬次點擊…但我半年就出現連點問題了……<br>右側為更換上去的 D2F-F-3-7，舊稱“紅點”，比 7n(10M) 更紮實低沉的回饋感，等級比高階電競滑鼠常用的 7n(20M) 更高且更耐用。</p><h2 id="使用心得"><a href="#使用心得" class="headerlink" title="使用心得"></a>使用心得</h2><p><img src="https://i.imgur.com/2Z6Awm2.jpg" alt="滑鼠一覽"><br>無線真的很方便！大球操作起來的手感很好。<br>但按鍵佈局有點奇特，一直無法真的去完全適應…且無法借轉動球體來作為滾輪功能很可惜(Kensington最強的地方)<br>目前就當工作用的滑鼠來用了。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;去年中買了 Elecom DEFT Pro 軌跡球，一直沒有花時間寫個介紹，昨天因為發生左鍵連點，所以換了個微動開關。&lt;br&gt;在此紀錄一下。&lt;br&gt;&lt;img src=&quot;https://imgur.com/zVK9xFs.png&quot; alt=&quot;DEFT Pro&quot;&gt;&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="3C" scheme="https://ppundsh.github.io/tags/3C/"/>
+    
+  </entry>
   
   <entry>
     <title>Chrome 擴充插件 ScriptSafe、uBlock Origin、uMatrix</title>
@@ -216,7 +236,7 @@
     <summary type="html">
     
       &lt;p&gt;有時我們會需要網頁載入前詳細的時間來判斷問題的所在，正時可以用 Curl 加上 -w 的方式輸出訊息 (此文為 win 環境)&lt;/p&gt;
-&lt;!--�18--&gt;
+&lt;!--�11--&gt;
     
     </summary>
     
@@ -412,28 +432,6 @@
     
     
       <category term="MIS" scheme="https://ppundsh.github.io/tags/MIS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Kali 安裝指令</title>
-    <link href="https://ppundsh.github.io/posts/140e/"/>
-    <id>https://ppundsh.github.io/posts/140e/</id>
-    <published>2018-04-29T16:30:58.000Z</published>
-    <updated>2018-05-14T16:06:27.172Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="重裝後的備忘"><a href="#重裝後的備忘" class="headerlink" title="重裝後的備忘"></a>重裝後的備忘</h1><a id="more"></a><h2 id="安裝-NTP"><a href="#安裝-NTP" class="headerlink" title="安裝 NTP"></a>安裝 NTP</h2><figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></div><div class="code"><pre><div class="line">apt-get install ntp ntpdate</div><div class="line"></div><div class="line"><span class="comment">#vim etc/ntp.conf</span></div><div class="line">server time.stdtime.gov.tw</div><div class="line">server clock.stdtime.gov.tw</div><div class="line"></div><div class="line">ntpdate time.stdtime.gov.tw</div></pre></div></div></figure><h2 id="更改時區"><a href="#更改時區" class="headerlink" title="更改時區"></a>更改時區</h2><figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></div><div class="code"><pre><div class="line">dpkg-reconfigure tzdata</div><div class="line">date <span class="comment">#檢查</span></div></pre></div></div></figure><h2 id="開啟網卡、DHCP"><a href="#開啟網卡、DHCP" class="headerlink" title="開啟網卡、DHCP"></a>開啟網卡、DHCP</h2><figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></div><div class="code"><pre><div class="line">ifconfig -a</div><div class="line">ifconfig eth0 up</div><div class="line">dhclient eth0</div><div class="line">ifconfig <span class="comment">#檢查</span></div></pre></div></div></figure><h2 id="設定新使用者"><a href="#設定新使用者" class="headerlink" title="設定新使用者"></a>設定新使用者</h2><p>kali 預設 root 無法用於 ssh 登入</p><figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></div><div class="code"><pre><div class="line">useradd -m usern <span class="comment">#新增使用者 -m 的意思是創建用戶的主目錄</span></div><div class="line">passwd usern <span class="comment">#設置密碼</span></div><div class="line">usermod -a -G sudo usern <span class="comment">#. 為添加的用戶賦予權限 (-a 添加 ；-G 群組) ，如果沒有這一步，我們創建的用戶只有瀏覽的權限而沒有修改等其它的特殊權限</span></div><div class="line">chsh -s /bin/bash usern <span class="comment">#將用戶 usern 的默認外殼改成 bash ，還可以改其它的，比如 csh 、zsh、fish 等，如果沒有什麼特別的用途，一般用 bash</span></div><div class="line">id usern <span class="comment">#檢查</span></div><div class="line">userdel usern <span class="comment">#刪除</span></div></pre></div></div></figure><h2 id="安裝-SSH-Server"><a href="#安裝-SSH-Server" class="headerlink" title="安裝 SSH Server"></a>安裝 SSH Server</h2><p><a href="https://lmgsecurity.com/enable-start-ssh-kali-linux/" rel="external nofollow noopener noreferrer" target="_blank">來源</a></p><p>檢查有無安裝</p><pre><code>apt list openssh-server</code></pre><p>如果看到如 [installed] 字樣，代表有裝過。<br>如果沒有，執行下列步驟：</p><p>先做更新再安裝</p><pre><code>apt-get updateapt install openssh-server</code></pre><p>Kali 帶有預設的 SSH 密鑰，為了安全先備份再生成新密鑰：</p><figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></div><div class="code"><pre><div class="line">mkdir /etc/ssh/default_keys</div><div class="line">mv /etc/ssh/ssh_host_* /etc/ssh/default_keys/</div><div class="line">dpkg-reconfigure openssh-server <span class="comment">#生成新密鑰</span></div></pre></div></div></figure><p>如果只是計劃簡單使用 SSH，則默認值可能沒問題。如果你認為你會使用它一段時間，我會建議至少啟用公鑰認證：<br>編輯 SSH Server 設定</p><pre><code>vim /etc/ssh/sshd_config</code></pre><figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">PasswordAuthentication no <span class="comment">#禁用密碼認證</span></div></pre></div></div></figure><p>您也可以在此處允許 root 用戶登錄，但應考慮創建非特權用戶帳戶。</p><p>與 SSH 相關的單元是 ssh.service 和 ssh.socket。在基本級別上，service 控制進程，socket 控製文件系統或網絡套接字。如果您只需要暫時啟動 SSH 服務，建議使用 ssh.socket：</p><figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></div><div class="code"><pre><div class="line">systemctl start ssh.socket <span class="comment">#暫時啟動 SSH 服務</span></div><div class="line">systemctl stop ssh.socket <span class="comment">#停止</span></div></pre></div></div></figure><figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></div><div class="code"><pre><div class="line">systemctl <span class="built_in">enable</span> ssh.service <span class="comment">#永久啟用 SSH 服務</span></div><div class="line">systemctl start ssh.service <span class="comment">#立即使用SSH而無需重新啟動</span></div><div class="line">systemctl status ssh.service <span class="comment">#檢查 SSH 服務狀態</span></div><div class="line">systemctl stop ssh.service <span class="comment">#關閉服務</span></div><div class="line">systemctl <span class="built_in">disable</span> ssh.service <span class="comment">#禁用服務</span></div></pre></div></div></figure><h2 id="Powerline"><a href="#Powerline" class="headerlink" title="Powerline"></a>Powerline</h2><p><a href="https://github.com/powerline/powerline" rel="external nofollow noopener noreferrer" target="_blank">官網</a><br><div class="note info"><p><a href="https://blog.gtwang.org/linux/powerline-adds-powerful-statuslines-and-prompts-to-vim-and-bash/" rel="external nofollow noopener noreferrer" target="_blank">來源</a><br>Powerline 是一個 Vim 狀態列與 Shell 命令提示字元的外掛，除了 Vim 之外也可以用於各種 Shell 與應用程式中，如 zsh、bash、tmux、IPython、Awesome 與 Qtile。</p><p>Powerline 是使用 Python 所開發的一個外掛小工具，支援各種常見的 Shell 與應用程式，可以產生非常漂亮的提示字串與狀態列文字，讓終端機的文字看起來更舒服。</p></div></p><p>自動安裝</p><figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">sudo apt-get install powerline</div></pre></div></div></figure><p>使用</p><p>在 Bash Shell 中使用，只要在 ~/.bashrc 中加入下面這段程式碼後重開即可</p><figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></div><div class="code"><pre><div class="line">POWERLINE_SCRIPT=/usr/share/powerline/bindings/bash/powerline.sh</div><div class="line"><span class="keyword">if</span> [ -f <span class="variable">$POWERLINE_SCRIPT</span> ]; <span class="keyword">then</span></div><div class="line">  <span class="built_in">source</span> <span class="variable">$POWERLINE_SCRIPT</span></div><div class="line"><span class="keyword">fi</span></div></pre></div></div></figure><p>若要在 Vim 的狀態列中使用 Powerline，則在 ~/.vimrc 中加入這幾行：<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup></p><figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></div><div class="code"><pre><div class="line"><span class="built_in">set</span> laststatus=2</div><div class="line"><span class="built_in">set</span> t_Co=256</div><div class="line">python3 from powerline.vim import setup as powerline_setup</div><div class="line">python3 powerline_setup()</div><div class="line">python3 del powerline_setup</div></pre></div></div></figure><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style:none; padding-left: 0;"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline-block; vertical-align: top;"><a href="https://powerline.readthedocs.io/en/latest/usage/other.html#vim-statusline" rel="external nofollow noopener noreferrer" target="_blank">Vim statusline</a></span><a href="#fnref:1" rev="footnote"> ↩</a></li></ol></div></div>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;重裝後的備忘&quot;&gt;&lt;a href=&quot;#重裝後的備忘&quot; class=&quot;headerlink&quot; title=&quot;重裝後的備忘&quot;&gt;&lt;/a&gt;重裝後的備忘&lt;/h1&gt;
-    
-    </summary>
-    
-    
-      <category term="Linux" scheme="https://ppundsh.github.io/tags/Linux/"/>
-    
-      <category term="Kali" scheme="https://ppundsh.github.io/tags/Kali/"/>
     
   </entry>
   
