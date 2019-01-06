@@ -216,7 +216,7 @@
     <summary type="html">
     
       &lt;p&gt;有時我們會需要網頁載入前詳細的時間來判斷問題的所在，正時可以用 Curl 加上 -w 的方式輸出訊息 (此文為 win 環境)&lt;/p&gt;
-&lt;!--�22--&gt;
+&lt;!--�18--&gt;
     
     </summary>
     
