@@ -170,7 +170,7 @@
 <meta property="og:image" content="https://i.imgur.com/DWCqoAg.png">
 <meta property="og:image" content="https://i.imgur.com/mouuIbp.png">
 <meta property="og:image" content="https://i.imgur.com/o9lEKLW.png">
-<meta property="og:updated_time" content="2019-01-01T04:01:14.568Z">
+<meta property="og:updated_time" content="2019-02-17T17:56:03.269Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="N66U 全改造，KMS Server、ARIA2、SWAP、SSR Server、SSH 安全">
 <meta name="twitter:description" content="ASUS N66U 是個人買過最貴的 Router ，也是個人第一次認真學 Linux 指令的對像。這邊記錄個人對它安裝的服務，包含 KMS 啟動用的 KMS Server 、ARIA2 下載器、掛載虛擬記憶體、翻牆工具等。">
@@ -448,7 +448,7 @@
               
                 <span class="post-meta-item-text">更新於：</span>
               
-              <time title="更新於" itemprop="dateModified" datetime="2019-01-01T12:01:14+08:00">2019-01-01</time>
+              <time title="更新於" itemprop="dateModified" datetime="2019-02-18T01:56:03+08:00">2019-02-18</time>
             
           </span>
 
@@ -543,7 +543,7 @@
 </ol>
 <p><img src="https://i.imgur.com/Wv1be2p.png" alt="JFFS"></p>
 <h3 id="安裝-vlmcsd"><a href="#安裝-vlmcsd" class="headerlink" title="安裝 vlmcsd"></a>安裝 vlmcsd</h3><ol>
-<li>在官網下載 vlmcsd ，複製出執行檔 <a href="https://mega.nz/#!qUlyjIrC!GMf3fHdgUw2hz-ET-GwE3JDHeG1HlctRC5fjhiHuXL4" rel="external nofollow noopener noreferrer" target="_blank">.</a><br> mips 架構的路由器使用 / binaries/Linux/mips/little-endian/static/vlmcsd-mips32el-uclibc-static<br> arm 架構的路由器使用 / binaries/Linux/armlittle-endian/static/vlmcsd-armv7el-uclibc-static</li>
+<li>在<a href="https://forums.mydigitallife.net/threads/50234" rel="external nofollow noopener noreferrer" target="_blank">官網</a> 下載 vlmcsd (下載 rgho.st 的) ，複製出執行檔 <a href="https://mega.nz/#!qUlyjIrC!GMf3fHdgUw2hz-ET-GwE3JDHeG1HlctRC5fjhiHuXL4" rel="external nofollow noopener noreferrer" target="_blank">.</a><br> arm 架構的路由器(AC68U)使用 vlmcsd-1112-2018-10-20-Hotbird64.7z\binaries\Linux\arm\little-endian\static\vlmcsd-armv7el-uclibc-static<br> mips 架構的路由器(N66U)使用 vlmcsd-1112-2018-10-20-Hotbird64.7z\binaries\Linux\mips\little-endian\static\vlmcsd-mips32el-uclibc-static</li>
 <li>將檔案重新命名為 vlmcsd，通過 xftp，winscp 等工具(連線類型還<code>SCP</code>，埠和 SSH 設定的一樣) 上傳到路由器 / jffs 目錄下</li>
 </ol>
 <p><img src="https://i.imgur.com/B3HAC7k.png" alt="vlmcsd"></p>
@@ -557,7 +557,7 @@
 </ol>
 <figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">/jffs/vlmcsd</div></pre></div></div></figure>
 <h3 id="Windows-啟動"><a href="#Windows-啟動" class="headerlink" title="Windows 啟動"></a>Windows 啟動</h3><p>來源<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup><br>用系統管理員許可權輸入以下命令</p>
-<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></div><div class="code"><pre><div class="line">::解除原先金鑰</div><div class="line">slmgr.vbs -upk</div><div class="line"></div><div class="line">::選擇金鑰，請依照底下的金鑰列表作選擇</div><div class="line">slmgr.vbs -ipk W269N-WFGWX-YVC9B-4J6C9-T83GX</div><div class="line"></div><div class="line">::設定KMS伺服器</div><div class="line">slmgr.vbs -skms 172.17.0.29</div><div class="line"></div><div class="line">::啟動</div><div class="line">slmgr.vbs -ato</div><div class="line"></div><div class="line">::顯示KMS相關資訊</div><div class="line">slmgr.vbs -dlv</div></pre></div></div></figure>
+<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></div><div class="code"><pre><div class="line">::解除原先金鑰</div><div class="line">slmgr.vbs -upk</div><div class="line"></div><div class="line">::選擇金鑰，請依照底下的金鑰列表作選擇</div><div class="line">slmgr.vbs -ipk W269N-WFGWX-YVC9B-4J6C9-T83GX</div><div class="line"></div><div class="line">::設定KMS伺服器</div><div class="line">slmgr.vbs -skms 192.168.1.1</div><div class="line"></div><div class="line">::啟動</div><div class="line">slmgr.vbs -ato</div><div class="line"></div><div class="line">::顯示KMS相關資訊</div><div class="line">slmgr.vbs -dlv</div></pre></div></div></figure>
 <p><img src="https://i.imgur.com/ujxZ9QF.png" alt="Windows Act"></p>
 <table>
 <thead>
@@ -748,12 +748,16 @@
 <ol start="6">
 <li>Run the following command to manually start ntpd as litmus test</li>
 </ol>
-<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></div><div class="code"><pre><div class="line">cp /jffs/configs/fstab /etc; mount -a</div><div class="line">/opt/etc/init.d/S77ntpd-custom start</div><div class="line">/jffs/bin/ntpstats.sh</div></pre></div></div></figure>
-<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">mount -a mounts /opt/var/www /www</div></pre></div></div></figure>
+<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">cp /jffs/configs/fstab /etc; mount -a</div></pre></div></div></figure>
+<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">/opt/etc/init.d/S77ntpd-custom start</div></pre></div></div></figure>
+<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">/jffs/bin/ntpstats.sh</div></pre></div></div></figure>
+<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">mount -a /opt/var/www /www</div></pre></div></div></figure>
 <ol start="7">
 <li>(FW version&gt;= 380.68) Patch files for WebUI and restart httpd</li>
 </ol>
-<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></div><div class="code"><pre><div class="line">cp /opt/var/spool/ntp/Tools_NtpdStats.asp /www</div><div class="line">sed -i <span class="string">'/"Tools_OtherSettings.asp", tabName: "Other Settings"/a &#123;url: "Tools_NtpdStats.asp", tabName: "NTP Daemon"&#125;,'</span> /www/require/modules/menuTree.js</div><div class="line">service restart_httpd</div></pre></div></div></figure>
+<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">cp /opt/var/spool/ntp/Tools_NtpdStats.asp /www</div></pre></div></div></figure>
+<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">sed -i <span class="string">'/"Tools_OtherSettings.asp", tabName: "Other Settings"/a &#123;url: "Tools_NtpdStats.asp", tabName: "NTP Daemon"&#125;,'</span> /www/require/modules/menuTree.js</div></pre></div></div></figure>
+<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">service restart_httpd</div></pre></div></div></figure>
 <p>Stop and check if any error. If things go well, you shall see NTP Daemon on WebUI &gt; Tools page.</p>
 <ol start="8">
 <li>Create a cron job to collect NTPD stats. Add the following line to /jffs/scripts/services-start</li>
