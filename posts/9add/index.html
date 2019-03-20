@@ -6,7 +6,7 @@
 
 
 <html class="theme-next mist use-motion" lang="zh-TW">
-<head>
+<head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
@@ -192,7 +192,7 @@
 <meta property="og:image" content="https://i.imgur.com/7XlWBol.png">
 <meta property="og:image" content="https://i.imgur.com/YPtzc92.png">
 <meta property="og:image" content="https://i.imgur.com/SxarKTB.png">
-<meta property="og:updated_time" content="2019-03-09T18:50:27.538Z">
+<meta property="og:updated_time" content="2019-03-09T18:52:23.051Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CJS z530 BIOS 更新、解鎖、更換開機 Logo 與跑分更新">
 <meta name="twitter:description" content="更新BIOS、解鎖、更換LOGO，重做一次新版的BIOS，並移植更新舊文順便回憶一下。">
@@ -470,7 +470,7 @@
               
                 <span class="post-meta-item-text">更新於：</span>
               
-              <time title="更新於" itemprop="dateModified" datetime="2019-03-10T02:50:27+08:00">2019-03-10</time>
+              <time title="更新於" itemprop="dateModified" datetime="2019-03-10T02:52:23+08:00">2019-03-10</time>
             
           </span>
 
@@ -544,16 +544,14 @@
 <div class="note default"><p>!! 所有刷新 BIOS 的動作強烈建議在電源充飽且接上 AC 電源時操作，一但刷新中斷電，要不送修要不只能買編碼器拆主版硬刷！！</p></div>
 <p>先上一張解鎖至 28w 後跑分的圖 (P.S 解鎖前降壓後的極限約是 560 左右)</p>
 <p><img src="https://i.imgur.com/2U0fB6Z.png" alt="Up_to_TDP28w"></p>
-<p>##一。更新 BIOS</p>
-<p>首先必須先取得 BIOS ，Clevo N131WU 的 BIOS 可在 <a href="https://repo.palkeo.com/clevo-mirror/" rel="external nofollow noopener noreferrer" target="_blank">Clevo-mirror</a> 找到(名為：N13xWU)，需下載最新版的 BIOS 和 EC BIOS。</p>
+<h2 id="一。更新-BIOS"><a href="#一。更新-BIOS" class="headerlink" title="一。更新 BIOS"></a>一。更新 BIOS</h2><p>首先必須先取得 BIOS ，Clevo N131WU 的 BIOS 可在 <a href="https://repo.palkeo.com/clevo-mirror/" rel="external nofollow noopener noreferrer" target="_blank">Clevo-mirror</a> 找到(名為：N13xWU)，需下載最新版的 BIOS 和 EC BIOS。</p>
 <p>EC （Embed Controller，嵌入式控制器）是一個 16 位單片機，它內部本身也有一定容量的 Flash 來存儲 EC 的代碼。EC 在系統中的地位絕不次於南北橋，在系統開啟的過程中，EC 控制著絕大多數重要信號的時序。</p>
 <p>BIOS 與 EC BIOS 兩者的關係可以參考 <a href="https://www.cjscope.com.tw/cht/faq_detail.php?serial=45" rel="external nofollow noopener noreferrer" target="_blank">喜捷獅官網</a> 的說明 ，須注意 BIOS 與其對應的 EC BIOS 是必須配合的，故接下來我將先刷入了 BIOS 再來刷 EC BIOS。</p>
 <p>下載後 BIOS 解壓縮為如此：</p>
 <p><img src="https://i.imgur.com/YuQ5xMl.png" alt="UnZip_Flash_Bios"></p>
 <p>請在電池至少充飽 80% 且接上 AC 電源後再來繼續。</p>
 <p>執行 FlashMEWinX64.bat 更新 BIOS，刷新中會鎖定滑鼠的操作以避免勿觸。<br>完成後關機後再開機開機以完成更新。<br>第一次開機時間會較長，鍵盤燈在閃滅第三次時會停住並維持較長時間 (十秒左右)，請靜候其自動重新開機 。<br>開機後會跳出兩次警告告知CMOS資料已清除，要求要進 BIOS 重新設定，重設即可。</p>
-<p>##二。更新 EC BIOS</p>
-<p>請先製作 DOS 開機隨身碟，推薦 <a href="https://rufus.ie/" rel="external nofollow noopener noreferrer" target="_blank">Rufus</a> 這個小巧強大的軟體來製做。</p>
+<h2 id="二。更新-EC-BIOS"><a href="#二。更新-EC-BIOS" class="headerlink" title="二。更新 EC BIOS"></a>二。更新 EC BIOS</h2><p>請先製作 DOS 開機隨身碟，推薦 <a href="https://rufus.ie/" rel="external nofollow noopener noreferrer" target="_blank">Rufus</a> 這個小巧強大的軟體來製做。</p>
 <p>先準備沒裝資料的隨身碟或記憶卡，插入電腦後在 Rufus 中選好並勾選 「使用映射檔建立開機片【FreeDos】，並按執行。</p>
 <p><img src="https://i.imgur.com/REjLCyR.png" alt="Rufus_Setting"></p>
 <p>完成後把 EC BIOS 解壓縮後的四個檔案直接放到開機隨身碟的根目錄中。</p>
@@ -565,8 +563,7 @@
 <p><img src="https://i.imgur.com/ePKRjLW.jpg" alt="Flush_EC_BIOS"></p>
 <p>完成後可看到游標重新閃爍，即可手動關機再開機。</p>
 <p>☆如果只想換 logo ，可直接跳到 <a href="##四。更改開機">四。更改開機</a> Logo 和 <a href="##六。FPT 刷入 BIOS">六。FPT 刷入 BIOS</a> 。</p>
-<p>##三。製作解鎖 BIOS</p>
-<p>BIOS、EC BIOS 都更新到最新版後，來製作解鎖 BIOS 吧！</p>
+<h2 id="三。製作解鎖-BIOS"><a href="#三。製作解鎖-BIOS" class="headerlink" title="三。製作解鎖 BIOS"></a>三。製作解鎖 BIOS</h2><p>BIOS、EC BIOS 都更新到最新版後，來製作解鎖 BIOS 吧！</p>
 <p>先上完成圖：</p>
 <p><img src="https://i.imgur.com/X8MGndt.jpg" alt="BIOS-01"></p>
 <p><img src="https://i.imgur.com/ZKBzYGD.jpg" alt="BIOS-02"></p>
@@ -587,10 +584,9 @@
 <p>如果要安裝 Win 7 需開啟 CSM 支援。</p>
 <p><img src="https://i.imgur.com/SYFLuNg.png" alt="AMIBCP_setting_CSM_config"></p>
 <p><img src="https://i.imgur.com/SYFLuNg.png" alt="AMIBCP_setting_CSM"></p>
-<p>修改完後，別忘了存檔。至此，一個能夠解鎖 TDP 的 BIOS 已經完成，如不需要其他操作可跳至 <a href="##六。FPT 刷入 BIOS">六。FPT 刷入 BIOS</a> 。</p>
+<p>修改完後，別忘了存檔。至此，一個能夠解鎖 TDP 的 BIOS 已經完成，如不需要其他操作可跳至 <a href="## 六。FPT 刷入 BIOS">六。FPT 刷入 BIOS</a> 。</p>
 <p>P.S：如果防毒軟體為 BitDefender ，頻繁修改 BIOS 的行為會被視為病毒行為造成 AMIBCP 和修改的 BIOS 被隔離。</p>
-<p>##四。更改開機 Logo</p>
-<p>先下載 <a href="https://mega.nz/#!fRczwSrK!jrDt5tlzmLpu9vIRT2znQr3jqgZBfKKXlgwGqQ7ykz8" rel="external nofollow noopener noreferrer" target="_blank">AMI ChangeLogo Tool</a></p>
+<h2 id="四。更改開機-Logo"><a href="#四。更改開機-Logo" class="headerlink" title="四。更改開機 Logo"></a>四。更改開機 Logo</h2><p>先下載 <a href="https://mega.nz/#!fRczwSrK!jrDt5tlzmLpu9vIRT2znQr3jqgZBfKKXlgwGqQ7ykz8" rel="external nofollow noopener noreferrer" target="_blank">AMI ChangeLogo Tool</a></p>
 <p>開啟後點選主畫面中右上角的 Load Image 載入 BIOS，檔案類型設為 All Files ，選擇剛剛修改好的 N130WU.bin</p>
 <p><img src="https://i.imgur.com/lFgSuHg.png" alt="AMI_Change_Logo-01"></p>
 <p>載入成功後，在左方 ① Available Images 欄框中選擇要替換的目標。</p>
@@ -599,8 +595,7 @@
 <p>Splash Logo - Default 為 UEFI 下的開機畫面，超過 800 <em>600 會跳警告但仍可正常使用，個人是用 1920</em>1080 的 jpg，位元深度不可超過 24，要注意 Win10 開機畫面的轉圈圈是一個四方型黑底的圖片。</p>
 <p>Splash Logo - MyOemLogo1 為傳統 BIOS 的開機畫面，大小限制為 800*600 ，位元深度不可超過 24 (超過的範圍不顯示)</p>
 <p>Splash Logo - MyOemLogo2 為傳統 BIOS 右下的 Intel Logo ，為了美觀會用一個 1 像素的黑色 bmp 取代。</p>
-<p>##五。解鎖 Chipset 頁面</p>
-<p>Chipset 頁面的解鎖較為特別，首先在 AMIBCP 中將 Chipset 改為 USER。</p>
+<h2 id="五。解鎖-Chipset-頁面"><a href="#五。解鎖-Chipset-頁面" class="headerlink" title="五。解鎖 Chipset 頁面"></a>五。解鎖 Chipset 頁面</h2><p>Chipset 頁面的解鎖較為特別，首先在 AMIBCP 中將 Chipset 改為 USER。</p>
 <p><img src="https://i.imgur.com/HQDMNZf.png" alt="BIOS_Chipset"></p>
 <p>下載 <a href="https://mega.nz/#!mB9yWYhL!oDL7ve1VIZkduSJuwiKoa_R295Unoot0kvNhEFsJSdU" rel="external nofollow noopener noreferrer" target="_blank">UEFITool</a> 來拆出 BIOS 的模組。</p>
 <p>主畫面左上的 File→Open 載入上一步驟修改好的 BIOS。</p>
@@ -626,8 +621,7 @@
 <p><img src="https://i.imgur.com/MNeCGvV.png" alt="BIOS_UEFITool-09"></p>
 <p>完成後介面會長這樣，保存後即完成解鎖 Chipset 頁面的 BIOS 。</p>
 <p><img src="https://i.imgur.com/lbE6ByI.png" alt="BIOS_UEFITool-0"></p>
-<p>##六。FPT 刷入 BIOS</p>
-<p>經過修改的 BIOS 無法通驗證，所以需要用 DOS 開機隨身碟強刷。</p>
+<h2 id="六。FPT-刷入-BIOS"><a href="#六。FPT-刷入-BIOS" class="headerlink" title="六。FPT 刷入 BIOS"></a>六。FPT 刷入 BIOS</h2><p>經過修改的 BIOS 無法通驗證，所以需要用 DOS 開機隨身碟強刷。</p>
 <p>B10715版的BIOS 更新壓縮包已經拿掉了FPT刷新工具，請下載舊版的(E.g.10511)的BIOS更新壓縮包來使用。<br>把刷 BIOS 用的更新壓縮包內的所有檔案和修改好的 BIOS 放入 DOS 開機隨身碟的根目錄中，。</p>
 <p><img src="https://i.imgur.com/C16wFZZ.png" alt="FPT_dir"></p>
 <p>重開機，在開機時按 F2 以進入 BIOS 設定頁面，到 Boot → UEFI Setting →UEFI Boot 把它設為 Disable ，儲存後使用該開機碟開機。進入 Dos ，用以下指令以強刷 BIOS (OOOO.bin 請替換成你所修改的 BIOS 名稱)</p>
@@ -640,8 +634,7 @@
 <p>更新完 BIOS 後會遇到這兩個警告，按兩次 Enter 跳過即完成。</p>
 <p><img src="https://i.imgur.com/dOXuggb.jpg" alt="CMOS_Message-01"></p>
 <p><img src="https://i.imgur.com/wiLt4ir.jpg" alt="CMOS_Message-02"></p>
-<p>##七。解鎖 LP1 44w 測試和跑分更新</p>
-<p>以下測試為將 LP1 設為 44 W (BIOS 和 XTU)，風搧開到最大進行解鎖後的跑分測試。除了 x264 轉檔太容易當掉所以不降壓，其他核心和內顯均為 -0.65<br>。<br>另這次也借到了 i7 7550u 的機器，直接將結果更新在之前的記錄中。</p>
+<h2 id="七。解鎖-LP1-44w-測試和跑分更新"><a href="#七。解鎖-LP1-44w-測試和跑分更新" class="headerlink" title="七。解鎖 LP1 44w 測試和跑分更新"></a>七。解鎖 LP1 44w 測試和跑分更新</h2><p>以下測試為將 LP1 設為 44 W (BIOS 和 XTU)，風搧開到最大進行解鎖後的跑分測試。除了 x264 轉檔太容易當掉所以不降壓，其他核心和內顯均為 -0.65<br>。<br>另這次也借到了 i7 7550u 的機器，直接將結果更新在之前的記錄中。</p>
 <p><img src="https://i.imgur.com/5umthEv.png" alt="Bench-01"></p>
 <p><img src="https://i.imgur.com/BYnq6RR.png" alt="Bench-02"></p>
 <p><img src="https://i.imgur.com/lRXvFJ1.png" alt="Bench-03"></p>
@@ -650,8 +643,7 @@
 <p>就算是用上液金 + 散熱矽膠墊 + 風扇全開，仍然碰到溫度牆而被降頻，推測維持 44 W 的功耗這應該是 z530 的極限了。</p>
 <p><img src="https://i.imgur.com/7XlWBol.png" alt="taotll-01"></p>
 <p><img src="https://i.imgur.com/YPtzc92.png" alt="taotll-02"></p>
-<p>##八。結語</p>
-<p>結果來看 i7 7550u 的性能比個人之前六年前的桌機還差，約只有 i7 6700HQ 的一半。<br>解鎖後的 i7 8550u 測試結果超越 i7 6700HQ。</p>
+<h2 id="八。結語"><a href="#八。結語" class="headerlink" title="八。結語"></a>八。結語</h2><p>結果來看 i7 7550u 的性能比個人之前六年前的桌機還差，約只有 i7 6700HQ 的一半。<br>解鎖後的 i7 8550u 測試結果超越 i7 6700HQ。</p>
 <p>這些跡象看來，intel 在八代確實是下了極大的工夫改進，但筆電廠商小改款七代模具的結果是完全無法壓制八代的散熱和提供穩定的功耗，而造成實際八代 u 系列 CPU 的效能無法真正發揮其理論值。</p>
 <p>就算解鎖 TDP ，就算使用更激進的風扇策略確保溫度不會過高，但超過廠商原設計三倍的耗電量對主機板料件的損害也讓我不選擇長時間使用這個設定。</p>
 <p>購入此台筆電後的諸多測試下來，看見種種廣告手法和各種頻測中避而不談的交叉測試結果讓我學習很多，未來如果有閒會繼續研究 BIOS 中解鎖出來的各式設定吧？</p>
@@ -773,8 +765,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目錄
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            本站概要
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -874,6 +875,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一。更新-BIOS"><span class="nav-number">1.</span> <span class="nav-text">一。更新 BIOS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二。更新-EC-BIOS"><span class="nav-number">2.</span> <span class="nav-text">二。更新 EC BIOS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三。製作解鎖-BIOS"><span class="nav-number">3.</span> <span class="nav-text">三。製作解鎖 BIOS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四。更改開機-Logo"><span class="nav-number">4.</span> <span class="nav-text">四。更改開機 Logo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#五。解鎖-Chipset-頁面"><span class="nav-number">5.</span> <span class="nav-text">五。解鎖 Chipset 頁面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#六。FPT-刷入-BIOS"><span class="nav-number">6.</span> <span class="nav-text">六。FPT 刷入 BIOS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#七。解鎖-LP1-44w-測試和跑分更新"><span class="nav-number">7.</span> <span class="nav-text">七。解鎖 LP1 44w 測試和跑分更新</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#八。結語"><span class="nav-number">8.</span> <span class="nav-text">八。結語</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
         <div class="back-to-top">
@@ -928,7 +945,7 @@
 
 
 
-<!--  <div class="powered-by">由 <a class="theme-link" target="_blank" rel="external nofollow" href="https://hexo.io">Hexo</a> 強力驅動 v3.7.1</div>
+<!--  <div class="powered-by">由 <a class="theme-link" target="_blank" rel="external nofollow" href="https://hexo.io">Hexo</a> 強力驅動 v3.8.0</div>
 
 -->
 
